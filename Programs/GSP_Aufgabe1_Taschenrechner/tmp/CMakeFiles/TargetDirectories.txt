@@ -1,0 +1,8 @@
+C:/GS_Beinert/ITS-BRD-VSC/Programs/GSP_Aufgabe1_Taschenrechner/tmp/CMakeFiles/database.dir
+C:/GS_Beinert/ITS-BRD-VSC/Programs/GSP_Aufgabe1_Taschenrechner/tmp/CMakeFiles/GSP_Aufgabe1_Taschenrechner.Debug+ITSboard.dir
+C:/GS_Beinert/ITS-BRD-VSC/Programs/GSP_Aufgabe1_Taschenrechner/tmp/CMakeFiles/GSP_Aufgabe1_Taschenrechner.Debug+ITSboard-build.dir
+C:/GS_Beinert/ITS-BRD-VSC/Programs/GSP_Aufgabe1_Taschenrechner/tmp/CMakeFiles/GSP_Aufgabe1_Taschenrechner.Debug+ITSboard-configure.dir
+C:/GS_Beinert/ITS-BRD-VSC/Programs/GSP_Aufgabe1_Taschenrechner/tmp/CMakeFiles/GSP_Aufgabe1_Taschenrechner.Debug+ITSboard-executes.dir
+C:/GS_Beinert/ITS-BRD-VSC/Programs/GSP_Aufgabe1_Taschenrechner/tmp/CMakeFiles/GSP_Aufgabe1_Taschenrechner.Debug+ITSboard-database.dir
+C:/GS_Beinert/ITS-BRD-VSC/Programs/GSP_Aufgabe1_Taschenrechner/tmp/CMakeFiles/edit_cache.dir
+C:/GS_Beinert/ITS-BRD-VSC/Programs/GSP_Aufgabe1_Taschenrechner/tmp/CMakeFiles/rebuild_cache.dir

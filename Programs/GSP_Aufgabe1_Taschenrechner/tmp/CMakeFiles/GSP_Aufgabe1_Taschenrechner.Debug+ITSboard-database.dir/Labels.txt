@@ -1,0 +1,11 @@
+# Target labels
+ GSP_Aufgabe1_Taschenrechner.Debug+ITSboard
+# Source files and their labels
+C:/GS_Beinert/ITS-BRD-VSC/Programs/GSP_Aufgabe1_Taschenrechner/tmp/CMakeFiles/GSP_Aufgabe1_Taschenrechner.Debug+ITSboard-database
+C:/GS_Beinert/ITS-BRD-VSC/Programs/GSP_Aufgabe1_Taschenrechner/tmp/CMakeFiles/GSP_Aufgabe1_Taschenrechner.Debug+ITSboard-database.rule
+C:/GS_Beinert/ITS-BRD-VSC/Programs/GSP_Aufgabe1_Taschenrechner/tmp/GSP_Aufgabe1_Taschenrechner.Debug+ITSboard/src/GSP_Aufgabe1_Taschenrechner.Debug+ITSboard-stamp/GSP_Aufgabe1_Taschenrechner.Debug+ITSboard-database.rule
+C:/GS_Beinert/ITS-BRD-VSC/Programs/GSP_Aufgabe1_Taschenrechner/tmp/GSP_Aufgabe1_Taschenrechner.Debug+ITSboard/src/GSP_Aufgabe1_Taschenrechner.Debug+ITSboard-stamp/GSP_Aufgabe1_Taschenrechner.Debug+ITSboard-configure.rule
+C:/GS_Beinert/ITS-BRD-VSC/Programs/GSP_Aufgabe1_Taschenrechner/tmp/GSP_Aufgabe1_Taschenrechner.Debug+ITSboard/src/GSP_Aufgabe1_Taschenrechner.Debug+ITSboard-stamp/GSP_Aufgabe1_Taschenrechner.Debug+ITSboard-patch.rule
+C:/GS_Beinert/ITS-BRD-VSC/Programs/GSP_Aufgabe1_Taschenrechner/tmp/GSP_Aufgabe1_Taschenrechner.Debug+ITSboard/src/GSP_Aufgabe1_Taschenrechner.Debug+ITSboard-stamp/GSP_Aufgabe1_Taschenrechner.Debug+ITSboard-update.rule
+C:/GS_Beinert/ITS-BRD-VSC/Programs/GSP_Aufgabe1_Taschenrechner/tmp/GSP_Aufgabe1_Taschenrechner.Debug+ITSboard/src/GSP_Aufgabe1_Taschenrechner.Debug+ITSboard-stamp/GSP_Aufgabe1_Taschenrechner.Debug+ITSboard-download.rule
+C:/GS_Beinert/ITS-BRD-VSC/Programs/GSP_Aufgabe1_Taschenrechner/tmp/GSP_Aufgabe1_Taschenrechner.Debug+ITSboard/src/GSP_Aufgabe1_Taschenrechner.Debug+ITSboard-stamp/GSP_Aufgabe1_Taschenrechner.Debug+ITSboard-mkdir.rule
