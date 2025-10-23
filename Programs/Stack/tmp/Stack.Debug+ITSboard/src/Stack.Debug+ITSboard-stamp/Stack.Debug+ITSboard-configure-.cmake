@@ -1,11 +1,11 @@
 
 cmake_minimum_required(VERSION 3.15)
 
-set(command "C:/Users/Musti/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.28.4/bin/cmake.exe;-G;Ninja;-S;C:/GS_Labor/ITS-BRD-VSC/Programs/Stack/tmp/Stack.Debug+ITSboard;-B;C:/GS_Labor/ITS-BRD-VSC/Programs/Stack/tmp/1;-DSOLUTION_ROOT=C:/GS_Labor/ITS-BRD-VSC/Programs/Stack;-DCMSIS_PACK_ROOT=C:/Users/Musti/AppData/Local/arm/packs;-DCMSIS_COMPILER_ROOT=C:/Users/Musti/.vcpkg/artifacts/2139c4c6/tools.open.cmsis.pack.cmsis.toolbox/2.11.0/etc")
+set(command "C:/Users/joshu/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.28.4/bin/cmake.exe;-G;Ninja;-S;C:/GS_Beinert/ITS-BRD-VSC/Programs/Stack/tmp/Stack.Debug+ITSboard;-B;C:/GS_Beinert/ITS-BRD-VSC/Programs/Stack/tmp/1;-DSOLUTION_ROOT=C:/GS_Beinert/ITS-BRD-VSC/Programs/Stack;-DCMSIS_PACK_ROOT=C:/Users/joshu/AppData/Local/Arm/Packs;-DCMSIS_COMPILER_ROOT=C:/Users/joshu/.vcpkg/artifacts/2139c4c6/tools.open.cmsis.pack.cmsis.toolbox/2.11.0/etc")
 set(log_merged "")
 set(log_output_on_failure "ON")
-set(stdout_log "C:/GS_Labor/ITS-BRD-VSC/Programs/Stack/tmp/Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-configure-out.log")
-set(stderr_log "C:/GS_Labor/ITS-BRD-VSC/Programs/Stack/tmp/Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-configure-err.log")
+set(stdout_log "C:/GS_Beinert/ITS-BRD-VSC/Programs/Stack/tmp/Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-configure-out.log")
+set(stderr_log "C:/GS_Beinert/ITS-BRD-VSC/Programs/Stack/tmp/Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-configure-err.log")
 execute_process(
   COMMAND ${command}
   RESULT_VARIABLE result
@@ -31,7 +31,7 @@ if(result)
   if (${log_merged})
     set(msg "${msg}\nSee also\n  ${stderr_log}")
   else()
-    set(msg "${msg}\nSee also\n  C:/GS_Labor/ITS-BRD-VSC/Programs/Stack/tmp/Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-configure-*.log")
+    set(msg "${msg}\nSee also\n  C:/GS_Beinert/ITS-BRD-VSC/Programs/Stack/tmp/Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-configure-*.log")
   endif()
   if (${log_output_on_failure})
     message(SEND_ERROR "${msg}")
@@ -50,7 +50,7 @@ if(result)
   endif()
 else()
   if(NOT "Ninja" MATCHES "Ninja")
-    set(msg "Stack.Debug+ITSboard configure command succeeded.  See also C:/GS_Labor/ITS-BRD-VSC/Programs/Stack/tmp/Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-configure-*.log")
+    set(msg "Stack.Debug+ITSboard configure command succeeded.  See also C:/GS_Beinert/ITS-BRD-VSC/Programs/Stack/tmp/Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-configure-*.log")
     message(STATUS "${msg}")
   endif()
 endif()
