@@ -1,4 +1,5 @@
 # ninja log v6
+<<<<<<< HEAD
 6567	6665	7829312496192485	C:/GS_Labor/ITS-BRD-VSC/Programs/Stack/tmp/Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-executes	fc2bbb084f33719d
 38	133	7829312232356947	Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-mkdir	e0fb830b159b1aea
 38	133	7829312232356947	C:/GS_Labor/ITS-BRD-VSC/Programs/Stack/tmp/Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-mkdir	e0fb830b159b1aea
@@ -26,3 +27,19 @@
 6976	7128	7829312500831203	CMakeFiles/Stack.Debug+ITSboard-complete	1578a4da95f434
 42	299	7829329039327573	Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-database	4f64e6414072a8a8
 42	299	7829329039327573	C:/GS_Labor/ITS-BRD-VSC/Programs/Stack/tmp/Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-database	4f64e6414072a8a8
+=======
+489	642	7829328787875916	C:/GS_Beinert/ITS-BRD-VSC/Programs/Stack/tmp/Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-patch	67a266bbf1eee518
+174	318	7829328784627822	C:/GS_Beinert/ITS-BRD-VSC/Programs/Stack/tmp/Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-download	c3e37ae03a18ccb4
+26	172	7829328783194800	Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-mkdir	ab2175cb71f57dc8
+642	9079	7829328872258840	Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-configure	d4a1a99aedf62d0e
+26	172	7829328783194800	C:/GS_Beinert/ITS-BRD-VSC/Programs/Stack/tmp/Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-mkdir	ab2175cb71f57dc8
+318	465	7829328786122907	Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-update	b58336b04e5db8f2
+174	318	7829328784627822	Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-download	c3e37ae03a18ccb4
+318	465	7829328786122907	C:/GS_Beinert/ITS-BRD-VSC/Programs/Stack/tmp/Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-update	b58336b04e5db8f2
+489	642	7829328787875916	Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-patch	67a266bbf1eee518
+642	9079	7829328872258840	C:/GS_Beinert/ITS-BRD-VSC/Programs/Stack/tmp/Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-configure	d4a1a99aedf62d0e
+9080	9450	7829328872399396	Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-database	31f642799ed1aaf9
+9080	9450	7829328872399396	C:/GS_Beinert/ITS-BRD-VSC/Programs/Stack/tmp/Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-database	31f642799ed1aaf9
+45	911	7829332282404350	Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-database	31f642799ed1aaf9
+45	911	7829332282404350	C:/GS_Beinert/ITS-BRD-VSC/Programs/Stack/tmp/Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-database	31f642799ed1aaf9
+>>>>>>> a2f02fbaffb608f24ff02e95324f15ca4fdd9739
