@@ -1,6 +1,6 @@
 /**
   * @file stack.h
-  * @author MJ
+  * @author MJ test
   * @date Oct 2025
   */
 
@@ -21,6 +21,4 @@ int getStackSize();
 void clearStack();
 
 
-
 #endif
-
