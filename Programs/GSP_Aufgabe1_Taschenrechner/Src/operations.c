@@ -7,47 +7,52 @@
 #include "operations.h"
 #include "stack.h"
 
-int p(){
+int p() {
     return peek();
 }
 
-int[] P(){
-    if (getStackSize() == 2){
+int[] P() {
+    if(getSize() == 2) {
         int n2 = pop();
         int n1 = pop();
-        int[] result = {n1,n2};
+        int[] result = {n1, n2};
         push(n1);
         push(n2);
         return result;
     }
-    else if (getStackSize() == 1){
+    else if(getStackSize() == 1) {
         return peek();
     }
-    else printf("stack is empty!\n")
+    else {    
+        return printf("stack is empty!\n");
+    }
 }
 
 void C() clearStack();
 
-void d(){
+void d() {
     int duplicate = peek();
 
-    if (getStackSize() == 2){
+    if(getSize() == 2) {
         clearStack();
         push(duplicate);
         push(duplicate);
     }
-    else if (getStackSize() == 1){
+    else if(getStackSize() == 1) {
         push(duplicate);
     }
-    else printf("stack is empty!\n")
-}
-
-void r(){
-    if(getStackSize() == 2){
-        int n2 = pop();
-        int n1 = pop();
-        push(n2);
-        push(n1);
+    else {    
+        return printf("stack is empty!\n");
     }
-    else print("not enough elements to swap!\n");
+}
+    
+
+void r() {
+   if(getSize() == 2) {
+    int n2 = pop();
+    int n1 = pop();
+    push(n2);
+    push(n1);
+   }
+   else printf("not enough elements to swap!\n");
 }

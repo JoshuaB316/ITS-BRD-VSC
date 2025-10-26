@@ -9,50 +9,48 @@
 #include <limits.h>
 #include <stdio.h>
 
-void +(){
+void +() {
     int firstNum = pop();
     int secondNum = pop();
 
-    if (firstNum + secondNum > INT_MAX) printf("Integer Overflow!\n");
-    else if (firstNum + secondNum < INT_MIN) printf("Integer Underflow!\n");
+    if(firstNum + secondNum > INT_MAX) printf("Integer Overflow!\n");
+    else if(firstNum + secondNum < INT_MIN) printf("Integer Underflow!\n");
     else {
         int result = firstNum + secondNum;
         push(result);
     }
 }
 
-void -(){
+void -() {
     int firstNum = pop();
     int secondNum = pop();
-
-    if (secondNum - firstNum > INT_MAX) printf("Integer Overflow!\n");
-    else if (secondNum - firstNum < INT_MIN) printf("Integer Underflow!\n");
-    else {
-        int result = firstNum + secondNum;
+    if(secondNum - secfirstNumondNum > INT_MAX) printf("Integer Overflow!\n");
+    else if(secondNum - firstNum < INT_MIN) printf("Integer Underflow!\n");
+    else  {
+        int result = secondNum - firstNum;
         push(result);
     }
 }
 
-void *(){
+void *() {
     int firstNum = pop();
     int secondNum = pop();
-
-    if (firstNum * secondNum > INT_MAX) printf("Integer Overflow!\n");
-    else if (firstNum * secondNum < INT_MIN) printf("Integer Underflow!\n");
-    else {
-        int result = firstNum + secondNum;
+    if(firstNum * secondNum > INT_MAX) printf("Integer Overflow!\n");
+    else if(firstNum * secondNum < INT_MIN) printf("Integer Underflow!\n");
+    else  {
+        int result = firstNum * secondNum;
         push(result);
     }
 }
 
-void /(){
+void /() {
     int firstNum = pop();
     int secondNum = pop();
-    if (firstNum != 0){
+    if (firstNum != 0) {
         int result = secondNum / firstNum;
         push(result);
     }
-    else {
+   else {
         printf("cannot divide by 0\n");
         push(secondNum);
         push(firstNum);

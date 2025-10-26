@@ -11,11 +11,15 @@ int p();
 
 int[] P();
 
-void C();
+int C();
 
-void d();
+int d();
 
-void r();
+int r();
+
+
+
+
 
 
 #endif

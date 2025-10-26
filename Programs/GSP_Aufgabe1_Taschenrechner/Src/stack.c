@@ -4,49 +4,53 @@
   * @date Oct 2025
   */
 
+
 #include "stack.h"
-#define maxSize 2 
+#include <stdio.h>
+
+#define maxStackSize 2
 
 int stackSize = 0;
 int index0;
 int index1;
 
-bool isEmpty() return stackSize == 0;
+bool inEmpty() return stackSize == 0;
 
-void push(int value){
+int peek(int index) {
+    if(isEmpty()) printf("stack is empty!\n");
+    else if (stackSize == 1) return index0;
+    else if (stackSize == maxStackSize) return index1;
+}
+
+void push(int value) {
     if (isEmpty) {
         index0 = value;
         stackSize++;
-    }
-    else if (stackSize == 1){
+    } 
+    else if (stackSize == 1) {
         index1 = value;
         stackSize++;
-    } 
+    }
     else printf("stack Overflow!\n");
 }
 
-int pop(){
+int pop() {
     if (isEmpty) printf("stack Underflow!\n");
-    else if (stacksize == 1) {
+    else if (stackSize == 1) {
         stackSize--;
         return index0;
     }
-    else if (stackSize == maxSize){
+    else if (stackSize == maxStackSize) {
         stackSize--;
         return index1;
     }
 }
-
-int peek(){
-    if (isEmpty) printf("stack is empty!\n");
-    else if (stackSize == 1) return index0;
-    else if (stackSize == maxSize) return index1;
-}
-
-int getStackSize(){
+   
+int getStackSize() {
     return stackSize;
 }
 
-void clearStack(){
+void clearStack() {
     stackSize = 0;
 }
+

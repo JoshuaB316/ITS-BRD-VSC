@@ -15,4 +15,6 @@ void *();
 
 void /();
 
-#endif
+
+
+#endif /* CALCULATE_H */

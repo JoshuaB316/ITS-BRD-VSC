@@ -10,11 +10,11 @@
 
 bool isEmpty();
 
+int peek();
+
 void push(int value);
 
 int pop();
-
-int peek();
 
 int getStackSize();
 
