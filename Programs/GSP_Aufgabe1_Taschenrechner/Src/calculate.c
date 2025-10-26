@@ -9,7 +9,7 @@
 #include <limits.h>
 #include <stdio.h>
 
-void +() {
+void add() {
     int firstNum = pop();
     int secondNum = pop();
 
@@ -21,7 +21,7 @@ void +() {
     }
 }
 
-void -() {
+void subtract() {
     int firstNum = pop();
     int secondNum = pop();
     if(secondNum - secfirstNumondNum > INT_MAX) printf("Integer Overflow!\n");
@@ -32,7 +32,7 @@ void -() {
     }
 }
 
-void *() {
+void multiply() {
     int firstNum = pop();
     int secondNum = pop();
     if(firstNum * secondNum > INT_MAX) printf("Integer Overflow!\n");
@@ -43,7 +43,7 @@ void *() {
     }
 }
 
-void /() {
+void divide() {
     int firstNum = pop();
     int secondNum = pop();
     if (firstNum != 0) {
