@@ -7,7 +7,6 @@
 #ifndef OPERATIONS_H
 #define OPERATIONS_H
 
-
 int p();
 
 int[] P();
