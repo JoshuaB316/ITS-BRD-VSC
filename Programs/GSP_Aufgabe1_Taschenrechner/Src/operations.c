@@ -38,7 +38,9 @@ int[] P() {
     }
 }
 
-void C() clearStack();
+void C() {
+    clearStack();
+}
 
 void d() {
     int duplicate = peek();
