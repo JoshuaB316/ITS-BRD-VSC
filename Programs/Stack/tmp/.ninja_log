@@ -1,15 +1,15 @@
 # ninja log v6
 15	60	7829402523169357	Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-mkdir	7c8c3868795c7100
-15	60	7829402523169357	C:/GS_Labor/ITS-BRD-VSC/Programs/Stack/tmp/Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-mkdir	7c8c3868795c7100
-61	99	7829402523547304	Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-download	b294c5642a806118
 99	137	7829402523938242	Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-update	645523506cfb597
-61	99	7829402523547304	C:/GS_Labor/ITS-BRD-VSC/Programs/Stack/tmp/Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-download	b294c5642a806118
+61	99	7829402523547304	Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-download	b294c5642a806118
+15	60	7829402523169357	C:/GS_Labor/ITS-BRD-VSC/Programs/Stack/tmp/Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-mkdir	7c8c3868795c7100
 137	176	7829402524325830	Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-patch	ab0ea5a90457d03
-99	137	7829402523938242	C:/GS_Labor/ITS-BRD-VSC/Programs/Stack/tmp/Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-update	645523506cfb597
+61	99	7829402523547304	C:/GS_Labor/ITS-BRD-VSC/Programs/Stack/tmp/Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-download	b294c5642a806118
 137	176	7829402524325830	C:/GS_Labor/ITS-BRD-VSC/Programs/Stack/tmp/Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-patch	ab0ea5a90457d03
+99	137	7829402523938242	C:/GS_Labor/ITS-BRD-VSC/Programs/Stack/tmp/Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-update	645523506cfb597
 176	5444	7829402577000950	Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-configure	6f567f76657843fb
 176	5444	7829402577000950	C:/GS_Labor/ITS-BRD-VSC/Programs/Stack/tmp/Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-configure	6f567f76657843fb
-27	195	7832158156056118	Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-database	5f89ce800d05fc43
-27	195	7832158156056118	C:/GS_Labor/ITS-BRD-VSC/Programs/Stack/tmp/Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-database	5f89ce800d05fc43
 18	146	7832162133446282	Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-database	5f89ce800d05fc43
 18	146	7832162133446282	C:/GS_Labor/ITS-BRD-VSC/Programs/Stack/tmp/Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-database	5f89ce800d05fc43
+23	187	7832914445791379	Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-database	5f89ce800d05fc43
+23	187	7832914445791379	C:/GS_Labor/ITS-BRD-VSC/Programs/Stack/tmp/Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-database	5f89ce800d05fc43
