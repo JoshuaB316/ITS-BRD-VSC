@@ -9,12 +9,21 @@
 #include <limits.h>
 #include <stdio.h>
 
+#include "stm32f4xx_hal.h"
+#include "init.h"
+#include "LCD_GUI.h"
+#include "LCD_Touch.h"
+#include "lcd.h"
+#include "fontsFLASH.h"
+#include "additionalFonts.h"
+#include "error.h"
+
 void add() {
     int firstNum = pop();
     int secondNum = pop();
 
-    if(firstNum + secondNum > INT_MAX) printf("Integer Overflow!\n");
-    else if(firstNum + secondNum < INT_MIN) printf("Integer Underflow!\n");
+    if(firstNum + secondNum > INT_MAX) lcdPrintlnS("Integer Overflow!\n");
+    else if(firstNum + secondNum < INT_MIN) lcdPrintlnS("Integer Underflow!\n");
     else {
         int result = firstNum + secondNum;
         push(result);
@@ -24,8 +33,8 @@ void add() {
 void subtract() {
     int firstNum = pop();
     int secondNum = pop();
-    if(secondNum - secfirstNumondNum > INT_MAX) printf("Integer Overflow!\n");
-    else if(secondNum - firstNum < INT_MIN) printf("Integer Underflow!\n");
+    if(secondNum - secfirstNumondNum > INT_MAX) lcdPrintlnS("Integer Overflow!\n");
+    else if(secondNum - firstNum < INT_MIN) lcdPrintlnS("Integer Underflow!\n");
     else  {
         int result = secondNum - firstNum;
         push(result);
@@ -35,8 +44,8 @@ void subtract() {
 void multiply() {
     int firstNum = pop();
     int secondNum = pop();
-    if(firstNum * secondNum > INT_MAX) printf("Integer Overflow!\n");
-    else if(firstNum * secondNum < INT_MIN) printf("Integer Underflow!\n");
+    if(firstNum * secondNum > INT_MAX) lcdPrintlnS("Integer Overflow!\n");
+    else if(firstNum * secondNum < INT_MIN) lcdPrintlnS("Integer Underflow!\n");
     else  {
         int result = firstNum * secondNum;
         push(result);
@@ -51,7 +60,7 @@ void divide() {
         push(result);
     }
    else {
-        printf("cannot divide by 0\n");
+        lcdPrintlnS("cannot divide by 0\n");
         push(secondNum);
         push(firstNum);
     }

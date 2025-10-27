@@ -6,6 +6,16 @@
 
 #include "operations.h"
 #include "stack.h"
+#include <stdio.h>
+
+#include "stm32f4xx_hal.h"
+#include "init.h"
+#include "LCD_GUI.h"
+#include "LCD_Touch.h"
+#include "lcd.h"
+#include "fontsFLASH.h"
+#include "additionalFonts.h"
+#include "error.h"
 
 int p() {
     return peek();
@@ -24,7 +34,7 @@ int[] P() {
         return peek();
     }
     else {    
-        return printf("stack is empty!\n");
+        lcdPrintlnS("stack is empty!\n");
     }
 }
 
@@ -42,7 +52,7 @@ void d() {
         push(duplicate);
     }
     else {    
-        return printf("stack is empty!\n");
+        lcdPrintlnS("stack is empty!\n");
     }
 }
     
@@ -54,5 +64,5 @@ void r() {
     push(n2);
     push(n1);
    }
-   else printf("not enough elements to swap!\n");
+   else lcdPrintlnS("not enough elements to swap!\n");
 }
