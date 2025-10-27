@@ -26,9 +26,15 @@ int index1;
 bool inEmpty() return stackSize == 0;
 
 int peek(int index) {
-    if(isEmpty()) lcdPrintlnS("stack is empty!\n");
-    else if (stackSize == 1) return index0;
-    else if (stackSize == maxStackSize) return index1;
+    if(isEmpty()) {
+        lcdPrintlnS("stack is empty!\n");
+    }
+    else if (stackSize == 1) {
+        return index0;
+    }
+    else if (stackSize == maxStackSize) {
+        return index1;
+    }
 }
 
 void push(int value) {
@@ -40,11 +46,15 @@ void push(int value) {
         index1 = value;
         stackSize++;
     }
-    else lcdPrintlnS("stack Overflow!\n");
+    else {
+        lcdPrintlnS("stack Overflow!\n");
+    }
 }
 
 int pop() {
-    if (isEmpty) lcdPrintlnS("stack Underflow!\n");
+    if (isEmpty) {
+        lcdPrintlnS("stack Underflow!\n");
+    }
     else if (stackSize == 1) {
         stackSize--;
         return index0;
