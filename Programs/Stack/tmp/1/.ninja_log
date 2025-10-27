@@ -1,4 +1,10 @@
 # ninja log v6
+<<<<<<< HEAD
+5	108	7829343909056821	CMakeFiles/database	67d4693d9dbc7e02
+5	108	7829343909056821	C:/GS_Labor/ITS-BRD-VSC/Programs/Stack/tmp/1/CMakeFiles/database	67d4693d9dbc7e02
+102	332	7832679467071107	CMakeFiles/database	67d4693d9dbc7e02
+102	332	7832679467071107	C:/GS_Labor/ITS-BRD-VSC/Programs/Stack/tmp/1/CMakeFiles/database	67d4693d9dbc7e02
+=======
 4	51	7829402577548897	CMakeFiles/database	93ca3a98563f245
 4	51	7829402577548897	C:/GS_Labor/ITS-BRD-VSC/Programs/Stack/tmp/1/CMakeFiles/database	93ca3a98563f245
 9	55	7829404348244096	CMakeFiles/database	93ca3a98563f245
@@ -25,5 +31,9 @@
 17	80	7832158156968072	C:/GS_Labor/ITS-BRD-VSC/Programs/Stack/tmp/1/CMakeFiles/database	93ca3a98563f245
 15	66	7832162134104180	CMakeFiles/database	93ca3a98563f245
 15	66	7832162134104180	C:/GS_Labor/ITS-BRD-VSC/Programs/Stack/tmp/1/CMakeFiles/database	93ca3a98563f245
+<<<<<<< HEAD
 44	102	7832914446787280	CMakeFiles/database	93ca3a98563f245
 44	102	7832914446787280	C:/GS_Labor/ITS-BRD-VSC/Programs/Stack/tmp/1/CMakeFiles/database	93ca3a98563f245
+=======
+>>>>>>> 596fa5e9017e80aad6974adce0ab9cf4cb8fe9d0
+>>>>>>> a0f4232d9cf7562d12c1479008969f13c3207597
