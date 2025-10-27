@@ -18,7 +18,7 @@
 #include "additionalFonts.h"
 #include "error.h"
 
-void add() {
+extern void add() {
     int firstNum = pop();
     int secondNum = pop();
 

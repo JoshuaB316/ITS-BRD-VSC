@@ -15,7 +15,10 @@
 #include "fontsFLASH.h"
 #include "additionalFonts.h"
 #include "error.h"
-
+#include "calculate.h"
+#include "operations.h"
+#include "toString.h"
+#include "token.h"
 
 int main(void) {
 	initITSboard();    // Initialisierung des ITS Boards
@@ -29,6 +32,50 @@ int main(void) {
 	// Test in Endlosschleife
 	while(1) {
 		HAL_Delay(10000);
+
+		switch(nextToken()) {
+			case 'n':{
+				push();
+			}
+			case '+';{
+				add();
+			}
+			case '-';{
+				subtract();
+			}
+			case '*';{
+				multiply();
+			}
+			case '/';{
+				divide();
+			}
+			case 'p';{
+				p();
+			}
+			case 'P';{
+				P();
+			}
+			case 'C';{
+				C();
+			}
+			case 'd';{
+				d();
+			}
+			case 'r';{
+				r();
+			}
+			case ' ';{
+				//ENTER
+			}
+			case 'U';{
+				//UNEXPECTED
+			}
+			case 'O';{
+				//OVERFLOW
+			}
+
+		}
+
 	}
 }
 

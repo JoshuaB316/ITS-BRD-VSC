@@ -28,6 +28,8 @@ int peek();
  ****************************************************************************************
  *  @brief      This function adds a value to the Stack
  *
+ *  @param      value   value to be added
+ *
  *  @return     void 
  ****************************************************************************************/
 void push(int value);
