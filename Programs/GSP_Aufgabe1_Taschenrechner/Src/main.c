@@ -33,49 +33,56 @@ int main(void) {
 	while(1) {
 		HAL_Delay(10000);
 
-		switch(nextToken()) {
+		switch(nextToken()){
 			case 'n':{
-				push();
+				push(); //hier eingelesene Zahl aber von wo???
 			}
-			case '+';{
+			case '+':{
 				add();
 			}
-			case '-';{
+			case '-':{
 				subtract();
 			}
-			case '*';{
+			case '*':{
 				multiply();
 			}
-			case '/';{
+			case '/':{
 				divide();
 			}
-			case 'p';{
-				p();
-			}
-			case 'P';{
+			case 'P':{
 				P();
 			}
-			case 'C';{
-				C();
-			}
-			case 'd';{
-				d();
-			}
-			case 'r';{
+			case 'r':{
 				r();
 			}
-			case ' ';{
-				//ENTER
+			case 'p':{
+				p();
 			}
-			case 'U';{
-				//UNEXPECTED
+			case 'C':{
+				C();
 			}
-			case 'O';{
-				//OVERFLOW
+			case 'd':{
+				d();
 			}
+			case ' ':{
+				//was macht enter?
+			}
+			case 'U':{
+				//?
+			}
+			case 'O':{
+				//?
+			}
+
 
 		}
 
+
+
+
+
+
+		
 	}
 }
 
