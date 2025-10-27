@@ -58,11 +58,12 @@ void d() {
     
 
 void r() {
-   if(getSize() == 2) {
-    int n2 = pop();
-    int n1 = pop();
-    push(n2);
-    push(n1);
-   }
-   else lcdPrintlnS("not enough elements to swap!\n");
+    if (getSize() == 2) {
+        int n2 = pop();
+        int n1 = pop();
+        push(n2);
+        push(n1);
+    } else {
+        lcdPrintlnS("not enough elements to swap!\n");
+    }
 }
