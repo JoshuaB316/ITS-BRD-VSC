@@ -18,7 +18,18 @@
 #include "error.h"
 
 int p() {
-    return peek();
+
+    int result = getStackSize();
+    int err = peek(*result);
+
+    if(err == -1){
+        lcdPrintlnS("Error")
+        return 0;
+    }
+    else {
+        return result;
+    }
+     
 }
 
 int[] P() {
