@@ -1,7 +1,7 @@
 
 cmake_minimum_required(VERSION 3.15)
 
-set(command "C:/Users/bumuk/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.28.4/bin/cmake.exe;--build;C:/GS_Labor/ITS-BRD-VSC/Programs/Stack/tmp/1;--target;database")
+set(command "C:/Users/Musti/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.28.4/bin/cmake.exe;--build;C:/GS_Labor/ITS-BRD-VSC/Programs/Stack/tmp/1;--target;database")
 set(log_merged "")
 set(log_output_on_failure "ON")
 set(stdout_log "C:/GS_Labor/ITS-BRD-VSC/Programs/Stack/tmp/Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-database-out.log")
