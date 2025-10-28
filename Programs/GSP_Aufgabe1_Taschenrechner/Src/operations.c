@@ -33,20 +33,7 @@ int p() {
 }
 
 int[] P() {
-    if(getSize() == 2) {
-        int n2 = pop();
-        int n1 = pop();
-        int[] result = {n1, n2};
-        push(n1);
-        push(n2);
-        return result;
-    }
-    else if(getStackSize() == 1) {
-        return peek();
-    }
-    else {    
-        lcdPrintlnS("stack is empty!\n");
-    }
+    
 }
 
 void C() {
