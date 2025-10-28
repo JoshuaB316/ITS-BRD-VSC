@@ -17,48 +17,51 @@
 #include "additionalFonts.h"
 #include "error.h"
 
-#define maxStackSize 10  // auf 10 stellen
+#define maxStackSize 10  
 
 int stackSize = 0;
-int stackCounter = 0;
-int stack[10];
+int index0;
+int index1;
 
-bool isEmpty() return stackSize == 0;
+bool inEmpty() return stackSize == 0;
 
-int peek(int *index) {
-    
-    if(index < stackSize){
-        index = stack[index]
-        return 0;
+int peek() {
+    if(isEmpty()) {
+        lcdPrintlnS("stack is empty!\n");
     }
-    else {
-        return -1;
+    else if (stackSize == 1) {
+        return index0;
+    }
+    else if (stackSize == maxStackSize) {
+        return index1;
     }
 }
 
-int push(int value) {
-    
-    if(stackCounter <= 9){
-        stack[stackCounter] = value
-        stackCounter++;
+void push(int value) {
+    if (isEmpty) {
+        index0 = value;
         stackSize++;
-        return 0;
+    } 
+    else if (stackSize == 1) {
+        index1 = value;
+        stackSize++;
     }
     else {
-        return -1;
+        lcdPrintlnS("stack Overflow!\n");
     }
 }
 
-int pop(int *result) {
-    
-    if(stackCounter >= 0 || stackSize > 0){
-        result = stack[stackCounter - 1]
-        stackCounter--;
-        stackSize--;
-        return 0;
+int pop() {
+    if (isEmpty) {
+        lcdPrintlnS("stack Underflow!\n");
     }
-    else {
-        return -1;
+    else if (stackSize == 1) {
+        stackSize--;
+        return index0;
+    }
+    else if (stackSize == maxStackSize) {
+        stackSize--;
+        return index1;
     }
 }
    
