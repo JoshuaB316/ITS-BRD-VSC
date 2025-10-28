@@ -25,7 +25,7 @@ int index1;
 
 bool inEmpty() return stackSize == 0;
 
-int peek(int index) {
+int peek() {
     if(isEmpty()) {
         lcdPrintlnS("stack is empty!\n");
     }
