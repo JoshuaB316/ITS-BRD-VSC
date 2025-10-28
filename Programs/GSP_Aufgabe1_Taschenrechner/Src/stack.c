@@ -17,7 +17,7 @@
 #include "additionalFonts.h"
 #include "error.h"
 
-#define maxStackSize 2
+#define maxStackSize 2  // auf 10 stellen
 
 int stackSize = 0;
 int index0;
