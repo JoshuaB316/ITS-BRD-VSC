@@ -33,6 +33,16 @@ int p() {
 }
 
 int[] P() {
+
+    
+    int result[stackLength];
+    if(!isEmpty){
+        for(int i= 0, stackLength = getStackSize(); i <= stackLength; i++, stackLength--){
+
+            
+        result[i] = 
+        }
+    }
     
 }
 
