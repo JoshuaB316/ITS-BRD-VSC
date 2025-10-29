@@ -32,57 +32,50 @@ int main(void) {
 	// Test in Endlosschleife
 	while(1) {
 		HAL_Delay(10000);
+		T_token  t = nextToken();
 
-		switch(nextToken()){
-			case 'n':{
-				push(); //hier eingelesene Zahl aber von wo???
+		switch(t.tok){
+			case NUMBER :{
+				push(t.val); //hier eingelesene Zahl aber von wo???
 			}
-			case '+':{
+			case PLUS:{
 				add();
 			}
-			case '-':{
+			case MINUS:{
 				subtract();
 			}
-			case '*':{
+			case MULT:{
 				multiply();
 			}
-			case '/':{
+			case DIV:{
 				divide();
 			}
-			case 'P':{
+			case PRT:{
 				P();
 			}
-			case 'r':{
+			case SWAP:{
 				r();
 			}
-			case 'p':{
+			case PRT_ALL:{
 				p();
 			}
-			case 'C':{
+			case CLEAR:{
 				C();
 			}
-			case 'd':{
+			case DOUBLE:{
 				d();
 			}
-			case ' ':{
+			case ENTER:{
 				//was macht enter?
 			}
-			case 'U':{
+			case UNEXPECTED:{
 				//?
 			}
-			case 'O':{
+			case OVERFLOW:{
 				//?
 			}
-
-
 		}
 
-
-
-
-
-
-		
 	}
 }
 
