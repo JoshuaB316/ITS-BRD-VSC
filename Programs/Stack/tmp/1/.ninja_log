@@ -1,4 +1,52 @@
 # ninja log v6
+<<<<<<< HEAD
+<<<<<<< HEAD
+5	108	7829343909056821	CMakeFiles/database	67d4693d9dbc7e02
+5	108	7829343909056821	C:/GS_Labor/ITS-BRD-VSC/Programs/Stack/tmp/1/CMakeFiles/database	67d4693d9dbc7e02
+102	332	7832679467071107	CMakeFiles/database	67d4693d9dbc7e02
+102	332	7832679467071107	C:/GS_Labor/ITS-BRD-VSC/Programs/Stack/tmp/1/CMakeFiles/database	67d4693d9dbc7e02
+=======
+4	51	7829402577548897	CMakeFiles/database	93ca3a98563f245
+4	51	7829402577548897	C:/GS_Labor/ITS-BRD-VSC/Programs/Stack/tmp/1/CMakeFiles/database	93ca3a98563f245
+9	55	7829404348244096	CMakeFiles/database	93ca3a98563f245
+9	55	7829404348244096	C:/GS_Labor/ITS-BRD-VSC/Programs/Stack/tmp/1/CMakeFiles/database	93ca3a98563f245
+9	46	7829404913694414	CMakeFiles/database	93ca3a98563f245
+9	46	7829404913694414	C:/GS_Labor/ITS-BRD-VSC/Programs/Stack/tmp/1/CMakeFiles/database	93ca3a98563f245
+9	47	7829406425420674	CMakeFiles/database	93ca3a98563f245
+9	47	7829406425420674	C:/GS_Labor/ITS-BRD-VSC/Programs/Stack/tmp/1/CMakeFiles/database	93ca3a98563f245
+30	82	7829445336370568	CMakeFiles/database	93ca3a98563f245
+30	82	7829445336370568	C:/GS_Labor/ITS-BRD-VSC/Programs/Stack/tmp/1/CMakeFiles/database	93ca3a98563f245
+38	95	7831104417130034	CMakeFiles/database	93ca3a98563f245
+38	95	7831104417130034	C:/GS_Labor/ITS-BRD-VSC/Programs/Stack/tmp/1/CMakeFiles/database	93ca3a98563f245
+17	65	7831104506394044	CMakeFiles/database	93ca3a98563f245
+17	65	7831104506394044	C:/GS_Labor/ITS-BRD-VSC/Programs/Stack/tmp/1/CMakeFiles/database	93ca3a98563f245
+39	102	7831943290884766	CMakeFiles/database	93ca3a98563f245
+39	102	7831943290884766	C:/GS_Labor/ITS-BRD-VSC/Programs/Stack/tmp/1/CMakeFiles/database	93ca3a98563f245
+26	77	7831949235379679	CMakeFiles/database	93ca3a98563f245
+26	77	7831949235379679	C:/GS_Labor/ITS-BRD-VSC/Programs/Stack/tmp/1/CMakeFiles/database	93ca3a98563f245
+9	49	7831954059824935	CMakeFiles/database	93ca3a98563f245
+9	49	7831954059824935	C:/GS_Labor/ITS-BRD-VSC/Programs/Stack/tmp/1/CMakeFiles/database	93ca3a98563f245
+20	77	7832127879268824	CMakeFiles/database	93ca3a98563f245
+20	77	7832127879268824	C:/GS_Labor/ITS-BRD-VSC/Programs/Stack/tmp/1/CMakeFiles/database	93ca3a98563f245
+17	80	7832158156968072	CMakeFiles/database	93ca3a98563f245
+17	80	7832158156968072	C:/GS_Labor/ITS-BRD-VSC/Programs/Stack/tmp/1/CMakeFiles/database	93ca3a98563f245
+15	66	7832162134104180	CMakeFiles/database	93ca3a98563f245
+15	66	7832162134104180	C:/GS_Labor/ITS-BRD-VSC/Programs/Stack/tmp/1/CMakeFiles/database	93ca3a98563f245
+<<<<<<< HEAD
+44	102	7832914446787280	CMakeFiles/database	93ca3a98563f245
+44	102	7832914446787280	C:/GS_Labor/ITS-BRD-VSC/Programs/Stack/tmp/1/CMakeFiles/database	93ca3a98563f245
+=======
+>>>>>>> 596fa5e9017e80aad6974adce0ab9cf4cb8fe9d0
+>>>>>>> a0f4232d9cf7562d12c1479008969f13c3207597
+7	52	7832936024845671	CMakeFiles/database	93ca3a98563f245
+7	52	7832936024845671	C:/GS_Labor/ITS-BRD-VSC/Programs/Stack/tmp/1/CMakeFiles/database	93ca3a98563f245
+15	67	7832961031848164	CMakeFiles/database	93ca3a98563f245
+15	67	7832961031848164	C:/GS_Labor/ITS-BRD-VSC/Programs/Stack/tmp/1/CMakeFiles/database	93ca3a98563f245
+16	69	7833047336264310	CMakeFiles/database	93ca3a98563f245
+16	69	7833047336264310	C:/GS_Labor/ITS-BRD-VSC/Programs/Stack/tmp/1/CMakeFiles/database	93ca3a98563f245
+36	93	7834650093759666	CMakeFiles/database	93ca3a98563f245
+36	93	7834650093759666	C:/GS_Labor/ITS-BRD-VSC/Programs/Stack/tmp/1/CMakeFiles/database	93ca3a98563f245
+=======
 15	310	7833413024467982	CMakeFiles/Group_Drivers_Board.dir/C_/GS_Labor/ITS-BRD-VSC/ITS_BRD_LIB/Src/startup/startup_stm32f429xx.o	1dea33de9cdf25b7
 21	1073	7833413024522284	CMakeFiles/Group_Drivers_Board.dir/C_/GS_Labor/ITS-BRD-VSC/ITS_BRD_LIB/Src/startup/system_stm32f4xx.o	4a51ca55620f3257
 71	1152	7833413025029129	CMakeFiles/Group_Drivers_STM32F4xx_HAL_Driver.dir/C_/GS_Labor/ITS-BRD-VSC/stm32cubef4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o	292a3b3622093f53
@@ -93,3 +141,4 @@
 90	226	7833444889215535	C:/GS_Labor/ITS-BRD-VSC/Programs/Stack/tmp/1/CMakeFiles/database	67d4693d9dbc7e02
 33	152	7833487147540879	CMakeFiles/database	67d4693d9dbc7e02
 33	152	7833487147540879	C:/GS_Labor/ITS-BRD-VSC/Programs/Stack/tmp/1/CMakeFiles/database	67d4693d9dbc7e02
+>>>>>>> 1fbaafb3ae4d3e5422aaf757188ae8fa7f8ff9e7
