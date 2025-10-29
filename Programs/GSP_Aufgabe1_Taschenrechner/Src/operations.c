@@ -23,27 +23,34 @@ int p() {
     int err = peek(*result);
 
     if(err == -1){
-        lcdPrintlnS("Error")
+        lcdPrintlnS("Error");
         return 0;
     }
     else {
         return result;
     }
-     
 }
 
 int[] P() {
 
-    
-    int result[stackLength];
-    if(!isEmpty){
-        for(int i= 0, stackLength = getStackSize(); i <= stackLength; i++, stackLength--){
+    int stackLength = getStackSize();
 
-            
-        result[i] = 
+    int result[stackLength];
+
+    if(!isEmpty()){
+        for(int i= 0; i <= stackLength; i++, stackLength--){
+            int temp = stacklength - 1;
+            int err = peek(*temp);
+
+            if(err == -1){
+                lcdPrintlnS("Error");
+                return 0;
+            }
+            else {
+                result[i] = temp;
+            }
         }
     }
-    
 }
 
 void C() {
