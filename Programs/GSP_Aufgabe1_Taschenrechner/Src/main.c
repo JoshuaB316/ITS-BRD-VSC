@@ -34,48 +34,62 @@ int main(void) {
 		HAL_Delay(10000);
 		T_token  t = nextToken();
 
-		switch(t.tok){
-			case NUMBER :{
-				push(t.val); //hier eingelesene Zahl aber von wo???
-			}
-			case PLUS:{
-				add();
-			}
-			case MINUS:{
-				subtract();
-			}
-			case MULT:{
-				multiply();
-			}
-			case DIV:{
-				divide();
-			}
-			case PRT:{
-				P();
-			}
-			case SWAP:{
-				r();
-			}
-			case PRT_ALL:{
-				p();
-			}
-			case CLEAR:{
-				C();
-			}
-			case DOUBLE:{
-				d();
-			}
-			case ENTER:{
-				//was macht enter?
-			}
-			case UNEXPECTED:{
-				//?
-			}
-			case OVERFLOW:{
-				//?
-			}
-		}
+		switch (t.tok) {
+			case NUMBER:
+				push(t.val);
+				break;
 
+			case PLUS:
+				add();
+				break;
+
+			case MINUS:
+				subtract();
+				break;
+
+			case MULT:
+				multiply();
+				break;
+
+			case DIV:
+				divide();
+				break;
+
+			case PRT:
+				P();
+				break;
+
+			case SWAP:
+				r();
+				break;
+
+			case PRT_ALL:
+				p();
+				break;
+
+			case CLEAR:
+				C();
+				break;
+
+			case DOUBLE:
+				d();
+				break;
+
+			case ENTER:
+				break;
+
+			case UNEXPECTED:
+				lcdPrintlnS("Unexpected token!");
+				break;
+
+			case OVERFLOW:
+				lcdPrintlnS("Stack overflow!");
+				break;
+
+			default:
+				lcdPrintlnS("Unknown token!");
+				break;
+		}
 	}
 }
 
