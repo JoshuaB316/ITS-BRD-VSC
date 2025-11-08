@@ -17,70 +17,94 @@
 #include "additionalFonts.h"
 #include "error.h"
 
-int p() {
+void p() {
 
-    int result = getStackSize();
-    int err = peek(*result);
+    int result;
+    int err = peek(getStackSize() - 1, &result);
 
     if(err == -1){
-        lcdPrintlnS("Error");
-        return 0;
+        lcdPrintlnS("Error")
+        return;
     }
     else {
-        return result;
+        char str[12]; //max int = 10 + "-" + "\0" = 12
+        intToString(result, str);
+        lcdPrintlnS(str);
     }
 }
 
-int[] P() {
+void P() {
+    if (isEmpty()) {
 
-    int stackLength = getStackSize();
+        lcdPrintlnS("Stack is Empty!");
+        return;
+    }
+    
+    int stackSize = getStackSize();
 
-    int result[stackLength];
+    int result[10]; //max stack size is 10
+    char str[12];
 
-    if(!isEmpty()){
-        for(int i= 0; i <= stackLength; i++, stackLength--){
-            int temp = stacklength - 1;
-            int err = peek(*temp);
-
-            if(err == -1){
-                lcdPrintlnS("Error");
-                return 0;
-            }
-            else {
-                result[i] = temp;
-            }
+    for(int i = 0; i < stackSize; i++) {
+        int temp;
+        int err = peek(stackSize - 1 - i, &temp);
+        if(err == -1) {
+            lcdPrintlnS("Error");
+            return;
         }
+        result[i] = temp;
+    }
+    for(int i = 0; i < stackSize; i++) {
+        intToString(result[i], str);
+        lcdPrintlnS(str);
     }
 }
 
 void C() {
+
     clearStack();
 }
 
 void d() {
-    int duplicate = peek();
 
-    if(getSize() == 2) {
-        clearStack();
-        push(duplicate);
-        push(duplicate);
+    if(isEmpty()){
+        lcdPrintlnS("stack is empty cant duplicate!");
+        return;
     }
-    else if(getStackSize() == 1) {
-        push(duplicate);
+
+    int result;
+    int err = peek(getStackSize() - 1, &result);
+
+    if(err == -1){
+        lcdPrintlnS("Error");
+        return;
     }
-    else {    
-        lcdPrintlnS("stack is empty!\n");
-    }
+
+    push(result);
 }
     
 
 void r() {
-    if (getSize() == 2) {
-        int n2 = pop();
-        int n1 = pop();
-        push(n2);
-        push(n1);
-    } else {
-        lcdPrintlnS("not enough elements to swap!\n");
+
+    if (getStackSize() < 2) {
+        lcdPrintlnS("Stack doesn't contain two elements!");
+        return;
     }
+
+    int val1; 
+    int val2;
+
+    if (pop(&val1) == -1) {
+        lcdPrintlnS("Error");
+        return;
+    }
+
+    if (pop(&val2) == -1) {
+        lcdPrintlnS("Error");
+        push(val1);
+        return;
+    }
+
+    push(val1); 
+    push(val2); 
 }

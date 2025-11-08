@@ -20,15 +20,16 @@
 #define maxStackSize 10  // auf 10 stellen
 
 int stackSize = 0;
-int stackCounter = 0;
 int stack[10];
 
-bool isEmpty() return stackSize == 0;
+bool isEmpty() {
+    return stackSize == 0;
+}
 
-int peek(int *index) {
+int peek(int index, int *result) {
     
-    if(index < stackSize){
-        index = stack[index]
+    if(index >= 0 && index < stackSize){
+        *result = stack[index];
         return 0;
     }
     else {
@@ -38,9 +39,8 @@ int peek(int *index) {
 
 int push(int value) {
     
-    if(stackCounter <= 9){
-        stack[stackCounter] = value
-        stackCounter++;
+    if(stackSize <= 9){
+        stack[stackSize] = value;
         stackSize++;
         return 0;
     }
@@ -52,8 +52,7 @@ int push(int value) {
 int pop(int *result) {
     
     if(stackCounter >= 0 || stackSize > 0){
-        result = stack[stackCounter - 1]
-        stackCounter--;
+        *result = stack[stackSize - 1];
         stackSize--;
         return 0;
     }
