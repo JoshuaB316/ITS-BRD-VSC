@@ -19,10 +19,10 @@
 #include "error.h"
 
 int safe_add(int a, int b, int *result) {
-    if ((b > 0) && (a > INT_MAX -b)) {
-        return 1; // Overflow
+    if ((b > 0) && (a > INT_MAX - b)) {
+        return -1; // Overflow
     } else if ((b < 0) && (a < INT_MIN - b)) {
-        return 1; // Underflow
+        return -1; // Underflow
     } else {
         *result = a + b;
         return 0; // is OK
@@ -36,16 +36,18 @@ extern void add() {
 
     if (!safe_add(firstNum, secondNum, &result)){
         lcdPrintlnS("Integer Overflow / Underflow!\n");
+        push(secondNum);
+        push(firstNum);
     } else {
         push(result);
     }
 }
 
-int safe:substract(int a, int b, int *result) {
+int safe_substract(int a, int b, int *result) {
     if ((b < 0) && (a > INT_MAX + b)) {
-        return 1; // Overflow
+        return -1; // Overflow
     } else if ((b > 0) && (a < INT_MIN + b)) {
-        return 1; // Underflow
+        return -1; // Underflow
     } else {
         *result = a - b;
         return 0; // is OK
@@ -59,6 +61,8 @@ extern void subtract() {
 
     if (!safe_substract(secondNum, firstNum, &result)){
         lcdPrintlnS("Integer Overflow / Underflow!\n");
+        push(secondNum);
+        push(firstNum);
     } else {
         push(result);
     }
@@ -67,10 +71,10 @@ extern void subtract() {
 int safe_multiply(int a, int b, int *result) {
     if (((a > 0) && (b > 0) && (a > INT_MAX / b)) ||
        ((a < 0) && (b < 0) && (a < INT_MAX / b))) {
-        return 1; // Overflow
+        return -1; // Overflow
     } else if (((a > 0) && (b < 0) && (b < INT_MIN / a)) ||
                ((a < 0) && (b > 0) && (a < INT_MIN / b))) {
-        return 1; // Underflow
+        return -1; // Underflow
     } else {
         *result = a * b;
         return 0; // is OK
@@ -84,6 +88,8 @@ extern void multiply() {
 
     if (!safe_multiply(firstNum, secondNum, &result)){
         lcdPrintlnS("Integer Overflow / Underflow!\n");
+        push(secondNum);
+        push(firstNum);
     } else {
         push(result);
     }
@@ -91,9 +97,9 @@ extern void multiply() {
 
 int safe_divide(int a, int b, int *result) {
     if (b == 0) {
-        return 1; // Division by zero
+        return -1; // Division by zero
     } else if ((a == INT_MIN) && (b == -1)) {
-        return 1; // Overflow
+        return -1; // Overflow
     } else {
         *result = a / b;
         return 0; // is OK
@@ -107,6 +113,8 @@ extern void divide() {
 
     if (!safe_divide(secondNum, firstNum, &result)){
         lcdPrintlnS("Error: Division by zero or Integer Overflow!\n");
+        push(secondNum);
+        push(firstNum);
     } else {
         push(result);
     }
