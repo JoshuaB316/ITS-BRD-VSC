@@ -1,5 +1,10 @@
 /**
   * @file timer.h
   * @author MJ
-  * @date Oct 2025
+  * @date Nov 2025
   */
+
+#ifndef TIMER_H
+#define TIMER_H
+
+#endif

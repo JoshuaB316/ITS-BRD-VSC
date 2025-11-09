@@ -1,5 +1,7 @@
 /**
-  * @file display.h
+  * @file display.c
   * @author MJ
-  * @date Oct 2025
+  * @date Nov 2025
   */
+
+#include "display.h"

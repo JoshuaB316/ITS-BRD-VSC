@@ -1,5 +1,10 @@
 /**
   * @file encoder.h
   * @author MJ
-  * @date Oct 2025
+  * @date Nov 2025
   */
+
+#ifndef ENCODER_H
+#define ENCODER_H
+
+#endif
