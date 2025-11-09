@@ -117,7 +117,7 @@
   "cmake.ignoreCMakeListsMissing": true,
   "C_Cpp_Runner.msvcBatchPath": "",
   "clangd.arguments": [
-    "--compile-commands-dir=c:\\GS_Beinert\\ITS-BRD-VSC\\Programs\\GSP_Aufgabe2_Drehgeber\\out\\GSP_Aufgabe2_Drehgeber\\ITSboard\\Debug"
+    "--compile-commands-dir=c:\\GS_Labor\\ITS-BRD-VSC\\Programs\\Stack\\out\\Stack\\ITSboard\\Debug"
   ],
   "debug.hideSlowPreLaunchWarning": true
 }
