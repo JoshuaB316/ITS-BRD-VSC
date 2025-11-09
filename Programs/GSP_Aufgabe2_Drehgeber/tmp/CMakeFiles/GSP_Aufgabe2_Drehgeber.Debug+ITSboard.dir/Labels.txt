@@ -1,0 +1,16 @@
+# Target labels
+ GSP_Aufgabe2_Drehgeber.Debug+ITSboard
+# Source files and their labels
+C:/GS_Beinert/ITS-BRD-VSC/Programs/GSP_Aufgabe2_Drehgeber/tmp/CMakeFiles/GSP_Aufgabe2_Drehgeber.Debug+ITSboard
+C:/GS_Beinert/ITS-BRD-VSC/Programs/GSP_Aufgabe2_Drehgeber/tmp/CMakeFiles/GSP_Aufgabe2_Drehgeber.Debug+ITSboard.rule
+C:/GS_Beinert/ITS-BRD-VSC/Programs/GSP_Aufgabe2_Drehgeber/tmp/CMakeFiles/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-complete.rule
+C:/GS_Beinert/ITS-BRD-VSC/Programs/GSP_Aufgabe2_Drehgeber/tmp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard/src/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-stamp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-build.rule
+C:/GS_Beinert/ITS-BRD-VSC/Programs/GSP_Aufgabe2_Drehgeber/tmp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard/src/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-stamp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-configure.rule
+C:/GS_Beinert/ITS-BRD-VSC/Programs/GSP_Aufgabe2_Drehgeber/tmp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard/src/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-stamp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-database.rule
+C:/GS_Beinert/ITS-BRD-VSC/Programs/GSP_Aufgabe2_Drehgeber/tmp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard/src/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-stamp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-download.rule
+C:/GS_Beinert/ITS-BRD-VSC/Programs/GSP_Aufgabe2_Drehgeber/tmp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard/src/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-stamp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-executes.rule
+C:/GS_Beinert/ITS-BRD-VSC/Programs/GSP_Aufgabe2_Drehgeber/tmp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard/src/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-stamp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-install.rule
+C:/GS_Beinert/ITS-BRD-VSC/Programs/GSP_Aufgabe2_Drehgeber/tmp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard/src/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-stamp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-mkdir.rule
+C:/GS_Beinert/ITS-BRD-VSC/Programs/GSP_Aufgabe2_Drehgeber/tmp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard/src/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-stamp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-patch.rule
+C:/GS_Beinert/ITS-BRD-VSC/Programs/GSP_Aufgabe2_Drehgeber/tmp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard/src/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-stamp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-test.rule
+C:/GS_Beinert/ITS-BRD-VSC/Programs/GSP_Aufgabe2_Drehgeber/tmp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard/src/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-stamp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-update.rule

@@ -54,6 +54,7 @@ void P() {
         }
         result[i] = temp;
     }
+    
     for(int i = 0; i < stackSize; i++) {
         intToString(result[i], str);
         lcdPrintlnS(str);

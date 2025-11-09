@@ -1,0 +1,8 @@
+C:/GS_Beinert/ITS-BRD-VSC/Programs/GSP_Aufgabe2_Drehgeber/tmp/CMakeFiles/database.dir
+C:/GS_Beinert/ITS-BRD-VSC/Programs/GSP_Aufgabe2_Drehgeber/tmp/CMakeFiles/GSP_Aufgabe2_Drehgeber.Debug+ITSboard.dir
+C:/GS_Beinert/ITS-BRD-VSC/Programs/GSP_Aufgabe2_Drehgeber/tmp/CMakeFiles/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-build.dir
+C:/GS_Beinert/ITS-BRD-VSC/Programs/GSP_Aufgabe2_Drehgeber/tmp/CMakeFiles/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-configure.dir
+C:/GS_Beinert/ITS-BRD-VSC/Programs/GSP_Aufgabe2_Drehgeber/tmp/CMakeFiles/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-executes.dir
+C:/GS_Beinert/ITS-BRD-VSC/Programs/GSP_Aufgabe2_Drehgeber/tmp/CMakeFiles/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-database.dir
+C:/GS_Beinert/ITS-BRD-VSC/Programs/GSP_Aufgabe2_Drehgeber/tmp/CMakeFiles/edit_cache.dir
+C:/GS_Beinert/ITS-BRD-VSC/Programs/GSP_Aufgabe2_Drehgeber/tmp/CMakeFiles/rebuild_cache.dir
