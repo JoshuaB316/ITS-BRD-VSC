@@ -26,9 +26,35 @@ int main(void) {
   // Begruessungstext	
 	lcdPrintlnS("Hallo liebes TI-Labor (c-project)");
 	
+	double winkel = 0;
+	double winkelges = 0;
+	int kanalA;
+	int kanalB;
+
+
 	// Test in Endlosschleife
 	while(1) {
-		HAL_Delay(10000);
+		//Datenerfassung
+			//Auslesen der Kanäle A und B
+			//wurde S6 gedrückt 
+
+		//Datenverarbeitung
+			//Auswertung von Kanal A und B + phasenzuordnung
+			//letzen phasenwechsel mit neuer phase vergleichen - potenziell fehler
+				//a zu b +0,3
+				//b zu a -0,3
+				//a zu a /
+				//a zu c /
+
+
+		//Steuerung
+			//LED für schritte
+			//LED für laufrichtung
+			//LED für fehler
+
+			//Display
+				//Drehwinkel
+				//Drehgeschwindigkeit in Grad pro sekunde (timer modul)
 	}
 }
 

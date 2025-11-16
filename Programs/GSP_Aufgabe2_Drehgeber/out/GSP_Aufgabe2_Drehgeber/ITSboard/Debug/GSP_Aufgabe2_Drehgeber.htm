@@ -3,9 +3,9 @@
 <title>Static Call Graph - [C:\GS_Beinert\ITS-BRD-VSC\Programs\GSP_Aufgabe2_Drehgeber\out\GSP_Aufgabe2_Drehgeber\ITSboard\Debug\GSP_Aufgabe2_Drehgeber.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image C:\GS_Beinert\ITS-BRD-VSC\Programs\GSP_Aufgabe2_Drehgeber\out\GSP_Aufgabe2_Drehgeber\ITSboard\Debug\GSP_Aufgabe2_Drehgeber.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6240002: Last Updated: Sun Nov  9 20:06:59 2025
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6240002: Last Updated: Sun Nov 16 22:31:14 2025
 <BR><P>
-<H3>Maximum Stack Usage =        400 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
+<H3>Maximum Stack Usage =        432 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
 main &rArr; lcdPrintlnS &rArr; lcdPrintS &rArr; GUI_disStr &rArr; GUI_disChar &rArr; LCD_fillRectangleBW &rArr; LCD_setWindow &rArr; LCD_WriteParam &rArr; LCD_WriteParameters &rArr; SPI4W_Write_Byte &rArr; check_SPI_SR &rArr; LCDErrHandler &rArr; HAL_GPIO_Init
 <P>
@@ -610,8 +610,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
 </UL>
-<BR>[Called By]<UL><LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Driver_Delay_ms
+<BR>[Called By]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Driver_Delay_ms
 </UL>
 
 <P><STRONG><a name="[97]"></a>HAL_ETH_ErrorCallback</STRONG> (Thumb, 8 bytes, Stack size 4 bytes, stm32f4xx_hal_eth.o(.text.HAL_ETH_ErrorCallback))
@@ -1038,11 +1037,10 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[64]"></a>main</STRONG> (Thumb, 48 bytes, Stack size 16 bytes, main.o(.text.main))
-<BR><BR>[Stack]<UL><LI>Max Depth = 400<LI>Call Chain = main &rArr; lcdPrintlnS &rArr; lcdPrintS &rArr; GUI_disStr &rArr; GUI_disChar &rArr; LCD_fillRectangleBW &rArr; LCD_setWindow &rArr; LCD_WriteParam &rArr; LCD_WriteParameters &rArr; SPI4W_Write_Byte &rArr; check_SPI_SR &rArr; LCDErrHandler &rArr; HAL_GPIO_Init
+<P><STRONG><a name="[64]"></a>main</STRONG> (Thumb, 52 bytes, Stack size 48 bytes, main.o(.text.main))
+<BR><BR>[Stack]<UL><LI>Max Depth = 432<LI>Call Chain = main &rArr; lcdPrintlnS &rArr; lcdPrintS &rArr; GUI_disStr &rArr; GUI_disChar &rArr; LCD_fillRectangleBW &rArr; LCD_setWindow &rArr; LCD_WriteParam &rArr; LCD_WriteParameters &rArr; SPI4W_Write_Byte &rArr; check_SPI_SR &rArr; LCDErrHandler &rArr; HAL_GPIO_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Delay
-<LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initITSboard
+<BR>[Calls]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initITSboard
 <LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdPrintlnS
 <LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TP_InitBasic
 <LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_init

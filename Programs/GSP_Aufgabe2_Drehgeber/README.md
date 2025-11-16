@@ -2,9 +2,12 @@ Modulkonzept
 
  Modul          Aufgabe
  main.c         Loop (Direct Digital Control), Initialisierung aller Module
- encoder.c      Einlesen der Eingänge (A/B), Bestimmen der Phasen, Richtungs- und Fehlererkennung
+ encoder.c      Einlesen der Eingänge (A/B), Bestimmen der Phasen, Richtungserkennung
  display.c      Steuerung der LCD-Ausgabe (Winkel, Geschwindigkeit, Statusmeldungen)
  led_control.c  Ausgabe an LEDs (D8–D15, D21–D23)
  timer.c        Zeitmessung und Berechnung der Zeitfenster
  error.c        Verwaltung von Fehlerzuständen und Rücksetzen per Taste S6
- bit_utils.c    Funktionen zur Bitmanipulation für I/O-Operationen
+
+
+ wie lesen wir Kanal A und B ein?
+
