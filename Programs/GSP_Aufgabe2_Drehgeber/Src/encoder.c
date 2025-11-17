@@ -5,3 +5,66 @@
   */
 
 #include "encoder.h"
+#include "stm32f4xx_hal.h"
+#include <stdbool.h>
+#include <stdio.h>
+
+
+#define IDR_MASK_CHANNEL_A (0x01 << (0)) // Pin A an bit 0
+#define IDR_MASK_CHANNEL_B (0x01 << (1)) // Pin B an bit 1
+
+
+
+bool givePinA(void){
+    if (IDR_MASK_CHANNEL_A == (GPIOF -> IDR & IDR_MASK_CHANNEL_A)){
+        return true;
+    } else {
+        return false;
+    }
+  
+}
+
+bool givePinB(void){
+   if (IDR_MASK_CHANNEL_B == (GPIOF -> IDR & IDR_MASK_CHANNEL_B)){
+        return true;
+    } else {
+        return false;
+    }
+  
+}
+
+int getPhase() {
+    bool A = givePinA();
+    bool B = givePinB();
+
+    if (!A && !B) {
+        return '0'; // phase a
+    } else if (A && !B) {
+        return '1'; // phase b
+    } else if (A && B) {
+        return '2'; // phase c
+    } else { // (!A && B)
+        return '3'; // phase d
+    }
+}
+
+int getDirection(int lastPhase, int currentPhase) {
+
+    if (lastPhase == currentPhase) {
+        return 2; // keine Bewegung
+    }
+
+    if ((lastPhase == 0 && currentPhase == 1) ||
+        (lastPhase == 1 && currentPhase == 2) ||
+        (lastPhase == 2 && currentPhase == 3) ||
+        (lastPhase == 3 && currentPhase == 1)) {
+        return 0; // rechts
+    } else if ((lastPhase == 0 && currentPhase == 3) ||
+               (lastPhase == 3 && currentPhase == 2) ||
+               (lastPhase == 2 && currentPhase == 1) ||
+               (lastPhase == 1 && currentPhase == 0)) {
+        return 1; // links
+    } else {
+        return -1; // Fehler: ungültiger Übergang
+    }
+}

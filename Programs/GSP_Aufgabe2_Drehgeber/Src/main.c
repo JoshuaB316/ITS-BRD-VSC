@@ -15,6 +15,7 @@
 #include "fontsFLASH.h"
 #include "additionalFonts.h"
 #include "error.h"
+#inlcude "encoder.h"
 
 
 int main(void) {

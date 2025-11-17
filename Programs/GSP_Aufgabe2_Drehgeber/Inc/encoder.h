@@ -20,7 +20,7 @@ char getPhase();
 /**
  * @brief bestimmt Laufrichtung
  *
- * @return int  liefert 0 wenn Laufrichtung rechts und 1 wenn Laufrichtung links
+ * @return int  liefert 0 wenn Laufrichtung rechts, 1 wenn Laufrichtung links, 2 wenn keine Bewegung und -1 bei fehler
  */
 int getDirection();
 
