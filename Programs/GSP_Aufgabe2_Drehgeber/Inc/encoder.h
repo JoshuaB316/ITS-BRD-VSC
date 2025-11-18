@@ -8,6 +8,20 @@
 #define ENCODER_H
 
 
+/**
+ * @brief auslesen von Kanal A
+ * 
+ * @return bool  liefert true wenn Kanal A high ist, sonst false
+ */
+bool givePinA();
+
+
+/**
+ * @brief auslesen von Kanal B
+ * 
+ * @return bool  liefert true wenn Kanal B high ist, sonst false
+ */
+bool givePinB();
 
 /**
  * @brief auslesen von Kanälen A und B
