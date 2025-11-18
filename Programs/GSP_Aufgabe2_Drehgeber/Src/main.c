@@ -38,6 +38,7 @@ int main(void) {
 		//Datenerfassung
 			//Auslesen der Kanäle A und B
 			//wurde S6 gedrückt 
+			//brauchen lastPhase und currentPhase als variable
 
 		//Datenverarbeitung
 			//Auswertung von Kanal A und B + phasenzuordnung
