@@ -33,10 +33,8 @@ bool givePinB(void){
   
 }
 
-int getPhase() {
-    bool A = givePinA();
-    bool B = givePinB();
-
+int getPhase(bool A, bool B) {
+   
     if (!A && !B) {
         return 0; // phase a
     } else if (A && !B) {

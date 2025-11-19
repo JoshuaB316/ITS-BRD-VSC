@@ -14,3 +14,6 @@ void display_update() {
 }
 
 
+void display_error() {
+    // Hier wird eine Fehlermeldung auf dem Display angezeigt
+}
