@@ -17,17 +17,16 @@
 #include "led_control.h"
 #include <stdbool.h>
 #include <stdio.h>
-#include "timer.h"
 
 
 
-void display_update() {
-    // Hier wird das Display mit den aktuellen Werten aktualisiert
-    // z.B. Drehwinkel, Drehgeschwindigkeit etc.
-}
+void display_update() {}
+    
 
 
 void display_error() {
     // Fehlermeldung auf bem Bildschirm
-
+    lcdClearScreen();
+    lcdPrintlnS("Fehler erkannt!");
+    lcdPrintlnS("Bitte S6 drücken");
 }
