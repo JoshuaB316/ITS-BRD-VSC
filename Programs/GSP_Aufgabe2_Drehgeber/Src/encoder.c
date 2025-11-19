@@ -10,8 +10,8 @@
 #include <stdio.h>
 
 
-#define IDR_MASK_CHANNEL_A (0x01 << (0)) // Pin A an bit 0
-#define IDR_MASK_CHANNEL_B (0x01 << (1)) // Pin B an bit 1
+#define IDR_MASK_CHANNEL_A (0x01 << (0)) // Pin A on bit 0
+#define IDR_MASK_CHANNEL_B (0x01 << (1)) // Pin B on bit 1
 
 
 
@@ -38,33 +38,33 @@ int getPhase() {
     bool B = givePinB();
 
     if (!A && !B) {
-        return '0'; // phase a
+        return 0; // phase a
     } else if (A && !B) {
-        return '1'; // phase b
+        return 1; // phase b
     } else if (A && B) {
-        return '2'; // phase c
+        return 2; // phase c
     } else { // (!A && B)
-        return '3'; // phase d
+        return 3; // phase d
     }
 }
 
 int getDirection(int lastPhase, int currentPhase) {
 
     if (lastPhase == currentPhase) {
-        return 2; // keine Bewegung
+        return 2; // no movement
     }
 
     if ((lastPhase == 0 && currentPhase == 1) ||
         (lastPhase == 1 && currentPhase == 2) ||
         (lastPhase == 2 && currentPhase == 3) ||
-        (lastPhase == 3 && currentPhase == 1)) {
-        return 0; // rechts
+        (lastPhase == 3 && currentPhase == 0)) {
+        return 0; // right
     } else if ((lastPhase == 0 && currentPhase == 3) ||
                (lastPhase == 3 && currentPhase == 2) ||
                (lastPhase == 2 && currentPhase == 1) ||
                (lastPhase == 1 && currentPhase == 0)) {
-        return 1; // links
+        return 1; // left
     } else {
-        return -1; // Fehler: ungültiger Übergang
+        return -1; // Error: invalid transition
     }
 }
