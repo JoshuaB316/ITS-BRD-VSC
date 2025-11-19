@@ -9,10 +9,8 @@
 #include <stdbool.h>
 #include <stdio.h>
 
-
 #define IDR_MASK_CHANNEL_A (0x01 << (0)) // Pin A on bit 0
 #define IDR_MASK_CHANNEL_B (0x01 << (1)) // Pin B on bit 1
-
 
 
 bool givePinA(void){
@@ -24,6 +22,7 @@ bool givePinA(void){
   
 }
 
+
 bool givePinB(void){
    if (IDR_MASK_CHANNEL_B == (GPIOF -> IDR & IDR_MASK_CHANNEL_B)){
         return true;
@@ -32,6 +31,7 @@ bool givePinB(void){
     }
   
 }
+
 
 int getPhase() {
     bool A = givePinA();
@@ -48,8 +48,8 @@ int getPhase() {
     }
 }
 
-int getDirection(int lastPhase, int currentPhase) {
 
+int getDirection(int lastPhase, int currentPhase) {
     if (lastPhase == currentPhase) {
         return 2; // no movement
     }
