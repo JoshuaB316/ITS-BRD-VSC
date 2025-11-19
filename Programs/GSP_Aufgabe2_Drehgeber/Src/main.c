@@ -23,6 +23,7 @@
 #include "timer.h"
 
 #define MODER_MASK_PIN_6   (0x03U << (2*6)) // Pin 6 
+#define GPIOF_PORT GPIOF	
 
 
 int main(void) {
@@ -31,46 +32,35 @@ int main(void) {
 	GUI_init(DEFAULT_BRIGHTNESS);   // Initialisierung des LCD Boards mit Touch
 	TP_Init(false);                 // Initialisierung des LCD Boards mit Touch
 
-  // Begruessungstext	
+  	// Begruessungstext	
 	lcdPrintlnS("Hallo liebes TI-Labor (c-project)");
 	
-	double angle = 0;
-	double angleSpeed = 0;
-	double lastAngle = 0;
-	double newAngle = 0;
-	int phaseCounter = 0;
-	int lastPhase = 0;
-	int currentPhase = 0;
-	int direction = -1; // -1 bei fehler, 0 rechts, 1
+	// Fehlererkennung
 	bool existingError = false;
-	bool channelA = 0;
-	bool channelB = 0;
+	
+	// Timer initialisieren
 	uint32_t timer_start = getTimeStamp();
 	uint32_t timer_end;
 
-  // Timer initialisieren
-
 	// Test in Endlosschleife
 	while(1) {
-		//Datenerfassung
-			channelA = givePinA();
-			channelB = givePinB();
-
-			//wurde S6 gedrückt ? 
+		// Datenerfassung
+			// Gibt es Fehler und wurde S6 gedrückt?
 			if(existingError){
 				if(MODER_MASK_PIN_6 == (GPIOF -> IDR & MODER_MASK_PIN_6)){
 					reset();
 				}
 			}
 
-		//Datenverarbeitung
-			//Auswertung von Kanal A und B + phasenzuordnung
-			
+			// Kanäle einlesen
+			channelA = givePinA();
+			channelB = givePinB();
+
+		// Datenverarbeitung
+			// Auswertung von Kanal A und B um Phase und Richtung zu bestimmen
 			currentPhase = getPhase(channelA, channelB);
 			direction = getDirection(lastPhase, currentPhase);
 			lastPhase = currentPhase;
-
-
 
 			if(direction == -1){
 				existingError = true;
@@ -82,30 +72,26 @@ int main(void) {
 			} else if(direction == 1){
 				angle -= 0,3;
 				phaseCounter++;
-			} 
-
-			angleSpeed = angle / timer_diff();
-
-		//Steuerung
-			//LED für schritte
-			ledNextStep();
-
-			//LED für laufrichtung
-			ledDirection(direction);
-
-			//LED für fehler
-			if(existingError){
-				ledError();
 			}
 
-			//Display
-				//Drehwinkel
-				timer_end = getTimeStamp();
-					// alter Winkel - neuer Winkel / Zeitdifferenz
-				//Drehgeschwindigkeit in Grad pro sekunde (timer modul)
-				lastAngle = newAngle;
-				newAngle = angle;
-				timer_start = timer_end;
+			// Berechnung der Winkelgeschwindigkeit
+			timer_end = getTimeStamp();
+			angleSpeed = (lastAngle - newAngle) / (timer_end - timer_start);
+
+		// Steuerung
+			// bei Fehler keine Steuerung
+			if(!existingError){
+				ledNextStep();
+				ledDirection(direction);
+				// DisplayAusgabe
+			} else {
+				ledError();
+			}
+			
+			// Update der Variablen
+			lastAngle = newAngle;
+			newAngle = angle;
+			timer_start = timer_end;
 	}
 }
 

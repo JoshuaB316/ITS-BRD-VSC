@@ -11,18 +11,42 @@
 #include "led_control.h"
 #include "display.h"
 
-#define GPIOF_PORT GPIOF
+
+// Variablen für Winkel
+	double angle = 0;
+	double angleSpeed = 0;
+	double lastAngle = 0;
+	double newAngle = 0;
+	
+	// Variablen für Kanalverarbeitung
+	bool channelA = 0;
+	bool channelB = 0;
+	int lastPhase = 0;
+	int currentPhase = 0;
+	int phaseCounter = 0;
+
+	int direction = -1; 
 
 void reset() {
-    //Kanäle zurücksetzen ??? benlötigt ?
+    // Variablen für Winkel zurücksetzen
+    double angle = 0;
+    double angleSpeed = 0;
+    double lastAngle = 0;
+    double newAngle = 0;
+	
+    // Variablen für Kanalverarbeitung zurücksetzen
+    bool channelA = 0;
+    bool channelB = 0;
+    int lastPhase = 0;
+    int currentPhase = 0;
+    int phaseCounter = 0;
 
-    //Winkelwerte zurücksetzen
-
-
-    //Anzeige auf dem ITSBoard zurücksetzen
-
-    //LEDs zurücksetzen
+    // Wert für "direction" zurücksetzen
+    int direction = -1; 
+    
+    // LEDs zurücksetzen
     ledReset();
 
-    //Display zurücksetzen
+    // Display zurücksetzen
     display_update();
+}

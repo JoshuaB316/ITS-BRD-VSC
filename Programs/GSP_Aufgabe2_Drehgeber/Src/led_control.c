@@ -13,43 +13,57 @@
 
 
 void ledNextStep() {
-    
-    GPIOD->BSRR = 0xFFFF0000; // alle LEDs aus
+    // alle LEDs aus
+    GPIOD->BSRR = 0xFFFF0000; 
 
-    GPIOD->BSRR = (0x01 << (nextStepCounter)); // setzt die nächste LED
+    // schaltet nächste LED an
+    GPIOD->BSRR = (0x01 << (nextStepCounter)); 
     nextStepCounter++;
 
+    // zurücksetzen auf erste LED wenn die Letzte erreicht wurde
     if (nextStepCounter > 15) {
-        nextStepCounter = 8; // zurücksetzen auf D8
+        nextStepCounter = 8; 
     }
 }
 
 
 void ledReset() {
-    GPIOD->BSRR = 0xFFFF0000; // alle LEDs aus
+    // alle LEDs aus
+    GPIOD->BSRR = 0xFFFF0000; 
+    // D22 aus
+    GPIOD->BSRR = (0x01 << (22 + 16)); 
+    // D23 aus
+    GPIOD->BSRR = (0x01 << (23 + 16)); 
+    // D21 aus
+    GPIOD->BSRR = (0x01 << (21 + 16));
+    //StepCounter wieder auf den Ursprungswert
     nextStepCounter = 8;
-    GPIOD->BSRR = (0x01 << (22 + 16)); // D22 aus
-    GPIOD->BSRR = (0x01 << (23 + 16)); // D23 aus
-    GPIOD->BSRR = (0x01 << (21 + 16)); // D21 aus
 }
 
 
 void ledDirection(int direction) {
-    if (direction == 0) { //right
-        GPIOD->BSRR = (0x01 << (23)); // D23 an
-        GPIOD->BSRR = (0x01 << (22 + 16)); // D22 aus
-    } else if (direction == 1) { //left
-        GPIOD->BSRR = (0x01 << (22)); // D22 an
-        GPIOD->BSRR = (0x01 << (23 + 16)); // D23 aus
+    if (direction == 0) { // rechts
+        // D23 an
+        GPIOD->BSRR = (0x01 << (23)); 
+        // D22 aus
+        GPIOD->BSRR = (0x01 << (22 + 16)); 
+    } else if (direction == 1) { // links
+        // D22 an
+        GPIOD->BSRR = (0x01 << (22)); 
+        // D23 aus
+        GPIOD->BSRR = (0x01 << (23 + 16)); 
     } else {
-        GPIOD->BSRR = (0x01 << (22 + 16)); // D22 aus
-        GPIOD->BSRR = (0x01 << (23 + 16)); // D23 aus         
+        // D22 aus
+        GPIOD->BSRR = (0x01 << (22 + 16)); 
+        // D23 aus
+        GPIOD->BSRR = (0x01 << (23 + 16)); 
     }
 }
 
 
 void ledError() {
-    GPIOD->BSRR = (0x01 << (21)); // D21 an
+    // D21 an
+    GPIOD->BSRR = (0x01 << (21)); 
 }
 
 
