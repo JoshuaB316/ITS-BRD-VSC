@@ -26,10 +26,6 @@ double timer_diff();
 double timer_update();
 
 
-/* Was soll der Timer genau machen ?
-* Welche Punkte sollen gemessen werden ?
-*
-*/
 
 
 #endif

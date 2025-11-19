@@ -25,9 +25,6 @@ void display_update();
 void display_error();
 
 
-/*
-* Sollen Fehler hier angezeigt werden ?
-* 
-*/
+
 
 #endif

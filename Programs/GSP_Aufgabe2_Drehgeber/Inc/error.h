@@ -14,10 +14,5 @@
 void reset();
 
 
-/*
-mit adresse an schalter s6 kommen
-der schalter soll fehlerzustand löschen! wie soll man ein fehlerzustand löschen????????
-wenn a,c dann c löschen? was bringt das oder komplett zurücksetzen????????
-*/
 
 #endif

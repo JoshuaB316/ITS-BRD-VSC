@@ -7,4 +7,3 @@ Modulkonzept
  led_control.c  Ausgabe an LEDs (D8–D15, D21–D23)
  timer.c        Zeitmessung und Berechnung der Zeitfenster
  error.c        Verwaltung von Fehlerzuständen und Rücksetzen per Taste S6
- bit_utils.c    Funktionen zur Bitmanipulation für I/O-Operationen
