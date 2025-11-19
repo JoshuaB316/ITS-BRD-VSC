@@ -13,36 +13,36 @@
 
 
 // Variablen für Winkel
-	double angle = 0;
-	double angleSpeed = 0;
-	double lastAngle = 0;
-	double newAngle = 0;
+angle = 0;
+angleSpeed = 0;
+lastAngle = 0;
+newAngle = 0;
 	
-	// Variablen für Kanalverarbeitung
-	bool channelA = 0;
-	bool channelB = 0;
-	int lastPhase = 0;
-	int currentPhase = 0;
-	int phaseCounter = 0;
+// Variablen für Kanalverarbeitung
+channelA = 0;
+hannelB = 0;
+lastPhase = 0;
+currentPhase = 0;
+phaseCounter = 0;
 
-	int direction = -1; 
+direction = -1; 
 
 void reset() {
     // Variablen für Winkel zurücksetzen
-    double angle = 0;
-    double angleSpeed = 0;
-    double lastAngle = 0;
-    double newAngle = 0;
+    angle = 0;
+    angleSpeed = 0;
+    lastAngle = 0;
+    newAngle = 0;
 	
     // Variablen für Kanalverarbeitung zurücksetzen
-    bool channelA = 0;
-    bool channelB = 0;
-    int lastPhase = 0;
-    int currentPhase = 0;
-    int phaseCounter = 0;
+    channelA = 0;
+    channelB = 0;
+    lastPhase = 0;
+    currentPhase = 0;
+    phaseCounter = 0;
 
     // Wert für "direction" zurücksetzen
-    int direction = -1; 
+    direction = -1; 
     
     // LEDs zurücksetzen
     ledReset();
