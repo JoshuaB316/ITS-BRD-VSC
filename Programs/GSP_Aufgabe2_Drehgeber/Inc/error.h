@@ -13,7 +13,7 @@ extern double angleSpeed;
 extern double lastAngle;
 extern double newAngle;
 	
-	// Variablen für Kanalverarbeitung
+// Variablen für Kanalverarbeitung
 extern bool channelA;
 extern bool channelB;
 extern int lastPhase;
