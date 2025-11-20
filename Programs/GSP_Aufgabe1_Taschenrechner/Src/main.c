@@ -19,6 +19,9 @@
 #include "operations.h"
 #include "toString.h"
 #include "token.h"
+#include "scanner.h"
+#include "stack.h"
+#include "display.h"
 
 int main(void) {
 	initITSboard();    // Initialisierung des ITS Boards

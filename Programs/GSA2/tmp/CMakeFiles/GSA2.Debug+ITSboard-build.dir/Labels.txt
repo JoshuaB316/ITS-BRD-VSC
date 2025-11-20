@@ -1,0 +1,11 @@
+# Target labels
+ GSA2.Debug+ITSboard
+# Source files and their labels
+C:/GS_Labor/ITS-BRD-VSC/Programs/GSA2/tmp/CMakeFiles/GSA2.Debug+ITSboard-build
+C:/GS_Labor/ITS-BRD-VSC/Programs/GSA2/tmp/CMakeFiles/GSA2.Debug+ITSboard-build.rule
+C:/GS_Labor/ITS-BRD-VSC/Programs/GSA2/tmp/GSA2.Debug+ITSboard/src/GSA2.Debug+ITSboard-stamp/GSA2.Debug+ITSboard-build.rule
+C:/GS_Labor/ITS-BRD-VSC/Programs/GSA2/tmp/GSA2.Debug+ITSboard/src/GSA2.Debug+ITSboard-stamp/GSA2.Debug+ITSboard-configure.rule
+C:/GS_Labor/ITS-BRD-VSC/Programs/GSA2/tmp/GSA2.Debug+ITSboard/src/GSA2.Debug+ITSboard-stamp/GSA2.Debug+ITSboard-patch.rule
+C:/GS_Labor/ITS-BRD-VSC/Programs/GSA2/tmp/GSA2.Debug+ITSboard/src/GSA2.Debug+ITSboard-stamp/GSA2.Debug+ITSboard-update.rule
+C:/GS_Labor/ITS-BRD-VSC/Programs/GSA2/tmp/GSA2.Debug+ITSboard/src/GSA2.Debug+ITSboard-stamp/GSA2.Debug+ITSboard-download.rule
+C:/GS_Labor/ITS-BRD-VSC/Programs/GSA2/tmp/GSA2.Debug+ITSboard/src/GSA2.Debug+ITSboard-stamp/GSA2.Debug+ITSboard-mkdir.rule
