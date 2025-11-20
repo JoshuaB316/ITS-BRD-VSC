@@ -28,18 +28,20 @@ int main(void) {
 	
 	GUI_init(DEFAULT_BRIGHTNESS);   // Initialisierung des LCD Boards mit Touch
 	TP_Init(false);                 // Initialisierung des LCD Boards mit Touch
-
+	initDisplay();
   // Begruessungstext	
-	lcdPrintlnS("Hallo liebes TI-Labor (c-project)");
+	//lcdPrintlnS("Hallo liebes TI-Labor (c-project)");
 	
+	
+
 	// Test in Endlosschleife
 	while(1) {
-		HAL_Delay(10000);
+		//HAL_Delay(10000);
+		
 		T_token  t = nextToken();
 
 		switch (t.tok) {
 			case NUMBER:
-				push(t.val);
 				break;
 
 			case PLUS:
@@ -79,6 +81,7 @@ int main(void) {
 				break;
 
 			case ENTER:
+				push(t.val);
 				break;
 
 			case UNEXPECTED:
