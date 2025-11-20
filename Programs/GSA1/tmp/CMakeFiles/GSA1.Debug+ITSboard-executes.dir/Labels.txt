@@ -1,0 +1,12 @@
+# Target labels
+ GSA1.Debug+ITSboard
+# Source files and their labels
+C:/GS_Labor/ITS-BRD-VSC/Programs/GSA1/tmp/CMakeFiles/GSA1.Debug+ITSboard-executes
+C:/GS_Labor/ITS-BRD-VSC/Programs/GSA1/tmp/CMakeFiles/GSA1.Debug+ITSboard-executes.rule
+C:/GS_Labor/ITS-BRD-VSC/Programs/GSA1/tmp/GSA1.Debug+ITSboard/src/GSA1.Debug+ITSboard-stamp/GSA1.Debug+ITSboard-executes.rule
+C:/GS_Labor/ITS-BRD-VSC/Programs/GSA1/tmp/GSA1.Debug+ITSboard/src/GSA1.Debug+ITSboard-stamp/GSA1.Debug+ITSboard-build.rule
+C:/GS_Labor/ITS-BRD-VSC/Programs/GSA1/tmp/GSA1.Debug+ITSboard/src/GSA1.Debug+ITSboard-stamp/GSA1.Debug+ITSboard-configure.rule
+C:/GS_Labor/ITS-BRD-VSC/Programs/GSA1/tmp/GSA1.Debug+ITSboard/src/GSA1.Debug+ITSboard-stamp/GSA1.Debug+ITSboard-patch.rule
+C:/GS_Labor/ITS-BRD-VSC/Programs/GSA1/tmp/GSA1.Debug+ITSboard/src/GSA1.Debug+ITSboard-stamp/GSA1.Debug+ITSboard-update.rule
+C:/GS_Labor/ITS-BRD-VSC/Programs/GSA1/tmp/GSA1.Debug+ITSboard/src/GSA1.Debug+ITSboard-stamp/GSA1.Debug+ITSboard-download.rule
+C:/GS_Labor/ITS-BRD-VSC/Programs/GSA1/tmp/GSA1.Debug+ITSboard/src/GSA1.Debug+ITSboard-stamp/GSA1.Debug+ITSboard-mkdir.rule
