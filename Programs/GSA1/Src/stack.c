@@ -51,7 +51,7 @@ int push(int value) {
 
 int pop(int *result) {
     
-    if(stackCounter >= 0 || stackSize > 0){
+    if(stackSize > 0){
         *result = stack[stackSize - 1];
         stackSize--;
         return 0;

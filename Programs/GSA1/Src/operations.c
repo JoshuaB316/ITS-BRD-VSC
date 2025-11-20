@@ -16,6 +16,7 @@
 #include "fontsFLASH.h"
 #include "additionalFonts.h"
 #include "error.h"
+#include "toString.h"
 
 void p() {
 
@@ -23,7 +24,7 @@ void p() {
     int err = peek(getStackSize() - 1, &result);
 
     if(err == -1){
-        lcdPrintlnS("Error")
+        lcdPrintlnS("Error");
         return;
     }
     else {

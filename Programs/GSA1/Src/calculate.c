@@ -30,16 +30,23 @@ int safe_add(int a, int b, int *result) {
 }
 
 extern void add() {
-    int firstNum = pop();
-    int secondNum = pop();
-    int result;
+    int result1 = 0;
+    int err1 = pop(&result1);
 
-    if (!safe_add(firstNum, secondNum, &result)){
-        lcdPrintlnS("Integer Overflow / Underflow!\n");
-        push(secondNum);
-        push(firstNum);
+    int result2 = 0;
+    int err2 = pop(&result2);
+
+    int result;
+    if(!(err1 == -1 || err2 == -1)){
+        if (!safe_add(result1, result2, &result)){
+            lcdPrintlnS("Integer Overflow / Underflow!\n");
+            push(result2);
+            push(result1);
+        } else {
+            push(result);
+        }
     } else {
-        push(result);
+        lcdPrintlnS("ERROR DURING POP\n");
     }
 }
 
@@ -55,16 +62,23 @@ int safe_substract(int a, int b, int *result) {
 }
 
 extern void subtract() {
-    int firstNum = pop();
-    int secondNum = pop();
-    int result;
+    int result1 = 0;
+    int err1 = pop(&result1);
 
-    if (!safe_substract(secondNum, firstNum, &result)){
-        lcdPrintlnS("Integer Overflow / Underflow!\n");
-        push(secondNum);
-        push(firstNum);
+    int result2 = 0;
+    int err2 = pop(&result2);
+
+    int result;
+    if(!(err1 == -1 || err2 == -1)){
+        if (!safe_substract(result1, result2, &result)){
+            lcdPrintlnS("Integer Overflow / Underflow!\n");
+            push(result2);
+            push(result1);
+        } else {
+            push(result);
+        }
     } else {
-        push(result);
+        lcdPrintlnS("ERROR DURING POP\n");
     }
 }
 
@@ -82,16 +96,23 @@ int safe_multiply(int a, int b, int *result) {
 }
 
 extern void multiply() {
-    int firstNum = pop();
-    int secondNum = pop();
-    int result;
+    int result1 = 0;
+    int err1 = pop(&result1);
 
-    if (!safe_multiply(firstNum, secondNum, &result)){
-        lcdPrintlnS("Integer Overflow / Underflow!\n");
-        push(secondNum);
-        push(firstNum);
+    int result2 = 0;
+    int err2 = pop(&result2);
+
+    int result;
+    if(!(err1 == -1 || err2 == -1)){
+        if (!safe_multiply(result1, result2, &result)){
+            lcdPrintlnS("Integer Overflow / Underflow!\n");
+            push(result2);
+            push(result1);
+        } else {
+            push(result);
+        }
     } else {
-        push(result);
+        lcdPrintlnS("ERROR DURING POP\n");
     }
 }
 
@@ -107,15 +128,22 @@ int safe_divide(int a, int b, int *result) {
 }
 
 extern void divide() {
-    int firstNum = pop();
-    int secondNum = pop();
-    int result;
+    int result1 = 0;
+    int err1 = pop(&result1);
 
-    if (!safe_divide(secondNum, firstNum, &result)){
-        lcdPrintlnS("Error: Division by zero or Integer Overflow!\n");
-        push(secondNum);
-        push(firstNum);
+    int result2 = 0;
+    int err2 = pop(&result2);
+
+    int result;
+    if(!(err1 == -1 || err2 == -1)){
+        if (!safe_add(result1, result2, &result)){
+            lcdPrintlnS("Error: Division by zero or Integer Overflow!\n");
+            push(result2);
+            push(result1);
+        } else {
+            push(result);
+        }
     } else {
-        push(result);
+        lcdPrintlnS("ERROR DURING POP\n");
     }
 }

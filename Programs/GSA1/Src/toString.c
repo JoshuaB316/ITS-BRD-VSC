@@ -29,7 +29,7 @@ void intToString(int value, char *str){
         str[i++] = '-';
     }
 
-    str[i] = '\0'
+    str[i] = '\0';
 
     for(int j = 0; j < i / 2; j++ , i--) {
         char temp = str[j];

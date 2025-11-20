@@ -1,0 +1,10 @@
+# Target labels
+ TestGS1.Debug+ITSboard
+# Source files and their labels
+C:/GS_Labor/ITS-BRD-VSC/Programs/TestGS1/tmp/CMakeFiles/TestGS1.Debug+ITSboard-configure
+C:/GS_Labor/ITS-BRD-VSC/Programs/TestGS1/tmp/CMakeFiles/TestGS1.Debug+ITSboard-configure.rule
+C:/GS_Labor/ITS-BRD-VSC/Programs/TestGS1/tmp/TestGS1.Debug+ITSboard/src/TestGS1.Debug+ITSboard-stamp/TestGS1.Debug+ITSboard-configure.rule
+C:/GS_Labor/ITS-BRD-VSC/Programs/TestGS1/tmp/TestGS1.Debug+ITSboard/src/TestGS1.Debug+ITSboard-stamp/TestGS1.Debug+ITSboard-patch.rule
+C:/GS_Labor/ITS-BRD-VSC/Programs/TestGS1/tmp/TestGS1.Debug+ITSboard/src/TestGS1.Debug+ITSboard-stamp/TestGS1.Debug+ITSboard-update.rule
+C:/GS_Labor/ITS-BRD-VSC/Programs/TestGS1/tmp/TestGS1.Debug+ITSboard/src/TestGS1.Debug+ITSboard-stamp/TestGS1.Debug+ITSboard-download.rule
+C:/GS_Labor/ITS-BRD-VSC/Programs/TestGS1/tmp/TestGS1.Debug+ITSboard/src/TestGS1.Debug+ITSboard-stamp/TestGS1.Debug+ITSboard-mkdir.rule

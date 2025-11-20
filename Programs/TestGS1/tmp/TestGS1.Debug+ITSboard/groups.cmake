@@ -205,12 +205,6 @@ target_link_libraries(Group_Program_User_Inc_ABSTRACTIONS INTERFACE
 # group Program/User/Src
 add_library(Group_Program_User_Src OBJECT
   "${SOLUTION_ROOT}/Src/main.c"
-  "${SOLUTION_ROOT}/Src/calculate.c"
-  "${SOLUTION_ROOT}/Src/display.c"
-  "${SOLUTION_ROOT}/Src/operations.c"
-  "${SOLUTION_ROOT}/Src/scanner.c"
-  "${SOLUTION_ROOT}/Src/stack.c"
-  "${SOLUTION_ROOT}/Src/toString.c"
 )
 target_include_directories(Group_Program_User_Src PUBLIC
   $<TARGET_PROPERTY:${CONTEXT},INTERFACE_INCLUDE_DIRECTORIES>
