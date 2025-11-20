@@ -15,7 +15,13 @@
 #include "fontsFLASH.h"
 #include "additionalFonts.h"
 #include "error.h"
-
+#include "calculate.h"
+#include "operations.h"
+#include "toString.h"
+#include "token.h"
+#include "scanner.h"
+#include "stack.h"
+#include "display.h"
 
 int main(void) {
 	initITSboard();    // Initialisierung des ITS Boards
@@ -29,6 +35,64 @@ int main(void) {
 	// Test in Endlosschleife
 	while(1) {
 		HAL_Delay(10000);
+		T_token  t = nextToken();
+
+		switch (t.tok) {
+			case NUMBER:
+				push(t.val);
+				break;
+
+			case PLUS:
+				add();
+				break;
+
+			case MINUS:
+				subtract();
+				break;
+
+			case MULT:
+				multiply();
+				break;
+
+			case DIV:
+				divide();
+				break;
+
+			case PRT:
+				P();
+				break;
+
+			case SWAP:
+				r();
+				break;
+
+			case PRT_ALL:
+				p();
+				break;
+
+			case CLEAR:
+				C();
+				break;
+
+			case DOUBLE:
+				d();
+				break;
+
+			case ENTER:
+				break;
+
+			case UNEXPECTED:
+				lcdPrintlnS("Unexpected token!");
+				break;
+
+			case OVERFLOW:
+				lcdPrintlnS("Stack overflow!");
+				break;
+
+			default:
+				lcdPrintlnS("Unknown token!");
+				break;
+		}
 	}
 }
 
