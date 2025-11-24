@@ -17,6 +17,7 @@
 #include "fontsFLASH.h"
 #include "additionalFonts.h"
 #include "error.h"
+#include "display.h"
 
 int safe_add(int a, int b, int *result) {
     if ((b > 0) && (a > INT_MAX - b)) {
@@ -39,14 +40,14 @@ extern void add() {
     int result;
     if(!(err1 == -1 || err2 == -1)){
         if (!safe_add(result1, result2, &result)){
-            lcdPrintlnS("Integer Overflow / Underflow!\n");
+            printStdout("Integer Overflow / Underflow!\n");
             push(result2);
             push(result1);
         } else {
             push(result);
         }
     } else {
-        lcdPrintlnS("ERROR DURING POP\n");
+        printStdout("ERROR DURING POP\n");
     }
 }
 
@@ -71,14 +72,14 @@ extern void subtract() {
     int result;
     if(!(err1 == -1 || err2 == -1)){
         if (!safe_substract(result1, result2, &result)){
-            lcdPrintlnS("Integer Overflow / Underflow!\n");
+            printStdout("Integer Overflow / Underflow!\n");
             push(result2);
             push(result1);
         } else {
             push(result);
         }
     } else {
-        lcdPrintlnS("ERROR DURING POP\n");
+        printStdout("ERROR DURING POP\n");
     }
 }
 
@@ -105,14 +106,14 @@ extern void multiply() {
     int result;
     if(!(err1 == -1 || err2 == -1)){
         if (!safe_multiply(result1, result2, &result)){
-            lcdPrintlnS("Integer Overflow / Underflow!\n");
+            printStdout("Integer Overflow / Underflow!\n");
             push(result2);
             push(result1);
         } else {
             push(result);
         }
     } else {
-        lcdPrintlnS("ERROR DURING POP\n");
+        printStdout("ERROR DURING POP\n");
     }
 }
 
@@ -137,13 +138,13 @@ extern void divide() {
     int result;
     if(!(err1 == -1 || err2 == -1)){
         if (!safe_add(result1, result2, &result)){
-            lcdPrintlnS("Error: Division by zero or Integer Overflow!\n");
+            printStdout("Error: Division by zero or Integer Overflow!\n");
             push(result2);
             push(result1);
         } else {
             push(result);
         }
     } else {
-        lcdPrintlnS("ERROR DURING POP\n");
+        printStdout("ERROR DURING POP\n");
     }
 }

@@ -17,6 +17,7 @@
 #include "additionalFonts.h"
 #include "error.h"
 #include "toString.h"
+#include "display.h"
 
 void p() {
 
@@ -24,7 +25,7 @@ void p() {
     int err = peek(getStackSize() - 1, &result);
 
     if(err == -1){
-        lcdPrintlnS("Error");
+        printStdout("Error");
         return;
     }
     else {
@@ -37,7 +38,7 @@ void p() {
 void P() {
     if (isEmpty()) {
 
-        lcdPrintlnS("Stack is Empty!");
+        printStdout("Stack is Empty!");
         return;
     }
     
@@ -50,7 +51,7 @@ void P() {
         int temp;
         int err = peek(stackSize - 1 - i, &temp);
         if(err == -1) {
-            lcdPrintlnS("Error");
+            printStdout("Error");
             return;
         }
         result[i] = temp;
