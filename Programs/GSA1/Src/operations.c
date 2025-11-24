@@ -31,7 +31,7 @@ void p() {
     else {
         char str[12]; //max int = 10 + "-" + "\0" = 12
         intToString(result, str);
-        lcdPrintlnS(str);
+        printStdout(str);
     }
 }
 

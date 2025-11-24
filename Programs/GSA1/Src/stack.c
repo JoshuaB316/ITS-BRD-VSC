@@ -39,7 +39,7 @@ int peek(int index, int *result) {
 }
 
 int push(int value) {
-    
+
     if(stackSize <= 9){
         stack[stackSize] = value;
         stackSize++;
@@ -47,10 +47,6 @@ int push(int value) {
     }
     else {
         return -1;
-    }
-
-    if(stackSize == 0){
-        printStdout("Error during push\n");
     }
 }
 

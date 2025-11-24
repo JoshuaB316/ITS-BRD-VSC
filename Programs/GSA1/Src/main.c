@@ -40,15 +40,13 @@ int main(void) {
 		//HAL_Delay(10000);
 		
 		T_token  t = nextToken();
-		char str[12]; //max int = 10 + "-" + "\0" = 12
-		
+		int value = t.val;
+
 		switch (t.tok) {
 			case NUMBER:
 				break;
 
 			case PLUS:
-        		intToString(stackSize, str);
-				printStdout(str);
 				add();
 				break;
 
@@ -65,7 +63,7 @@ int main(void) {
 				break;
 
 			case PRT:
-				P();
+				p();
 				break;
 
 			case SWAP:
@@ -73,7 +71,7 @@ int main(void) {
 				break;
 
 			case PRT_ALL:
-				p();
+				P();
 				break;
 
 			case CLEAR:
@@ -81,11 +79,12 @@ int main(void) {
 				break;
 
 			case DOUBLE:
-				d();
+			push(value);	
+			//d();
 				break;
 
 			case ENTER:
-				push(t.val);
+				//push(value);
 				break;
 
 			case UNEXPECTED:
