@@ -24,7 +24,7 @@ void p() {
     int err = peek(getStackSize() - 1, &result);
 
     if(err == -1){
-        lcdPrintlnS("Error");
+        printStdout("Error");
         return;
     }
     else {
@@ -37,7 +37,7 @@ void p() {
 void P() {
     if (isEmpty()) {
 
-        lcdPrintlnS("Stack is Empty!");
+        printStdout("Stack is Empty!");
         return;
     }
     
@@ -50,7 +50,7 @@ void P() {
         int temp;
         int err = peek(stackSize - 1 - i, &temp);
         if(err == -1) {
-            lcdPrintlnS("Error");
+            printStdout("Error");
             return;
         }
         result[i] = temp;
@@ -58,7 +58,7 @@ void P() {
     
     for(int i = 0; i < stackSize; i++) {
         intToString(result[i], str);
-        lcdPrintlnS(str);
+        printStdout(str);
     }
 }
 
@@ -70,7 +70,7 @@ void C() {
 void d() {
 
     if(isEmpty()){
-        lcdPrintlnS("stack is empty cant duplicate!");
+        lcdPprintStdoutrintlnS("stack is empty cant duplicate!");
         return;
     }
 
@@ -78,7 +78,7 @@ void d() {
     int err = peek(getStackSize() - 1, &result);
 
     if(err == -1){
-        lcdPrintlnS("Error");
+        printStdout("Error");
         return;
     }
 
@@ -89,7 +89,7 @@ void d() {
 void r() {
 
     if (getStackSize() < 2) {
-        lcdPrintlnS("Stack doesn't contain two elements!");
+        printStdout("Stack doesn't contain two elements!");
         return;
     }
 
@@ -97,12 +97,12 @@ void r() {
     int val2;
 
     if (pop(&val1) == -1) {
-        lcdPrintlnS("Error");
+        printStdout("Error");
         return;
     }
 
     if (pop(&val2) == -1) {
-        lcdPrintlnS("Error");
+        printStdout("Error");
         push(val1);
         return;
     }
