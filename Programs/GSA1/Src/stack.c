@@ -49,7 +49,7 @@ int push(int value) {
     }
 
     if(stackSize == 0){
-        PrintStdout("Error during push"\n);
+        PrintStdout("Error during push\n");
     }
 }
 
