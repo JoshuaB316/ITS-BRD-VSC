@@ -47,7 +47,7 @@ extern void add() {
             push(result);
         }
     } else {
-        printStdout("ERROR DURING POP\n");
+       printStdout("ERROR DURING POP\n");
     }
 }
 
@@ -113,7 +113,7 @@ extern void multiply() {
             push(result);
         }
     } else {
-        printStdout("ERROR DURING POP\n");
+       printStdout("ERROR DURING POP\n");
     }
 }
 
