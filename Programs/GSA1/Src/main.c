@@ -40,13 +40,13 @@ int main(void) {
 		//HAL_Delay(10000);
 		
 		T_token  t = nextToken();
-
+		char str[12]; //max int = 10 + "-" + "\0" = 12
+		
 		switch (t.tok) {
 			case NUMBER:
 				break;
 
 			case PLUS:
-				char str[12]; //max int = 10 + "-" + "\0" = 12
         		intToString(stackSize, str);
 				printStdout(str);
 				add();
