@@ -28,11 +28,8 @@
             "type": "shell",
             "command": "pyocd",
             "options": {
-<<<<<<< HEAD
                 "cwd": "${workspaceFolder}/Programs/GSA1",
-=======
                 "cwd": "${workspaceFolder}/Programs/TestNewFont",
->>>>>>> 981b15671afa49413993422213e75710f8c42ade
                 "shell": {
                     "executable": "cmd.exe",
                     "args": [
@@ -51,16 +48,18 @@
             ],
             "problemMatcher": []
         },
+        "args",
+        "--probe",
+        "stlink:",
+        "--chip",
+        "--cbuild-run",
+        "${command:cmsis-csolution.getCbuildRunFile}",
         {
             "label": "CMSIS Load",
             "type": "shell",
             "command": "pyocd",
             "options": {
-<<<<<<< HEAD
                 "cwd": "${workspaceFolder}/Programs/GSA1",
-=======
-                "cwd": "${workspaceFolder}/Programs/TestNewFont",
->>>>>>> 981b15671afa49413993422213e75710f8c42ade
                 "shell": {
                     "executable": "cmd.exe",
                     "args": [
@@ -83,11 +82,7 @@
             "type": "shell",
             "command": "pyocd",
             "options": {
-<<<<<<< HEAD
                 "cwd": "${workspaceFolder}/Programs/GSA1",
-=======
-                "cwd": "${workspaceFolder}/Programs/TestNewFont",
->>>>>>> 981b15671afa49413993422213e75710f8c42ade
                 "shell": {
                     "executable": "cmd.exe",
                     "args": [
@@ -126,11 +121,7 @@
             "type": "shell",
             "command": "pyocd",
             "options": {
-<<<<<<< HEAD
                 "cwd": "${workspaceFolder}/Programs/GSA1",
-=======
-                "cwd": "${workspaceFolder}/Programs/TestNewFont",
->>>>>>> 981b15671afa49413993422213e75710f8c42ade
                 "shell": {
                     "executable": "cmd.exe",
                     "args": [
@@ -146,5 +137,6 @@
             ],
             "problemMatcher": []
         }
-    ]
+    ],
+    "problemMatcher": []
 }
