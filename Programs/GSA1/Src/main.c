@@ -22,6 +22,7 @@
 #include "scanner.h"
 #include "stack.h"
 #include "display.h"
+#include <stdio.h>
 
 int main(void) {
 	initITSboard();    // Initialisierung des ITS Boards
