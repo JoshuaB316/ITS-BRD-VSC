@@ -33,17 +33,17 @@ int main(void) {
   // Begruessungstext	
 	//lcdPrintlnS("Hallo liebes TI-Labor (c-project)");
 	
-	
+	int value = 0;
 
 	// Test in Endlosschleife
 	while(1) {
 		//HAL_Delay(10000);
 		
 		T_token  t = nextToken();
-		int value = t.val;
 
 		switch (t.tok) {
 			case NUMBER:
+				value = t.val;
 				break;
 
 			case PLUS:

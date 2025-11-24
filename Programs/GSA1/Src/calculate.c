@@ -57,7 +57,7 @@ int safe_substract(int a, int b, int *result) {
     } else if ((b > 0) && (a < INT_MIN + b)) {
         return -1; // Underflow
     } else {
-        *result = a - b;
+        *result = b - a;
         return 0; // is OK
     }
 }
@@ -123,7 +123,7 @@ int safe_divide(int a, int b, int *result) {
     } else if ((a == INT_MIN) && (b == -1)) {
         return -1; // Overflow
     } else {
-        *result = a / b;
+        *result = b / a;
         return 0; // is OK
     }
 }
@@ -137,7 +137,7 @@ extern void divide() {
 
     int result;
     if(err1 != -1 || err2 != -1){
-        if (safe_add(result1, result2, &result) != 0){
+        if (safe_divide(result1, result2, &result) != 0){
             printStdout("Error: Division by zero or Integer Overflow!\n");
             push(result2);
             push(result1);
