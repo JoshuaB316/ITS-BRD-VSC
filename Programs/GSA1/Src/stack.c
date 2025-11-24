@@ -47,6 +47,10 @@ int push(int value) {
     else {
         return -1;
     }
+
+    if(stackSize == 0){
+        PrintStdout("Error during push"\n);
+    }
 }
 
 int pop(int *result) {
