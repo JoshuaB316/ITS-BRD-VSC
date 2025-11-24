@@ -37,7 +37,7 @@ extern void add() {
     int err2 = pop(&result2);
 
     int result;
-    if(!(err1 == -1 || err2 == -1)){
+    if(err1 != -1 || err2 != -1){
         if (!safe_add(result1, result2, &result)){
             printStdout("Integer Overflow / Underflow!\n");
             push(result2);
@@ -69,7 +69,7 @@ extern void subtract() {
     int err2 = pop(&result2);
 
     int result;
-    if(!(err1 == -1 || err2 == -1)){
+    if(err1 != -1 || err2 != -1){
         if (!safe_substract(result1, result2, &result)){
             printStdout("Integer Overflow / Underflow!\n");
             push(result2);
@@ -103,7 +103,7 @@ extern void multiply() {
     int err2 = pop(&result2);
 
     int result;
-    if(!(err1 == -1 || err2 == -1)){
+    if(err1 != -1 || err2 != -1){
         if (!safe_multiply(result1, result2, &result)){
             printStdout("Integer Overflow / Underflow!\n");
             push(result2);
@@ -135,7 +135,7 @@ extern void divide() {
     int err2 = pop(&result2);
 
     int result;
-    if(!(err1 == -1 || err2 == -1)){
+    if(err1 != -1 || err2 != -1){
         if (!safe_add(result1, result2, &result)){
             printStdout("Error: Division by zero or Integer Overflow!\n");
             push(result2);
