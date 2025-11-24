@@ -45,6 +45,9 @@ int main(void) {
 				break;
 
 			case PLUS:
+				char str[12]; //max int = 10 + "-" + "\0" = 12
+        		intToString(stackSize, str);
+				printStdout(str);
 				add();
 				break;
 
