@@ -85,15 +85,15 @@ int main(void) {
 				break;
 
 			case UNEXPECTED:
-				printStdout("Unexpected token!");
+				printStdout("Unexpected token!\n");
 				break;
 
 			case OVERFLOW:
-				printStdout("Stack overflow!");
+				printStdout("Stack overflow!\n");
 				break;
 
 			default:
-				printStdout("Unknown token!");
+				printStdout("Unknown token!\n");
 				break;
 		}
 	}
