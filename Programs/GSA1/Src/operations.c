@@ -17,6 +17,7 @@
 #include "additionalFonts.h"
 #include "error.h"
 #include "toString.h"
+#include "display.h"
 
 void p() {
 

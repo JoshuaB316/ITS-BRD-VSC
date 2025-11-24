@@ -17,6 +17,7 @@
 #include "fontsFLASH.h"
 #include "additionalFonts.h"
 #include "error.h"
+#include "display.h"
 
 int safe_add(int a, int b, int *result) {
     if ((b > 0) && (a > INT_MAX - b)) {
