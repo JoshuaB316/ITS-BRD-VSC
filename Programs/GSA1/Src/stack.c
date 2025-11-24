@@ -16,6 +16,7 @@
 #include "fontsFLASH.h"
 #include "additionalFonts.h"
 #include "error.h"
+#include "display.h"
 
 #define maxStackSize 10  // auf 10 stellen
 
