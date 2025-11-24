@@ -20,7 +20,7 @@
 
 #define maxStackSize 10  // auf 10 stellen
 
-stackSize = 0;
+int stackSize = 0;
 int stack[10];
 
 bool isEmpty() {
