@@ -145,3 +145,9 @@
 329	496	7857192556119890	C:/GS_Labor/ITS-BRD-VSC/Programs/GSA1/out/GSA1/ITSboard/Debug/GSA1.axf	7d4247825d880616
 41	150	7857192559532103	CMakeFiles/database	3afe2141fbca2ebd
 41	150	7857192559532103	C:/GS_Labor/ITS-BRD-VSC/Programs/GSA1/tmp/1/CMakeFiles/database	3afe2141fbca2ebd
+54	149	7862386488778347	CMakeFiles/database	3afe2141fbca2ebd
+54	149	7862386488778347	C:/GS_Labor/ITS-BRD-VSC/Programs/GSA1/tmp/1/CMakeFiles/database	3afe2141fbca2ebd
+10	400	7862391903920216	CMakeFiles/Group_Program_User_Src.dir/C_/GS_Labor/ITS-BRD-VSC/Programs/GSA1/Src/main.o	9a90cbd0606dc92
+32	464	7862391904146239	CMakeFiles/Group_Program_User_Src.dir/C_/GS_Labor/ITS-BRD-VSC/Programs/GSA1/Src/stack.o	bdd805311cb28179
+6	216	7862392516350214	CMakeFiles/Group_Program_User_Src.dir/C_/GS_Labor/ITS-BRD-VSC/Programs/GSA1/Src/calculate.o	a07f9e6f29028a61
+34	210	7862392967174623	CMakeFiles/Group_Program_User_Src.dir/C_/GS_Labor/ITS-BRD-VSC/Programs/GSA1/Src/operations.o	1f00edb7a00335e8
