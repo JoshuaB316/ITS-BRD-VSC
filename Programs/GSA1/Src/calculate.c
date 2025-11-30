@@ -50,7 +50,6 @@ void add() {
             push(result1);
         } else {
             push(result);
-        }
     } else {
        displayError(StackUnderflow);
     }
@@ -86,7 +85,6 @@ extern void subtract() {
             push(result1);
         } else {
             push(result);
-        }
     } else {
         displayError(StackUnderflow);
     }
