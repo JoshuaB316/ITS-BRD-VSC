@@ -23,6 +23,6 @@
  * @param errNum predefined integer values
  * @return void
  */
-void displayError(int errNum)
+void displayError(int errNum);
 
 #endif
