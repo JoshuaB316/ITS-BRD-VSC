@@ -31,7 +31,7 @@ int safe_add(int a, int b, int *result) {
     }
 }
 
-extern void add() {
+void add() {
     int result1 = 0;
     int err1 = pop(&result1);
 
@@ -39,7 +39,7 @@ extern void add() {
     int err2 = pop(&result2);
 
     int result;
-    if(err1 != -1 || err2 != -1){
+    if(err1 == 0 || err2 == 0){
         if (safe_add(result1, result2, &result) != 0){
             printStdout("Integer Overflow / Underflow!\n");
             push(result2);
