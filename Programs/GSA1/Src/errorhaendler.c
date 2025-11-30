@@ -28,5 +28,21 @@ void displayError(int errNum){
             setErrMode();
             printStdout("Cannot divide by zero!\n");
             break;
+        case UnexpectedToken:
+            setErrMode();
+            printStdout("Unexpected Token!\n");
+            break;
+        case UnknownToken:
+            setErrMode();
+            printStdout("Unknown Token!\n");
+            break;
+        case EmptyStack:
+            setErrMode();
+            printStdout("Stack is Empty!\n");
+            break;
+        case NotEnoughElements:
+            setErrMode();
+            printStdout("Not enough Elements!\n");
+            break;
     }
 }

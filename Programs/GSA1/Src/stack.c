@@ -17,6 +17,7 @@
 #include "additionalFonts.h"
 #include "error.h"
 #include "display.h"
+#include "errorhaendler.h"
 
 #define maxStackSize 10  // auf 10 stellen
 
@@ -34,7 +35,7 @@ int peek(int index, int *result) {
         return 0;
     }
     else {
-        return -1;
+        return StackUnderflow;
     }
 }
 
@@ -46,7 +47,7 @@ int push(int value) {
         return 0;
     }
     else {
-        return -1;
+        return StackOverflow;
     }
 }
 
@@ -58,7 +59,7 @@ int pop(int *result) {
         return 0;
     }
     else {
-        return -1;
+        return StackUnderflow;
     }
 }
    

@@ -23,6 +23,7 @@
 #include "stack.h"
 #include "display.h"
 #include <stdio.h>
+#include "errorhaendler.h"
 
 int main(void) {
 	initITSboard();    // Initialisierung des ITS Boards
@@ -82,21 +83,20 @@ int main(void) {
 			push(value);	
 			//d();
 				break;
-
 			case ENTER:
 				//push(value);
 				break;
 
 			case UNEXPECTED:
-				printStdout("Unexpected token!\n");
+				displayError(UnexpectedToken);
 				break;
 
 			case OVERFLOW:
-				printStdout("Stack overflow!\n");
+				displayError(StackOverflow);
 				break;
 
 			default:
-				printStdout("Unknown token!\n");
+				displayError(UnknownToken);
 				break;
 		}
 	}
