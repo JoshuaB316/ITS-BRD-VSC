@@ -89,7 +89,7 @@ void d() {
     if(getStackSize() + 1 <= maxStackSize){
         push(result);
     } else {
-        displayError(StackOverFlow);
+        displayError(StackOverflow);
     }
     
 }
