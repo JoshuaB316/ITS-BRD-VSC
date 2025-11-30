@@ -14,7 +14,6 @@
 #include "LCD_GUI.h"
 #include "LCD_Touch.h"
 #include "keypad.h"
-#include "errorhaendler.h"
 
 static Terminal stdoutTerm = INVALID_TERM;
 static Terminal echoTerm   = INVALID_TERM;
