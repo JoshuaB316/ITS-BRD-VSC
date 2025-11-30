@@ -39,7 +39,7 @@ void add() {
     int err2 = pop(&result2);
 
     int result;
-    if(err1 == 0 || err2 == 0){
+    if(err1 == 0 && err2 == 0){
         if (safe_add(result1, result2, &result) == IntOverflow){
             displayError(IntOverflow);
             push(result2);
@@ -50,6 +50,7 @@ void add() {
             push(result1);
         } else {
             push(result);
+        }
     } else {
        displayError(StackUnderflow);
     }
@@ -74,7 +75,7 @@ extern void subtract() {
     int err2 = pop(&result2);
 
     int result;
-    if(err1 == 0 || err2 == 0){
+    if(err1 == 0 && err2 == 0){
         if (safe_substract(result1, result2, &result) == IntOverflow){
             display(IntOverflow)
             push(result2);
@@ -85,6 +86,7 @@ extern void subtract() {
             push(result1);
         } else {
             push(result);
+        }
     } else {
         displayError(StackUnderflow);
     }
@@ -111,7 +113,7 @@ extern void multiply() {
     int err2 = pop(&result2);
 
     int result;
-    if(err1 == 0 || err2 == 0){
+    if(err1 == 0 && err2 == 0){
         if (safe_multiply(result1, result2, &result) == IntOverflow){
             displayError(IntOverflow);
             push(result2);
@@ -147,7 +149,7 @@ extern void divide() {
     int err2 = pop(&result2);
 
     int result;
-    if(err1 == 0 || err2 == 0){
+    if(err1 == 0 && err2 == 0){
         if (safe_divide(result1, result2, &result) == IntOverflow){
             displayError(IntOverflow);
             push(result2);
