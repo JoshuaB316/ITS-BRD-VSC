@@ -67,6 +67,6 @@ int getStackSize() {
 }
 
 void clearStack() {
-    stackSize = 0;
+    stackSize = 0; //verlieren von referenzen
 }
 

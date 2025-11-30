@@ -18,12 +18,13 @@
 #include "additionalFonts.h"
 #include "error.h"
 #include "display.h"
+#include "errorhaendler.h"
 
 int safe_add(int a, int b, int *result) {
     if ((b > 0) && (a > INT_MAX - b)) {
-        return -1; // Overflow
+        return IntOverflow; // Overflow
     } else if ((b < 0) && (a < INT_MIN - b)) {
-        return -1; // Underflow
+        return IntUnderflow; // Underflow
     } else {
         *result = a + b;
         return 0; // is OK
@@ -53,9 +54,9 @@ extern void add() {
 
 int safe_substract(int a, int b, int *result) {
     if ((b < 0) && (a > INT_MAX + b)) {
-        return -1; // Overflow
+        return IntOverflow; // Overflow
     } else if ((b > 0) && (a < INT_MIN + b)) {
-        return -1; // Underflow
+        return IntUnderflow; // Underflow
     } else {
         *result = b - a;
         return 0; // is OK
@@ -86,10 +87,10 @@ extern void subtract() {
 int safe_multiply(int a, int b, int *result) {
     if (((a > 0) && (b > 0) && (a > INT_MAX / b)) ||
        ((a < 0) && (b < 0) && (a < INT_MAX / b))) {
-        return -1; // Overflow
+        return IntOverflow; // Overflow
     } else if (((a > 0) && (b < 0) && (b < INT_MIN / a)) ||
                ((a < 0) && (b > 0) && (a < INT_MIN / b))) {
-        return -1; // Underflow
+        return IntUnderflow; // Underflow
     } else {
         *result = a * b;
         return 0; // is OK
@@ -119,9 +120,9 @@ extern void multiply() {
 
 int safe_divide(int a, int b, int *result) {
     if (b == 0) {
-        return -1; // Division by zero
+        return DivideByZero; // Division by zero
     } else if ((a == INT_MIN) && (b == -1)) {
-        return -1; // Overflow
+        return IntOverflow; // Overflow
     } else {
         *result = b / a;
         return 0; // is OK
