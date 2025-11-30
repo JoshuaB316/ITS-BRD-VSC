@@ -44,58 +44,71 @@ int main(void) {
 
 		switch (t.tok) {
 			case NUMBER:
+				clearStdout();
 				value = t.val;
 				break;
 
 			case PLUS:
+				clearStdout();
 				add();
 				break;
 
 			case MINUS:
+				clearStdout();
 				subtract();
 				break;
 
 			case MULT:
+				clearStdout();
 				multiply();
 				break;
 
 			case DIV:
+				clearStdout();
 				divide();
 				break;
 
 			case PRT:
+				clearStdout();
 				p();
 				break;
 
 			case SWAP:
+				clearStdout();
 				r();
 				break;
 
 			case PRT_ALL:
+				clearStdout();
 				P();
 				break;
 
 			case CLEAR:
+				clearStdout();
 				C();
 				break;
 
 			case DOUBLE:
-			push(value);	
-			//d();
+				clearStdout();
+				push(value);	
+				//d();
 				break;
 			case ENTER:
 				//push(value);
 				break;
 
 			case UNEXPECTED:
+				clearStdout();
 				displayError(UnexpectedToken);
 				break;
 
 			case OVERFLOW:
+				clearStdout();
 				displayError(StackOverflow);
 				break;
 
 			default:
+				clearStdout();
 				displayError(UnknownToken);
 				break;
 		}
