@@ -16,6 +16,7 @@
 #include "fontsFLASH.h"
 #include "additionalFonts.h"
 #include "error.h"
+#include "display.h"
 
 #define maxStackSize 10  // auf 10 stellen
 
@@ -38,7 +39,7 @@ int peek(int index, int *result) {
 }
 
 int push(int value) {
-    
+
     if(stackSize <= 9){
         stack[stackSize] = value;
         stackSize++;
@@ -66,6 +67,6 @@ int getStackSize() {
 }
 
 void clearStack() {
-    stackSize = 0;
+    stackSize = 0; //verlieren von referenzen
 }
 

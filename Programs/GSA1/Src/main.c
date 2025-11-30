@@ -22,6 +22,7 @@
 #include "scanner.h"
 #include "stack.h"
 #include "display.h"
+#include <stdio.h>
 
 int main(void) {
 	initITSboard();    // Initialisierung des ITS Boards
@@ -32,7 +33,7 @@ int main(void) {
   // Begruessungstext	
 	//lcdPrintlnS("Hallo liebes TI-Labor (c-project)");
 	
-	
+	int value = 0;
 
 	// Test in Endlosschleife
 	while(1) {
@@ -42,6 +43,7 @@ int main(void) {
 
 		switch (t.tok) {
 			case NUMBER:
+				value = t.val;
 				break;
 
 			case PLUS:
@@ -61,7 +63,7 @@ int main(void) {
 				break;
 
 			case PRT:
-				P();
+				p();
 				break;
 
 			case SWAP:
@@ -69,7 +71,7 @@ int main(void) {
 				break;
 
 			case PRT_ALL:
-				p();
+				P();
 				break;
 
 			case CLEAR:
@@ -77,11 +79,12 @@ int main(void) {
 				break;
 
 			case DOUBLE:
-				d();
+			push(value);	
+			//d();
 				break;
 
 			case ENTER:
-				push(t.val);
+				//push(value);
 				break;
 
 			case UNEXPECTED:

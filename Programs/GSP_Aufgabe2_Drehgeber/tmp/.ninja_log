@@ -1,17 +1,17 @@
 # ninja log v6
-565	798	7844075638138783	GSP_Aufgabe2_Drehgeber.Debug+ITSboard/src/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-stamp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-patch	871386ddffa7c7c7
+42	217	7844075632262219	GSP_Aufgabe2_Drehgeber.Debug+ITSboard/src/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-stamp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-mkdir	7ed9db420384a1e8
 9830	9924	7850318754087056	C:/GS_Beinert/ITS-BRD-VSC/Programs/GSP_Aufgabe2_Drehgeber/tmp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard/src/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-stamp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-install	1e4e5b14800b8ab9
 219	397	7844075634104098	C:/GS_Beinert/ITS-BRD-VSC/Programs/GSP_Aufgabe2_Drehgeber/tmp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard/src/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-stamp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-download	d8ea581058674ef6
-42	217	7844075632262219	GSP_Aufgabe2_Drehgeber.Debug+ITSboard/src/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-stamp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-mkdir	7ed9db420384a1e8
+565	798	7844075638138783	GSP_Aufgabe2_Drehgeber.Debug+ITSboard/src/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-stamp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-patch	871386ddffa7c7c7
 42	217	7844075632262219	C:/GS_Beinert/ITS-BRD-VSC/Programs/GSP_Aufgabe2_Drehgeber/tmp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard/src/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-stamp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-mkdir	7ed9db420384a1e8
 219	397	7844075634104098	GSP_Aufgabe2_Drehgeber.Debug+ITSboard/src/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-stamp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-download	d8ea581058674ef6
 399	564	7844075635787991	GSP_Aufgabe2_Drehgeber.Debug+ITSboard/src/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-stamp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-update	bd54fcff35943d76
-399	564	7844075635787991	C:/GS_Beinert/ITS-BRD-VSC/Programs/GSP_Aufgabe2_Drehgeber/tmp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard/src/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-stamp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-update	bd54fcff35943d76
 6699	6847	7844076482105612	C:/GS_Beinert/ITS-BRD-VSC/Programs/GSP_Aufgabe2_Drehgeber/tmp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard/src/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-stamp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-executes	c5c1a9dfd1f56617
+399	564	7844075635787991	C:/GS_Beinert/ITS-BRD-VSC/Programs/GSP_Aufgabe2_Drehgeber/tmp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard/src/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-stamp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-update	bd54fcff35943d76
 565	798	7844075638138783	C:/GS_Beinert/ITS-BRD-VSC/Programs/GSP_Aufgabe2_Drehgeber/tmp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard/src/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-stamp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-patch	871386ddffa7c7c7
-9399	9829	7850318749780938	C:/GS_Beinert/ITS-BRD-VSC/Programs/GSP_Aufgabe2_Drehgeber/tmp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard/src/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-stamp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-database	77c47e09d084316b
-799	15459	7844075784740747	GSP_Aufgabe2_Drehgeber.Debug+ITSboard/src/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-stamp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-configure	122587eaaf206490
 9830	9924	7850318754087056	GSP_Aufgabe2_Drehgeber.Debug+ITSboard/src/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-stamp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-install	1e4e5b14800b8ab9
+799	15459	7844075784740747	GSP_Aufgabe2_Drehgeber.Debug+ITSboard/src/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-stamp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-configure	122587eaaf206490
+9399	9829	7850318749780938	C:/GS_Beinert/ITS-BRD-VSC/Programs/GSP_Aufgabe2_Drehgeber/tmp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard/src/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-stamp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-database	77c47e09d084316b
 799	15459	7844075784740747	C:/GS_Beinert/ITS-BRD-VSC/Programs/GSP_Aufgabe2_Drehgeber/tmp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard/src/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-stamp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-configure	122587eaaf206490
 9399	9829	7850318749780938	GSP_Aufgabe2_Drehgeber.Debug+ITSboard/src/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-stamp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-database	77c47e09d084316b
 71	9398	7850318656489779	GSP_Aufgabe2_Drehgeber.Debug+ITSboard/src/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-stamp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-build	9049855bf91976ae
@@ -20,7 +20,9 @@
 6699	6847	7844076482105612	GSP_Aufgabe2_Drehgeber.Debug+ITSboard/src/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-stamp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-executes	c5c1a9dfd1f56617
 9924	10072	7850318756352635	GSP_Aufgabe2_Drehgeber.Debug+ITSboard/src/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-stamp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-test	38296085bb4392da
 9924	10072	7850318756352635	C:/GS_Beinert/ITS-BRD-VSC/Programs/GSP_Aufgabe2_Drehgeber/tmp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard/src/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-stamp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-test	38296085bb4392da
-10073	10273	7850318758368745	CMakeFiles/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-complete	2bed3031a90af8ec
 10073	10273	7850318758368745	GSP_Aufgabe2_Drehgeber.Debug+ITSboard/src/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-stamp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-done	2bed3031a90af8ec
+10073	10273	7850318758368745	CMakeFiles/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-complete	2bed3031a90af8ec
 10073	10273	7850318758368745	C:/GS_Beinert/ITS-BRD-VSC/Programs/GSP_Aufgabe2_Drehgeber/tmp/CMakeFiles/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-complete	2bed3031a90af8ec
 10073	10273	7850318758368745	C:/GS_Beinert/ITS-BRD-VSC/Programs/GSP_Aufgabe2_Drehgeber/tmp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard/src/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-stamp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-done	2bed3031a90af8ec
+54	9441	7861510020078798	GSP_Aufgabe2_Drehgeber.Debug+ITSboard/src/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-stamp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-database	77c47e09d084316b
+54	9441	7861510020078798	C:/GS_Beinert/ITS-BRD-VSC/Programs/GSP_Aufgabe2_Drehgeber/tmp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard/src/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-stamp/GSP_Aufgabe2_Drehgeber.Debug+ITSboard-database	77c47e09d084316b

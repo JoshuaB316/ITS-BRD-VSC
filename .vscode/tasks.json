@@ -28,8 +28,13 @@
             "type": "shell",
             "command": "pyocd",
             "options": {
+<<<<<<< HEAD
                 "cwd": "${workspaceFolder}/Programs/TestNewFont",
                 "cwd": "${workspaceFolder}/Programs/TestNewFont",
+=======
+                "cwd": "${workspaceFolder}/Programs/GSP_Aufgabe2_Drehgeber",
+                "cwd": "${workspaceFolder}/Programs/TestNewFont",
+>>>>>>> 27b200e71c0ce2d0996d07267f5cc6437b2d222c
                 "shell": {
                     "executable": "cmd.exe",
                     "args": [
@@ -59,7 +64,11 @@
             "type": "shell",
             "command": "pyocd",
             "options": {
+<<<<<<< HEAD
                 "cwd": "${workspaceFolder}/Programs/TestNewFont",
+=======
+                "cwd": "${workspaceFolder}/Programs/GSP_Aufgabe2_Drehgeber",
+>>>>>>> 27b200e71c0ce2d0996d07267f5cc6437b2d222c
                 "shell": {
                     "executable": "cmd.exe",
                     "args": [
@@ -82,7 +91,11 @@
             "type": "shell",
             "command": "pyocd",
             "options": {
+<<<<<<< HEAD
                 "cwd": "${workspaceFolder}/Programs/TestNewFont",
+=======
+                "cwd": "${workspaceFolder}/Programs/GSP_Aufgabe2_Drehgeber",
+>>>>>>> 27b200e71c0ce2d0996d07267f5cc6437b2d222c
                 "shell": {
                     "executable": "cmd.exe",
                     "args": [
@@ -121,7 +134,11 @@
             "type": "shell",
             "command": "pyocd",
             "options": {
+<<<<<<< HEAD
                 "cwd": "${workspaceFolder}/Programs/TestNewFont",
+=======
+                "cwd": "${workspaceFolder}/Programs/GSP_Aufgabe2_Drehgeber",
+>>>>>>> 27b200e71c0ce2d0996d07267f5cc6437b2d222c
                 "shell": {
                     "executable": "cmd.exe",
                     "args": [
