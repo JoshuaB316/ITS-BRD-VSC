@@ -40,8 +40,12 @@ void add() {
 
     int result;
     if(err1 == 0 || err2 == 0){
-        if (safe_add(result1, result2, &result) != 0){
-            printStdout("Integer Overflow / Underflow!\n");
+        if (safe_add(result1, result2, &result) == IntOverflow){
+            displayError(IntOverflow);
+            push(result2);
+            push(result1);
+        }else if(safe_add(result1, result2, &result) == IntUnderflow){
+            displayError(IntUnderflow);
             push(result2);
             push(result1);
         } else {
