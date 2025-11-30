@@ -52,7 +52,7 @@ void add() {
             push(result);
         }
     } else {
-       printStdout("ERROR DURING POP\n");
+       displayError(StackUnderflow);
     }
 }
 
@@ -75,16 +75,20 @@ extern void subtract() {
     int err2 = pop(&result2);
 
     int result;
-    if(err1 != -1 || err2 != -1){
-        if (safe_substract(result1, result2, &result) != 0){
-            printStdout("Integer Overflow / Underflow!\n");
+    if(err1 == 0 || err2 == 0){
+        if (safe_substract(result1, result2, &result) == IntOverflow){
+            display(IntOverflow)
+            push(result2);
+            push(result1);
+        } else if(safe_substract(result1, result2, &result) == IntUnderflow) {
+            display(IntUnderflow)
             push(result2);
             push(result1);
         } else {
             push(result);
         }
     } else {
-        printStdout("ERROR DURING POP\n");
+        displayError(StackUnderflow);
     }
 }
 
@@ -109,16 +113,20 @@ extern void multiply() {
     int err2 = pop(&result2);
 
     int result;
-    if(err1 != -1 || err2 != -1){
-        if (safe_multiply(result1, result2, &result) != 0){
-            printStdout("Integer Overflow / Underflow!\n");
+    if(err1 == 0 || err2 == 0){
+        if (safe_multiply(result1, result2, &result) == IntOverflow){
+            displayError(IntOverflow);
+            push(result2);
+            push(result1);
+        } else if(safe_multiply(result1, result2, &result) == IntUnderflow) {
+            displayError(IntUnderflow);
             push(result2);
             push(result1);
         } else {
             push(result);
         }
     } else {
-       printStdout("ERROR DURING POP\n");
+       displayError(StackUnderflow);
     }
 }
 
@@ -141,15 +149,17 @@ extern void divide() {
     int err2 = pop(&result2);
 
     int result;
-    if(err1 != -1 || err2 != -1){
-        if (safe_divide(result1, result2, &result) != 0){
-            printStdout("Error: Division by zero or Integer Overflow!\n");
+    if(err1 == 0 || err2 == 0){
+        if (safe_divide(result1, result2, &result) == IntOverflow){
+            displayError(IntOverflow);
             push(result2);
             push(result1);
+        } else if(safe_divide(result1, result2, &result) == DivideByZero) {
+            displayError(DivideByZero);
         } else {
             push(result);
         }
     } else {
-        printStdout("ERROR DURING POP\n");
+        displayError(StackUnderflow);
     }
 }
