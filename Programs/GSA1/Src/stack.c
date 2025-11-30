@@ -19,7 +19,7 @@
 #include "display.h"
 #include "errorhaendler.h"
 
-#define maxStackSize 10  // auf 10 stellen
+
 
 int stackSize = 0;
 int stack[10];
