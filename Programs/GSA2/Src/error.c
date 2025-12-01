@@ -10,20 +10,21 @@
 #include "encoder.h"
 #include "led_control.h"
 #include "display.h"
+#include <stdbool.h>
 
 
 // Variablen für Winkel
-angle = 0;
-angleSpeed = 0;
-lastAngle = 0;
-newAngle = 0;
+double angle = 0;
+double angleSpeed = 0;
+double lastAngle = 0;
+double newAngle = 0;
 	
 // Variablen für Kanalverarbeitung
-channelA = 0;
-hannelB = 0;
-lastPhase = 0;
-currentPhase = 0;
-phaseCounter = 0;
+bool channelA = 0;
+bool channelB = 0;
+int lastPhase = 0;
+int currentPhase = 0;
+int phaseCounter = 0;
 
 direction = -1; 
 
