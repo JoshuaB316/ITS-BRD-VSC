@@ -21,6 +21,7 @@
 #include <stdbool.h>
 #include <stdio.h>
 #include "timer.h"
+#include "errorManager.h"
 
 #define MODER_MASK_PIN_6   (0x03U << (2*6)) // Pin 6 
 #define GPIOF_PORT GPIOF	
@@ -65,12 +66,12 @@ int main(void) {
 			if(direction == -1){
 				existingError = true;
 				ledError();
-				display_error()
+				display_error();
 			} else if(direction == 0){
-				angle += 0,3;
+				angle += 0.3;
 				phaseCounter++;
 			} else if(direction == 1){
-				angle -= 0,3;
+				angle -= 0.3;
 				phaseCounter++;
 			}
 

@@ -1,11 +1,11 @@
 /**
-  * @file error.h
+  * @file errorManager.h
   * @author MJ
   * @date Nov 2025
   */
 
-#ifndef ERROR_H
-#define ERROR_H
+#ifndef ERRORMANAGER_H
+#define ERRORMANAGER_H
 #include <stdbool.h>
 
 // Variablen für Winkel

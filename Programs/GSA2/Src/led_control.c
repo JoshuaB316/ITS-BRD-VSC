@@ -7,6 +7,7 @@
 #include "led_control.h"
 #include "stm32f4xx_hal.h"
 #include <stdio.h>
+#include "errorManager.h"
 
 #define LED_PORT GPIOD
 #define nextStepCounter 8

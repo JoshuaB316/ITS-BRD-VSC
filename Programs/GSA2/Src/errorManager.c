@@ -1,10 +1,10 @@
 /**
-  * @file error.c
+  * @file errorManager.c
   * @author MJ
   * @date Nov 2025
   */
 
-#include "error.h"
+#include "errorManager.h"
 #include "stm32f4xx_hal.h"
 #include "lcd.h"
 #include "encoder.h"
@@ -26,7 +26,7 @@ int lastPhase = 0;
 int currentPhase = 0;
 int phaseCounter = 0;
 
-direction = -1; 
+int direction = -1; 
 
 void reset() {
     // Variablen für Winkel zurücksetzen

@@ -17,6 +17,7 @@
 #include "led_control.h"
 #include <stdbool.h>
 #include <stdio.h>
+#include "errorManager.h"
 
 
 
