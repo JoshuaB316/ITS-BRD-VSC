@@ -3,7 +3,7 @@
 <title>Static Call Graph - [C:\GS_Labor\ITS-BRD-VSC\Programs\GSA1\out\GSA1\ITSboard\Debug\GSA1.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image C:\GS_Labor\ITS-BRD-VSC\Programs\GSA1\out\GSA1\ITSboard\Debug\GSA1.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6240002: Last Updated: Sun Nov 30 22:14:40 2025
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6240002: Last Updated: Sun Nov 30 22:24:13 2025
 <BR><P>
 <H3>Maximum Stack Usage =        712 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -1127,6 +1127,7 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clearTerm
 </UL>
 <BR>[Called By]<UL><LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initDisplay
+<LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[fb]"></a>clearTerm</STRONG> (Thumb, 40 bytes, Stack size 16 bytes, terminal.o(.text.clearTerm))
@@ -1250,7 +1251,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;genTerm
 </UL>
 
-<P><STRONG><a name="[64]"></a>main</STRONG> (Thumb, 244 bytes, Stack size 32 bytes, main.o(.text.main))
+<P><STRONG><a name="[64]"></a>main</STRONG> (Thumb, 296 bytes, Stack size 32 bytes, main.o(.text.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 712<LI>Call Chain = main &rArr; P &rArr; displayError &rArr; printStdout &rArr; printTerm &rArr; printNewLine &rArr; printChar &rArr; clearTerm &rArr; GUI_drawRectangle &rArr; printDebugMsg &rArr; GUI_disNum &rArr;  printDebugMsg (Cycle)
 </UL>
 <BR>[Calls]<UL><LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;displayError
@@ -1263,6 +1264,7 @@ Global Symbols
 <LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;multiply
 <LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;subtract
 <LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;add
+<LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clearStdout
 <LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nextToken
 <LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initDisplay
 <LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initITSboard
