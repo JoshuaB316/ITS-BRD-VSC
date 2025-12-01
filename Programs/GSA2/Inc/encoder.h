@@ -6,6 +6,7 @@
 
 #ifndef ENCODER_H
 #define ENCODER_H
+#include <stdbool.h>
 
 
 /**
@@ -28,7 +29,7 @@ bool givePinB();
  * 
  * @return char   liefert a,b,c oder d abhängig von den Kanälen A und B
  */
-char getPhase();
+int getPhase(bool A, bool B);
 
 
 /**
@@ -36,7 +37,7 @@ char getPhase();
  *
  * @return int  liefert 0 wenn Laufrichtung rechts, 1 wenn Laufrichtung links, 2 wenn keine Bewegung und -1 bei fehler
  */
-int getDirection();
+int getDirection(int lastPhase, int currentPhase);
 
 
 
