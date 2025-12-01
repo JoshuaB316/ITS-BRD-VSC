@@ -10,7 +10,7 @@
 #include "errorManager.h"
 
 #define LED_PORT GPIOD
-#define nextStepCounter 8
+int nextStepCounter = 8
 
 
 void ledNextStep() {
@@ -19,7 +19,7 @@ void ledNextStep() {
 
     // schaltet nächste LED an
     GPIOD->BSRR = (0x01 << (nextStepCounter)); 
-    nextStepCounter++;
+    nextStepCounter += 1;
 
     // zurücksetzen auf erste LED wenn die Letzte erreicht wurde
     if (nextStepCounter > 15) {
@@ -60,6 +60,7 @@ void ledDirection(int direction) {
         GPIOD->BSRR = (0x01 << (23 + 16)); 
     }
 }
+
 
 
 void ledError() {
