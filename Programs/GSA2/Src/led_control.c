@@ -10,7 +10,8 @@
 #include "errorManager.h"
 
 #define LED_PORT GPIOD
-int nextStepCounter = 8
+
+int nextStepCounter = 0;
 
 
 void ledNextStep() {
@@ -22,8 +23,8 @@ void ledNextStep() {
     nextStepCounter += 1;
 
     // zurücksetzen auf erste LED wenn die Letzte erreicht wurde
-    if (nextStepCounter > 15) {
-        nextStepCounter = 8; 
+    if (nextStepCounter > 7) {
+        nextStepCounter = 0; 
     }
 }
 
@@ -32,11 +33,11 @@ void ledReset() {
     // alle LEDs aus
     GPIOD->BSRR = 0xFFFF0000; 
     // D22 aus
-    GPIOD->BSRR = (0x01 << (22 + 16)); 
+    GPIOD->BSRR = (0x01 << (14 + 16)); 
     // D23 aus
-    GPIOD->BSRR = (0x01 << (23 + 16)); 
+    GPIOD->BSRR = (0x01 << (15 + 16)); 
     // D21 aus
-    GPIOD->BSRR = (0x01 << (21 + 16));
+    GPIOD->BSRR = (0x01 << (13 + 16));
     //StepCounter wieder auf den Ursprungswert
     nextStepCounter = 8;
 }
@@ -45,19 +46,19 @@ void ledReset() {
 void ledDirection(int direction) {
     if (direction == 0) { // rechts
         // D23 an
-        GPIOD->BSRR = (0x01 << (23)); 
+        GPIOD->BSRR = (0x01 << (15)); 
         // D22 aus
-        GPIOD->BSRR = (0x01 << (22 + 16)); 
+        GPIOD->BSRR = (0x01 << (14 + 16)); 
     } else if (direction == 1) { // links
         // D22 an
-        GPIOD->BSRR = (0x01 << (22)); 
+        GPIOD->BSRR = (0x01 << (14)); 
         // D23 aus
-        GPIOD->BSRR = (0x01 << (23 + 16)); 
+        GPIOD->BSRR = (0x01 << (15 + 16)); 
     } else {
         // D22 aus
-        GPIOD->BSRR = (0x01 << (22 + 16)); 
+        GPIOD->BSRR = (0x01 << (14 + 16)); 
         // D23 aus
-        GPIOD->BSRR = (0x01 << (23 + 16)); 
+        GPIOD->BSRR = (0x01 << (15 + 16)); 
     }
 }
 
@@ -65,7 +66,7 @@ void ledDirection(int direction) {
 
 void ledError() {
     // D21 an
-    GPIOD->BSRR = (0x01 << (21)); 
+    GPIOD->BSRR = (0x01 << (13)); 
 }
 
 
