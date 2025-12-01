@@ -6,6 +6,7 @@
 
 #ifndef ERROR_H
 #define ERROR_H
+#include <stdbool.h>
 
 // Variablen für Winkel
 extern double angle;
