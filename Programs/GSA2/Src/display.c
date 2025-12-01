@@ -29,7 +29,6 @@ void display_update() {
 
 void display_error() {
   // Fehlermeldung auf bem Bildschirm
-  LCD_clear();
   lcdPrintlnS("Fehler erkannt!");
   lcdPrintlnS("Bitte S6 drücken");
 }
