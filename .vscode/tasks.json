@@ -28,7 +28,7 @@
             "type": "shell",
             "command": "pyocd",
             "options": {
-                "cwd": "${workspaceFolder}/Programs/GSA1",
+                "cwd": "${workspaceFolder}/Programs/GSA2",
                 "cwd": "${workspaceFolder}/Programs/TestNewFont",
                 "cwd": "${workspaceFolder}/Programs/GSP_Aufgabe2_Drehgeber",
                 "cwd": "${workspaceFolder}/Programs/TestNewFont",
@@ -61,7 +61,7 @@
             "type": "shell",
             "command": "pyocd",
             "options": {
-                "cwd": "${workspaceFolder}/Programs/GSA1",
+                "cwd": "${workspaceFolder}/Programs/GSA2",
                 "shell": {
                     "executable": "cmd.exe",
                     "args": [
@@ -84,7 +84,7 @@
             "type": "shell",
             "command": "pyocd",
             "options": {
-                "cwd": "${workspaceFolder}/Programs/GSA1",
+                "cwd": "${workspaceFolder}/Programs/GSA2",
                 "shell": {
                     "executable": "cmd.exe",
                     "args": [
@@ -123,7 +123,7 @@
             "type": "shell",
             "command": "pyocd",
             "options": {
-                "cwd": "${workspaceFolder}/Programs/GSA1",
+                "cwd": "${workspaceFolder}/Programs/GSA2",
                 "shell": {
                     "executable": "cmd.exe",
                     "args": [
