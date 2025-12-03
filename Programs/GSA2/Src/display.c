@@ -17,6 +17,7 @@
 #include "led_control.h"
 #include <stdbool.h>
 #include <stdio.h>
+#include "errorManager.h"
 
 
 
@@ -28,7 +29,6 @@ void display_update() {
 
 void display_error() {
   // Fehlermeldung auf bem Bildschirm
-  lcdClearScreen();
   lcdPrintlnS("Fehler erkannt!");
   lcdPrintlnS("Bitte S6 drücken");
 }

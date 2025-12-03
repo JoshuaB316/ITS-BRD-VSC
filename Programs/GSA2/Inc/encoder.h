@@ -6,6 +6,7 @@
 
 #ifndef ENCODER_H
 #define ENCODER_H
+#include <stdbool.h>
 
 
 /**
@@ -27,16 +28,20 @@ bool givePinB();
  * @brief auslesen von Kanälen A und B
  * 
  * @return char   liefert a,b,c oder d abhängig von den Kanälen A und B
+ * @param A       Kanal A
+ * @param B       Kanal B
  */
-char getPhase();
+int getPhase(bool A, bool B);
 
 
 /**
  * @brief bestimmt Laufrichtung
  *
  * @return int  liefert 0 wenn Laufrichtung rechts, 1 wenn Laufrichtung links, 2 wenn keine Bewegung und -1 bei fehler
+ * @param lastPhase letzte Phase
+ * @param currentPhase aktuelle Phase
  */
-int getDirection();
+int getDirection(int lastPhase, int currentPhase);
 
 
 

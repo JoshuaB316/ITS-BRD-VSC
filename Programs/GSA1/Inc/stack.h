@@ -7,6 +7,8 @@
 #ifndef STACK_H
 #define STACK_H
 #include <stdbool.h>
+#define maxStackSize 10  // auf 10 stellen
+
 extern int stackSize;
 
 /*

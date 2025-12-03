@@ -77,11 +77,11 @@ extern void subtract() {
     int result;
     if(err1 == 0 && err2 == 0){
         if (safe_substract(result1, result2, &result) == IntOverflow){
-            display(IntOverflow)
+            displayError(IntOverflow);
             push(result2);
             push(result1);
         } else if(safe_substract(result1, result2, &result) == IntUnderflow) {
-            display(IntUnderflow)
+            displayError(IntUnderflow);
             push(result2);
             push(result1);
         } else {

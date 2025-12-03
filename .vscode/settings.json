@@ -117,7 +117,11 @@
   "cmake.ignoreCMakeListsMissing": true,
   "C_Cpp_Runner.msvcBatchPath": "",
   "clangd.arguments": [
+<<<<<<< HEAD
     "--compile-commands-dir=c:\\GS_Labor\\ITS-BRD-VSC\\Programs\\TestNewFont\\out\\TestNewFont\\ITSboard\\Debug"
+=======
+    "--compile-commands-dir=c:\\GS_Labor\\ITS-BRD-VSC\\Programs\\GSA2\\out\\GSA2\\ITSboard\\Debug"
+>>>>>>> 1ebfa68e8d6801fa6efb159031074e4b9125401e
   ],
   "debug.hideSlowPreLaunchWarning": true,
   "debug.showInStatusBar": "never"

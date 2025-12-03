@@ -21,9 +21,9 @@ void ledReset();
 
 /**
  * @brief schaltet D23 and wenn Laufrichtung rechts und D22 wenn Laufrichtung links
- * 
+ * @param direction Laufrichtung benötigt
  */
-void ledDirection();
+void ledDirection(int direction);
 
 /**
  * @brief schaltet D21 an wenn ein Fehler vorliegt

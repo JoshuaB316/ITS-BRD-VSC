@@ -8,6 +8,7 @@
 #include "stm32f4xx_hal.h"
 #include <stdbool.h>
 #include <stdio.h>
+#include "errorManager.h"
 
 #define IDR_MASK_CHANNEL_A (0x01 << (0)) // Pin A auf bit 0
 #define IDR_MASK_CHANNEL_B (0x01 << (1)) // Pin B auf bit 1

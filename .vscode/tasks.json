@@ -61,7 +61,11 @@
             "type": "shell",
             "command": "pyocd",
             "options": {
+<<<<<<< HEAD
                 "cwd": "${workspaceFolder}/Programs/TestNewFont",
+=======
+                "cwd": "${workspaceFolder}/Programs/GSA2",
+>>>>>>> 1ebfa68e8d6801fa6efb159031074e4b9125401e
                 "shell": {
                     "executable": "cmd.exe",
                     "args": [
@@ -84,7 +88,11 @@
             "type": "shell",
             "command": "pyocd",
             "options": {
+<<<<<<< HEAD
                 "cwd": "${workspaceFolder}/Programs/TestNewFont",
+=======
+                "cwd": "${workspaceFolder}/Programs/GSA2",
+>>>>>>> 1ebfa68e8d6801fa6efb159031074e4b9125401e
                 "shell": {
                     "executable": "cmd.exe",
                     "args": [
@@ -123,7 +131,11 @@
             "type": "shell",
             "command": "pyocd",
             "options": {
+<<<<<<< HEAD
                 "cwd": "${workspaceFolder}/Programs/TestNewFont",
+=======
+                "cwd": "${workspaceFolder}/Programs/GSA2",
+>>>>>>> 1ebfa68e8d6801fa6efb159031074e4b9125401e
                 "shell": {
                     "executable": "cmd.exe",
                     "args": [
