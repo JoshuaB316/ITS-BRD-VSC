@@ -45,7 +45,7 @@ int main(void) {
 
 	// Test in Endlosschleife
 	while(1) {
-		HAL_Delay(250);
+		HAL_Delay(250);//test
 		// Datenerfassung
 			// Gibt es Fehler und wurde S6 gedrückt?
 			if(existingError){
