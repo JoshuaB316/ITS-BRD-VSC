@@ -93,6 +93,7 @@ int main(void) {
 			lastAngle = newAngle;
 			newAngle = angle;
 			timer_start = timer_end;
+			
 	}
 }
 

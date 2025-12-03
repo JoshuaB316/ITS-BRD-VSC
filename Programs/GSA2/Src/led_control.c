@@ -33,11 +33,11 @@ void ledReset() {
     // alle LEDs aus
     GPIOD->BSRR = 0xFFFF0000; 
     // D22 aus
-    GPIOD->BSRR = (0x01 << (14 + 16)); 
+    GPIOE->BSRR = (0x01 << (6 + 16)); 
     // D23 aus
-    GPIOD->BSRR = (0x01 << (15 + 16)); 
+    GPIOE->BSRR = (0x01 << (7 + 16)); 
     // D21 aus
-    GPIOD->BSRR = (0x01 << (13 + 16));
+    GPIOE->BSRR = (0x01 << (5 + 16));
     //StepCounter wieder auf den Ursprungswert
     nextStepCounter = 8;
 }
@@ -46,19 +46,19 @@ void ledReset() {
 void ledDirection(int direction) {
     if (direction == 0) { // rechts
         // D23 an
-        GPIOD->BSRR = (0x01 << (15)); 
+        GPIOE->BSRR = (0x01 << (7)); 
         // D22 aus
-        GPIOD->BSRR = (0x01 << (14 + 16)); 
+        GPIOE->BSRR = (0x01 << (6 + 16)); 
     } else if (direction == 1) { // links
         // D22 an
-        GPIOD->BSRR = (0x01 << (14)); 
+        GPIOE->BSRR = (0x01 << (6)); 
         // D23 aus
-        GPIOD->BSRR = (0x01 << (15 + 16)); 
+        GPIOE->BSRR = (0x01 << (7 + 16)); 
     } else {
         // D22 aus
-        GPIOD->BSRR = (0x01 << (14 + 16)); 
+        GPIOE->BSRR = (0x01 << (6 + 16)); 
         // D23 aus
-        GPIOD->BSRR = (0x01 << (15 + 16)); 
+        GPIOE->BSRR = (0x01 << (7 + 16)); 
     }
 }
 
@@ -66,7 +66,7 @@ void ledDirection(int direction) {
 
 void ledError() {
     // D21 an
-    GPIOD->BSRR = (0x01 << (13)); 
+    GPIOE->BSRR = (0x01 << (5)); 
 }
 
 
