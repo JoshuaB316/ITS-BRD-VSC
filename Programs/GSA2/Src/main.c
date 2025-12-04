@@ -52,7 +52,8 @@ int main(void) {
 				if(MODER_MASK_PIN_6 == (GPIOF -> IDR & MODER_MASK_PIN_6)){
 					reset();
 				}
-			}
+			} else {
+
 
 			// Kanäle einlesen
 			channelA = givePinA();
@@ -95,7 +96,7 @@ int main(void) {
 			newAngle = angle;
 			timer_start = timer_end;
 			
+		}
 	}
 }
-
 // EOF

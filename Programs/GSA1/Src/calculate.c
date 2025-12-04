@@ -131,7 +131,7 @@ extern void multiply() {
 }
 
 int safe_divide(int a, int b, int *result) {
-    if (b == 0) {
+    if (a == 0) {
         return DivideByZero; // Division by zero
     } else if ((a == INT_MIN) && (b == -1)) {
         return IntOverflow; // Overflow
