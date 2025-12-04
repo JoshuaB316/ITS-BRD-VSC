@@ -1419,132 +1419,59 @@ Section Cross References
     main.o(.text.main) refers to init.o(.text.initITSboard) for initITSboard
     main.o(.text.main) refers to LCD_GUI.o(.text.GUI_init) for GUI_init
     main.o(.text.main) refers to LCD_Touch.o(.text.TP_InitBasic) for TP_InitBasic
-    main.o(.text.main) refers to display.o(.text.initDisplay) for initDisplay
-    main.o(.text.main) refers to scanner.o(.text.nextToken) for nextToken
-    main.o(.text.main) refers to display.o(.text.clearStdout) for clearStdout
-    main.o(.text.main) refers to stack.o(.text.push) for push
-    main.o(.text.main) refers to calculate.o(.text.add) for add
-    main.o(.text.main) refers to calculate.o(.text.subtract) for subtract
-    main.o(.text.main) refers to calculate.o(.text.multiply) for multiply
-    main.o(.text.main) refers to calculate.o(.text.divide) for divide
-    main.o(.text.main) refers to operations.o(.text.p) for p
-    main.o(.text.main) refers to operations.o(.text.r) for r
-    main.o(.text.main) refers to operations.o(.text.P) for P
-    main.o(.text.main) refers to operations.o(.text.C) for C
-    main.o(.text.main) refers to operations.o(.text.d) for d
-    main.o(.text.main) refers to errorhaendler.o(.text.displayError) for displayError
+    main.o(.text.main) refers to main.o(.rodata.str1.1) for .L.str
+    main.o(.text.main) refers to lcd.o(.text.lcdPrintlnS) for lcdPrintlnS
+    main.o(.text.main) refers to stm32f4xx_hal.o(.text.HAL_Delay) for HAL_Delay
+    main.o(.text.main) refers to errorManager.o(.text.reset) for reset
+    main.o(.text.main) refers to encoder.o(.text.givePinA) for givePinA
+    main.o(.text.main) refers to errorManager.o(.bss.channelA) for channelA
+    main.o(.text.main) refers to encoder.o(.text.givePinB) for givePinB
+    main.o(.text.main) refers to errorManager.o(.bss.channelB) for channelB
+    main.o(.text.main) refers to encoder.o(.text.getPhase) for getPhase
+    main.o(.text.main) refers to errorManager.o(.bss.currentPhase) for currentPhase
+    main.o(.text.main) refers to errorManager.o(.bss.lastPhase) for lastPhase
+    main.o(.text.main) refers to encoder.o(.text.getDirection) for getDirection
+    main.o(.text.main) refers to errorManager.o(.data.direction) for direction
+    main.o(.text.main) refers to led_control.o(.text.ledError) for ledError
+    main.o(.text.main) refers to display.o(.text.display_error) for display_error
+    main.o(.text.main) refers to errorManager.o(.bss.angle) for angle
+    main.o(.text.main) refers to dadd.o(.text) for __aeabi_dadd
+    main.o(.text.main) refers to errorManager.o(.bss.phaseCounter) for phaseCounter
+    main.o(.text.main) refers to errorManager.o(.bss.lastAngle) for lastAngle
+    main.o(.text.main) refers to errorManager.o(.bss.newAngle) for newAngle
+    main.o(.text.main) refers to dfltui.o(.text) for __aeabi_ui2d
+    main.o(.text.main) refers to ddiv.o(.text) for __aeabi_ddiv
+    main.o(.text.main) refers to errorManager.o(.bss.angleSpeed) for angleSpeed
+    main.o(.text.main) refers to led_control.o(.text.ledNextStep) for ledNextStep
+    main.o(.text.main) refers to led_control.o(.text.ledDirection) for ledDirection
     main.o(.ARM.exidx.text.main) refers to main.o(.text.main) for [Anonymous Symbol]
-    calculate.o(.ARM.exidx.text.safe_add) refers to calculate.o(.text.safe_add) for [Anonymous Symbol]
-    calculate.o(.text.add) refers to stack.o(.text.pop) for pop
-    calculate.o(.text.add) refers to calculate.o(.text.safe_add) for safe_add
-    calculate.o(.text.add) refers to errorhaendler.o(.text.displayError) for displayError
-    calculate.o(.text.add) refers to stack.o(.text.push) for push
-    calculate.o(.ARM.exidx.text.add) refers to calculate.o(.text.add) for [Anonymous Symbol]
-    calculate.o(.ARM.exidx.text.safe_substract) refers to calculate.o(.text.safe_substract) for [Anonymous Symbol]
-    calculate.o(.text.subtract) refers to stack.o(.text.pop) for pop
-    calculate.o(.text.subtract) refers to calculate.o(.text.safe_substract) for safe_substract
-    calculate.o(.text.subtract) refers to errorhaendler.o(.text.displayError) for displayError
-    calculate.o(.text.subtract) refers to stack.o(.text.push) for push
-    calculate.o(.ARM.exidx.text.subtract) refers to calculate.o(.text.subtract) for [Anonymous Symbol]
-    calculate.o(.ARM.exidx.text.safe_multiply) refers to calculate.o(.text.safe_multiply) for [Anonymous Symbol]
-    calculate.o(.text.multiply) refers to stack.o(.text.pop) for pop
-    calculate.o(.text.multiply) refers to calculate.o(.text.safe_multiply) for safe_multiply
-    calculate.o(.text.multiply) refers to errorhaendler.o(.text.displayError) for displayError
-    calculate.o(.text.multiply) refers to stack.o(.text.push) for push
-    calculate.o(.ARM.exidx.text.multiply) refers to calculate.o(.text.multiply) for [Anonymous Symbol]
-    calculate.o(.ARM.exidx.text.safe_divide) refers to calculate.o(.text.safe_divide) for [Anonymous Symbol]
-    calculate.o(.text.divide) refers to stack.o(.text.pop) for pop
-    calculate.o(.text.divide) refers to calculate.o(.text.safe_divide) for safe_divide
-    calculate.o(.text.divide) refers to errorhaendler.o(.text.displayError) for displayError
-    calculate.o(.text.divide) refers to stack.o(.text.push) for push
-    calculate.o(.ARM.exidx.text.divide) refers to calculate.o(.text.divide) for [Anonymous Symbol]
-    display.o(.text.clearStdout) refers to display.o(.data.stdoutTerm) for stdoutTerm
-    display.o(.text.clearStdout) refers to terminal.o(.text.clearTerm) for clearTerm
-    display.o(.ARM.exidx.text.clearStdout) refers to display.o(.text.clearStdout) for [Anonymous Symbol]
-    display.o(.text.clearEchoTerm) refers to display.o(.data.echoTerm) for echoTerm
-    display.o(.text.clearEchoTerm) refers to terminal.o(.text.clearTerm) for clearTerm
-    display.o(.ARM.exidx.text.clearEchoTerm) refers to display.o(.text.clearEchoTerm) for [Anonymous Symbol]
-    display.o(.text.printStdout) refers to display.o(.data.stdoutTerm) for stdoutTerm
-    display.o(.text.printStdout) refers to terminal.o(.text.printTerm) for printTerm
-    display.o(.ARM.exidx.text.printStdout) refers to display.o(.text.printStdout) for [Anonymous Symbol]
-    display.o(.text.initDisplay) refers to LCD_GUI.o(.text.GUI_init) for GUI_init
-    display.o(.text.initDisplay) refers to LCD_Touch.o(.text.TP_InitBasic) for TP_InitBasic
-    display.o(.text.initDisplay) refers to keypad.o(.text.makeKeyPad) for makeKeyPad
-    display.o(.text.initDisplay) refers to terminal.o(.text.genTerm) for genTerm
-    display.o(.text.initDisplay) refers to display.o(.data.stdoutTerm) for stdoutTerm
-    display.o(.text.initDisplay) refers to display.o(.data.echoTerm) for echoTerm
-    display.o(.text.initDisplay) refers to display.o(.text.clearEchoTerm) for clearEchoTerm
-    display.o(.text.initDisplay) refers to display.o(.text.clearStdout) for clearStdout
-    display.o(.ARM.exidx.text.initDisplay) refers to display.o(.text.initDisplay) for [Anonymous Symbol]
-    display.o(.text.printToEchoLine) refers to display.o(.data.echoTerm) for echoTerm
-    display.o(.text.printToEchoLine) refers to terminal.o(.text.printTerm) for printTerm
-    display.o(.ARM.exidx.text.printToEchoLine) refers to display.o(.text.printToEchoLine) for [Anonymous Symbol]
-    display.o(.text.setErrMode) refers to display.o(.data.stdoutTerm) for stdoutTerm
-    display.o(.text.setErrMode) refers to terminal.o(.text.clearTerm) for clearTerm
-    display.o(.text.setErrMode) refers to terminal.o(.text.setTextColorTerm) for setTextColorTerm
-    display.o(.ARM.exidx.text.setErrMode) refers to display.o(.text.setErrMode) for [Anonymous Symbol]
-    display.o(.text.setNormalMode) refers to display.o(.data.stdoutTerm) for stdoutTerm
-    display.o(.text.setNormalMode) refers to terminal.o(.text.clearTerm) for clearTerm
-    display.o(.text.setNormalMode) refers to terminal.o(.text.setTextColorTerm) for setTextColorTerm
-    display.o(.ARM.exidx.text.setNormalMode) refers to display.o(.text.setNormalMode) for [Anonymous Symbol]
-    display.o(.text.isBottomLine) refers to display.o(.data.stdoutTerm) for stdoutTerm
-    display.o(.text.isBottomLine) refers to terminal.o(.text.getCurRow) for getCurRow
-    display.o(.text.isBottomLine) refers to terminal.o(.text.getNoOfRows) for getNoOfRows
-    display.o(.ARM.exidx.text.isBottomLine) refers to display.o(.text.isBottomLine) for [Anonymous Symbol]
-    operations.o(.text.p) refers to stack.o(.text.isEmpty) for isEmpty
-    operations.o(.text.p) refers to errorhaendler.o(.text.displayError) for displayError
-    operations.o(.text.p) refers to stack.o(.text.getStackSize) for getStackSize
-    operations.o(.text.p) refers to stack.o(.text.peek) for peek
-    operations.o(.text.p) refers to toString.o(.text.intToString) for intToString
-    operations.o(.text.p) refers to display.o(.text.printStdout) for printStdout
-    operations.o(.ARM.exidx.text.p) refers to operations.o(.text.p) for [Anonymous Symbol]
-    operations.o(.text.P) refers to stack.o(.text.isEmpty) for isEmpty
-    operations.o(.text.P) refers to errorhaendler.o(.text.displayError) for displayError
-    operations.o(.text.P) refers to stack.o(.text.getStackSize) for getStackSize
-    operations.o(.text.P) refers to stack.o(.text.peek) for peek
-    operations.o(.text.P) refers to toString.o(.text.intToString) for intToString
-    operations.o(.text.P) refers to display.o(.text.printStdout) for printStdout
-    operations.o(.ARM.exidx.text.P) refers to operations.o(.text.P) for [Anonymous Symbol]
-    operations.o(.text.C) refers to stack.o(.text.clearStack) for clearStack
-    operations.o(.ARM.exidx.text.C) refers to operations.o(.text.C) for [Anonymous Symbol]
-    operations.o(.text.d) refers to stack.o(.text.isEmpty) for isEmpty
-    operations.o(.text.d) refers to errorhaendler.o(.text.displayError) for displayError
-    operations.o(.text.d) refers to stack.o(.text.getStackSize) for getStackSize
-    operations.o(.text.d) refers to stack.o(.text.peek) for peek
-    operations.o(.text.d) refers to stack.o(.text.push) for push
-    operations.o(.ARM.exidx.text.d) refers to operations.o(.text.d) for [Anonymous Symbol]
-    operations.o(.text.r) refers to stack.o(.text.getStackSize) for getStackSize
-    operations.o(.text.r) refers to errorhaendler.o(.text.displayError) for displayError
-    operations.o(.text.r) refers to stack.o(.text.pop) for pop
-    operations.o(.text.r) refers to stack.o(.text.push) for push
-    operations.o(.ARM.exidx.text.r) refers to operations.o(.text.r) for [Anonymous Symbol]
-    scanner.o(.text.nextToken) refers to display.o(.text.clearEchoTerm) for clearEchoTerm
-    scanner.o(.text.nextToken) refers to scanner.o(.data.nextToken.c) for nextToken.c
-    scanner.o(.text.nextToken) refers to scanner.o(.text.nextChar) for nextChar
-    scanner.o(.text.nextToken) refers to display.o(.text.printToEchoLine) for printToEchoLine
-    scanner.o(.ARM.exidx.text.nextToken) refers to scanner.o(.text.nextToken) for [Anonymous Symbol]
-    scanner.o(.text.nextChar) refers to keypad.o(.text.getKeyPadInput) for getKeyPadInput
-    scanner.o(.ARM.exidx.text.nextChar) refers to scanner.o(.text.nextChar) for [Anonymous Symbol]
-    stack.o(.text.isEmpty) refers to stack.o(.bss.stackSize) for stackSize
-    stack.o(.ARM.exidx.text.isEmpty) refers to stack.o(.text.isEmpty) for [Anonymous Symbol]
-    stack.o(.text.peek) refers to stack.o(.bss.stackSize) for stackSize
-    stack.o(.text.peek) refers to stack.o(.bss.stack) for stack
-    stack.o(.ARM.exidx.text.peek) refers to stack.o(.text.peek) for [Anonymous Symbol]
-    stack.o(.text.push) refers to stack.o(.bss.stackSize) for stackSize
-    stack.o(.text.push) refers to stack.o(.bss.stack) for stack
-    stack.o(.ARM.exidx.text.push) refers to stack.o(.text.push) for [Anonymous Symbol]
-    stack.o(.text.pop) refers to stack.o(.bss.stackSize) for stackSize
-    stack.o(.text.pop) refers to stack.o(.bss.stack) for stack
-    stack.o(.ARM.exidx.text.pop) refers to stack.o(.text.pop) for [Anonymous Symbol]
-    stack.o(.text.getStackSize) refers to stack.o(.bss.stackSize) for stackSize
-    stack.o(.ARM.exidx.text.getStackSize) refers to stack.o(.text.getStackSize) for [Anonymous Symbol]
-    stack.o(.text.clearStack) refers to stack.o(.bss.stackSize) for stackSize
-    stack.o(.ARM.exidx.text.clearStack) refers to stack.o(.text.clearStack) for [Anonymous Symbol]
-    toString.o(.ARM.exidx.text.intToString) refers to toString.o(.text.intToString) for [Anonymous Symbol]
-    errorhaendler.o(.text.displayError) refers to display.o(.text.setErrMode) for setErrMode
-    errorhaendler.o(.text.displayError) refers to errorhaendler.o(.rodata.str1.1) for .L.str
-    errorhaendler.o(.text.displayError) refers to display.o(.text.printStdout) for printStdout
-    errorhaendler.o(.ARM.exidx.text.displayError) refers to errorhaendler.o(.text.displayError) for [Anonymous Symbol]
+    display.o(.ARM.exidx.text.display_update) refers to display.o(.text.display_update) for [Anonymous Symbol]
+    display.o(.text.display_error) refers to display.o(.rodata.str1.1) for .L.str
+    display.o(.text.display_error) refers to lcd.o(.text.lcdPrintlnS) for lcdPrintlnS
+    display.o(.ARM.exidx.text.display_error) refers to display.o(.text.display_error) for [Anonymous Symbol]
+    encoder.o(.ARM.exidx.text.givePinA) refers to encoder.o(.text.givePinA) for [Anonymous Symbol]
+    encoder.o(.ARM.exidx.text.givePinB) refers to encoder.o(.text.givePinB) for [Anonymous Symbol]
+    encoder.o(.ARM.exidx.text.getPhase) refers to encoder.o(.text.getPhase) for [Anonymous Symbol]
+    encoder.o(.ARM.exidx.text.getDirection) refers to encoder.o(.text.getDirection) for [Anonymous Symbol]
+    errorManager.o(.text.reset) refers to errorManager.o(.bss.angle) for angle
+    errorManager.o(.text.reset) refers to errorManager.o(.bss.angleSpeed) for angleSpeed
+    errorManager.o(.text.reset) refers to errorManager.o(.bss.lastAngle) for lastAngle
+    errorManager.o(.text.reset) refers to errorManager.o(.bss.newAngle) for newAngle
+    errorManager.o(.text.reset) refers to errorManager.o(.bss.channelA) for channelA
+    errorManager.o(.text.reset) refers to errorManager.o(.bss.channelB) for channelB
+    errorManager.o(.text.reset) refers to errorManager.o(.bss.lastPhase) for lastPhase
+    errorManager.o(.text.reset) refers to errorManager.o(.bss.currentPhase) for currentPhase
+    errorManager.o(.text.reset) refers to errorManager.o(.bss.phaseCounter) for phaseCounter
+    errorManager.o(.text.reset) refers to errorManager.o(.data.direction) for direction
+    errorManager.o(.text.reset) refers to led_control.o(.text.ledReset) for ledReset
+    errorManager.o(.text.reset) refers to display.o(.text.display_update) for display_update
+    errorManager.o(.ARM.exidx.text.reset) refers to errorManager.o(.text.reset) for [Anonymous Symbol]
+    led_control.o(.text.ledNextStep) refers to led_control.o(.bss.nextStepCounter) for nextStepCounter
+    led_control.o(.ARM.exidx.text.ledNextStep) refers to led_control.o(.text.ledNextStep) for [Anonymous Symbol]
+    led_control.o(.text.ledReset) refers to led_control.o(.bss.nextStepCounter) for nextStepCounter
+    led_control.o(.ARM.exidx.text.ledReset) refers to led_control.o(.text.ledReset) for [Anonymous Symbol]
+    led_control.o(.ARM.exidx.text.ledDirection) refers to led_control.o(.text.ledDirection) for [Anonymous Symbol]
+    led_control.o(.ARM.exidx.text.ledError) refers to led_control.o(.text.ledError) for [Anonymous Symbol]
     sqrt.o(i.__hardfp_sqrt) refers (Special) to iusefp.o(.text) for __I$use$fp
     sqrt.o(i.__hardfp_sqrt) refers to dsqrt.o(.text) for _dsqrt
     sqrt.o(i.__hardfp_sqrt) refers to errno.o(i.__set_errno) for __set_errno
@@ -1607,6 +1534,12 @@ Section Cross References
     printfa.o(i._printf_pre_padding) refers (Special) to iusefp.o(.text) for __I$use$fp
     printfa.o(i._snputc) refers (Special) to iusefp.o(.text) for __I$use$fp
     printfa.o(i._sputc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dadd.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dadd.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    dadd.o(.text) refers to llsshr.o(.text) for __aeabi_lasr
+    dadd.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    ddiv.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    ddiv.o(.text) refers to depilogue.o(.text) for _double_round
     dfltui.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
     dfltui.o(.text) refers to depilogue.o(.text) for _double_epilogue
     dfixi.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
@@ -1628,14 +1561,8 @@ Section Cross References
     depilogue.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
     depilogue.o(.text) refers to llshl.o(.text) for __aeabi_llsl
     depilogue.o(.text) refers to llushr.o(.text) for __aeabi_llsr
-    dadd.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
-    dadd.o(.text) refers to llshl.o(.text) for __aeabi_llsl
-    dadd.o(.text) refers to llsshr.o(.text) for __aeabi_lasr
-    dadd.o(.text) refers to depilogue.o(.text) for _double_epilogue
     dmul.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
     dmul.o(.text) refers to depilogue.o(.text) for _double_epilogue
-    ddiv.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
-    ddiv.o(.text) refers to depilogue.o(.text) for _double_round
     dsqrt.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
     dsqrt.o(.text) refers to llushr.o(.text) for __aeabi_llsr
     dsqrt.o(.text) refers to depilogue.o(.text) for _double_round
@@ -2508,6 +2435,7 @@ Removing Unused input sections from the image.
     Removing fontsFLASH.o(.data.CourierNew48FLASH), (8 bytes).
     Removing fontsFLASH.o(.data.CourierNewBold40FLASH), (8 bytes).
     Removing fontsFLASH.o(.data.CourierNewBold60FLASH), (8 bytes).
+    Removing fontsFLASH.o(.data.Consolas40FLASH), (8 bytes).
     Removing fontsFLASH.o(.data.Consolas60FLASH), (8 bytes).
     Removing fontsFLASH.o(.data.Consolas80FLASH), (8 bytes).
     Removing fontsFLASH.o(.data.Consolas90FLASH), (8 bytes).
@@ -2542,7 +2470,9 @@ Removing Unused input sections from the image.
     Removing LCD_Driver.o(.ARM.exidx.text.LCD_WriteLine), (8 bytes).
     Removing LCD_GUI.o(.text), (0 bytes).
     Removing LCD_GUI.o(.ARM.exidx.text.GUI_init), (8 bytes).
+    Removing LCD_GUI.o(.text.GUI_clear), (20 bytes).
     Removing LCD_GUI.o(.ARM.exidx.text.GUI_clear), (8 bytes).
+    Removing LCD_GUI.o(.text.GUI_drawPoint), (242 bytes).
     Removing LCD_GUI.o(.ARM.exidx.text.GUI_drawPoint), (8 bytes).
     Removing LCD_GUI.o(.ARM.exidx.text.GUI_drawRectangle), (8 bytes).
     Removing LCD_GUI.o(.ARM.exidx.text.GUI_disChar), (8 bytes).
@@ -2565,16 +2495,23 @@ Removing Unused input sections from the image.
     Removing LCD_Touch.o(.ARM.exidx.text.TP_Adjust), (8 bytes).
     Removing LCD_Touch.o(.text.TP_DrawCross), (66 bytes).
     Removing LCD_Touch.o(.ARM.exidx.text.TP_DrawCross), (8 bytes).
+    Removing LCD_Touch.o(.text.TP_pressed), (8 bytes).
     Removing LCD_Touch.o(.ARM.exidx.text.TP_pressed), (8 bytes).
     Removing LCD_Touch.o(.text.TP_ShowInfo), (694 bytes).
     Removing LCD_Touch.o(.ARM.exidx.text.TP_ShowInfo), (8 bytes).
     Removing LCD_Touch.o(.ARM.exidx.text.TP_InitBasic), (8 bytes).
     Removing LCD_Touch.o(.ARM.exidx.text.TP_SetDefaultCalibration), (8 bytes).
+    Removing LCD_Touch.o(.text.TP_Scan), (252 bytes).
     Removing LCD_Touch.o(.ARM.exidx.text.TP_Scan), (8 bytes).
+    Removing LCD_Touch.o(.text.TP_get), (28 bytes).
     Removing LCD_Touch.o(.ARM.exidx.text.TP_get), (8 bytes).
+    Removing LCD_Touch.o(.text.TP_Read_TwiceADC), (244 bytes).
     Removing LCD_Touch.o(.ARM.exidx.text.TP_Read_TwiceADC), (8 bytes).
+    Removing LCD_Touch.o(.text.TP_Read_ADC_XY), (32 bytes).
     Removing LCD_Touch.o(.ARM.exidx.text.TP_Read_ADC_XY), (8 bytes).
+    Removing LCD_Touch.o(.text.TP_Read_ADC_Average), (296 bytes).
     Removing LCD_Touch.o(.ARM.exidx.text.TP_Read_ADC_Average), (8 bytes).
+    Removing LCD_Touch.o(.text.TP_Read_ADC), (110 bytes).
     Removing LCD_Touch.o(.ARM.exidx.text.TP_Read_ADC), (8 bytes).
     Removing LCD_Touch.o(.rodata.Cross), (100 bytes).
     Removing LCD_Touch.o(.rodata.cst16), (16 bytes).
@@ -2584,11 +2521,14 @@ Removing Unused input sections from the image.
     Removing LCD_SPI.o(.ARM.exidx.text.SPIinit), (8 bytes).
     Removing LCD_SPI.o(.ARM.exidx.text.SPIInitGPIOsWithoutHAL), (8 bytes).
     Removing LCD_SPI.o(.ARM.exidx.text.SPIInitDevWithoutHAL), (8 bytes).
+    Removing LCD_SPI.o(.text.SPIsetTPSpeed), (74 bytes).
     Removing LCD_SPI.o(.ARM.exidx.text.SPIsetTPSpeed), (8 bytes).
+    Removing LCD_SPI.o(.text.SPIsetLCDSpeed), (10 bytes).
     Removing LCD_SPI.o(.ARM.exidx.text.SPIsetLCDSpeed), (8 bytes).
     Removing LCD_SPI.o(.ARM.exidx.text.SPI4W_Write_Byte), (8 bytes).
     Removing LCD_SPI.o(.ARM.exidx.text.save_restore_AltFn_SPI1_MOSI_Pin), (8 bytes).
     Removing LCD_SPI.o(.ARM.exidx.text.check_SPI_SR), (8 bytes).
+    Removing LCD_SPI.o(.text.SPI4W_Read_Byte), (10 bytes).
     Removing LCD_SPI.o(.ARM.exidx.text.SPI4W_Read_Byte), (8 bytes).
     Removing LCD_GPIO.o(.text), (0 bytes).
     Removing LCD_GPIO.o(.ARM.exidx.text.GPIO_Init), (8 bytes).
@@ -2645,7 +2585,6 @@ Removing Unused input sections from the image.
     Removing lcd.o(.ARM.exidx.text.lcdPrintReplS), (8 bytes).
     Removing lcd.o(.text.lcdPrintInt), (34 bytes).
     Removing lcd.o(.ARM.exidx.text.lcdPrintInt), (8 bytes).
-    Removing lcd.o(.text.lcdPrintlnS), (84 bytes).
     Removing lcd.o(.ARM.exidx.text.lcdPrintlnS), (8 bytes).
     Removing lcd.o(.text.lcdPrintC), (222 bytes).
     Removing lcd.o(.ARM.exidx.text.lcdPrintC), (8 bytes).
@@ -2661,27 +2600,41 @@ Removing Unused input sections from the image.
     Removing init.o(.text.initLCDTouch), (30 bytes).
     Removing init.o(.ARM.exidx.text.initLCDTouch), (8 bytes).
     Removing terminal.o(.text), (0 bytes).
+    Removing terminal.o(.text.genTerm), (200 bytes).
     Removing terminal.o(.ARM.exidx.text.genTerm), (8 bytes).
+    Removing terminal.o(.text.clearTerm), (40 bytes).
     Removing terminal.o(.ARM.exidx.text.clearTerm), (8 bytes).
+    Removing terminal.o(.text.setTextColorTerm), (20 bytes).
     Removing terminal.o(.ARM.exidx.text.setTextColorTerm), (8 bytes).
     Removing terminal.o(.text.setPosTerm), (80 bytes).
     Removing terminal.o(.ARM.exidx.text.setPosTerm), (8 bytes).
+    Removing terminal.o(.text.printChar), (156 bytes).
     Removing terminal.o(.ARM.exidx.text.printChar), (8 bytes).
+    Removing terminal.o(.text.printTerm), (60 bytes).
     Removing terminal.o(.ARM.exidx.text.printTerm), (8 bytes).
+    Removing terminal.o(.text.printNewLine), (32 bytes).
     Removing terminal.o(.ARM.exidx.text.printNewLine), (8 bytes).
     Removing terminal.o(.text.getCurRow), (12 bytes).
     Removing terminal.o(.ARM.exidx.text.getCurRow), (8 bytes).
     Removing terminal.o(.text.getNoOfRows), (12 bytes).
     Removing terminal.o(.ARM.exidx.text.getNoOfRows), (8 bytes).
+    Removing terminal.o(.rodata.str1.1), (84 bytes).
     Removing keypad.o(.text), (0 bytes).
+    Removing keypad.o(.text.makeKeyPad), (210 bytes).
     Removing keypad.o(.ARM.exidx.text.makeKeyPad), (8 bytes).
+    Removing keypad.o(.text.printButton), (582 bytes).
     Removing keypad.o(.ARM.exidx.text.printButton), (8 bytes).
+    Removing keypad.o(.text.getKeyPadInput), (100 bytes).
     Removing keypad.o(.ARM.exidx.text.getKeyPadInput), (8 bytes).
+    Removing keypad.o(.text.selectButton), (362 bytes).
     Removing keypad.o(.ARM.exidx.text.selectButton), (8 bytes).
     Removing keypad.o(.text.testKeyPad), (342 bytes).
     Removing keypad.o(.ARM.exidx.text.testKeyPad), (8 bytes).
+    Removing keypad.o(.text.getValidButton), (64 bytes).
     Removing keypad.o(.ARM.exidx.text.getValidButton), (8 bytes).
+    Removing keypad.o(.text.touchCoordinateToKey), (234 bytes).
     Removing keypad.o(.ARM.exidx.text.touchCoordinateToKey), (8 bytes).
+    Removing keypad.o(.rodata.keypad), (336 bytes).
     Removing keypad.o(.rodata.cst4), (8 bytes).
     Removing keypad.o(.rodata.str1.1), (101 bytes).
     Removing delay.o(.text), (0 bytes).
@@ -2734,58 +2687,28 @@ Removing Unused input sections from the image.
     Removing main.o(.text), (0 bytes).
     Removing main.o(.ARM.exidx.text.main), (8 bytes).
     Removing main.o(.ARM.use_no_argv), (4 bytes).
-    Removing calculate.o(.text), (0 bytes).
-    Removing calculate.o(.ARM.exidx.text.safe_add), (8 bytes).
-    Removing calculate.o(.ARM.exidx.text.add), (8 bytes).
-    Removing calculate.o(.ARM.exidx.text.safe_substract), (8 bytes).
-    Removing calculate.o(.ARM.exidx.text.subtract), (8 bytes).
-    Removing calculate.o(.ARM.exidx.text.safe_multiply), (8 bytes).
-    Removing calculate.o(.ARM.exidx.text.multiply), (8 bytes).
-    Removing calculate.o(.ARM.exidx.text.safe_divide), (8 bytes).
-    Removing calculate.o(.ARM.exidx.text.divide), (8 bytes).
     Removing display.o(.text), (0 bytes).
-    Removing display.o(.ARM.exidx.text.clearStdout), (8 bytes).
-    Removing display.o(.ARM.exidx.text.clearEchoTerm), (8 bytes).
-    Removing display.o(.ARM.exidx.text.printStdout), (8 bytes).
-    Removing display.o(.ARM.exidx.text.initDisplay), (8 bytes).
-    Removing display.o(.ARM.exidx.text.printToEchoLine), (8 bytes).
-    Removing display.o(.ARM.exidx.text.setErrMode), (8 bytes).
-    Removing display.o(.text.setNormalMode), (30 bytes).
-    Removing display.o(.ARM.exidx.text.setNormalMode), (8 bytes).
-    Removing display.o(.text.isBottomLine), (46 bytes).
-    Removing display.o(.ARM.exidx.text.isBottomLine), (8 bytes).
-    Removing operations.o(.text), (0 bytes).
-    Removing operations.o(.ARM.exidx.text.p), (8 bytes).
-    Removing operations.o(.ARM.exidx.text.P), (8 bytes).
-    Removing operations.o(.ARM.exidx.text.C), (8 bytes).
-    Removing operations.o(.ARM.exidx.text.d), (8 bytes).
-    Removing operations.o(.ARM.exidx.text.r), (8 bytes).
-    Removing scanner.o(.text), (0 bytes).
-    Removing scanner.o(.ARM.exidx.text.nextToken), (8 bytes).
-    Removing scanner.o(.ARM.exidx.text.nextChar), (8 bytes).
-    Removing scanner.o(.rodata.cst8), (8 bytes).
-    Removing stack.o(.text), (0 bytes).
-    Removing stack.o(.ARM.exidx.text.isEmpty), (8 bytes).
-    Removing stack.o(.ARM.exidx.text.peek), (8 bytes).
-    Removing stack.o(.ARM.exidx.text.push), (8 bytes).
-    Removing stack.o(.ARM.exidx.text.pop), (8 bytes).
-    Removing stack.o(.ARM.exidx.text.getStackSize), (8 bytes).
-    Removing stack.o(.ARM.exidx.text.clearStack), (8 bytes).
-    Removing toString.o(.text), (0 bytes).
-    Removing toString.o(.ARM.exidx.text.intToString), (8 bytes).
-    Removing errorhaendler.o(.text), (0 bytes).
-    Removing errorhaendler.o(.ARM.exidx.text.displayError), (8 bytes).
-    Removing dfltui.o(.text), (26 bytes).
+    Removing display.o(.ARM.exidx.text.display_update), (8 bytes).
+    Removing display.o(.ARM.exidx.text.display_error), (8 bytes).
+    Removing encoder.o(.text), (0 bytes).
+    Removing encoder.o(.ARM.exidx.text.givePinA), (8 bytes).
+    Removing encoder.o(.ARM.exidx.text.givePinB), (8 bytes).
+    Removing encoder.o(.ARM.exidx.text.getPhase), (8 bytes).
+    Removing encoder.o(.ARM.exidx.text.getDirection), (8 bytes).
+    Removing errorManager.o(.text), (0 bytes).
+    Removing errorManager.o(.ARM.exidx.text.reset), (8 bytes).
+    Removing led_control.o(.text), (0 bytes).
+    Removing led_control.o(.ARM.exidx.text.ledNextStep), (8 bytes).
+    Removing led_control.o(.ARM.exidx.text.ledReset), (8 bytes).
+    Removing led_control.o(.ARM.exidx.text.ledDirection), (8 bytes).
+    Removing led_control.o(.ARM.exidx.text.ledError), (8 bytes).
     Removing dfixi.o(.text), (62 bytes).
-    Removing depilogue.o(.text), (186 bytes).
-    Removing dadd.o(.text), (334 bytes).
     Removing dmul.o(.text), (228 bytes).
-    Removing ddiv.o(.text), (222 bytes).
     Removing dsqrt.o(.text), (162 bytes).
     Removing dfixul.o(.text), (48 bytes).
     Removing cdrcmple.o(.text), (48 bytes).
 
-1134 unused section(s) (total 782987 bytes) removed from the image.
+1130 unused section(s) (total 785705 bytes) removed from the image.
 
 ==============================================================================
 
@@ -2864,13 +2787,13 @@ Image Symbol Table
     LCD_Tools.c                              0x00000000   Number         0  LCD_Tools.o ABSOLUTE
     LCD_Touch.c                              0x00000000   Number         0  LCD_Touch.o ABSOLUTE
     USART_STM32F4xx.c                        0x00000000   Number         0  USART_STM32F4xx.o ABSOLUTE
-    calculate.c                              0x00000000   Number         0  calculate.o ABSOLUTE
     cdrcmple.s                               0x00000000   Number         0  cdrcmple.o ABSOLUTE
     dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
     delay.c                                  0x00000000   Number         0  delay.o ABSOLUTE
     display.c                                0x00000000   Number         0  display.o ABSOLUTE
+    encoder.c                                0x00000000   Number         0  encoder.o ABSOLUTE
     error.c                                  0x00000000   Number         0  error.o ABSOLUTE
-    errorhaendler.c                          0x00000000   Number         0  errorhaendler.o ABSOLUTE
+    errorManager.c                           0x00000000   Number         0  errorManager.o ABSOLUTE
     font12.c                                 0x00000000   Number         0  font12.o ABSOLUTE
     font16.c                                 0x00000000   Number         0  font16.o ABSOLUTE
     font20.c                                 0x00000000   Number         0  font20.o ABSOLUTE
@@ -2882,10 +2805,8 @@ Image Symbol Table
     init.s                                   0x00000000   Number         0  init.o ABSOLUTE
     keypad.c                                 0x00000000   Number         0  keypad.o ABSOLUTE
     lcd.c                                    0x00000000   Number         0  lcd.o ABSOLUTE
+    led_control.c                            0x00000000   Number         0  led_control.o ABSOLUTE
     main.c                                   0x00000000   Number         0  main.o ABSOLUTE
-    operations.c                             0x00000000   Number         0  operations.o ABSOLUTE
-    scanner.c                                0x00000000   Number         0  scanner.o ABSOLUTE
-    stack.c                                  0x00000000   Number         0  stack.o ABSOLUTE
     stdinout_USART.c                         0x00000000   Number         0  stdinout_USART.o ABSOLUTE
     stm32f4xx_hal.c                          0x00000000   Number         0  stm32f4xx_hal.o ABSOLUTE
     stm32f4xx_hal_cortex.c                   0x00000000   Number         0  stm32f4xx_hal_cortex.o ABSOLUTE
@@ -2904,7 +2825,6 @@ Image Symbol Table
     terminal.c                               0x00000000   Number         0  terminal.o ABSOLUTE
     testsoftware.c                           0x00000000   Number         0  testsoftware.o ABSOLUTE
     timer.c                                  0x00000000   Number         0  timer.o ABSOLUTE
-    toString.c                               0x00000000   Number         0  toString.o ABSOLUTE
     RESET                                    0x08000000   Section      428  startup_stm32f429xx.o(RESET)
     .ARM.Collect$$$$00000000                 0x080001ac   Section        0  entry.o(.ARM.Collect$$$$00000000)
     .ARM.Collect$$$$00000001                 0x080001ac   Section        4  entry2.o(.ARM.Collect$$$$00000001)
@@ -2922,325 +2842,265 @@ Image Symbol Table
     .text                                    0x08000246   Section        0  ldiv.o(.text)
     .text                                    0x080002a8   Section        0  memseta.o(.text)
     .text                                    0x080002cc   Section        0  strlen.o(.text)
-    .text                                    0x080002da   Section        0  llshl.o(.text)
-    .text                                    0x080002f8   Section        0  llushr.o(.text)
-    .text                                    0x08000318   Section       48  init.o(.text)
-    [Anonymous Symbol]                       0x08000348   Section        0  stm32f4xx_it.o(.text.BusFault_Handler)
-    [Anonymous Symbol]                       0x0800034c   Section        0  operations.o(.text.C)
-    [Anonymous Symbol]                       0x08000354   Section        0  stm32f4xx_it.o(.text.DebugMon_Handler)
-    [Anonymous Symbol]                       0x08000358   Section        0  LCD_Tools.o(.text.Driver_Delay_ms)
-    [Anonymous Symbol]                       0x08000368   Section        0  LCD_Tools.o(.text.Driver_Delay_us)
-    [Anonymous Symbol]                       0x08000388   Section        0  stm32f4xx_it.o(.text.ETH_IRQHandler)
-    Enable_GPIO_Clock                        0x08000399   Thumb Code   474  USART_STM32F4xx.o(.text.Enable_GPIO_Clock)
-    [Anonymous Symbol]                       0x08000398   Section        0  USART_STM32F4xx.o(.text.Enable_GPIO_Clock)
-    [Anonymous Symbol]                       0x08000574   Section        0  error.o(.text.Error_Handler)
-    [Anonymous Symbol]                       0x0800065c   Section        0  LCD_GPIO.o(.text.GPIO_Init)
-    [Anonymous Symbol]                       0x08000664   Section        0  LCD_GUI.o(.text.GUI_clear)
-    [Anonymous Symbol]                       0x08000678   Section        0  LCD_GUI.o(.text.GUI_disChar)
-    [Anonymous Symbol]                       0x08000734   Section        0  LCD_GUI.o(.text.GUI_disNum)
-    [Anonymous Symbol]                       0x0800079c   Section        0  LCD_GUI.o(.text.GUI_disStr)
-    [Anonymous Symbol]                       0x080008b0   Section        0  LCD_GUI.o(.text.GUI_drawPoint)
-    [Anonymous Symbol]                       0x080009a4   Section        0  LCD_GUI.o(.text.GUI_drawRectangle)
-    [Anonymous Symbol]                       0x08000b50   Section        0  LCD_GUI.o(.text.GUI_init)
-    [Anonymous Symbol]                       0x08000b6c   Section        0  stm32f4xx_hal_dma.o(.text.HAL_DMA_Abort)
-    [Anonymous Symbol]                       0x08000c58   Section        0  stm32f4xx_hal.o(.text.HAL_Delay)
-    [Anonymous Symbol]                       0x08000c9c   Section        0  stm32f4xx_hal_eth.o(.text.HAL_ETH_ErrorCallback)
-    [Anonymous Symbol]                       0x08000ca4   Section        0  stm32f4xx_hal_eth.o(.text.HAL_ETH_IRQHandler)
-    [Anonymous Symbol]                       0x08000d68   Section        0  stm32f4xx_hal_eth.o(.text.HAL_ETH_RxCpltCallback)
-    [Anonymous Symbol]                       0x08000d70   Section        0  stm32f4xx_hal_eth.o(.text.HAL_ETH_TxCpltCallback)
-    [Anonymous Symbol]                       0x08000d78   Section        0  stm32f4xx_hal_gpio.o(.text.HAL_GPIO_DeInit)
-    [Anonymous Symbol]                       0x08000fd4   Section        0  stm32f4xx_hal_gpio.o(.text.HAL_GPIO_Init)
-    [Anonymous Symbol]                       0x080013c4   Section        0  stm32f4xx_hal_gpio.o(.text.HAL_GPIO_ReadPin)
-    [Anonymous Symbol]                       0x080013f4   Section        0  stm32f4xx_hal_gpio.o(.text.HAL_GPIO_TogglePin)
-    [Anonymous Symbol]                       0x08001428   Section        0  stm32f4xx_hal_gpio.o(.text.HAL_GPIO_WritePin)
-    [Anonymous Symbol]                       0x08001458   Section        0  stm32f4xx_hal.o(.text.HAL_GetTick)
-    [Anonymous Symbol]                       0x08001464   Section        0  stm32f4xx_hal.o(.text.HAL_IncTick)
-    [Anonymous Symbol]                       0x08001480   Section        0  stm32f4xx_hal.o(.text.HAL_Init)
-    [Anonymous Symbol]                       0x080014b0   Section        0  stm32f4xx_hal.o(.text.HAL_InitTick)
-    [Anonymous Symbol]                       0x08001520   Section        0  stm32f4xx_hal.o(.text.HAL_MspInit)
-    [Anonymous Symbol]                       0x08001524   Section        0  stm32f4xx_hal_cortex.o(.text.HAL_NVIC_DisableIRQ)
-    [Anonymous Symbol]                       0x08001538   Section        0  stm32f4xx_hal_cortex.o(.text.HAL_NVIC_SetPriority)
-    [Anonymous Symbol]                       0x0800156c   Section        0  stm32f4xx_hal_cortex.o(.text.HAL_NVIC_SetPriorityGrouping)
-    [Anonymous Symbol]                       0x0800157c   Section        0  stm32f4xx_hal_pwr_ex.o(.text.HAL_PWREx_EnableOverDrive)
-    [Anonymous Symbol]                       0x0800163c   Section        0  stm32f4xx_hal_rcc.o(.text.HAL_RCC_ClockConfig)
-    [Anonymous Symbol]                       0x080018a0   Section        0  stm32f4xx_hal_rcc.o(.text.HAL_RCC_GetHCLKFreq)
-    [Anonymous Symbol]                       0x080018ac   Section        0  stm32f4xx_hal_rcc.o(.text.HAL_RCC_GetPCLK1Freq)
-    [Anonymous Symbol]                       0x080018d0   Section        0  stm32f4xx_hal_rcc.o(.text.HAL_RCC_GetSysClockFreq)
-    [Anonymous Symbol]                       0x080019b8   Section        0  stm32f4xx_hal_rcc.o(.text.HAL_RCC_OscConfig)
-    [Anonymous Symbol]                       0x0800205c   Section        0  stm32f4xx_hal_cortex.o(.text.HAL_SYSTICK_Config)
-    [Anonymous Symbol]                       0x0800206c   Section        0  stm32f4xx_hal_tim_ex.o(.text.HAL_TIMEx_MasterConfigSynchronization)
-    HAL_TIM_MspPostInit                      0x08002191   Thumb Code    72  LCD_TIM.o(.text.HAL_TIM_MspPostInit)
-    [Anonymous Symbol]                       0x08002190   Section        0  LCD_TIM.o(.text.HAL_TIM_MspPostInit)
-    [Anonymous Symbol]                       0x080021d8   Section        0  stm32f4xx_hal_tim.o(.text.HAL_TIM_PWM_ConfigChannel)
-    [Anonymous Symbol]                       0x0800231c   Section        0  stm32f4xx_hal_tim.o(.text.HAL_TIM_PWM_Init)
-    [Anonymous Symbol]                       0x08002374   Section        0  LCD_TIM.o(.text.HAL_TIM_PWM_MspInit)
-    [Anonymous Symbol]                       0x080023b4   Section        0  stm32f4xx_hal_tim.o(.text.HAL_TIM_PWM_Start)
-    [Anonymous Symbol]                       0x08002434   Section        0  stm32f4xx_it.o(.text.HardFault_Handler)
-    [Anonymous Symbol]                       0x08002438   Section        0  LCD_Tools.o(.text.LCDErrHandler)
-    LCD_Reset                                0x080024f1   Thumb Code    74  LCD_Driver.o(.text.LCD_Reset)
-    [Anonymous Symbol]                       0x080024f0   Section        0  LCD_Driver.o(.text.LCD_Reset)
-    LCD_SetBackLight                         0x0800253d   Thumb Code    20  LCD_Driver.o(.text.LCD_SetBackLight)
-    [Anonymous Symbol]                       0x0800253c   Section        0  LCD_Driver.o(.text.LCD_SetBackLight)
-    LCD_SetGramScanWay                       0x08002551   Thumb Code    34  LCD_Driver.o(.text.LCD_SetGramScanWay)
-    [Anonymous Symbol]                       0x08002550   Section        0  LCD_Driver.o(.text.LCD_SetGramScanWay)
-    LCD_WriteCMD                             0x08002575   Thumb Code    72  LCD_Driver.o(.text.LCD_WriteCMD)
-    [Anonymous Symbol]                       0x08002574   Section        0  LCD_Driver.o(.text.LCD_WriteCMD)
-    LCD_WriteCMDList                         0x080025bd   Thumb Code    86  LCD_Driver.o(.text.LCD_WriteCMDList)
-    [Anonymous Symbol]                       0x080025bc   Section        0  LCD_Driver.o(.text.LCD_WriteCMDList)
-    LCD_WriteParam                           0x08002615   Thumb Code    22  LCD_Driver.o(.text.LCD_WriteParam)
-    [Anonymous Symbol]                       0x08002614   Section        0  LCD_Driver.o(.text.LCD_WriteParam)
-    LCD_WriteParameters                      0x0800262d   Thumb Code   112  LCD_Driver.o(.text.LCD_WriteParameters)
-    [Anonymous Symbol]                       0x0800262c   Section        0  LCD_Driver.o(.text.LCD_WriteParameters)
-    [Anonymous Symbol]                       0x0800269c   Section        0  LCD_Driver.o(.text.LCD_clear)
-    [Anonymous Symbol]                       0x080026c0   Section        0  LCD_Driver.o(.text.LCD_fillRectangleBW)
-    [Anonymous Symbol]                       0x08002850   Section        0  LCD_Driver.o(.text.LCD_fillRectangleMC)
-    [Anonymous Symbol]                       0x0800291c   Section        0  LCD_Driver.o(.text.LCD_init)
-    LCD_setWindow                            0x0800298d   Thumb Code    88  LCD_Driver.o(.text.LCD_setWindow)
-    [Anonymous Symbol]                       0x0800298c   Section        0  LCD_Driver.o(.text.LCD_setWindow)
-    MX_GPIO_Init                             0x080029e5   Thumb Code   414  LCD_GPIO.o(.text.MX_GPIO_Init)
-    [Anonymous Symbol]                       0x080029e4   Section        0  LCD_GPIO.o(.text.MX_GPIO_Init)
-    MX_TIM4_Init                             0x08002b85   Thumb Code   170  LCD_TIM.o(.text.MX_TIM4_Init)
-    [Anonymous Symbol]                       0x08002b84   Section        0  LCD_TIM.o(.text.MX_TIM4_Init)
-    [Anonymous Symbol]                       0x08002c30   Section        0  stm32f4xx_it.o(.text.MemManage_Handler)
-    [Anonymous Symbol]                       0x08002c34   Section        0  stm32f4xx_it.o(.text.NMI_Handler)
-    NVIC_EncodePriority                      0x08002c39   Thumb Code   108  stm32f4xx_hal_cortex.o(.text.NVIC_EncodePriority)
-    [Anonymous Symbol]                       0x08002c38   Section        0  stm32f4xx_hal_cortex.o(.text.NVIC_EncodePriority)
-    [Anonymous Symbol]                       0x08002ca4   Section        0  operations.o(.text.P)
-    [Anonymous Symbol]                       0x08002d3c   Section        0  LCD_TIM.o(.text.PWM_SetValue)
-    [Anonymous Symbol]                       0x08002d74   Section        0  stm32f4xx_it.o(.text.PendSV_Handler)
-    [Anonymous Symbol]                       0x08002d78   Section        0  LCD_SPI.o(.text.SPI4W_Read_Byte)
-    [Anonymous Symbol]                       0x08002d84   Section        0  LCD_SPI.o(.text.SPI4W_Write_Byte)
-    SPIInitDevWithoutHAL                     0x08002e3d   Thumb Code    76  LCD_SPI.o(.text.SPIInitDevWithoutHAL)
-    [Anonymous Symbol]                       0x08002e3c   Section        0  LCD_SPI.o(.text.SPIInitDevWithoutHAL)
-    SPIInitGPIOsWithoutHAL                   0x08002e89   Thumb Code   218  LCD_SPI.o(.text.SPIInitGPIOsWithoutHAL)
-    [Anonymous Symbol]                       0x08002e88   Section        0  LCD_SPI.o(.text.SPIInitGPIOsWithoutHAL)
-    [Anonymous Symbol]                       0x08002f64   Section        0  LCD_SPI.o(.text.SPIinit)
-    [Anonymous Symbol]                       0x08002f74   Section        0  LCD_SPI.o(.text.SPIsetLCDSpeed)
-    [Anonymous Symbol]                       0x08002f80   Section        0  LCD_SPI.o(.text.SPIsetTPSpeed)
-    [Anonymous Symbol]                       0x08002fcc   Section        0  stm32f4xx_it.o(.text.SVC_Handler)
-    SysTick_Config                           0x08002fd1   Thumb Code    82  stm32f4xx_hal_cortex.o(.text.SysTick_Config)
-    [Anonymous Symbol]                       0x08002fd0   Section        0  stm32f4xx_hal_cortex.o(.text.SysTick_Config)
-    [Anonymous Symbol]                       0x08003024   Section        0  stm32f4xx_it.o(.text.SysTick_Handler)
-    SystemClock_Config                       0x0800302d   Thumb Code   184  init.o(.text.SystemClock_Config)
-    [Anonymous Symbol]                       0x0800302c   Section        0  init.o(.text.SystemClock_Config)
-    [Anonymous Symbol]                       0x080030e4   Section        0  system_stm32f4xx.o(.text.SystemInit)
-    [Anonymous Symbol]                       0x08003154   Section        0  LCD_TIM.o(.text.TIM4_Init)
-    [Anonymous Symbol]                       0x0800315c   Section        0  stm32f4xx_hal_tim.o(.text.TIM_Base_SetConfig)
-    [Anonymous Symbol]                       0x080032f8   Section        0  stm32f4xx_hal_tim.o(.text.TIM_CCxChannelCmd)
-    TIM_OC1_SetConfig                        0x08003331   Thumb Code   234  stm32f4xx_hal_tim.o(.text.TIM_OC1_SetConfig)
-    [Anonymous Symbol]                       0x08003330   Section        0  stm32f4xx_hal_tim.o(.text.TIM_OC1_SetConfig)
-    [Anonymous Symbol]                       0x0800341c   Section        0  stm32f4xx_hal_tim.o(.text.TIM_OC2_SetConfig)
-    TIM_OC3_SetConfig                        0x08003511   Thumb Code   242  stm32f4xx_hal_tim.o(.text.TIM_OC3_SetConfig)
-    [Anonymous Symbol]                       0x08003510   Section        0  stm32f4xx_hal_tim.o(.text.TIM_OC3_SetConfig)
-    TIM_OC4_SetConfig                        0x08003605   Thumb Code   164  stm32f4xx_hal_tim.o(.text.TIM_OC4_SetConfig)
-    [Anonymous Symbol]                       0x08003604   Section        0  stm32f4xx_hal_tim.o(.text.TIM_OC4_SetConfig)
-    [Anonymous Symbol]                       0x080036a8   Section        0  LCD_Touch.o(.text.TP_InitBasic)
-    TP_Read_ADC                              0x080036dd   Thumb Code   110  LCD_Touch.o(.text.TP_Read_ADC)
-    [Anonymous Symbol]                       0x080036dc   Section        0  LCD_Touch.o(.text.TP_Read_ADC)
-    TP_Read_ADC_Average                      0x0800374d   Thumb Code   296  LCD_Touch.o(.text.TP_Read_ADC_Average)
-    [Anonymous Symbol]                       0x0800374c   Section        0  LCD_Touch.o(.text.TP_Read_ADC_Average)
-    TP_Read_ADC_XY                           0x08003875   Thumb Code    32  LCD_Touch.o(.text.TP_Read_ADC_XY)
-    [Anonymous Symbol]                       0x08003874   Section        0  LCD_Touch.o(.text.TP_Read_ADC_XY)
-    TP_Read_TwiceADC                         0x08003895   Thumb Code   244  LCD_Touch.o(.text.TP_Read_TwiceADC)
-    [Anonymous Symbol]                       0x08003894   Section        0  LCD_Touch.o(.text.TP_Read_TwiceADC)
-    TP_Scan                                  0x08003989   Thumb Code   244  LCD_Touch.o(.text.TP_Scan)
-    [Anonymous Symbol]                       0x08003988   Section        0  LCD_Touch.o(.text.TP_Scan)
-    TP_SetDefaultCalibration                 0x08003a85   Thumb Code    42  LCD_Touch.o(.text.TP_SetDefaultCalibration)
-    [Anonymous Symbol]                       0x08003a84   Section        0  LCD_Touch.o(.text.TP_SetDefaultCalibration)
-    [Anonymous Symbol]                       0x08003ab0   Section        0  LCD_Touch.o(.text.TP_get)
-    [Anonymous Symbol]                       0x08003acc   Section        0  LCD_Touch.o(.text.TP_pressed)
-    USART3_Control                           0x08003ad5   Thumb Code    28  USART_STM32F4xx.o(.text.USART3_Control)
-    [Anonymous Symbol]                       0x08003ad4   Section        0  USART_STM32F4xx.o(.text.USART3_Control)
-    USART3_GetCapabilities                   0x08003af1   Thumb Code    24  USART_STM32F4xx.o(.text.USART3_GetCapabilities)
-    [Anonymous Symbol]                       0x08003af0   Section        0  USART_STM32F4xx.o(.text.USART3_GetCapabilities)
-    USART3_GetModemStatus                    0x08003b09   Thumb Code    24  USART_STM32F4xx.o(.text.USART3_GetModemStatus)
-    [Anonymous Symbol]                       0x08003b08   Section        0  USART_STM32F4xx.o(.text.USART3_GetModemStatus)
-    USART3_GetRxCount                        0x08003b21   Thumb Code    16  USART_STM32F4xx.o(.text.USART3_GetRxCount)
-    [Anonymous Symbol]                       0x08003b20   Section        0  USART_STM32F4xx.o(.text.USART3_GetRxCount)
-    USART3_GetStatus                         0x08003b31   Thumb Code    24  USART_STM32F4xx.o(.text.USART3_GetStatus)
-    [Anonymous Symbol]                       0x08003b30   Section        0  USART_STM32F4xx.o(.text.USART3_GetStatus)
-    USART3_GetTxCount                        0x08003b49   Thumb Code    16  USART_STM32F4xx.o(.text.USART3_GetTxCount)
-    [Anonymous Symbol]                       0x08003b48   Section        0  USART_STM32F4xx.o(.text.USART3_GetTxCount)
-    [Anonymous Symbol]                       0x08003b58   Section        0  USART_STM32F4xx.o(.text.USART3_IRQHandler)
-    USART3_Initialize                        0x08003b69   Thumb Code    24  USART_STM32F4xx.o(.text.USART3_Initialize)
-    [Anonymous Symbol]                       0x08003b68   Section        0  USART_STM32F4xx.o(.text.USART3_Initialize)
-    USART3_PowerControl                      0x08003b81   Thumb Code    28  USART_STM32F4xx.o(.text.USART3_PowerControl)
-    [Anonymous Symbol]                       0x08003b80   Section        0  USART_STM32F4xx.o(.text.USART3_PowerControl)
-    USART3_Receive                           0x08003b9d   Thumb Code    28  USART_STM32F4xx.o(.text.USART3_Receive)
-    [Anonymous Symbol]                       0x08003b9c   Section        0  USART_STM32F4xx.o(.text.USART3_Receive)
-    USART3_Send                              0x08003bb9   Thumb Code    28  USART_STM32F4xx.o(.text.USART3_Send)
-    [Anonymous Symbol]                       0x08003bb8   Section        0  USART_STM32F4xx.o(.text.USART3_Send)
-    USART3_SetModemControl                   0x08003bd5   Thumb Code    28  USART_STM32F4xx.o(.text.USART3_SetModemControl)
-    [Anonymous Symbol]                       0x08003bd4   Section        0  USART_STM32F4xx.o(.text.USART3_SetModemControl)
-    USART3_Transfer                          0x08003bf1   Thumb Code    32  USART_STM32F4xx.o(.text.USART3_Transfer)
-    [Anonymous Symbol]                       0x08003bf0   Section        0  USART_STM32F4xx.o(.text.USART3_Transfer)
-    USART3_Uninitialize                      0x08003c11   Thumb Code    16  USART_STM32F4xx.o(.text.USART3_Uninitialize)
-    [Anonymous Symbol]                       0x08003c10   Section        0  USART_STM32F4xx.o(.text.USART3_Uninitialize)
-    USART_Control                            0x08003c21   Thumb Code  3462  USART_STM32F4xx.o(.text.USART_Control)
-    [Anonymous Symbol]                       0x08003c20   Section        0  USART_STM32F4xx.o(.text.USART_Control)
-    USART_GetCapabilities                    0x080049a9   Thumb Code    16  USART_STM32F4xx.o(.text.USART_GetCapabilities)
-    [Anonymous Symbol]                       0x080049a8   Section        0  USART_STM32F4xx.o(.text.USART_GetCapabilities)
-    USART_GetModemStatus                     0x080049b9   Thumb Code   106  USART_STM32F4xx.o(.text.USART_GetModemStatus)
-    [Anonymous Symbol]                       0x080049b8   Section        0  USART_STM32F4xx.o(.text.USART_GetModemStatus)
-    USART_GetRxCount                         0x08004a25   Thumb Code    14  USART_STM32F4xx.o(.text.USART_GetRxCount)
-    [Anonymous Symbol]                       0x08004a24   Section        0  USART_STM32F4xx.o(.text.USART_GetRxCount)
-    USART_GetStatus                          0x08004a35   Thumb Code   212  USART_STM32F4xx.o(.text.USART_GetStatus)
-    [Anonymous Symbol]                       0x08004a34   Section        0  USART_STM32F4xx.o(.text.USART_GetStatus)
-    USART_GetTxCount                         0x08004b09   Thumb Code    14  USART_STM32F4xx.o(.text.USART_GetTxCount)
-    [Anonymous Symbol]                       0x08004b08   Section        0  USART_STM32F4xx.o(.text.USART_GetTxCount)
-    [Anonymous Symbol]                       0x08004b18   Section        0  USART_STM32F4xx.o(.text.USART_IRQHandler)
-    USART_Initialize                         0x08004f1d   Thumb Code   224  USART_STM32F4xx.o(.text.USART_Initialize)
-    [Anonymous Symbol]                       0x08004f1c   Section        0  USART_STM32F4xx.o(.text.USART_Initialize)
-    USART_PeripheralReset                    0x08004ffd   Thumb Code   588  USART_STM32F4xx.o(.text.USART_PeripheralReset)
-    [Anonymous Symbol]                       0x08004ffc   Section        0  USART_STM32F4xx.o(.text.USART_PeripheralReset)
-    USART_PowerControl                       0x08005249   Thumb Code  1118  USART_STM32F4xx.o(.text.USART_PowerControl)
-    [Anonymous Symbol]                       0x08005248   Section        0  USART_STM32F4xx.o(.text.USART_PowerControl)
-    USART_Receive                            0x080056a9   Thumb Code   228  USART_STM32F4xx.o(.text.USART_Receive)
-    [Anonymous Symbol]                       0x080056a8   Section        0  USART_STM32F4xx.o(.text.USART_Receive)
-    USART_Send                               0x0800578d   Thumb Code   182  USART_STM32F4xx.o(.text.USART_Send)
-    [Anonymous Symbol]                       0x0800578c   Section        0  USART_STM32F4xx.o(.text.USART_Send)
-    USART_SetModemControl                    0x08005845   Thumb Code   226  USART_STM32F4xx.o(.text.USART_SetModemControl)
-    [Anonymous Symbol]                       0x08005844   Section        0  USART_STM32F4xx.o(.text.USART_SetModemControl)
-    USART_Transfer                           0x08005929   Thumb Code   150  USART_STM32F4xx.o(.text.USART_Transfer)
-    [Anonymous Symbol]                       0x08005928   Section        0  USART_STM32F4xx.o(.text.USART_Transfer)
-    USART_Uninitialize                       0x080059c1   Thumb Code   192  USART_STM32F4xx.o(.text.USART_Uninitialize)
-    [Anonymous Symbol]                       0x080059c0   Section        0  USART_STM32F4xx.o(.text.USART_Uninitialize)
-    USARTx_GetVersion                        0x08005a81   Thumb Code    18  USART_STM32F4xx.o(.text.USARTx_GetVersion)
-    [Anonymous Symbol]                       0x08005a80   Section        0  USART_STM32F4xx.o(.text.USARTx_GetVersion)
-    [Anonymous Symbol]                       0x08005a94   Section        0  stm32f4xx_it.o(.text.UsageFault_Handler)
-    __NVIC_ClearPendingIRQ                   0x08005a99   Thumb Code    48  USART_STM32F4xx.o(.text.__NVIC_ClearPendingIRQ)
-    [Anonymous Symbol]                       0x08005a98   Section        0  USART_STM32F4xx.o(.text.__NVIC_ClearPendingIRQ)
-    __NVIC_DisableIRQ                        0x08005ac9   Thumb Code    56  stm32f4xx_hal_cortex.o(.text.__NVIC_DisableIRQ)
-    [Anonymous Symbol]                       0x08005ac8   Section        0  stm32f4xx_hal_cortex.o(.text.__NVIC_DisableIRQ)
-    __NVIC_EnableIRQ                         0x08005b01   Thumb Code    48  USART_STM32F4xx.o(.text.__NVIC_EnableIRQ)
-    [Anonymous Symbol]                       0x08005b00   Section        0  USART_STM32F4xx.o(.text.__NVIC_EnableIRQ)
-    __NVIC_GetPriorityGrouping               0x08005b31   Thumb Code    16  stm32f4xx_hal_cortex.o(.text.__NVIC_GetPriorityGrouping)
-    [Anonymous Symbol]                       0x08005b30   Section        0  stm32f4xx_hal_cortex.o(.text.__NVIC_GetPriorityGrouping)
-    __NVIC_SetPriority                       0x08005b41   Thumb Code    66  stm32f4xx_hal_cortex.o(.text.__NVIC_SetPriority)
-    [Anonymous Symbol]                       0x08005b40   Section        0  stm32f4xx_hal_cortex.o(.text.__NVIC_SetPriority)
-    __NVIC_SetPriorityGrouping               0x08005b85   Thumb Code    60  stm32f4xx_hal_cortex.o(.text.__NVIC_SetPriorityGrouping)
-    [Anonymous Symbol]                       0x08005b84   Section        0  stm32f4xx_hal_cortex.o(.text.__NVIC_SetPriorityGrouping)
-    [Anonymous Symbol]                       0x08005bc0   Section        0  calculate.o(.text.add)
-    check_SPI_SR                             0x08005c55   Thumb Code    72  LCD_SPI.o(.text.check_SPI_SR)
-    [Anonymous Symbol]                       0x08005c54   Section        0  LCD_SPI.o(.text.check_SPI_SR)
-    [Anonymous Symbol]                       0x08005c9c   Section        0  display.o(.text.clearEchoTerm)
-    [Anonymous Symbol]                       0x08005cac   Section        0  stack.o(.text.clearStack)
-    [Anonymous Symbol]                       0x08005cbc   Section        0  display.o(.text.clearStdout)
-    [Anonymous Symbol]                       0x08005ccc   Section        0  terminal.o(.text.clearTerm)
-    [Anonymous Symbol]                       0x08005cf4   Section        0  operations.o(.text.d)
-    [Anonymous Symbol]                       0x08005d4c   Section        0  errorhaendler.o(.text.displayError)
-    [Anonymous Symbol]                       0x08005e14   Section        0  calculate.o(.text.divide)
-    [Anonymous Symbol]                       0x08005e9c   Section        0  terminal.o(.text.genTerm)
-    [Anonymous Symbol]                       0x08005f64   Section        0  keypad.o(.text.getKeyPadInput)
-    [Anonymous Symbol]                       0x08005fc8   Section        0  stack.o(.text.getStackSize)
-    getValidButton                           0x08005fd5   Thumb Code    64  keypad.o(.text.getValidButton)
-    [Anonymous Symbol]                       0x08005fd4   Section        0  keypad.o(.text.getValidButton)
-    [Anonymous Symbol]                       0x08006014   Section        0  display.o(.text.initDisplay)
-    initGPIOs                                0x080060e5   Thumb Code   320  init.o(.text.initGPIOs)
-    [Anonymous Symbol]                       0x080060e4   Section        0  init.o(.text.initGPIOs)
-    [Anonymous Symbol]                       0x08006224   Section        0  init.o(.text.initITSboard)
-    [Anonymous Symbol]                       0x08006238   Section        0  toString.o(.text.intToString)
-    [Anonymous Symbol]                       0x08006310   Section        0  stack.o(.text.isEmpty)
-    [Anonymous Symbol]                       0x08006324   Section        0  LCD_Tools.o(.text.itoa)
-    [Anonymous Symbol]                       0x080063d8   Section        0  lcd.o(.text.lcdPrintS)
-    [Anonymous Symbol]                       0x080065ac   Section        0  main.o(.text.main)
-    [Anonymous Symbol]                       0x080066d8   Section        0  keypad.o(.text.makeKeyPad)
-    [Anonymous Symbol]                       0x080067ac   Section        0  calculate.o(.text.multiply)
-    nextChar                                 0x08006841   Thumb Code     8  scanner.o(.text.nextChar)
-    [Anonymous Symbol]                       0x08006840   Section        0  scanner.o(.text.nextChar)
-    [Anonymous Symbol]                       0x08006848   Section        0  scanner.o(.text.nextToken)
-    [Anonymous Symbol]                       0x08006994   Section        0  operations.o(.text.p)
-    [Anonymous Symbol]                       0x080069e0   Section        0  stack.o(.text.peek)
-    [Anonymous Symbol]                       0x08006a28   Section        0  stack.o(.text.pop)
-    printButton                              0x08006a75   Thumb Code   582  keypad.o(.text.printButton)
-    [Anonymous Symbol]                       0x08006a74   Section        0  keypad.o(.text.printButton)
-    [Anonymous Symbol]                       0x08006cbc   Section        0  terminal.o(.text.printChar)
-    [Anonymous Symbol]                       0x08006d58   Section        0  LCD_Debug.o(.text.printDebugMsg)
-    printNewLine                             0x08006e0d   Thumb Code    32  terminal.o(.text.printNewLine)
-    [Anonymous Symbol]                       0x08006e0c   Section        0  terminal.o(.text.printNewLine)
-    [Anonymous Symbol]                       0x08006e2c   Section        0  display.o(.text.printStdout)
-    [Anonymous Symbol]                       0x08006e44   Section        0  terminal.o(.text.printTerm)
-    [Anonymous Symbol]                       0x08006e80   Section        0  display.o(.text.printToEchoLine)
-    [Anonymous Symbol]                       0x08006ea8   Section        0  stack.o(.text.push)
-    [Anonymous Symbol]                       0x08006ef0   Section        0  operations.o(.text.r)
-    [Anonymous Symbol]                       0x08006f4c   Section        0  calculate.o(.text.safe_add)
-    [Anonymous Symbol]                       0x08006fac   Section        0  calculate.o(.text.safe_divide)
-    [Anonymous Symbol]                       0x08006ff4   Section        0  calculate.o(.text.safe_multiply)
-    [Anonymous Symbol]                       0x080070b4   Section        0  calculate.o(.text.safe_substract)
-    save_restore_AltFn_SPI1_MOSI_Pin         0x08007115   Thumb Code    48  LCD_SPI.o(.text.save_restore_AltFn_SPI1_MOSI_Pin)
-    [Anonymous Symbol]                       0x08007114   Section        0  LCD_SPI.o(.text.save_restore_AltFn_SPI1_MOSI_Pin)
-    selectButton                             0x08007145   Thumb Code   362  keypad.o(.text.selectButton)
-    [Anonymous Symbol]                       0x08007144   Section        0  keypad.o(.text.selectButton)
-    [Anonymous Symbol]                       0x080072b0   Section        0  display.o(.text.setErrMode)
-    [Anonymous Symbol]                       0x080072d0   Section        0  terminal.o(.text.setTextColorTerm)
-    [Anonymous Symbol]                       0x080072e4   Section        0  stdinout_USART.o(.text.stdinout_init)
-    stringCopy                               0x08007395   Thumb Code    70  lcd.o(.text.stringCopy)
-    [Anonymous Symbol]                       0x08007394   Section        0  lcd.o(.text.stringCopy)
-    [Anonymous Symbol]                       0x080073dc   Section        0  calculate.o(.text.subtract)
-    touchCoordinateToKey                     0x08007471   Thumb Code   234  keypad.o(.text.touchCoordinateToKey)
-    [Anonymous Symbol]                       0x08007470   Section        0  keypad.o(.text.touchCoordinateToKey)
-    i.__scatterload_copy                     0x0800755a   Section       14  handlers.o(i.__scatterload_copy)
-    i.__scatterload_null                     0x08007568   Section        2  handlers.o(i.__scatterload_null)
-    i.__scatterload_zeroinit                 0x0800756a   Section       14  handlers.o(i.__scatterload_zeroinit)
-    USART3_Resources                         0x080075c8   Data          52  USART_STM32F4xx.o(.rodata.USART3_Resources)
-    [Anonymous Symbol]                       0x080075c8   Section        0  USART_STM32F4xx.o(.rodata.USART3_Resources)
-    USART3_rx                                0x080075fc   Data          12  USART_STM32F4xx.o(.rodata.USART3_rx)
-    [Anonymous Symbol]                       0x080075fc   Section        0  USART_STM32F4xx.o(.rodata.USART3_rx)
-    USART3_tx                                0x08007608   Data          12  USART_STM32F4xx.o(.rodata.USART3_tx)
-    [Anonymous Symbol]                       0x08007608   Section        0  USART_STM32F4xx.o(.rodata.USART3_tx)
-    .L.str                                   0x080077cc   Data          55  LCD_GUI.o(.rodata.str1.1)
-    [Anonymous Symbol]                       0x080077cc   Section        0  LCD_GUI.o(.rodata.str1.1)
-    .L.str                                   0x08007803   Data          55  LCD_SPI.o(.rodata.str1.1)
-    [Anonymous Symbol]                       0x08007803   Section        0  LCD_SPI.o(.rodata.str1.1)
-    .L.str                                   0x0800783a   Data          55  LCD_TIM.o(.rodata.str1.1)
-    [Anonymous Symbol]                       0x0800783a   Section        0  LCD_TIM.o(.rodata.str1.1)
-    .L.str.1                                 0x08007871   Data           6  LCD_Debug.o(.rodata.str1.1)
-    [Anonymous Symbol]                       0x08007871   Section        0  LCD_Debug.o(.rodata.str1.1)
-    .L.str                                   0x08007877   Data          22  LCD_Debug.o(.rodata.str1.1)
-    .L.str                                   0x0800788d   Data          38  terminal.o(.rodata.str1.1)
-    [Anonymous Symbol]                       0x0800788d   Section        0  terminal.o(.rodata.str1.1)
-    .L.str.1                                 0x080078b3   Data          46  terminal.o(.rodata.str1.1)
-    .L.str.5                                 0x080078e1   Data          19  errorhaendler.o(.rodata.str1.1)
-    [Anonymous Symbol]                       0x080078e1   Section        0  errorhaendler.o(.rodata.str1.1)
-    .L.str.6                                 0x080078f4   Data          16  errorhaendler.o(.rodata.str1.1)
-    .L.str.4                                 0x08007904   Data          24  errorhaendler.o(.rodata.str1.1)
-    .L.str.8                                 0x0800791c   Data          22  errorhaendler.o(.rodata.str1.1)
-    .L.str.1                                 0x08007932   Data          18  errorhaendler.o(.rodata.str1.1)
-    .L.str.3                                 0x08007944   Data          20  errorhaendler.o(.rodata.str1.1)
-    .L.str                                   0x08007958   Data          17  errorhaendler.o(.rodata.str1.1)
-    .L.str.2                                 0x08007969   Data          19  errorhaendler.o(.rodata.str1.1)
-    .L.str.7                                 0x0800797c   Data          17  errorhaendler.o(.rodata.str1.1)
-    crd                                      0x20000014   Data           4  lcd.o(.data.crd)
-    [Anonymous Symbol]                       0x20000014   Section        0  lcd.o(.data.crd)
-    echoTerm                                 0x20000018   Data          24  display.o(.data.echoTerm)
-    [Anonymous Symbol]                       0x20000018   Section        0  display.o(.data.echoTerm)
-    fontHeight                               0x20000030   Data           4  lcd.o(.data.fontHeight)
-    [Anonymous Symbol]                       0x20000030   Section        0  lcd.o(.data.fontHeight)
-    fontWidth                                0x20000034   Data           4  lcd.o(.data.fontWidth)
-    [Anonymous Symbol]                       0x20000034   Section        0  lcd.o(.data.fontWidth)
-    lcdFont                                  0x20000038   Data           4  lcd.o(.data.lcdFont)
-    [Anonymous Symbol]                       0x20000038   Section        0  lcd.o(.data.lcdFont)
-    lcdmaxx                                  0x2000003c   Data           4  lcd.o(.data.lcdmaxx)
-    [Anonymous Symbol]                       0x2000003c   Section        0  lcd.o(.data.lcdmaxx)
-    lcdmaxy                                  0x20000040   Data           4  lcd.o(.data.lcdmaxy)
-    [Anonymous Symbol]                       0x20000040   Section        0  lcd.o(.data.lcdmaxy)
-    nextToken.c                              0x20000044   Data           1  scanner.o(.data.nextToken.c)
-    [Anonymous Symbol]                       0x20000044   Section        0  scanner.o(.data.nextToken.c)
-    save_restore_AltFn_SPI1_MOSI_Pin.saved_AF 0x20000048   Data           4  LCD_SPI.o(.data.save_restore_AltFn_SPI1_MOSI_Pin.saved_AF)
-    [Anonymous Symbol]                       0x20000048   Section        0  LCD_SPI.o(.data.save_restore_AltFn_SPI1_MOSI_Pin.saved_AF)
-    stdoutTerm                               0x2000004c   Data          24  display.o(.data.stdoutTerm)
-    [Anonymous Symbol]                       0x2000004c   Section        0  display.o(.data.stdoutTerm)
-    USART3_Info                              0x200000b8   Data          20  USART_STM32F4xx.o(.bss.USART3_Info)
-    [Anonymous Symbol]                       0x200000b8   Section        0  USART_STM32F4xx.o(.bss.USART3_Info)
-    USART3_TransferInfo                      0x200000cc   Data          36  USART_STM32F4xx.o(.bss.USART3_TransferInfo)
-    [Anonymous Symbol]                       0x200000cc   Section        0  USART_STM32F4xx.o(.bss.USART3_TransferInfo)
-    htim4                                    0x200000f0   Data          64  LCD_TIM.o(.bss.htim4)
-    [Anonymous Symbol]                       0x200000f0   Section        0  LCD_TIM.o(.bss.htim4)
-    lcdColor                                 0x20000130   Data           2  lcd.o(.bss.lcdColor)
-    [Anonymous Symbol]                       0x20000130   Section        0  lcd.o(.bss.lcdColor)
-    sTP_DEV                                  0x20000134   Data          24  LCD_Touch.o(.bss.sTP_DEV)
-    [Anonymous Symbol]                       0x20000134   Section        0  LCD_Touch.o(.bss.sTP_DEV)
-    STACK                                    0x20000180   Section     1024  startup_stm32f429xx.o(STACK)
+    .text                                    0x080002da   Section        0  dadd.o(.text)
+    .text                                    0x08000428   Section        0  ddiv.o(.text)
+    .text                                    0x08000506   Section        0  dfltui.o(.text)
+    .text                                    0x08000520   Section        0  llshl.o(.text)
+    .text                                    0x0800053e   Section        0  llushr.o(.text)
+    .text                                    0x0800055e   Section        0  llsshr.o(.text)
+    .text                                    0x08000582   Section        0  iusefp.o(.text)
+    .text                                    0x08000582   Section        0  depilogue.o(.text)
+    .text                                    0x0800063c   Section       48  init.o(.text)
+    [Anonymous Symbol]                       0x0800066c   Section        0  stm32f4xx_it.o(.text.BusFault_Handler)
+    [Anonymous Symbol]                       0x08000670   Section        0  stm32f4xx_it.o(.text.DebugMon_Handler)
+    [Anonymous Symbol]                       0x08000674   Section        0  LCD_Tools.o(.text.Driver_Delay_ms)
+    [Anonymous Symbol]                       0x08000684   Section        0  LCD_Tools.o(.text.Driver_Delay_us)
+    [Anonymous Symbol]                       0x080006a4   Section        0  stm32f4xx_it.o(.text.ETH_IRQHandler)
+    Enable_GPIO_Clock                        0x080006b5   Thumb Code   474  USART_STM32F4xx.o(.text.Enable_GPIO_Clock)
+    [Anonymous Symbol]                       0x080006b4   Section        0  USART_STM32F4xx.o(.text.Enable_GPIO_Clock)
+    [Anonymous Symbol]                       0x08000890   Section        0  error.o(.text.Error_Handler)
+    [Anonymous Symbol]                       0x08000978   Section        0  LCD_GPIO.o(.text.GPIO_Init)
+    [Anonymous Symbol]                       0x08000980   Section        0  LCD_GUI.o(.text.GUI_disChar)
+    [Anonymous Symbol]                       0x08000a3c   Section        0  LCD_GUI.o(.text.GUI_disNum)
+    [Anonymous Symbol]                       0x08000aa4   Section        0  LCD_GUI.o(.text.GUI_disStr)
+    [Anonymous Symbol]                       0x08000bb8   Section        0  LCD_GUI.o(.text.GUI_drawRectangle)
+    [Anonymous Symbol]                       0x08000d64   Section        0  LCD_GUI.o(.text.GUI_init)
+    [Anonymous Symbol]                       0x08000d80   Section        0  stm32f4xx_hal_dma.o(.text.HAL_DMA_Abort)
+    [Anonymous Symbol]                       0x08000e6c   Section        0  stm32f4xx_hal.o(.text.HAL_Delay)
+    [Anonymous Symbol]                       0x08000eb0   Section        0  stm32f4xx_hal_eth.o(.text.HAL_ETH_ErrorCallback)
+    [Anonymous Symbol]                       0x08000eb8   Section        0  stm32f4xx_hal_eth.o(.text.HAL_ETH_IRQHandler)
+    [Anonymous Symbol]                       0x08000f7c   Section        0  stm32f4xx_hal_eth.o(.text.HAL_ETH_RxCpltCallback)
+    [Anonymous Symbol]                       0x08000f84   Section        0  stm32f4xx_hal_eth.o(.text.HAL_ETH_TxCpltCallback)
+    [Anonymous Symbol]                       0x08000f8c   Section        0  stm32f4xx_hal_gpio.o(.text.HAL_GPIO_DeInit)
+    [Anonymous Symbol]                       0x080011e8   Section        0  stm32f4xx_hal_gpio.o(.text.HAL_GPIO_Init)
+    [Anonymous Symbol]                       0x080015d8   Section        0  stm32f4xx_hal_gpio.o(.text.HAL_GPIO_ReadPin)
+    [Anonymous Symbol]                       0x08001608   Section        0  stm32f4xx_hal_gpio.o(.text.HAL_GPIO_TogglePin)
+    [Anonymous Symbol]                       0x0800163c   Section        0  stm32f4xx_hal_gpio.o(.text.HAL_GPIO_WritePin)
+    [Anonymous Symbol]                       0x0800166c   Section        0  stm32f4xx_hal.o(.text.HAL_GetTick)
+    [Anonymous Symbol]                       0x08001678   Section        0  stm32f4xx_hal.o(.text.HAL_IncTick)
+    [Anonymous Symbol]                       0x08001694   Section        0  stm32f4xx_hal.o(.text.HAL_Init)
+    [Anonymous Symbol]                       0x080016c4   Section        0  stm32f4xx_hal.o(.text.HAL_InitTick)
+    [Anonymous Symbol]                       0x08001734   Section        0  stm32f4xx_hal.o(.text.HAL_MspInit)
+    [Anonymous Symbol]                       0x08001738   Section        0  stm32f4xx_hal_cortex.o(.text.HAL_NVIC_DisableIRQ)
+    [Anonymous Symbol]                       0x0800174c   Section        0  stm32f4xx_hal_cortex.o(.text.HAL_NVIC_SetPriority)
+    [Anonymous Symbol]                       0x08001780   Section        0  stm32f4xx_hal_cortex.o(.text.HAL_NVIC_SetPriorityGrouping)
+    [Anonymous Symbol]                       0x08001790   Section        0  stm32f4xx_hal_pwr_ex.o(.text.HAL_PWREx_EnableOverDrive)
+    [Anonymous Symbol]                       0x08001850   Section        0  stm32f4xx_hal_rcc.o(.text.HAL_RCC_ClockConfig)
+    [Anonymous Symbol]                       0x08001ab4   Section        0  stm32f4xx_hal_rcc.o(.text.HAL_RCC_GetHCLKFreq)
+    [Anonymous Symbol]                       0x08001ac0   Section        0  stm32f4xx_hal_rcc.o(.text.HAL_RCC_GetPCLK1Freq)
+    [Anonymous Symbol]                       0x08001ae4   Section        0  stm32f4xx_hal_rcc.o(.text.HAL_RCC_GetSysClockFreq)
+    [Anonymous Symbol]                       0x08001bcc   Section        0  stm32f4xx_hal_rcc.o(.text.HAL_RCC_OscConfig)
+    [Anonymous Symbol]                       0x08002270   Section        0  stm32f4xx_hal_cortex.o(.text.HAL_SYSTICK_Config)
+    [Anonymous Symbol]                       0x08002280   Section        0  stm32f4xx_hal_tim_ex.o(.text.HAL_TIMEx_MasterConfigSynchronization)
+    HAL_TIM_MspPostInit                      0x080023a5   Thumb Code    72  LCD_TIM.o(.text.HAL_TIM_MspPostInit)
+    [Anonymous Symbol]                       0x080023a4   Section        0  LCD_TIM.o(.text.HAL_TIM_MspPostInit)
+    [Anonymous Symbol]                       0x080023ec   Section        0  stm32f4xx_hal_tim.o(.text.HAL_TIM_PWM_ConfigChannel)
+    [Anonymous Symbol]                       0x08002530   Section        0  stm32f4xx_hal_tim.o(.text.HAL_TIM_PWM_Init)
+    [Anonymous Symbol]                       0x08002588   Section        0  LCD_TIM.o(.text.HAL_TIM_PWM_MspInit)
+    [Anonymous Symbol]                       0x080025c8   Section        0  stm32f4xx_hal_tim.o(.text.HAL_TIM_PWM_Start)
+    [Anonymous Symbol]                       0x08002648   Section        0  stm32f4xx_it.o(.text.HardFault_Handler)
+    [Anonymous Symbol]                       0x0800264c   Section        0  LCD_Tools.o(.text.LCDErrHandler)
+    LCD_Reset                                0x08002705   Thumb Code    74  LCD_Driver.o(.text.LCD_Reset)
+    [Anonymous Symbol]                       0x08002704   Section        0  LCD_Driver.o(.text.LCD_Reset)
+    LCD_SetBackLight                         0x08002751   Thumb Code    20  LCD_Driver.o(.text.LCD_SetBackLight)
+    [Anonymous Symbol]                       0x08002750   Section        0  LCD_Driver.o(.text.LCD_SetBackLight)
+    LCD_SetGramScanWay                       0x08002765   Thumb Code    34  LCD_Driver.o(.text.LCD_SetGramScanWay)
+    [Anonymous Symbol]                       0x08002764   Section        0  LCD_Driver.o(.text.LCD_SetGramScanWay)
+    LCD_WriteCMD                             0x08002789   Thumb Code    72  LCD_Driver.o(.text.LCD_WriteCMD)
+    [Anonymous Symbol]                       0x08002788   Section        0  LCD_Driver.o(.text.LCD_WriteCMD)
+    LCD_WriteCMDList                         0x080027d1   Thumb Code    86  LCD_Driver.o(.text.LCD_WriteCMDList)
+    [Anonymous Symbol]                       0x080027d0   Section        0  LCD_Driver.o(.text.LCD_WriteCMDList)
+    LCD_WriteParam                           0x08002829   Thumb Code    22  LCD_Driver.o(.text.LCD_WriteParam)
+    [Anonymous Symbol]                       0x08002828   Section        0  LCD_Driver.o(.text.LCD_WriteParam)
+    LCD_WriteParameters                      0x08002841   Thumb Code   112  LCD_Driver.o(.text.LCD_WriteParameters)
+    [Anonymous Symbol]                       0x08002840   Section        0  LCD_Driver.o(.text.LCD_WriteParameters)
+    [Anonymous Symbol]                       0x080028b0   Section        0  LCD_Driver.o(.text.LCD_clear)
+    [Anonymous Symbol]                       0x080028d4   Section        0  LCD_Driver.o(.text.LCD_fillRectangleBW)
+    [Anonymous Symbol]                       0x08002a64   Section        0  LCD_Driver.o(.text.LCD_fillRectangleMC)
+    [Anonymous Symbol]                       0x08002b30   Section        0  LCD_Driver.o(.text.LCD_init)
+    LCD_setWindow                            0x08002ba1   Thumb Code    88  LCD_Driver.o(.text.LCD_setWindow)
+    [Anonymous Symbol]                       0x08002ba0   Section        0  LCD_Driver.o(.text.LCD_setWindow)
+    MX_GPIO_Init                             0x08002bf9   Thumb Code   414  LCD_GPIO.o(.text.MX_GPIO_Init)
+    [Anonymous Symbol]                       0x08002bf8   Section        0  LCD_GPIO.o(.text.MX_GPIO_Init)
+    MX_TIM4_Init                             0x08002d99   Thumb Code   170  LCD_TIM.o(.text.MX_TIM4_Init)
+    [Anonymous Symbol]                       0x08002d98   Section        0  LCD_TIM.o(.text.MX_TIM4_Init)
+    [Anonymous Symbol]                       0x08002e44   Section        0  stm32f4xx_it.o(.text.MemManage_Handler)
+    [Anonymous Symbol]                       0x08002e48   Section        0  stm32f4xx_it.o(.text.NMI_Handler)
+    NVIC_EncodePriority                      0x08002e4d   Thumb Code   108  stm32f4xx_hal_cortex.o(.text.NVIC_EncodePriority)
+    [Anonymous Symbol]                       0x08002e4c   Section        0  stm32f4xx_hal_cortex.o(.text.NVIC_EncodePriority)
+    [Anonymous Symbol]                       0x08002eb8   Section        0  LCD_TIM.o(.text.PWM_SetValue)
+    [Anonymous Symbol]                       0x08002ef0   Section        0  stm32f4xx_it.o(.text.PendSV_Handler)
+    [Anonymous Symbol]                       0x08002ef4   Section        0  LCD_SPI.o(.text.SPI4W_Write_Byte)
+    SPIInitDevWithoutHAL                     0x08002fad   Thumb Code    76  LCD_SPI.o(.text.SPIInitDevWithoutHAL)
+    [Anonymous Symbol]                       0x08002fac   Section        0  LCD_SPI.o(.text.SPIInitDevWithoutHAL)
+    SPIInitGPIOsWithoutHAL                   0x08002ff9   Thumb Code   218  LCD_SPI.o(.text.SPIInitGPIOsWithoutHAL)
+    [Anonymous Symbol]                       0x08002ff8   Section        0  LCD_SPI.o(.text.SPIInitGPIOsWithoutHAL)
+    [Anonymous Symbol]                       0x080030d4   Section        0  LCD_SPI.o(.text.SPIinit)
+    [Anonymous Symbol]                       0x080030e4   Section        0  stm32f4xx_it.o(.text.SVC_Handler)
+    SysTick_Config                           0x080030e9   Thumb Code    82  stm32f4xx_hal_cortex.o(.text.SysTick_Config)
+    [Anonymous Symbol]                       0x080030e8   Section        0  stm32f4xx_hal_cortex.o(.text.SysTick_Config)
+    [Anonymous Symbol]                       0x0800313c   Section        0  stm32f4xx_it.o(.text.SysTick_Handler)
+    SystemClock_Config                       0x08003145   Thumb Code   184  init.o(.text.SystemClock_Config)
+    [Anonymous Symbol]                       0x08003144   Section        0  init.o(.text.SystemClock_Config)
+    [Anonymous Symbol]                       0x080031fc   Section        0  system_stm32f4xx.o(.text.SystemInit)
+    [Anonymous Symbol]                       0x0800326c   Section        0  LCD_TIM.o(.text.TIM4_Init)
+    [Anonymous Symbol]                       0x08003274   Section        0  stm32f4xx_hal_tim.o(.text.TIM_Base_SetConfig)
+    [Anonymous Symbol]                       0x08003410   Section        0  stm32f4xx_hal_tim.o(.text.TIM_CCxChannelCmd)
+    TIM_OC1_SetConfig                        0x08003449   Thumb Code   234  stm32f4xx_hal_tim.o(.text.TIM_OC1_SetConfig)
+    [Anonymous Symbol]                       0x08003448   Section        0  stm32f4xx_hal_tim.o(.text.TIM_OC1_SetConfig)
+    [Anonymous Symbol]                       0x08003534   Section        0  stm32f4xx_hal_tim.o(.text.TIM_OC2_SetConfig)
+    TIM_OC3_SetConfig                        0x08003629   Thumb Code   242  stm32f4xx_hal_tim.o(.text.TIM_OC3_SetConfig)
+    [Anonymous Symbol]                       0x08003628   Section        0  stm32f4xx_hal_tim.o(.text.TIM_OC3_SetConfig)
+    TIM_OC4_SetConfig                        0x0800371d   Thumb Code   164  stm32f4xx_hal_tim.o(.text.TIM_OC4_SetConfig)
+    [Anonymous Symbol]                       0x0800371c   Section        0  stm32f4xx_hal_tim.o(.text.TIM_OC4_SetConfig)
+    [Anonymous Symbol]                       0x080037c0   Section        0  LCD_Touch.o(.text.TP_InitBasic)
+    TP_SetDefaultCalibration                 0x080037f5   Thumb Code    42  LCD_Touch.o(.text.TP_SetDefaultCalibration)
+    [Anonymous Symbol]                       0x080037f4   Section        0  LCD_Touch.o(.text.TP_SetDefaultCalibration)
+    USART3_Control                           0x08003821   Thumb Code    28  USART_STM32F4xx.o(.text.USART3_Control)
+    [Anonymous Symbol]                       0x08003820   Section        0  USART_STM32F4xx.o(.text.USART3_Control)
+    USART3_GetCapabilities                   0x0800383d   Thumb Code    24  USART_STM32F4xx.o(.text.USART3_GetCapabilities)
+    [Anonymous Symbol]                       0x0800383c   Section        0  USART_STM32F4xx.o(.text.USART3_GetCapabilities)
+    USART3_GetModemStatus                    0x08003855   Thumb Code    24  USART_STM32F4xx.o(.text.USART3_GetModemStatus)
+    [Anonymous Symbol]                       0x08003854   Section        0  USART_STM32F4xx.o(.text.USART3_GetModemStatus)
+    USART3_GetRxCount                        0x0800386d   Thumb Code    16  USART_STM32F4xx.o(.text.USART3_GetRxCount)
+    [Anonymous Symbol]                       0x0800386c   Section        0  USART_STM32F4xx.o(.text.USART3_GetRxCount)
+    USART3_GetStatus                         0x0800387d   Thumb Code    24  USART_STM32F4xx.o(.text.USART3_GetStatus)
+    [Anonymous Symbol]                       0x0800387c   Section        0  USART_STM32F4xx.o(.text.USART3_GetStatus)
+    USART3_GetTxCount                        0x08003895   Thumb Code    16  USART_STM32F4xx.o(.text.USART3_GetTxCount)
+    [Anonymous Symbol]                       0x08003894   Section        0  USART_STM32F4xx.o(.text.USART3_GetTxCount)
+    [Anonymous Symbol]                       0x080038a4   Section        0  USART_STM32F4xx.o(.text.USART3_IRQHandler)
+    USART3_Initialize                        0x080038b5   Thumb Code    24  USART_STM32F4xx.o(.text.USART3_Initialize)
+    [Anonymous Symbol]                       0x080038b4   Section        0  USART_STM32F4xx.o(.text.USART3_Initialize)
+    USART3_PowerControl                      0x080038cd   Thumb Code    28  USART_STM32F4xx.o(.text.USART3_PowerControl)
+    [Anonymous Symbol]                       0x080038cc   Section        0  USART_STM32F4xx.o(.text.USART3_PowerControl)
+    USART3_Receive                           0x080038e9   Thumb Code    28  USART_STM32F4xx.o(.text.USART3_Receive)
+    [Anonymous Symbol]                       0x080038e8   Section        0  USART_STM32F4xx.o(.text.USART3_Receive)
+    USART3_Send                              0x08003905   Thumb Code    28  USART_STM32F4xx.o(.text.USART3_Send)
+    [Anonymous Symbol]                       0x08003904   Section        0  USART_STM32F4xx.o(.text.USART3_Send)
+    USART3_SetModemControl                   0x08003921   Thumb Code    28  USART_STM32F4xx.o(.text.USART3_SetModemControl)
+    [Anonymous Symbol]                       0x08003920   Section        0  USART_STM32F4xx.o(.text.USART3_SetModemControl)
+    USART3_Transfer                          0x0800393d   Thumb Code    32  USART_STM32F4xx.o(.text.USART3_Transfer)
+    [Anonymous Symbol]                       0x0800393c   Section        0  USART_STM32F4xx.o(.text.USART3_Transfer)
+    USART3_Uninitialize                      0x0800395d   Thumb Code    16  USART_STM32F4xx.o(.text.USART3_Uninitialize)
+    [Anonymous Symbol]                       0x0800395c   Section        0  USART_STM32F4xx.o(.text.USART3_Uninitialize)
+    USART_Control                            0x0800396d   Thumb Code  3462  USART_STM32F4xx.o(.text.USART_Control)
+    [Anonymous Symbol]                       0x0800396c   Section        0  USART_STM32F4xx.o(.text.USART_Control)
+    USART_GetCapabilities                    0x080046f5   Thumb Code    16  USART_STM32F4xx.o(.text.USART_GetCapabilities)
+    [Anonymous Symbol]                       0x080046f4   Section        0  USART_STM32F4xx.o(.text.USART_GetCapabilities)
+    USART_GetModemStatus                     0x08004705   Thumb Code   106  USART_STM32F4xx.o(.text.USART_GetModemStatus)
+    [Anonymous Symbol]                       0x08004704   Section        0  USART_STM32F4xx.o(.text.USART_GetModemStatus)
+    USART_GetRxCount                         0x08004771   Thumb Code    14  USART_STM32F4xx.o(.text.USART_GetRxCount)
+    [Anonymous Symbol]                       0x08004770   Section        0  USART_STM32F4xx.o(.text.USART_GetRxCount)
+    USART_GetStatus                          0x08004781   Thumb Code   212  USART_STM32F4xx.o(.text.USART_GetStatus)
+    [Anonymous Symbol]                       0x08004780   Section        0  USART_STM32F4xx.o(.text.USART_GetStatus)
+    USART_GetTxCount                         0x08004855   Thumb Code    14  USART_STM32F4xx.o(.text.USART_GetTxCount)
+    [Anonymous Symbol]                       0x08004854   Section        0  USART_STM32F4xx.o(.text.USART_GetTxCount)
+    [Anonymous Symbol]                       0x08004864   Section        0  USART_STM32F4xx.o(.text.USART_IRQHandler)
+    USART_Initialize                         0x08004c69   Thumb Code   224  USART_STM32F4xx.o(.text.USART_Initialize)
+    [Anonymous Symbol]                       0x08004c68   Section        0  USART_STM32F4xx.o(.text.USART_Initialize)
+    USART_PeripheralReset                    0x08004d49   Thumb Code   588  USART_STM32F4xx.o(.text.USART_PeripheralReset)
+    [Anonymous Symbol]                       0x08004d48   Section        0  USART_STM32F4xx.o(.text.USART_PeripheralReset)
+    USART_PowerControl                       0x08004f95   Thumb Code  1118  USART_STM32F4xx.o(.text.USART_PowerControl)
+    [Anonymous Symbol]                       0x08004f94   Section        0  USART_STM32F4xx.o(.text.USART_PowerControl)
+    USART_Receive                            0x080053f5   Thumb Code   228  USART_STM32F4xx.o(.text.USART_Receive)
+    [Anonymous Symbol]                       0x080053f4   Section        0  USART_STM32F4xx.o(.text.USART_Receive)
+    USART_Send                               0x080054d9   Thumb Code   182  USART_STM32F4xx.o(.text.USART_Send)
+    [Anonymous Symbol]                       0x080054d8   Section        0  USART_STM32F4xx.o(.text.USART_Send)
+    USART_SetModemControl                    0x08005591   Thumb Code   226  USART_STM32F4xx.o(.text.USART_SetModemControl)
+    [Anonymous Symbol]                       0x08005590   Section        0  USART_STM32F4xx.o(.text.USART_SetModemControl)
+    USART_Transfer                           0x08005675   Thumb Code   150  USART_STM32F4xx.o(.text.USART_Transfer)
+    [Anonymous Symbol]                       0x08005674   Section        0  USART_STM32F4xx.o(.text.USART_Transfer)
+    USART_Uninitialize                       0x0800570d   Thumb Code   192  USART_STM32F4xx.o(.text.USART_Uninitialize)
+    [Anonymous Symbol]                       0x0800570c   Section        0  USART_STM32F4xx.o(.text.USART_Uninitialize)
+    USARTx_GetVersion                        0x080057cd   Thumb Code    18  USART_STM32F4xx.o(.text.USARTx_GetVersion)
+    [Anonymous Symbol]                       0x080057cc   Section        0  USART_STM32F4xx.o(.text.USARTx_GetVersion)
+    [Anonymous Symbol]                       0x080057e0   Section        0  stm32f4xx_it.o(.text.UsageFault_Handler)
+    __NVIC_ClearPendingIRQ                   0x080057e5   Thumb Code    48  USART_STM32F4xx.o(.text.__NVIC_ClearPendingIRQ)
+    [Anonymous Symbol]                       0x080057e4   Section        0  USART_STM32F4xx.o(.text.__NVIC_ClearPendingIRQ)
+    __NVIC_DisableIRQ                        0x08005815   Thumb Code    56  stm32f4xx_hal_cortex.o(.text.__NVIC_DisableIRQ)
+    [Anonymous Symbol]                       0x08005814   Section        0  stm32f4xx_hal_cortex.o(.text.__NVIC_DisableIRQ)
+    __NVIC_EnableIRQ                         0x0800584d   Thumb Code    48  USART_STM32F4xx.o(.text.__NVIC_EnableIRQ)
+    [Anonymous Symbol]                       0x0800584c   Section        0  USART_STM32F4xx.o(.text.__NVIC_EnableIRQ)
+    __NVIC_GetPriorityGrouping               0x0800587d   Thumb Code    16  stm32f4xx_hal_cortex.o(.text.__NVIC_GetPriorityGrouping)
+    [Anonymous Symbol]                       0x0800587c   Section        0  stm32f4xx_hal_cortex.o(.text.__NVIC_GetPriorityGrouping)
+    __NVIC_SetPriority                       0x0800588d   Thumb Code    66  stm32f4xx_hal_cortex.o(.text.__NVIC_SetPriority)
+    [Anonymous Symbol]                       0x0800588c   Section        0  stm32f4xx_hal_cortex.o(.text.__NVIC_SetPriority)
+    __NVIC_SetPriorityGrouping               0x080058d1   Thumb Code    60  stm32f4xx_hal_cortex.o(.text.__NVIC_SetPriorityGrouping)
+    [Anonymous Symbol]                       0x080058d0   Section        0  stm32f4xx_hal_cortex.o(.text.__NVIC_SetPriorityGrouping)
+    check_SPI_SR                             0x0800590d   Thumb Code    72  LCD_SPI.o(.text.check_SPI_SR)
+    [Anonymous Symbol]                       0x0800590c   Section        0  LCD_SPI.o(.text.check_SPI_SR)
+    [Anonymous Symbol]                       0x08005954   Section        0  display.o(.text.display_error)
+    [Anonymous Symbol]                       0x08005970   Section        0  display.o(.text.display_update)
+    [Anonymous Symbol]                       0x08005974   Section        0  encoder.o(.text.getDirection)
+    [Anonymous Symbol]                       0x08005a1c   Section        0  encoder.o(.text.getPhase)
+    [Anonymous Symbol]                       0x08005a80   Section        0  encoder.o(.text.givePinA)
+    [Anonymous Symbol]                       0x08005aac   Section        0  encoder.o(.text.givePinB)
+    initGPIOs                                0x08005ad9   Thumb Code   320  init.o(.text.initGPIOs)
+    [Anonymous Symbol]                       0x08005ad8   Section        0  init.o(.text.initGPIOs)
+    [Anonymous Symbol]                       0x08005c18   Section        0  init.o(.text.initITSboard)
+    [Anonymous Symbol]                       0x08005c2c   Section        0  LCD_Tools.o(.text.itoa)
+    [Anonymous Symbol]                       0x08005ce0   Section        0  lcd.o(.text.lcdPrintS)
+    [Anonymous Symbol]                       0x08005eb4   Section        0  lcd.o(.text.lcdPrintlnS)
+    [Anonymous Symbol]                       0x08005f08   Section        0  led_control.o(.text.ledDirection)
+    [Anonymous Symbol]                       0x08005f60   Section        0  led_control.o(.text.ledError)
+    [Anonymous Symbol]                       0x08005f70   Section        0  led_control.o(.text.ledNextStep)
+    [Anonymous Symbol]                       0x08005fb0   Section        0  led_control.o(.text.ledReset)
+    [Anonymous Symbol]                       0x08005fe8   Section        0  main.o(.text.main)
+    [Anonymous Symbol]                       0x08006238   Section        0  LCD_Debug.o(.text.printDebugMsg)
+    [Anonymous Symbol]                       0x080062ec   Section        0  errorManager.o(.text.reset)
+    save_restore_AltFn_SPI1_MOSI_Pin         0x0800636d   Thumb Code    48  LCD_SPI.o(.text.save_restore_AltFn_SPI1_MOSI_Pin)
+    [Anonymous Symbol]                       0x0800636c   Section        0  LCD_SPI.o(.text.save_restore_AltFn_SPI1_MOSI_Pin)
+    [Anonymous Symbol]                       0x0800639c   Section        0  stdinout_USART.o(.text.stdinout_init)
+    stringCopy                               0x0800644d   Thumb Code    70  lcd.o(.text.stringCopy)
+    [Anonymous Symbol]                       0x0800644c   Section        0  lcd.o(.text.stringCopy)
+    i.__scatterload_copy                     0x08006492   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x080064a0   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x080064a2   Section       14  handlers.o(i.__scatterload_zeroinit)
+    USART3_Resources                         0x08006500   Data          52  USART_STM32F4xx.o(.rodata.USART3_Resources)
+    [Anonymous Symbol]                       0x08006500   Section        0  USART_STM32F4xx.o(.rodata.USART3_Resources)
+    USART3_rx                                0x08006534   Data          12  USART_STM32F4xx.o(.rodata.USART3_rx)
+    [Anonymous Symbol]                       0x08006534   Section        0  USART_STM32F4xx.o(.rodata.USART3_rx)
+    USART3_tx                                0x08006540   Data          12  USART_STM32F4xx.o(.rodata.USART3_tx)
+    [Anonymous Symbol]                       0x08006540   Section        0  USART_STM32F4xx.o(.rodata.USART3_tx)
+    .L.str                                   0x080065b3   Data          55  LCD_GUI.o(.rodata.str1.1)
+    [Anonymous Symbol]                       0x080065b3   Section        0  LCD_GUI.o(.rodata.str1.1)
+    .L.str                                   0x080065ea   Data          55  LCD_SPI.o(.rodata.str1.1)
+    [Anonymous Symbol]                       0x080065ea   Section        0  LCD_SPI.o(.rodata.str1.1)
+    .L.str                                   0x08006621   Data          55  LCD_TIM.o(.rodata.str1.1)
+    [Anonymous Symbol]                       0x08006621   Section        0  LCD_TIM.o(.rodata.str1.1)
+    .L.str.1                                 0x08006658   Data           6  LCD_Debug.o(.rodata.str1.1)
+    [Anonymous Symbol]                       0x08006658   Section        0  LCD_Debug.o(.rodata.str1.1)
+    .L.str                                   0x0800665e   Data          22  LCD_Debug.o(.rodata.str1.1)
+    .L.str                                   0x08006674   Data          34  main.o(.rodata.str1.1)
+    [Anonymous Symbol]                       0x08006674   Section        0  main.o(.rodata.str1.1)
+    .L.str                                   0x08006696   Data          16  display.o(.rodata.str1.1)
+    [Anonymous Symbol]                       0x08006696   Section        0  display.o(.rodata.str1.1)
+    .L.str.1                                 0x080066a6   Data          18  display.o(.rodata.str1.1)
+    crd                                      0x2000000c   Data           4  lcd.o(.data.crd)
+    [Anonymous Symbol]                       0x2000000c   Section        0  lcd.o(.data.crd)
+    fontHeight                               0x20000014   Data           4  lcd.o(.data.fontHeight)
+    [Anonymous Symbol]                       0x20000014   Section        0  lcd.o(.data.fontHeight)
+    fontWidth                                0x20000018   Data           4  lcd.o(.data.fontWidth)
+    [Anonymous Symbol]                       0x20000018   Section        0  lcd.o(.data.fontWidth)
+    lcdFont                                  0x2000001c   Data           4  lcd.o(.data.lcdFont)
+    [Anonymous Symbol]                       0x2000001c   Section        0  lcd.o(.data.lcdFont)
+    lcdmaxx                                  0x20000020   Data           4  lcd.o(.data.lcdmaxx)
+    [Anonymous Symbol]                       0x20000020   Section        0  lcd.o(.data.lcdmaxx)
+    lcdmaxy                                  0x20000024   Data           4  lcd.o(.data.lcdmaxy)
+    [Anonymous Symbol]                       0x20000024   Section        0  lcd.o(.data.lcdmaxy)
+    save_restore_AltFn_SPI1_MOSI_Pin.saved_AF 0x20000028   Data           4  LCD_SPI.o(.data.save_restore_AltFn_SPI1_MOSI_Pin.saved_AF)
+    [Anonymous Symbol]                       0x20000028   Section        0  LCD_SPI.o(.data.save_restore_AltFn_SPI1_MOSI_Pin.saved_AF)
+    USART3_Info                              0x20000080   Data          20  USART_STM32F4xx.o(.bss.USART3_Info)
+    [Anonymous Symbol]                       0x20000080   Section        0  USART_STM32F4xx.o(.bss.USART3_Info)
+    USART3_TransferInfo                      0x20000094   Data          36  USART_STM32F4xx.o(.bss.USART3_TransferInfo)
+    [Anonymous Symbol]                       0x20000094   Section        0  USART_STM32F4xx.o(.bss.USART3_TransferInfo)
+    htim4                                    0x200000d0   Data          64  LCD_TIM.o(.bss.htim4)
+    [Anonymous Symbol]                       0x200000d0   Section        0  LCD_TIM.o(.bss.htim4)
+    lcdColor                                 0x2000011c   Data           2  lcd.o(.bss.lcdColor)
+    [Anonymous Symbol]                       0x2000011c   Section        0  lcd.o(.bss.lcdColor)
+    sTP_DEV                                  0x20000130   Data          24  LCD_Touch.o(.bss.sTP_DEV)
+    [Anonymous Symbol]                       0x20000130   Section        0  LCD_Touch.o(.bss.sTP_DEV)
+    STACK                                    0x20000150   Section     1024  startup_stm32f429xx.o(STACK)
 
     Global Symbols
 
@@ -3363,146 +3223,133 @@ Image Symbol Table
     __aeabi_memclr8                          0x080002b7   Thumb Code     0  memseta.o(.text)
     _memset$wrapper                          0x080002bb   Thumb Code    18  memseta.o(.text)
     strlen                                   0x080002cd   Thumb Code    14  strlen.o(.text)
-    __aeabi_llsl                             0x080002db   Thumb Code    30  llshl.o(.text)
-    _ll_shift_l                              0x080002db   Thumb Code     0  llshl.o(.text)
-    __aeabi_llsr                             0x080002f9   Thumb Code    32  llushr.o(.text)
-    _ll_ushift_r                             0x080002f9   Thumb Code     0  llushr.o(.text)
-    __scatterload                            0x08000319   Thumb Code    38  init.o(.text)
-    __scatterload_rt2                        0x08000319   Thumb Code     0  init.o(.text)
-    BusFault_Handler                         0x08000349   Thumb Code     4  stm32f4xx_it.o(.text.BusFault_Handler)
-    C                                        0x0800034d   Thumb Code     8  operations.o(.text.C)
-    DebugMon_Handler                         0x08000355   Thumb Code     2  stm32f4xx_it.o(.text.DebugMon_Handler)
-    Driver_Delay_ms                          0x08000359   Thumb Code    16  LCD_Tools.o(.text.Driver_Delay_ms)
-    Driver_Delay_us                          0x08000369   Thumb Code    32  LCD_Tools.o(.text.Driver_Delay_us)
-    ETH_IRQHandler                           0x08000389   Thumb Code    16  stm32f4xx_it.o(.text.ETH_IRQHandler)
-    Error_Handler                            0x08000575   Thumb Code   232  error.o(.text.Error_Handler)
-    GPIO_Init                                0x0800065d   Thumb Code     8  LCD_GPIO.o(.text.GPIO_Init)
-    GUI_clear                                0x08000665   Thumb Code    20  LCD_GUI.o(.text.GUI_clear)
-    GUI_disChar                              0x08000679   Thumb Code   188  LCD_GUI.o(.text.GUI_disChar)
-    GUI_disNum                               0x08000735   Thumb Code   104  LCD_GUI.o(.text.GUI_disNum)
-    GUI_disStr                               0x0800079d   Thumb Code   276  LCD_GUI.o(.text.GUI_disStr)
-    GUI_drawPoint                            0x080008b1   Thumb Code   242  LCD_GUI.o(.text.GUI_drawPoint)
-    GUI_drawRectangle                        0x080009a5   Thumb Code   426  LCD_GUI.o(.text.GUI_drawRectangle)
-    GUI_init                                 0x08000b51   Thumb Code    28  LCD_GUI.o(.text.GUI_init)
-    HAL_DMA_Abort                            0x08000b6d   Thumb Code   234  stm32f4xx_hal_dma.o(.text.HAL_DMA_Abort)
-    HAL_Delay                                0x08000c59   Thumb Code    66  stm32f4xx_hal.o(.text.HAL_Delay)
-    HAL_ETH_ErrorCallback                    0x08000c9d   Thumb Code     8  stm32f4xx_hal_eth.o(.text.HAL_ETH_ErrorCallback)
-    HAL_ETH_IRQHandler                       0x08000ca5   Thumb Code   194  stm32f4xx_hal_eth.o(.text.HAL_ETH_IRQHandler)
-    HAL_ETH_RxCpltCallback                   0x08000d69   Thumb Code     8  stm32f4xx_hal_eth.o(.text.HAL_ETH_RxCpltCallback)
-    HAL_ETH_TxCpltCallback                   0x08000d71   Thumb Code     8  stm32f4xx_hal_eth.o(.text.HAL_ETH_TxCpltCallback)
-    HAL_GPIO_DeInit                          0x08000d79   Thumb Code   604  stm32f4xx_hal_gpio.o(.text.HAL_GPIO_DeInit)
-    HAL_GPIO_Init                            0x08000fd5   Thumb Code  1008  stm32f4xx_hal_gpio.o(.text.HAL_GPIO_Init)
-    HAL_GPIO_ReadPin                         0x080013c5   Thumb Code    46  stm32f4xx_hal_gpio.o(.text.HAL_GPIO_ReadPin)
-    HAL_GPIO_TogglePin                       0x080013f5   Thumb Code    50  stm32f4xx_hal_gpio.o(.text.HAL_GPIO_TogglePin)
-    HAL_GPIO_WritePin                        0x08001429   Thumb Code    46  stm32f4xx_hal_gpio.o(.text.HAL_GPIO_WritePin)
-    HAL_GetTick                              0x08001459   Thumb Code    12  stm32f4xx_hal.o(.text.HAL_GetTick)
-    HAL_IncTick                              0x08001465   Thumb Code    26  stm32f4xx_hal.o(.text.HAL_IncTick)
-    HAL_Init                                 0x08001481   Thumb Code    46  stm32f4xx_hal.o(.text.HAL_Init)
-    HAL_InitTick                             0x080014b1   Thumb Code   112  stm32f4xx_hal.o(.text.HAL_InitTick)
-    HAL_MspInit                              0x08001521   Thumb Code     2  stm32f4xx_hal.o(.text.HAL_MspInit)
-    HAL_NVIC_DisableIRQ                      0x08001525   Thumb Code    20  stm32f4xx_hal_cortex.o(.text.HAL_NVIC_DisableIRQ)
-    HAL_NVIC_SetPriority                     0x08001539   Thumb Code    50  stm32f4xx_hal_cortex.o(.text.HAL_NVIC_SetPriority)
-    HAL_NVIC_SetPriorityGrouping             0x0800156d   Thumb Code    16  stm32f4xx_hal_cortex.o(.text.HAL_NVIC_SetPriorityGrouping)
-    HAL_PWREx_EnableOverDrive                0x0800157d   Thumb Code   190  stm32f4xx_hal_pwr_ex.o(.text.HAL_PWREx_EnableOverDrive)
-    HAL_RCC_ClockConfig                      0x0800163d   Thumb Code   610  stm32f4xx_hal_rcc.o(.text.HAL_RCC_ClockConfig)
-    HAL_RCC_GetHCLKFreq                      0x080018a1   Thumb Code    12  stm32f4xx_hal_rcc.o(.text.HAL_RCC_GetHCLKFreq)
-    HAL_RCC_GetPCLK1Freq                     0x080018ad   Thumb Code    34  stm32f4xx_hal_rcc.o(.text.HAL_RCC_GetPCLK1Freq)
-    HAL_RCC_GetSysClockFreq                  0x080018d1   Thumb Code   230  stm32f4xx_hal_rcc.o(.text.HAL_RCC_GetSysClockFreq)
-    HAL_RCC_OscConfig                        0x080019b9   Thumb Code  1700  stm32f4xx_hal_rcc.o(.text.HAL_RCC_OscConfig)
-    HAL_SYSTICK_Config                       0x0800205d   Thumb Code    16  stm32f4xx_hal_cortex.o(.text.HAL_SYSTICK_Config)
-    HAL_TIMEx_MasterConfigSynchronization    0x0800206d   Thumb Code   290  stm32f4xx_hal_tim_ex.o(.text.HAL_TIMEx_MasterConfigSynchronization)
-    HAL_TIM_PWM_ConfigChannel                0x080021d9   Thumb Code   324  stm32f4xx_hal_tim.o(.text.HAL_TIM_PWM_ConfigChannel)
-    HAL_TIM_PWM_Init                         0x0800231d   Thumb Code    88  stm32f4xx_hal_tim.o(.text.HAL_TIM_PWM_Init)
-    HAL_TIM_PWM_MspInit                      0x08002375   Thumb Code    62  LCD_TIM.o(.text.HAL_TIM_PWM_MspInit)
-    HAL_TIM_PWM_Start                        0x080023b5   Thumb Code   128  stm32f4xx_hal_tim.o(.text.HAL_TIM_PWM_Start)
-    HardFault_Handler                        0x08002435   Thumb Code     4  stm32f4xx_it.o(.text.HardFault_Handler)
-    LCDErrHandler                            0x08002439   Thumb Code   182  LCD_Tools.o(.text.LCDErrHandler)
-    LCD_clear                                0x0800269d   Thumb Code    34  LCD_Driver.o(.text.LCD_clear)
-    LCD_fillRectangleBW                      0x080026c1   Thumb Code   398  LCD_Driver.o(.text.LCD_fillRectangleBW)
-    LCD_fillRectangleMC                      0x08002851   Thumb Code   202  LCD_Driver.o(.text.LCD_fillRectangleMC)
-    LCD_init                                 0x0800291d   Thumb Code   112  LCD_Driver.o(.text.LCD_init)
-    MemManage_Handler                        0x08002c31   Thumb Code     4  stm32f4xx_it.o(.text.MemManage_Handler)
-    NMI_Handler                              0x08002c35   Thumb Code     2  stm32f4xx_it.o(.text.NMI_Handler)
-    P                                        0x08002ca5   Thumb Code   150  operations.o(.text.P)
-    PWM_SetValue                             0x08002d3d   Thumb Code    56  LCD_TIM.o(.text.PWM_SetValue)
-    PendSV_Handler                           0x08002d75   Thumb Code     2  stm32f4xx_it.o(.text.PendSV_Handler)
-    SPI4W_Read_Byte                          0x08002d79   Thumb Code    10  LCD_SPI.o(.text.SPI4W_Read_Byte)
-    SPI4W_Write_Byte                         0x08002d85   Thumb Code   184  LCD_SPI.o(.text.SPI4W_Write_Byte)
-    SPIinit                                  0x08002f65   Thumb Code    14  LCD_SPI.o(.text.SPIinit)
-    SPIsetLCDSpeed                           0x08002f75   Thumb Code    10  LCD_SPI.o(.text.SPIsetLCDSpeed)
-    SPIsetTPSpeed                            0x08002f81   Thumb Code    74  LCD_SPI.o(.text.SPIsetTPSpeed)
-    SVC_Handler                              0x08002fcd   Thumb Code     2  stm32f4xx_it.o(.text.SVC_Handler)
-    SysTick_Handler                          0x08003025   Thumb Code     8  stm32f4xx_it.o(.text.SysTick_Handler)
-    SystemInit                               0x080030e5   Thumb Code   110  system_stm32f4xx.o(.text.SystemInit)
-    TIM4_Init                                0x08003155   Thumb Code     8  LCD_TIM.o(.text.TIM4_Init)
-    TIM_Base_SetConfig                       0x0800315d   Thumb Code   410  stm32f4xx_hal_tim.o(.text.TIM_Base_SetConfig)
-    TIM_CCxChannelCmd                        0x080032f9   Thumb Code    54  stm32f4xx_hal_tim.o(.text.TIM_CCxChannelCmd)
-    TIM_OC2_SetConfig                        0x0800341d   Thumb Code   244  stm32f4xx_hal_tim.o(.text.TIM_OC2_SetConfig)
-    TP_InitBasic                             0x080036a9   Thumb Code    50  LCD_Touch.o(.text.TP_InitBasic)
-    TP_get                                   0x08003ab1   Thumb Code    28  LCD_Touch.o(.text.TP_get)
-    TP_pressed                               0x08003acd   Thumb Code     8  LCD_Touch.o(.text.TP_pressed)
-    USART3_IRQHandler                        0x08003b59   Thumb Code    16  USART_STM32F4xx.o(.text.USART3_IRQHandler)
-    USART_IRQHandler                         0x08004b19   Thumb Code  1026  USART_STM32F4xx.o(.text.USART_IRQHandler)
-    UsageFault_Handler                       0x08005a95   Thumb Code     4  stm32f4xx_it.o(.text.UsageFault_Handler)
-    add                                      0x08005bc1   Thumb Code   146  calculate.o(.text.add)
-    clearEchoTerm                            0x08005c9d   Thumb Code    16  display.o(.text.clearEchoTerm)
-    clearStack                               0x08005cad   Thumb Code    14  stack.o(.text.clearStack)
-    clearStdout                              0x08005cbd   Thumb Code    16  display.o(.text.clearStdout)
-    clearTerm                                0x08005ccd   Thumb Code    40  terminal.o(.text.clearTerm)
-    d                                        0x08005cf5   Thumb Code    88  operations.o(.text.d)
-    displayError                             0x08005d4d   Thumb Code   200  errorhaendler.o(.text.displayError)
-    divide                                   0x08005e15   Thumb Code   134  calculate.o(.text.divide)
-    genTerm                                  0x08005e9d   Thumb Code   200  terminal.o(.text.genTerm)
-    getKeyPadInput                           0x08005f65   Thumb Code   100  keypad.o(.text.getKeyPadInput)
-    getStackSize                             0x08005fc9   Thumb Code    12  stack.o(.text.getStackSize)
-    initDisplay                              0x08006015   Thumb Code   208  display.o(.text.initDisplay)
-    initITSboard                             0x08006225   Thumb Code    20  init.o(.text.initITSboard)
-    intToString                              0x08006239   Thumb Code   214  toString.o(.text.intToString)
-    isEmpty                                  0x08006311   Thumb Code    18  stack.o(.text.isEmpty)
-    itoa                                     0x08006325   Thumb Code   180  LCD_Tools.o(.text.itoa)
-    lcdPrintS                                0x080063d9   Thumb Code   466  lcd.o(.text.lcdPrintS)
-    main                                     0x080065ad   Thumb Code   300  main.o(.text.main)
-    makeKeyPad                               0x080066d9   Thumb Code   210  keypad.o(.text.makeKeyPad)
-    multiply                                 0x080067ad   Thumb Code   146  calculate.o(.text.multiply)
-    nextToken                                0x08006849   Thumb Code   330  scanner.o(.text.nextToken)
-    p                                        0x08006995   Thumb Code    76  operations.o(.text.p)
-    peek                                     0x080069e1   Thumb Code    70  stack.o(.text.peek)
-    pop                                      0x08006a29   Thumb Code    76  stack.o(.text.pop)
-    printChar                                0x08006cbd   Thumb Code   156  terminal.o(.text.printChar)
-    printDebugMsg                            0x08006d59   Thumb Code   178  LCD_Debug.o(.text.printDebugMsg)
-    printStdout                              0x08006e2d   Thumb Code    24  display.o(.text.printStdout)
-    printTerm                                0x08006e45   Thumb Code    60  terminal.o(.text.printTerm)
-    printToEchoLine                          0x08006e81   Thumb Code    40  display.o(.text.printToEchoLine)
-    push                                     0x08006ea9   Thumb Code    70  stack.o(.text.push)
-    r                                        0x08006ef1   Thumb Code    92  operations.o(.text.r)
-    safe_add                                 0x08006f4d   Thumb Code    94  calculate.o(.text.safe_add)
-    safe_divide                              0x08006fad   Thumb Code    72  calculate.o(.text.safe_divide)
-    safe_multiply                            0x08006ff5   Thumb Code   190  calculate.o(.text.safe_multiply)
-    safe_substract                           0x080070b5   Thumb Code    94  calculate.o(.text.safe_substract)
-    setErrMode                               0x080072b1   Thumb Code    32  display.o(.text.setErrMode)
-    setTextColorTerm                         0x080072d1   Thumb Code    20  terminal.o(.text.setTextColorTerm)
-    stdinout_init                            0x080072e5   Thumb Code   174  stdinout_USART.o(.text.stdinout_init)
-    subtract                                 0x080073dd   Thumb Code   146  calculate.o(.text.subtract)
-    __scatterload_copy                       0x0800755b   Thumb Code    14  handlers.o(i.__scatterload_copy)
-    __scatterload_null                       0x08007569   Thumb Code     2  handlers.o(i.__scatterload_null)
-    __scatterload_zeroinit                   0x0800756b   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
-    AHBPrescTable                            0x08007578   Data          16  system_stm32f4xx.o(.rodata.AHBPrescTable)
-    APBPrescTable                            0x08007588   Data           8  system_stm32f4xx.o(.rodata.APBPrescTable)
-    Driver_USART3                            0x08007590   Data          56  USART_STM32F4xx.o(.rodata.Driver_USART3)
-    initCmds                                 0x08007614   Data         103  LCD_Driver.o(.rodata.initCmds)
-    keypad                                   0x0800767c   Data         336  keypad.o(.rodata.keypad)
-    Region$$Table$$Base                      0x08007990   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x080079b0   Number         0  anon$$obj.o(Region$$Table)
-    Consolas40FLASH                          0x20000000   Data           8  fontsFLASH.o(.data.Consolas40FLASH)
-    Font16FLASH                              0x20000008   Data           8  fontsFLASH.o(.data.Font16FLASH)
-    SystemCoreClock                          0x20000010   Data           4  system_stm32f4xx.o(.data.SystemCoreClock)
-    uwTickFreq                               0x20000064   Data           1  stm32f4xx_hal.o(.data.uwTickFreq)
-    uwTickPrio                               0x20000068   Data           4  stm32f4xx_hal.o(.data.uwTickPrio)
-    EthHandle                                0x20000070   Data          72  stm32f4xx_it.o(.bss.EthHandle)
-    stack                                    0x2000014c   Data          40  stack.o(.bss.stack)
-    stackSize                                0x20000174   Data           4  stack.o(.bss.stackSize)
-    uwTick                                   0x20000178   Data           4  stm32f4xx_hal.o(.bss.uwTick)
-    __initial_sp                             0x20000580   Data           0  startup_stm32f429xx.o(STACK)
+    __aeabi_dadd                             0x080002db   Thumb Code   322  dadd.o(.text)
+    __aeabi_dsub                             0x0800041d   Thumb Code     6  dadd.o(.text)
+    __aeabi_drsub                            0x08000423   Thumb Code     6  dadd.o(.text)
+    __aeabi_ddiv                             0x08000429   Thumb Code   222  ddiv.o(.text)
+    __aeabi_ui2d                             0x08000507   Thumb Code    26  dfltui.o(.text)
+    __aeabi_llsl                             0x08000521   Thumb Code    30  llshl.o(.text)
+    _ll_shift_l                              0x08000521   Thumb Code     0  llshl.o(.text)
+    __aeabi_llsr                             0x0800053f   Thumb Code    32  llushr.o(.text)
+    _ll_ushift_r                             0x0800053f   Thumb Code     0  llushr.o(.text)
+    __aeabi_lasr                             0x0800055f   Thumb Code    36  llsshr.o(.text)
+    _ll_sshift_r                             0x0800055f   Thumb Code     0  llsshr.o(.text)
+    __I$use$fp                               0x08000583   Thumb Code     0  iusefp.o(.text)
+    _double_round                            0x08000583   Thumb Code    30  depilogue.o(.text)
+    _double_epilogue                         0x080005a1   Thumb Code   156  depilogue.o(.text)
+    __scatterload                            0x0800063d   Thumb Code    38  init.o(.text)
+    __scatterload_rt2                        0x0800063d   Thumb Code     0  init.o(.text)
+    BusFault_Handler                         0x0800066d   Thumb Code     4  stm32f4xx_it.o(.text.BusFault_Handler)
+    DebugMon_Handler                         0x08000671   Thumb Code     2  stm32f4xx_it.o(.text.DebugMon_Handler)
+    Driver_Delay_ms                          0x08000675   Thumb Code    16  LCD_Tools.o(.text.Driver_Delay_ms)
+    Driver_Delay_us                          0x08000685   Thumb Code    32  LCD_Tools.o(.text.Driver_Delay_us)
+    ETH_IRQHandler                           0x080006a5   Thumb Code    16  stm32f4xx_it.o(.text.ETH_IRQHandler)
+    Error_Handler                            0x08000891   Thumb Code   232  error.o(.text.Error_Handler)
+    GPIO_Init                                0x08000979   Thumb Code     8  LCD_GPIO.o(.text.GPIO_Init)
+    GUI_disChar                              0x08000981   Thumb Code   188  LCD_GUI.o(.text.GUI_disChar)
+    GUI_disNum                               0x08000a3d   Thumb Code   104  LCD_GUI.o(.text.GUI_disNum)
+    GUI_disStr                               0x08000aa5   Thumb Code   276  LCD_GUI.o(.text.GUI_disStr)
+    GUI_drawRectangle                        0x08000bb9   Thumb Code   426  LCD_GUI.o(.text.GUI_drawRectangle)
+    GUI_init                                 0x08000d65   Thumb Code    28  LCD_GUI.o(.text.GUI_init)
+    HAL_DMA_Abort                            0x08000d81   Thumb Code   234  stm32f4xx_hal_dma.o(.text.HAL_DMA_Abort)
+    HAL_Delay                                0x08000e6d   Thumb Code    66  stm32f4xx_hal.o(.text.HAL_Delay)
+    HAL_ETH_ErrorCallback                    0x08000eb1   Thumb Code     8  stm32f4xx_hal_eth.o(.text.HAL_ETH_ErrorCallback)
+    HAL_ETH_IRQHandler                       0x08000eb9   Thumb Code   194  stm32f4xx_hal_eth.o(.text.HAL_ETH_IRQHandler)
+    HAL_ETH_RxCpltCallback                   0x08000f7d   Thumb Code     8  stm32f4xx_hal_eth.o(.text.HAL_ETH_RxCpltCallback)
+    HAL_ETH_TxCpltCallback                   0x08000f85   Thumb Code     8  stm32f4xx_hal_eth.o(.text.HAL_ETH_TxCpltCallback)
+    HAL_GPIO_DeInit                          0x08000f8d   Thumb Code   604  stm32f4xx_hal_gpio.o(.text.HAL_GPIO_DeInit)
+    HAL_GPIO_Init                            0x080011e9   Thumb Code  1008  stm32f4xx_hal_gpio.o(.text.HAL_GPIO_Init)
+    HAL_GPIO_ReadPin                         0x080015d9   Thumb Code    46  stm32f4xx_hal_gpio.o(.text.HAL_GPIO_ReadPin)
+    HAL_GPIO_TogglePin                       0x08001609   Thumb Code    50  stm32f4xx_hal_gpio.o(.text.HAL_GPIO_TogglePin)
+    HAL_GPIO_WritePin                        0x0800163d   Thumb Code    46  stm32f4xx_hal_gpio.o(.text.HAL_GPIO_WritePin)
+    HAL_GetTick                              0x0800166d   Thumb Code    12  stm32f4xx_hal.o(.text.HAL_GetTick)
+    HAL_IncTick                              0x08001679   Thumb Code    26  stm32f4xx_hal.o(.text.HAL_IncTick)
+    HAL_Init                                 0x08001695   Thumb Code    46  stm32f4xx_hal.o(.text.HAL_Init)
+    HAL_InitTick                             0x080016c5   Thumb Code   112  stm32f4xx_hal.o(.text.HAL_InitTick)
+    HAL_MspInit                              0x08001735   Thumb Code     2  stm32f4xx_hal.o(.text.HAL_MspInit)
+    HAL_NVIC_DisableIRQ                      0x08001739   Thumb Code    20  stm32f4xx_hal_cortex.o(.text.HAL_NVIC_DisableIRQ)
+    HAL_NVIC_SetPriority                     0x0800174d   Thumb Code    50  stm32f4xx_hal_cortex.o(.text.HAL_NVIC_SetPriority)
+    HAL_NVIC_SetPriorityGrouping             0x08001781   Thumb Code    16  stm32f4xx_hal_cortex.o(.text.HAL_NVIC_SetPriorityGrouping)
+    HAL_PWREx_EnableOverDrive                0x08001791   Thumb Code   190  stm32f4xx_hal_pwr_ex.o(.text.HAL_PWREx_EnableOverDrive)
+    HAL_RCC_ClockConfig                      0x08001851   Thumb Code   610  stm32f4xx_hal_rcc.o(.text.HAL_RCC_ClockConfig)
+    HAL_RCC_GetHCLKFreq                      0x08001ab5   Thumb Code    12  stm32f4xx_hal_rcc.o(.text.HAL_RCC_GetHCLKFreq)
+    HAL_RCC_GetPCLK1Freq                     0x08001ac1   Thumb Code    34  stm32f4xx_hal_rcc.o(.text.HAL_RCC_GetPCLK1Freq)
+    HAL_RCC_GetSysClockFreq                  0x08001ae5   Thumb Code   230  stm32f4xx_hal_rcc.o(.text.HAL_RCC_GetSysClockFreq)
+    HAL_RCC_OscConfig                        0x08001bcd   Thumb Code  1700  stm32f4xx_hal_rcc.o(.text.HAL_RCC_OscConfig)
+    HAL_SYSTICK_Config                       0x08002271   Thumb Code    16  stm32f4xx_hal_cortex.o(.text.HAL_SYSTICK_Config)
+    HAL_TIMEx_MasterConfigSynchronization    0x08002281   Thumb Code   290  stm32f4xx_hal_tim_ex.o(.text.HAL_TIMEx_MasterConfigSynchronization)
+    HAL_TIM_PWM_ConfigChannel                0x080023ed   Thumb Code   324  stm32f4xx_hal_tim.o(.text.HAL_TIM_PWM_ConfigChannel)
+    HAL_TIM_PWM_Init                         0x08002531   Thumb Code    88  stm32f4xx_hal_tim.o(.text.HAL_TIM_PWM_Init)
+    HAL_TIM_PWM_MspInit                      0x08002589   Thumb Code    62  LCD_TIM.o(.text.HAL_TIM_PWM_MspInit)
+    HAL_TIM_PWM_Start                        0x080025c9   Thumb Code   128  stm32f4xx_hal_tim.o(.text.HAL_TIM_PWM_Start)
+    HardFault_Handler                        0x08002649   Thumb Code     4  stm32f4xx_it.o(.text.HardFault_Handler)
+    LCDErrHandler                            0x0800264d   Thumb Code   182  LCD_Tools.o(.text.LCDErrHandler)
+    LCD_clear                                0x080028b1   Thumb Code    34  LCD_Driver.o(.text.LCD_clear)
+    LCD_fillRectangleBW                      0x080028d5   Thumb Code   398  LCD_Driver.o(.text.LCD_fillRectangleBW)
+    LCD_fillRectangleMC                      0x08002a65   Thumb Code   202  LCD_Driver.o(.text.LCD_fillRectangleMC)
+    LCD_init                                 0x08002b31   Thumb Code   112  LCD_Driver.o(.text.LCD_init)
+    MemManage_Handler                        0x08002e45   Thumb Code     4  stm32f4xx_it.o(.text.MemManage_Handler)
+    NMI_Handler                              0x08002e49   Thumb Code     2  stm32f4xx_it.o(.text.NMI_Handler)
+    PWM_SetValue                             0x08002eb9   Thumb Code    56  LCD_TIM.o(.text.PWM_SetValue)
+    PendSV_Handler                           0x08002ef1   Thumb Code     2  stm32f4xx_it.o(.text.PendSV_Handler)
+    SPI4W_Write_Byte                         0x08002ef5   Thumb Code   184  LCD_SPI.o(.text.SPI4W_Write_Byte)
+    SPIinit                                  0x080030d5   Thumb Code    14  LCD_SPI.o(.text.SPIinit)
+    SVC_Handler                              0x080030e5   Thumb Code     2  stm32f4xx_it.o(.text.SVC_Handler)
+    SysTick_Handler                          0x0800313d   Thumb Code     8  stm32f4xx_it.o(.text.SysTick_Handler)
+    SystemInit                               0x080031fd   Thumb Code   110  system_stm32f4xx.o(.text.SystemInit)
+    TIM4_Init                                0x0800326d   Thumb Code     8  LCD_TIM.o(.text.TIM4_Init)
+    TIM_Base_SetConfig                       0x08003275   Thumb Code   410  stm32f4xx_hal_tim.o(.text.TIM_Base_SetConfig)
+    TIM_CCxChannelCmd                        0x08003411   Thumb Code    54  stm32f4xx_hal_tim.o(.text.TIM_CCxChannelCmd)
+    TIM_OC2_SetConfig                        0x08003535   Thumb Code   244  stm32f4xx_hal_tim.o(.text.TIM_OC2_SetConfig)
+    TP_InitBasic                             0x080037c1   Thumb Code    50  LCD_Touch.o(.text.TP_InitBasic)
+    USART3_IRQHandler                        0x080038a5   Thumb Code    16  USART_STM32F4xx.o(.text.USART3_IRQHandler)
+    USART_IRQHandler                         0x08004865   Thumb Code  1026  USART_STM32F4xx.o(.text.USART_IRQHandler)
+    UsageFault_Handler                       0x080057e1   Thumb Code     4  stm32f4xx_it.o(.text.UsageFault_Handler)
+    display_error                            0x08005955   Thumb Code    28  display.o(.text.display_error)
+    display_update                           0x08005971   Thumb Code     2  display.o(.text.display_update)
+    getDirection                             0x08005975   Thumb Code   168  encoder.o(.text.getDirection)
+    getPhase                                 0x08005a1d   Thumb Code   100  encoder.o(.text.getPhase)
+    givePinA                                 0x08005a81   Thumb Code    42  encoder.o(.text.givePinA)
+    givePinB                                 0x08005aad   Thumb Code    44  encoder.o(.text.givePinB)
+    initITSboard                             0x08005c19   Thumb Code    20  init.o(.text.initITSboard)
+    itoa                                     0x08005c2d   Thumb Code   180  LCD_Tools.o(.text.itoa)
+    lcdPrintS                                0x08005ce1   Thumb Code   466  lcd.o(.text.lcdPrintS)
+    lcdPrintlnS                              0x08005eb5   Thumb Code    84  lcd.o(.text.lcdPrintlnS)
+    ledDirection                             0x08005f09   Thumb Code    86  led_control.o(.text.ledDirection)
+    ledError                                 0x08005f61   Thumb Code    14  led_control.o(.text.ledError)
+    ledNextStep                              0x08005f71   Thumb Code    62  led_control.o(.text.ledNextStep)
+    ledReset                                 0x08005fb1   Thumb Code    56  led_control.o(.text.ledReset)
+    main                                     0x08005fe9   Thumb Code   576  main.o(.text.main)
+    printDebugMsg                            0x08006239   Thumb Code   178  LCD_Debug.o(.text.printDebugMsg)
+    reset                                    0x080062ed   Thumb Code   126  errorManager.o(.text.reset)
+    stdinout_init                            0x0800639d   Thumb Code   174  stdinout_USART.o(.text.stdinout_init)
+    __scatterload_copy                       0x08006493   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x080064a1   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x080064a3   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    AHBPrescTable                            0x080064b0   Data          16  system_stm32f4xx.o(.rodata.AHBPrescTable)
+    APBPrescTable                            0x080064c0   Data           8  system_stm32f4xx.o(.rodata.APBPrescTable)
+    Driver_USART3                            0x080064c8   Data          56  USART_STM32F4xx.o(.rodata.Driver_USART3)
+    initCmds                                 0x0800654c   Data         103  LCD_Driver.o(.rodata.initCmds)
+    Region$$Table$$Base                      0x080066b8   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x080066d8   Number         0  anon$$obj.o(Region$$Table)
+    Font16FLASH                              0x20000000   Data           8  fontsFLASH.o(.data.Font16FLASH)
+    SystemCoreClock                          0x20000008   Data           4  system_stm32f4xx.o(.data.SystemCoreClock)
+    direction                                0x20000010   Data           4  errorManager.o(.data.direction)
+    uwTickFreq                               0x2000002c   Data           1  stm32f4xx_hal.o(.data.uwTickFreq)
+    uwTickPrio                               0x20000030   Data           4  stm32f4xx_hal.o(.data.uwTickPrio)
+    EthHandle                                0x20000038   Data          72  stm32f4xx_it.o(.bss.EthHandle)
+    angle                                    0x200000b8   Data           8  errorManager.o(.bss.angle)
+    angleSpeed                               0x200000c0   Data           8  errorManager.o(.bss.angleSpeed)
+    channelA                                 0x200000c8   Data           1  errorManager.o(.bss.channelA)
+    channelB                                 0x200000c9   Data           1  errorManager.o(.bss.channelB)
+    currentPhase                             0x200000cc   Data           4  errorManager.o(.bss.currentPhase)
+    lastAngle                                0x20000110   Data           8  errorManager.o(.bss.lastAngle)
+    lastPhase                                0x20000118   Data           4  errorManager.o(.bss.lastPhase)
+    newAngle                                 0x20000120   Data           8  errorManager.o(.bss.newAngle)
+    nextStepCounter                          0x20000128   Data           4  led_control.o(.bss.nextStepCounter)
+    phaseCounter                             0x2000012c   Data           4  errorManager.o(.bss.phaseCounter)
+    uwTick                                   0x20000148   Data           4  stm32f4xx_hal.o(.bss.uwTick)
+    __initial_sp                             0x20000550   Data           0  startup_stm32f429xx.o(STACK)
 
 
 
@@ -3512,349 +3359,299 @@ Memory Map of the image
 
   Image Entry point : 0x080001c1
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00007a20, Max: 0x00200000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00006710, Max: 0x00200000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x000079b0, Max: 0x00200000, ABSOLUTE)
+    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x000066d8, Max: 0x00200000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
     0x08000000   0x08000000   0x000001ac   Data   RO           63    RESET               startup_stm32f429xx.o
-    0x080001ac   0x080001ac   0x00000000   Code   RO         1707  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
-    0x080001ac   0x080001ac   0x00000004   Code   RO         1750    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
-    0x080001b0   0x080001b0   0x00000004   Code   RO         1753    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
-    0x080001b4   0x080001b4   0x00000000   Code   RO         1755    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
-    0x080001b4   0x080001b4   0x00000000   Code   RO         1757    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
-    0x080001b4   0x080001b4   0x00000008   Code   RO         1758    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
-    0x080001bc   0x080001bc   0x00000000   Code   RO         1760    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
-    0x080001bc   0x080001bc   0x00000000   Code   RO         1762    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
-    0x080001bc   0x080001bc   0x00000004   Code   RO         1751    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+    0x080001ac   0x080001ac   0x00000000   Code   RO         1651  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x080001ac   0x080001ac   0x00000004   Code   RO         1698    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
+    0x080001b0   0x080001b0   0x00000004   Code   RO         1701    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x080001b4   0x080001b4   0x00000000   Code   RO         1703    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x080001b4   0x080001b4   0x00000000   Code   RO         1705    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x080001b4   0x080001b4   0x00000008   Code   RO         1706    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x080001bc   0x080001bc   0x00000000   Code   RO         1708    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
+    0x080001bc   0x080001bc   0x00000000   Code   RO         1710    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
+    0x080001bc   0x080001bc   0x00000004   Code   RO         1699    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
     0x080001c0   0x080001c0   0x00000024   Code   RO           64  * .text               startup_stm32f429xx.o
-    0x080001e4   0x080001e4   0x00000062   Code   RO         1710    .text               mc_w.l(uldiv.o)
-    0x08000246   0x08000246   0x00000062   Code   RO         1712    .text               mc_w.l(ldiv.o)
-    0x080002a8   0x080002a8   0x00000024   Code   RO         1714    .text               mc_w.l(memseta.o)
-    0x080002cc   0x080002cc   0x0000000e   Code   RO         1716    .text               mc_w.l(strlen.o)
-    0x080002da   0x080002da   0x0000001e   Code   RO         1780    .text               mc_w.l(llshl.o)
-    0x080002f8   0x080002f8   0x00000020   Code   RO         1782    .text               mc_w.l(llushr.o)
-    0x08000318   0x08000318   0x00000030   Code   RO         1806    .text               mc_w.l(init.o)
-    0x08000348   0x08000348   0x00000004   Code   RO           91    .text.BusFault_Handler  stm32f4xx_it.o
-    0x0800034c   0x0800034c   0x00000008   Code   RO         1636    .text.C             operations.o
-    0x08000354   0x08000354   0x00000002   Code   RO           97    .text.DebugMon_Handler  stm32f4xx_it.o
-    0x08000356   0x08000356   0x00000002   PAD
-    0x08000358   0x08000358   0x00000010   Code   RO         1295    .text.Driver_Delay_ms  LCD_Tools.o
-    0x08000368   0x08000368   0x00000020   Code   RO         1297    .text.Driver_Delay_us  LCD_Tools.o
-    0x08000388   0x08000388   0x00000010   Code   RO          103    .text.ETH_IRQHandler  stm32f4xx_it.o
-    0x08000398   0x08000398   0x000001da   Code   RO         1518    .text.Enable_GPIO_Clock  USART_STM32F4xx.o
-    0x08000572   0x08000572   0x00000002   PAD
-    0x08000574   0x08000574   0x000000e8   Code   RO         1359    .text.Error_Handler  error.o
-    0x0800065c   0x0800065c   0x00000008   Code   RO         1263    .text.GPIO_Init     LCD_GPIO.o
-    0x08000664   0x08000664   0x00000014   Code   RO         1168    .text.GUI_clear     LCD_GUI.o
-    0x08000678   0x08000678   0x000000bc   Code   RO         1174    .text.GUI_disChar   LCD_GUI.o
-    0x08000734   0x08000734   0x00000068   Code   RO         1178    .text.GUI_disNum    LCD_GUI.o
-    0x0800079c   0x0800079c   0x00000114   Code   RO         1176    .text.GUI_disStr    LCD_GUI.o
-    0x080008b0   0x080008b0   0x000000f2   Code   RO         1170    .text.GUI_drawPoint  LCD_GUI.o
-    0x080009a2   0x080009a2   0x00000002   PAD
-    0x080009a4   0x080009a4   0x000001aa   Code   RO         1172    .text.GUI_drawRectangle  LCD_GUI.o
-    0x08000b4e   0x08000b4e   0x00000002   PAD
-    0x08000b50   0x08000b50   0x0000001c   Code   RO         1166    .text.GUI_init      LCD_GUI.o
-    0x08000b6c   0x08000b6c   0x000000ea   Code   RO          750    .text.HAL_DMA_Abort  stm32f4xx_hal_dma.o
-    0x08000c56   0x08000c56   0x00000002   PAD
-    0x08000c58   0x08000c58   0x00000042   Code   RO          293    .text.HAL_Delay     stm32f4xx_hal.o
-    0x08000c9a   0x08000c9a   0x00000002   PAD
-    0x08000c9c   0x08000c9c   0x00000008   Code   RO          889    .text.HAL_ETH_ErrorCallback  stm32f4xx_hal_eth.o
-    0x08000ca4   0x08000ca4   0x000000c2   Code   RO          883    .text.HAL_ETH_IRQHandler  stm32f4xx_hal_eth.o
-    0x08000d66   0x08000d66   0x00000002   PAD
-    0x08000d68   0x08000d68   0x00000008   Code   RO          885    .text.HAL_ETH_RxCpltCallback  stm32f4xx_hal_eth.o
-    0x08000d70   0x08000d70   0x00000008   Code   RO          887    .text.HAL_ETH_TxCpltCallback  stm32f4xx_hal_eth.o
-    0x08000d78   0x08000d78   0x0000025c   Code   RO          227    .text.HAL_GPIO_DeInit  stm32f4xx_hal_gpio.o
-    0x08000fd4   0x08000fd4   0x000003f0   Code   RO          225    .text.HAL_GPIO_Init  stm32f4xx_hal_gpio.o
-    0x080013c4   0x080013c4   0x0000002e   Code   RO          229    .text.HAL_GPIO_ReadPin  stm32f4xx_hal_gpio.o
-    0x080013f2   0x080013f2   0x00000002   PAD
-    0x080013f4   0x080013f4   0x00000032   Code   RO          233    .text.HAL_GPIO_TogglePin  stm32f4xx_hal_gpio.o
-    0x08001426   0x08001426   0x00000002   PAD
-    0x08001428   0x08001428   0x0000002e   Code   RO          231    .text.HAL_GPIO_WritePin  stm32f4xx_hal_gpio.o
-    0x08001456   0x08001456   0x00000002   PAD
-    0x08001458   0x08001458   0x0000000c   Code   RO          285    .text.HAL_GetTick   stm32f4xx_hal.o
-    0x08001464   0x08001464   0x0000001a   Code   RO          283    .text.HAL_IncTick   stm32f4xx_hal.o
-    0x0800147e   0x0800147e   0x00000002   PAD
-    0x08001480   0x08001480   0x0000002e   Code   RO          273    .text.HAL_Init      stm32f4xx_hal.o
-    0x080014ae   0x080014ae   0x00000002   PAD
-    0x080014b0   0x080014b0   0x00000070   Code   RO          275    .text.HAL_InitTick  stm32f4xx_hal.o
-    0x08001520   0x08001520   0x00000002   Code   RO          277    .text.HAL_MspInit   stm32f4xx_hal.o
-    0x08001522   0x08001522   0x00000002   PAD
-    0x08001524   0x08001524   0x00000014   Code   RO          129    .text.HAL_NVIC_DisableIRQ  stm32f4xx_hal_cortex.o
-    0x08001538   0x08001538   0x00000032   Code   RO          117    .text.HAL_NVIC_SetPriority  stm32f4xx_hal_cortex.o
-    0x0800156a   0x0800156a   0x00000002   PAD
-    0x0800156c   0x0800156c   0x00000010   Code   RO          113    .text.HAL_NVIC_SetPriorityGrouping  stm32f4xx_hal_cortex.o
-    0x0800157c   0x0800157c   0x000000be   Code   RO          260    .text.HAL_PWREx_EnableOverDrive  stm32f4xx_hal_pwr_ex.o
+    0x080001e4   0x080001e4   0x00000062   Code   RO         1654    .text               mc_w.l(uldiv.o)
+    0x08000246   0x08000246   0x00000062   Code   RO         1656    .text               mc_w.l(ldiv.o)
+    0x080002a8   0x080002a8   0x00000024   Code   RO         1658    .text               mc_w.l(memseta.o)
+    0x080002cc   0x080002cc   0x0000000e   Code   RO         1660    .text               mc_w.l(strlen.o)
+    0x080002da   0x080002da   0x0000014e   Code   RO         1690    .text               mf_w.l(dadd.o)
+    0x08000428   0x08000428   0x000000de   Code   RO         1692    .text               mf_w.l(ddiv.o)
+    0x08000506   0x08000506   0x0000001a   Code   RO         1694    .text               mf_w.l(dfltui.o)
+    0x08000520   0x08000520   0x0000001e   Code   RO         1728    .text               mc_w.l(llshl.o)
+    0x0800053e   0x0800053e   0x00000020   Code   RO         1730    .text               mc_w.l(llushr.o)
+    0x0800055e   0x0800055e   0x00000024   Code   RO         1732    .text               mc_w.l(llsshr.o)
+    0x08000582   0x08000582   0x00000000   Code   RO         1741    .text               mc_w.l(iusefp.o)
+    0x08000582   0x08000582   0x000000ba   Code   RO         1742    .text               mf_w.l(depilogue.o)
+    0x0800063c   0x0800063c   0x00000030   Code   RO         1752    .text               mc_w.l(init.o)
+    0x0800066c   0x0800066c   0x00000004   Code   RO           91    .text.BusFault_Handler  stm32f4xx_it.o
+    0x08000670   0x08000670   0x00000002   Code   RO           97    .text.DebugMon_Handler  stm32f4xx_it.o
+    0x08000672   0x08000672   0x00000002   PAD
+    0x08000674   0x08000674   0x00000010   Code   RO         1295    .text.Driver_Delay_ms  LCD_Tools.o
+    0x08000684   0x08000684   0x00000020   Code   RO         1297    .text.Driver_Delay_us  LCD_Tools.o
+    0x080006a4   0x080006a4   0x00000010   Code   RO          103    .text.ETH_IRQHandler  stm32f4xx_it.o
+    0x080006b4   0x080006b4   0x000001da   Code   RO         1518    .text.Enable_GPIO_Clock  USART_STM32F4xx.o
+    0x0800088e   0x0800088e   0x00000002   PAD
+    0x08000890   0x08000890   0x000000e8   Code   RO         1359    .text.Error_Handler  error.o
+    0x08000978   0x08000978   0x00000008   Code   RO         1263    .text.GPIO_Init     LCD_GPIO.o
+    0x08000980   0x08000980   0x000000bc   Code   RO         1174    .text.GUI_disChar   LCD_GUI.o
+    0x08000a3c   0x08000a3c   0x00000068   Code   RO         1178    .text.GUI_disNum    LCD_GUI.o
+    0x08000aa4   0x08000aa4   0x00000114   Code   RO         1176    .text.GUI_disStr    LCD_GUI.o
+    0x08000bb8   0x08000bb8   0x000001aa   Code   RO         1172    .text.GUI_drawRectangle  LCD_GUI.o
+    0x08000d62   0x08000d62   0x00000002   PAD
+    0x08000d64   0x08000d64   0x0000001c   Code   RO         1166    .text.GUI_init      LCD_GUI.o
+    0x08000d80   0x08000d80   0x000000ea   Code   RO          750    .text.HAL_DMA_Abort  stm32f4xx_hal_dma.o
+    0x08000e6a   0x08000e6a   0x00000002   PAD
+    0x08000e6c   0x08000e6c   0x00000042   Code   RO          293    .text.HAL_Delay     stm32f4xx_hal.o
+    0x08000eae   0x08000eae   0x00000002   PAD
+    0x08000eb0   0x08000eb0   0x00000008   Code   RO          889    .text.HAL_ETH_ErrorCallback  stm32f4xx_hal_eth.o
+    0x08000eb8   0x08000eb8   0x000000c2   Code   RO          883    .text.HAL_ETH_IRQHandler  stm32f4xx_hal_eth.o
+    0x08000f7a   0x08000f7a   0x00000002   PAD
+    0x08000f7c   0x08000f7c   0x00000008   Code   RO          885    .text.HAL_ETH_RxCpltCallback  stm32f4xx_hal_eth.o
+    0x08000f84   0x08000f84   0x00000008   Code   RO          887    .text.HAL_ETH_TxCpltCallback  stm32f4xx_hal_eth.o
+    0x08000f8c   0x08000f8c   0x0000025c   Code   RO          227    .text.HAL_GPIO_DeInit  stm32f4xx_hal_gpio.o
+    0x080011e8   0x080011e8   0x000003f0   Code   RO          225    .text.HAL_GPIO_Init  stm32f4xx_hal_gpio.o
+    0x080015d8   0x080015d8   0x0000002e   Code   RO          229    .text.HAL_GPIO_ReadPin  stm32f4xx_hal_gpio.o
+    0x08001606   0x08001606   0x00000002   PAD
+    0x08001608   0x08001608   0x00000032   Code   RO          233    .text.HAL_GPIO_TogglePin  stm32f4xx_hal_gpio.o
     0x0800163a   0x0800163a   0x00000002   PAD
-    0x0800163c   0x0800163c   0x00000262   Code   RO          345    .text.HAL_RCC_ClockConfig  stm32f4xx_hal_rcc.o
-    0x0800189e   0x0800189e   0x00000002   PAD
-    0x080018a0   0x080018a0   0x0000000c   Code   RO          355    .text.HAL_RCC_GetHCLKFreq  stm32f4xx_hal_rcc.o
-    0x080018ac   0x080018ac   0x00000022   Code   RO          357    .text.HAL_RCC_GetPCLK1Freq  stm32f4xx_hal_rcc.o
-    0x080018ce   0x080018ce   0x00000002   PAD
-    0x080018d0   0x080018d0   0x000000e6   Code   RO          347    .text.HAL_RCC_GetSysClockFreq  stm32f4xx_hal_rcc.o
-    0x080019b6   0x080019b6   0x00000002   PAD
-    0x080019b8   0x080019b8   0x000006a4   Code   RO          343    .text.HAL_RCC_OscConfig  stm32f4xx_hal_rcc.o
-    0x0800205c   0x0800205c   0x00000010   Code   RO          137    .text.HAL_SYSTICK_Config  stm32f4xx_hal_cortex.o
-    0x0800206c   0x0800206c   0x00000122   Code   RO          838    .text.HAL_TIMEx_MasterConfigSynchronization  stm32f4xx_hal_tim_ex.o
-    0x0800218e   0x0800218e   0x00000002   PAD
-    0x08002190   0x08002190   0x00000048   Code   RO         1284    .text.HAL_TIM_MspPostInit  LCD_TIM.o
-    0x080021d8   0x080021d8   0x00000144   Code   RO          542    .text.HAL_TIM_PWM_ConfigChannel  stm32f4xx_hal_tim.o
-    0x0800231c   0x0800231c   0x00000058   Code   RO          430    .text.HAL_TIM_PWM_Init  stm32f4xx_hal_tim.o
-    0x08002374   0x08002374   0x0000003e   Code   RO         1278    .text.HAL_TIM_PWM_MspInit  LCD_TIM.o
-    0x080023b2   0x080023b2   0x00000002   PAD
-    0x080023b4   0x080023b4   0x00000080   Code   RO          438    .text.HAL_TIM_PWM_Start  stm32f4xx_hal_tim.o
-    0x08002434   0x08002434   0x00000004   Code   RO           87    .text.HardFault_Handler  stm32f4xx_it.o
-    0x08002438   0x08002438   0x000000b6   Code   RO         1299    .text.LCDErrHandler  LCD_Tools.o
-    0x080024ee   0x080024ee   0x00000002   PAD
-    0x080024f0   0x080024f0   0x0000004a   Code   RO         1132    .text.LCD_Reset     LCD_Driver.o
-    0x0800253a   0x0800253a   0x00000002   PAD
-    0x0800253c   0x0800253c   0x00000014   Code   RO         1134    .text.LCD_SetBackLight  LCD_Driver.o
-    0x08002550   0x08002550   0x00000022   Code   RO         1138    .text.LCD_SetGramScanWay  LCD_Driver.o
-    0x08002572   0x08002572   0x00000002   PAD
-    0x08002574   0x08002574   0x00000048   Code   RO         1140    .text.LCD_WriteCMD  LCD_Driver.o
-    0x080025bc   0x080025bc   0x00000056   Code   RO         1136    .text.LCD_WriteCMDList  LCD_Driver.o
-    0x08002612   0x08002612   0x00000002   PAD
-    0x08002614   0x08002614   0x00000016   Code   RO         1150    .text.LCD_WriteParam  LCD_Driver.o
-    0x0800262a   0x0800262a   0x00000002   PAD
-    0x0800262c   0x0800262c   0x00000070   Code   RO         1146    .text.LCD_WriteParameters  LCD_Driver.o
-    0x0800269c   0x0800269c   0x00000022   Code   RO         1152    .text.LCD_clear     LCD_Driver.o
-    0x080026be   0x080026be   0x00000002   PAD
-    0x080026c0   0x080026c0   0x0000018e   Code   RO         1148    .text.LCD_fillRectangleBW  LCD_Driver.o
-    0x0800284e   0x0800284e   0x00000002   PAD
-    0x08002850   0x08002850   0x000000ca   Code   RO         1142    .text.LCD_fillRectangleMC  LCD_Driver.o
-    0x0800291a   0x0800291a   0x00000002   PAD
-    0x0800291c   0x0800291c   0x00000070   Code   RO         1130    .text.LCD_init      LCD_Driver.o
-    0x0800298c   0x0800298c   0x00000058   Code   RO         1144    .text.LCD_setWindow  LCD_Driver.o
-    0x080029e4   0x080029e4   0x0000019e   Code   RO         1265    .text.MX_GPIO_Init  LCD_GPIO.o
-    0x08002b82   0x08002b82   0x00000002   PAD
-    0x08002b84   0x08002b84   0x000000aa   Code   RO         1276    .text.MX_TIM4_Init  LCD_TIM.o
-    0x08002c2e   0x08002c2e   0x00000002   PAD
-    0x08002c30   0x08002c30   0x00000004   Code   RO           89    .text.MemManage_Handler  stm32f4xx_it.o
-    0x08002c34   0x08002c34   0x00000002   Code   RO           85    .text.NMI_Handler   stm32f4xx_it.o
-    0x08002c36   0x08002c36   0x00000002   PAD
-    0x08002c38   0x08002c38   0x0000006c   Code   RO          123    .text.NVIC_EncodePriority  stm32f4xx_hal_cortex.o
-    0x08002ca4   0x08002ca4   0x00000096   Code   RO         1634    .text.P             operations.o
-    0x08002d3a   0x08002d3a   0x00000002   PAD
-    0x08002d3c   0x08002d3c   0x00000038   Code   RO         1282    .text.PWM_SetValue  LCD_TIM.o
-    0x08002d74   0x08002d74   0x00000002   Code   RO           99    .text.PendSV_Handler  stm32f4xx_it.o
-    0x08002d76   0x08002d76   0x00000002   PAD
-    0x08002d78   0x08002d78   0x0000000a   Code   RO         1252    .text.SPI4W_Read_Byte  LCD_SPI.o
-    0x08002d82   0x08002d82   0x00000002   PAD
-    0x08002d84   0x08002d84   0x000000b8   Code   RO         1246    .text.SPI4W_Write_Byte  LCD_SPI.o
-    0x08002e3c   0x08002e3c   0x0000004c   Code   RO         1240    .text.SPIInitDevWithoutHAL  LCD_SPI.o
-    0x08002e88   0x08002e88   0x000000da   Code   RO         1238    .text.SPIInitGPIOsWithoutHAL  LCD_SPI.o
-    0x08002f62   0x08002f62   0x00000002   PAD
-    0x08002f64   0x08002f64   0x0000000e   Code   RO         1236    .text.SPIinit       LCD_SPI.o
-    0x08002f72   0x08002f72   0x00000002   PAD
-    0x08002f74   0x08002f74   0x0000000a   Code   RO         1244    .text.SPIsetLCDSpeed  LCD_SPI.o
-    0x08002f7e   0x08002f7e   0x00000002   PAD
-    0x08002f80   0x08002f80   0x0000004a   Code   RO         1242    .text.SPIsetTPSpeed  LCD_SPI.o
-    0x08002fca   0x08002fca   0x00000002   PAD
-    0x08002fcc   0x08002fcc   0x00000002   Code   RO           95    .text.SVC_Handler   stm32f4xx_it.o
-    0x08002fce   0x08002fce   0x00000002   PAD
-    0x08002fd0   0x08002fd0   0x00000052   Code   RO          139    .text.SysTick_Config  stm32f4xx_hal_cortex.o
-    0x08003022   0x08003022   0x00000002   PAD
-    0x08003024   0x08003024   0x00000008   Code   RO          101    .text.SysTick_Handler  stm32f4xx_it.o
-    0x0800302c   0x0800302c   0x000000b8   Code   RO         1401    .text.SystemClock_Config  init.o
-    0x080030e4   0x080030e4   0x0000006e   Code   RO           71    .text.SystemInit    system_stm32f4xx.o
-    0x08003152   0x08003152   0x00000002   PAD
-    0x08003154   0x08003154   0x00000008   Code   RO         1274    .text.TIM4_Init     LCD_TIM.o
-    0x0800315c   0x0800315c   0x0000019a   Code   RO          380    .text.TIM_Base_SetConfig  stm32f4xx_hal_tim.o
-    0x080032f6   0x080032f6   0x00000002   PAD
-    0x080032f8   0x080032f8   0x00000036   Code   RO          414    .text.TIM_CCxChannelCmd  stm32f4xx_hal_tim.o
-    0x0800332e   0x0800332e   0x00000002   PAD
-    0x08003330   0x08003330   0x000000ea   Code   RO          524    .text.TIM_OC1_SetConfig  stm32f4xx_hal_tim.o
-    0x0800341a   0x0800341a   0x00000002   PAD
-    0x0800341c   0x0800341c   0x000000f4   Code   RO          526    .text.TIM_OC2_SetConfig  stm32f4xx_hal_tim.o
-    0x08003510   0x08003510   0x000000f2   Code   RO          528    .text.TIM_OC3_SetConfig  stm32f4xx_hal_tim.o
-    0x08003602   0x08003602   0x00000002   PAD
-    0x08003604   0x08003604   0x000000a4   Code   RO          530    .text.TIM_OC4_SetConfig  stm32f4xx_hal_tim.o
-    0x080036a8   0x080036a8   0x00000032   Code   RO         1208    .text.TP_InitBasic  LCD_Touch.o
-    0x080036da   0x080036da   0x00000002   PAD
-    0x080036dc   0x080036dc   0x0000006e   Code   RO         1222    .text.TP_Read_ADC   LCD_Touch.o
-    0x0800374a   0x0800374a   0x00000002   PAD
-    0x0800374c   0x0800374c   0x00000128   Code   RO         1220    .text.TP_Read_ADC_Average  LCD_Touch.o
-    0x08003874   0x08003874   0x00000020   Code   RO         1218    .text.TP_Read_ADC_XY  LCD_Touch.o
-    0x08003894   0x08003894   0x000000f4   Code   RO         1216    .text.TP_Read_TwiceADC  LCD_Touch.o
-    0x08003988   0x08003988   0x000000fc   Code   RO         1212    .text.TP_Scan       LCD_Touch.o
-    0x08003a84   0x08003a84   0x0000002a   Code   RO         1210    .text.TP_SetDefaultCalibration  LCD_Touch.o
-    0x08003aae   0x08003aae   0x00000002   PAD
-    0x08003ab0   0x08003ab0   0x0000001c   Code   RO         1214    .text.TP_get        LCD_Touch.o
-    0x08003acc   0x08003acc   0x00000008   Code   RO         1204    .text.TP_pressed    LCD_Touch.o
-    0x08003ad4   0x08003ad4   0x0000001c   Code   RO         1506    .text.USART3_Control  USART_STM32F4xx.o
-    0x08003af0   0x08003af0   0x00000018   Code   RO         1488    .text.USART3_GetCapabilities  USART_STM32F4xx.o
-    0x08003b08   0x08003b08   0x00000018   Code   RO         1512    .text.USART3_GetModemStatus  USART_STM32F4xx.o
-    0x08003b20   0x08003b20   0x00000010   Code   RO         1504    .text.USART3_GetRxCount  USART_STM32F4xx.o
-    0x08003b30   0x08003b30   0x00000018   Code   RO         1508    .text.USART3_GetStatus  USART_STM32F4xx.o
-    0x08003b48   0x08003b48   0x00000010   Code   RO         1502    .text.USART3_GetTxCount  USART_STM32F4xx.o
-    0x08003b58   0x08003b58   0x00000010   Code   RO         1484    .text.USART3_IRQHandler  USART_STM32F4xx.o
-    0x08003b68   0x08003b68   0x00000018   Code   RO         1490    .text.USART3_Initialize  USART_STM32F4xx.o
-    0x08003b80   0x08003b80   0x0000001c   Code   RO         1494    .text.USART3_PowerControl  USART_STM32F4xx.o
-    0x08003b9c   0x08003b9c   0x0000001c   Code   RO         1498    .text.USART3_Receive  USART_STM32F4xx.o
-    0x08003bb8   0x08003bb8   0x0000001c   Code   RO         1496    .text.USART3_Send   USART_STM32F4xx.o
-    0x08003bd4   0x08003bd4   0x0000001c   Code   RO         1510    .text.USART3_SetModemControl  USART_STM32F4xx.o
-    0x08003bf0   0x08003bf0   0x00000020   Code   RO         1500    .text.USART3_Transfer  USART_STM32F4xx.o
-    0x08003c10   0x08003c10   0x00000010   Code   RO         1492    .text.USART3_Uninitialize  USART_STM32F4xx.o
-    0x08003c20   0x08003c20   0x00000d86   Code   RO         1540    .text.USART_Control  USART_STM32F4xx.o
-    0x080049a6   0x080049a6   0x00000002   PAD
-    0x080049a8   0x080049a8   0x00000010   Code   RO         1514    .text.USART_GetCapabilities  USART_STM32F4xx.o
-    0x080049b8   0x080049b8   0x0000006a   Code   RO         1546    .text.USART_GetModemStatus  USART_STM32F4xx.o
-    0x08004a22   0x08004a22   0x00000002   PAD
-    0x08004a24   0x08004a24   0x0000000e   Code   RO         1538    .text.USART_GetRxCount  USART_STM32F4xx.o
-    0x08004a32   0x08004a32   0x00000002   PAD
-    0x08004a34   0x08004a34   0x000000d4   Code   RO         1542    .text.USART_GetStatus  USART_STM32F4xx.o
-    0x08004b08   0x08004b08   0x0000000e   Code   RO         1536    .text.USART_GetTxCount  USART_STM32F4xx.o
-    0x08004b16   0x08004b16   0x00000002   PAD
-    0x08004b18   0x08004b18   0x00000402   Code   RO         1482    .text.USART_IRQHandler  USART_STM32F4xx.o
-    0x08004f1a   0x08004f1a   0x00000002   PAD
-    0x08004f1c   0x08004f1c   0x000000e0   Code   RO         1516    .text.USART_Initialize  USART_STM32F4xx.o
-    0x08004ffc   0x08004ffc   0x0000024c   Code   RO         1528    .text.USART_PeripheralReset  USART_STM32F4xx.o
-    0x08005248   0x08005248   0x0000045e   Code   RO         1522    .text.USART_PowerControl  USART_STM32F4xx.o
-    0x080056a6   0x080056a6   0x00000002   PAD
-    0x080056a8   0x080056a8   0x000000e4   Code   RO         1532    .text.USART_Receive  USART_STM32F4xx.o
-    0x0800578c   0x0800578c   0x000000b6   Code   RO         1530    .text.USART_Send    USART_STM32F4xx.o
-    0x08005842   0x08005842   0x00000002   PAD
-    0x08005844   0x08005844   0x000000e2   Code   RO         1544    .text.USART_SetModemControl  USART_STM32F4xx.o
-    0x08005926   0x08005926   0x00000002   PAD
-    0x08005928   0x08005928   0x00000096   Code   RO         1534    .text.USART_Transfer  USART_STM32F4xx.o
-    0x080059be   0x080059be   0x00000002   PAD
-    0x080059c0   0x080059c0   0x000000c0   Code   RO         1520    .text.USART_Uninitialize  USART_STM32F4xx.o
-    0x08005a80   0x08005a80   0x00000012   Code   RO         1486    .text.USARTx_GetVersion  USART_STM32F4xx.o
-    0x08005a92   0x08005a92   0x00000002   PAD
-    0x08005a94   0x08005a94   0x00000004   Code   RO           93    .text.UsageFault_Handler  stm32f4xx_it.o
-    0x08005a98   0x08005a98   0x00000030   Code   RO         1524    .text.__NVIC_ClearPendingIRQ  USART_STM32F4xx.o
-    0x08005ac8   0x08005ac8   0x00000038   Code   RO          131    .text.__NVIC_DisableIRQ  stm32f4xx_hal_cortex.o
-    0x08005b00   0x08005b00   0x00000030   Code   RO         1526    .text.__NVIC_EnableIRQ  USART_STM32F4xx.o
-    0x08005b30   0x08005b30   0x00000010   Code   RO          119    .text.__NVIC_GetPriorityGrouping  stm32f4xx_hal_cortex.o
-    0x08005b40   0x08005b40   0x00000042   Code   RO          121    .text.__NVIC_SetPriority  stm32f4xx_hal_cortex.o
-    0x08005b82   0x08005b82   0x00000002   PAD
-    0x08005b84   0x08005b84   0x0000003c   Code   RO          115    .text.__NVIC_SetPriorityGrouping  stm32f4xx_hal_cortex.o
-    0x08005bc0   0x08005bc0   0x00000092   Code   RO         1586    .text.add           calculate.o
-    0x08005c52   0x08005c52   0x00000002   PAD
-    0x08005c54   0x08005c54   0x00000048   Code   RO         1250    .text.check_SPI_SR  LCD_SPI.o
-    0x08005c9c   0x08005c9c   0x00000010   Code   RO         1609    .text.clearEchoTerm  display.o
-    0x08005cac   0x08005cac   0x0000000e   Code   RO         1673    .text.clearStack    stack.o
-    0x08005cba   0x08005cba   0x00000002   PAD
-    0x08005cbc   0x08005cbc   0x00000010   Code   RO         1607    .text.clearStdout   display.o
-    0x08005ccc   0x08005ccc   0x00000028   Code   RO         1416    .text.clearTerm     terminal.o
-    0x08005cf4   0x08005cf4   0x00000058   Code   RO         1638    .text.d             operations.o
-    0x08005d4c   0x08005d4c   0x000000c8   Code   RO         1693    .text.displayError  errorhaendler.o
-    0x08005e14   0x08005e14   0x00000086   Code   RO         1598    .text.divide        calculate.o
-    0x08005e9a   0x08005e9a   0x00000002   PAD
-    0x08005e9c   0x08005e9c   0x000000c8   Code   RO         1414    .text.genTerm       terminal.o
-    0x08005f64   0x08005f64   0x00000064   Code   RO         1445    .text.getKeyPadInput  keypad.o
-    0x08005fc8   0x08005fc8   0x0000000c   Code   RO         1671    .text.getStackSize  stack.o
-    0x08005fd4   0x08005fd4   0x00000040   Code   RO         1451    .text.getValidButton  keypad.o
-    0x08006014   0x08006014   0x000000d0   Code   RO         1613    .text.initDisplay   display.o
-    0x080060e4   0x080060e4   0x00000140   Code   RO         1403    .text.initGPIOs     init.o
-    0x08006224   0x08006224   0x00000014   Code   RO         1399    .text.initITSboard  init.o
-    0x08006238   0x08006238   0x000000d6   Code   RO         1684    .text.intToString   toString.o
-    0x0800630e   0x0800630e   0x00000002   PAD
-    0x08006310   0x08006310   0x00000012   Code   RO         1663    .text.isEmpty       stack.o
-    0x08006322   0x08006322   0x00000002   PAD
-    0x08006324   0x08006324   0x000000b4   Code   RO         1301    .text.itoa          LCD_Tools.o
-    0x080063d8   0x080063d8   0x000001d2   Code   RO         1367    .text.lcdPrintS     lcd.o
-    0x080065aa   0x080065aa   0x00000002   PAD
-    0x080065ac   0x080065ac   0x0000012c   Code   RO         1575    .text.main          main.o
-    0x080066d8   0x080066d8   0x000000d2   Code   RO         1441    .text.makeKeyPad    keypad.o
-    0x080067aa   0x080067aa   0x00000002   PAD
-    0x080067ac   0x080067ac   0x00000092   Code   RO         1594    .text.multiply      calculate.o
-    0x0800683e   0x0800683e   0x00000002   PAD
-    0x08006840   0x08006840   0x00000008   Code   RO         1651    .text.nextChar      scanner.o
-    0x08006848   0x08006848   0x0000014a   Code   RO         1649    .text.nextToken     scanner.o
-    0x08006992   0x08006992   0x00000002   PAD
-    0x08006994   0x08006994   0x0000004c   Code   RO         1632    .text.p             operations.o
-    0x080069e0   0x080069e0   0x00000046   Code   RO         1665    .text.peek          stack.o
-    0x08006a26   0x08006a26   0x00000002   PAD
-    0x08006a28   0x08006a28   0x0000004c   Code   RO         1669    .text.pop           stack.o
-    0x08006a74   0x08006a74   0x00000246   Code   RO         1443    .text.printButton   keypad.o
-    0x08006cba   0x08006cba   0x00000002   PAD
-    0x08006cbc   0x08006cbc   0x0000009c   Code   RO         1422    .text.printChar     terminal.o
-    0x08006d58   0x08006d58   0x000000b2   Code   RO         1333    .text.printDebugMsg  LCD_Debug.o
-    0x08006e0a   0x08006e0a   0x00000002   PAD
-    0x08006e0c   0x08006e0c   0x00000020   Code   RO         1426    .text.printNewLine  terminal.o
-    0x08006e2c   0x08006e2c   0x00000018   Code   RO         1611    .text.printStdout   display.o
-    0x08006e44   0x08006e44   0x0000003c   Code   RO         1424    .text.printTerm     terminal.o
-    0x08006e80   0x08006e80   0x00000028   Code   RO         1615    .text.printToEchoLine  display.o
-    0x08006ea8   0x08006ea8   0x00000046   Code   RO         1667    .text.push          stack.o
-    0x08006eee   0x08006eee   0x00000002   PAD
-    0x08006ef0   0x08006ef0   0x0000005c   Code   RO         1640    .text.r             operations.o
-    0x08006f4c   0x08006f4c   0x0000005e   Code   RO         1584    .text.safe_add      calculate.o
-    0x08006faa   0x08006faa   0x00000002   PAD
-    0x08006fac   0x08006fac   0x00000048   Code   RO         1596    .text.safe_divide   calculate.o
-    0x08006ff4   0x08006ff4   0x000000be   Code   RO         1592    .text.safe_multiply  calculate.o
-    0x080070b2   0x080070b2   0x00000002   PAD
-    0x080070b4   0x080070b4   0x0000005e   Code   RO         1588    .text.safe_substract  calculate.o
-    0x08007112   0x08007112   0x00000002   PAD
-    0x08007114   0x08007114   0x00000030   Code   RO         1248    .text.save_restore_AltFn_SPI1_MOSI_Pin  LCD_SPI.o
-    0x08007144   0x08007144   0x0000016a   Code   RO         1447    .text.selectButton  keypad.o
-    0x080072ae   0x080072ae   0x00000002   PAD
-    0x080072b0   0x080072b0   0x00000020   Code   RO         1617    .text.setErrMode    display.o
-    0x080072d0   0x080072d0   0x00000014   Code   RO         1418    .text.setTextColorTerm  terminal.o
-    0x080072e4   0x080072e4   0x000000ae   Code   RO         1562    .text.stdinout_init  stdinout_USART.o
-    0x08007392   0x08007392   0x00000002   PAD
-    0x08007394   0x08007394   0x00000046   Code   RO         1369    .text.stringCopy    lcd.o
-    0x080073da   0x080073da   0x00000002   PAD
-    0x080073dc   0x080073dc   0x00000092   Code   RO         1590    .text.subtract      calculate.o
-    0x0800746e   0x0800746e   0x00000002   PAD
-    0x08007470   0x08007470   0x000000ea   Code   RO         1453    .text.touchCoordinateToKey  keypad.o
-    0x0800755a   0x0800755a   0x0000000e   Code   RO         1814    i.__scatterload_copy  mc_w.l(handlers.o)
-    0x08007568   0x08007568   0x00000002   Code   RO         1815    i.__scatterload_null  mc_w.l(handlers.o)
-    0x0800756a   0x0800756a   0x0000000e   Code   RO         1816    i.__scatterload_zeroinit  mc_w.l(handlers.o)
-    0x08007578   0x08007578   0x00000010   Data   RO           76    .rodata.AHBPrescTable  system_stm32f4xx.o
-    0x08007588   0x08007588   0x00000008   Data   RO           77    .rodata.APBPrescTable  system_stm32f4xx.o
-    0x08007590   0x08007590   0x00000038   Data   RO         1548    .rodata.Driver_USART3  USART_STM32F4xx.o
-    0x080075c8   0x080075c8   0x00000034   Data   RO         1553    .rodata.USART3_Resources  USART_STM32F4xx.o
-    0x080075fc   0x080075fc   0x0000000c   Data   RO         1550    .rodata.USART3_rx   USART_STM32F4xx.o
-    0x08007608   0x08007608   0x0000000c   Data   RO         1549    .rodata.USART3_tx   USART_STM32F4xx.o
-    0x08007614   0x08007614   0x00000067   Data   RO         1158    .rodata.initCmds    LCD_Driver.o
-    0x0800767b   0x0800767b   0x00000001   PAD
-    0x0800767c   0x0800767c   0x00000150   Data   RO         1455    .rodata.keypad      keypad.o
-    0x080077cc   0x080077cc   0x00000037   Data   RO         1190    .rodata.str1.1      LCD_GUI.o
-    0x08007803   0x08007803   0x00000037   Data   RO         1254    .rodata.str1.1      LCD_SPI.o
-    0x0800783a   0x0800783a   0x00000037   Data   RO         1287    .rodata.str1.1      LCD_TIM.o
-    0x08007871   0x08007871   0x0000001c   Data   RO         1336    .rodata.str1.1      LCD_Debug.o
-    0x0800788d   0x0800788d   0x00000054   Data   RO         1432    .rodata.str1.1      terminal.o
-    0x080078e1   0x080078e1   0x000000ac   Data   RO         1695    .rodata.str1.1      errorhaendler.o
-    0x0800798d   0x0800798d   0x00000003   PAD
-    0x08007990   0x08007990   0x00000020   Data   RO         1813    Region$$Table       anon$$obj.o
+    0x0800163c   0x0800163c   0x0000002e   Code   RO          231    .text.HAL_GPIO_WritePin  stm32f4xx_hal_gpio.o
+    0x0800166a   0x0800166a   0x00000002   PAD
+    0x0800166c   0x0800166c   0x0000000c   Code   RO          285    .text.HAL_GetTick   stm32f4xx_hal.o
+    0x08001678   0x08001678   0x0000001a   Code   RO          283    .text.HAL_IncTick   stm32f4xx_hal.o
+    0x08001692   0x08001692   0x00000002   PAD
+    0x08001694   0x08001694   0x0000002e   Code   RO          273    .text.HAL_Init      stm32f4xx_hal.o
+    0x080016c2   0x080016c2   0x00000002   PAD
+    0x080016c4   0x080016c4   0x00000070   Code   RO          275    .text.HAL_InitTick  stm32f4xx_hal.o
+    0x08001734   0x08001734   0x00000002   Code   RO          277    .text.HAL_MspInit   stm32f4xx_hal.o
+    0x08001736   0x08001736   0x00000002   PAD
+    0x08001738   0x08001738   0x00000014   Code   RO          129    .text.HAL_NVIC_DisableIRQ  stm32f4xx_hal_cortex.o
+    0x0800174c   0x0800174c   0x00000032   Code   RO          117    .text.HAL_NVIC_SetPriority  stm32f4xx_hal_cortex.o
+    0x0800177e   0x0800177e   0x00000002   PAD
+    0x08001780   0x08001780   0x00000010   Code   RO          113    .text.HAL_NVIC_SetPriorityGrouping  stm32f4xx_hal_cortex.o
+    0x08001790   0x08001790   0x000000be   Code   RO          260    .text.HAL_PWREx_EnableOverDrive  stm32f4xx_hal_pwr_ex.o
+    0x0800184e   0x0800184e   0x00000002   PAD
+    0x08001850   0x08001850   0x00000262   Code   RO          345    .text.HAL_RCC_ClockConfig  stm32f4xx_hal_rcc.o
+    0x08001ab2   0x08001ab2   0x00000002   PAD
+    0x08001ab4   0x08001ab4   0x0000000c   Code   RO          355    .text.HAL_RCC_GetHCLKFreq  stm32f4xx_hal_rcc.o
+    0x08001ac0   0x08001ac0   0x00000022   Code   RO          357    .text.HAL_RCC_GetPCLK1Freq  stm32f4xx_hal_rcc.o
+    0x08001ae2   0x08001ae2   0x00000002   PAD
+    0x08001ae4   0x08001ae4   0x000000e6   Code   RO          347    .text.HAL_RCC_GetSysClockFreq  stm32f4xx_hal_rcc.o
+    0x08001bca   0x08001bca   0x00000002   PAD
+    0x08001bcc   0x08001bcc   0x000006a4   Code   RO          343    .text.HAL_RCC_OscConfig  stm32f4xx_hal_rcc.o
+    0x08002270   0x08002270   0x00000010   Code   RO          137    .text.HAL_SYSTICK_Config  stm32f4xx_hal_cortex.o
+    0x08002280   0x08002280   0x00000122   Code   RO          838    .text.HAL_TIMEx_MasterConfigSynchronization  stm32f4xx_hal_tim_ex.o
+    0x080023a2   0x080023a2   0x00000002   PAD
+    0x080023a4   0x080023a4   0x00000048   Code   RO         1284    .text.HAL_TIM_MspPostInit  LCD_TIM.o
+    0x080023ec   0x080023ec   0x00000144   Code   RO          542    .text.HAL_TIM_PWM_ConfigChannel  stm32f4xx_hal_tim.o
+    0x08002530   0x08002530   0x00000058   Code   RO          430    .text.HAL_TIM_PWM_Init  stm32f4xx_hal_tim.o
+    0x08002588   0x08002588   0x0000003e   Code   RO         1278    .text.HAL_TIM_PWM_MspInit  LCD_TIM.o
+    0x080025c6   0x080025c6   0x00000002   PAD
+    0x080025c8   0x080025c8   0x00000080   Code   RO          438    .text.HAL_TIM_PWM_Start  stm32f4xx_hal_tim.o
+    0x08002648   0x08002648   0x00000004   Code   RO           87    .text.HardFault_Handler  stm32f4xx_it.o
+    0x0800264c   0x0800264c   0x000000b6   Code   RO         1299    .text.LCDErrHandler  LCD_Tools.o
+    0x08002702   0x08002702   0x00000002   PAD
+    0x08002704   0x08002704   0x0000004a   Code   RO         1132    .text.LCD_Reset     LCD_Driver.o
+    0x0800274e   0x0800274e   0x00000002   PAD
+    0x08002750   0x08002750   0x00000014   Code   RO         1134    .text.LCD_SetBackLight  LCD_Driver.o
+    0x08002764   0x08002764   0x00000022   Code   RO         1138    .text.LCD_SetGramScanWay  LCD_Driver.o
+    0x08002786   0x08002786   0x00000002   PAD
+    0x08002788   0x08002788   0x00000048   Code   RO         1140    .text.LCD_WriteCMD  LCD_Driver.o
+    0x080027d0   0x080027d0   0x00000056   Code   RO         1136    .text.LCD_WriteCMDList  LCD_Driver.o
+    0x08002826   0x08002826   0x00000002   PAD
+    0x08002828   0x08002828   0x00000016   Code   RO         1150    .text.LCD_WriteParam  LCD_Driver.o
+    0x0800283e   0x0800283e   0x00000002   PAD
+    0x08002840   0x08002840   0x00000070   Code   RO         1146    .text.LCD_WriteParameters  LCD_Driver.o
+    0x080028b0   0x080028b0   0x00000022   Code   RO         1152    .text.LCD_clear     LCD_Driver.o
+    0x080028d2   0x080028d2   0x00000002   PAD
+    0x080028d4   0x080028d4   0x0000018e   Code   RO         1148    .text.LCD_fillRectangleBW  LCD_Driver.o
+    0x08002a62   0x08002a62   0x00000002   PAD
+    0x08002a64   0x08002a64   0x000000ca   Code   RO         1142    .text.LCD_fillRectangleMC  LCD_Driver.o
+    0x08002b2e   0x08002b2e   0x00000002   PAD
+    0x08002b30   0x08002b30   0x00000070   Code   RO         1130    .text.LCD_init      LCD_Driver.o
+    0x08002ba0   0x08002ba0   0x00000058   Code   RO         1144    .text.LCD_setWindow  LCD_Driver.o
+    0x08002bf8   0x08002bf8   0x0000019e   Code   RO         1265    .text.MX_GPIO_Init  LCD_GPIO.o
+    0x08002d96   0x08002d96   0x00000002   PAD
+    0x08002d98   0x08002d98   0x000000aa   Code   RO         1276    .text.MX_TIM4_Init  LCD_TIM.o
+    0x08002e42   0x08002e42   0x00000002   PAD
+    0x08002e44   0x08002e44   0x00000004   Code   RO           89    .text.MemManage_Handler  stm32f4xx_it.o
+    0x08002e48   0x08002e48   0x00000002   Code   RO           85    .text.NMI_Handler   stm32f4xx_it.o
+    0x08002e4a   0x08002e4a   0x00000002   PAD
+    0x08002e4c   0x08002e4c   0x0000006c   Code   RO          123    .text.NVIC_EncodePriority  stm32f4xx_hal_cortex.o
+    0x08002eb8   0x08002eb8   0x00000038   Code   RO         1282    .text.PWM_SetValue  LCD_TIM.o
+    0x08002ef0   0x08002ef0   0x00000002   Code   RO           99    .text.PendSV_Handler  stm32f4xx_it.o
+    0x08002ef2   0x08002ef2   0x00000002   PAD
+    0x08002ef4   0x08002ef4   0x000000b8   Code   RO         1246    .text.SPI4W_Write_Byte  LCD_SPI.o
+    0x08002fac   0x08002fac   0x0000004c   Code   RO         1240    .text.SPIInitDevWithoutHAL  LCD_SPI.o
+    0x08002ff8   0x08002ff8   0x000000da   Code   RO         1238    .text.SPIInitGPIOsWithoutHAL  LCD_SPI.o
+    0x080030d2   0x080030d2   0x00000002   PAD
+    0x080030d4   0x080030d4   0x0000000e   Code   RO         1236    .text.SPIinit       LCD_SPI.o
+    0x080030e2   0x080030e2   0x00000002   PAD
+    0x080030e4   0x080030e4   0x00000002   Code   RO           95    .text.SVC_Handler   stm32f4xx_it.o
+    0x080030e6   0x080030e6   0x00000002   PAD
+    0x080030e8   0x080030e8   0x00000052   Code   RO          139    .text.SysTick_Config  stm32f4xx_hal_cortex.o
+    0x0800313a   0x0800313a   0x00000002   PAD
+    0x0800313c   0x0800313c   0x00000008   Code   RO          101    .text.SysTick_Handler  stm32f4xx_it.o
+    0x08003144   0x08003144   0x000000b8   Code   RO         1401    .text.SystemClock_Config  init.o
+    0x080031fc   0x080031fc   0x0000006e   Code   RO           71    .text.SystemInit    system_stm32f4xx.o
+    0x0800326a   0x0800326a   0x00000002   PAD
+    0x0800326c   0x0800326c   0x00000008   Code   RO         1274    .text.TIM4_Init     LCD_TIM.o
+    0x08003274   0x08003274   0x0000019a   Code   RO          380    .text.TIM_Base_SetConfig  stm32f4xx_hal_tim.o
+    0x0800340e   0x0800340e   0x00000002   PAD
+    0x08003410   0x08003410   0x00000036   Code   RO          414    .text.TIM_CCxChannelCmd  stm32f4xx_hal_tim.o
+    0x08003446   0x08003446   0x00000002   PAD
+    0x08003448   0x08003448   0x000000ea   Code   RO          524    .text.TIM_OC1_SetConfig  stm32f4xx_hal_tim.o
+    0x08003532   0x08003532   0x00000002   PAD
+    0x08003534   0x08003534   0x000000f4   Code   RO          526    .text.TIM_OC2_SetConfig  stm32f4xx_hal_tim.o
+    0x08003628   0x08003628   0x000000f2   Code   RO          528    .text.TIM_OC3_SetConfig  stm32f4xx_hal_tim.o
+    0x0800371a   0x0800371a   0x00000002   PAD
+    0x0800371c   0x0800371c   0x000000a4   Code   RO          530    .text.TIM_OC4_SetConfig  stm32f4xx_hal_tim.o
+    0x080037c0   0x080037c0   0x00000032   Code   RO         1208    .text.TP_InitBasic  LCD_Touch.o
+    0x080037f2   0x080037f2   0x00000002   PAD
+    0x080037f4   0x080037f4   0x0000002a   Code   RO         1210    .text.TP_SetDefaultCalibration  LCD_Touch.o
+    0x0800381e   0x0800381e   0x00000002   PAD
+    0x08003820   0x08003820   0x0000001c   Code   RO         1506    .text.USART3_Control  USART_STM32F4xx.o
+    0x0800383c   0x0800383c   0x00000018   Code   RO         1488    .text.USART3_GetCapabilities  USART_STM32F4xx.o
+    0x08003854   0x08003854   0x00000018   Code   RO         1512    .text.USART3_GetModemStatus  USART_STM32F4xx.o
+    0x0800386c   0x0800386c   0x00000010   Code   RO         1504    .text.USART3_GetRxCount  USART_STM32F4xx.o
+    0x0800387c   0x0800387c   0x00000018   Code   RO         1508    .text.USART3_GetStatus  USART_STM32F4xx.o
+    0x08003894   0x08003894   0x00000010   Code   RO         1502    .text.USART3_GetTxCount  USART_STM32F4xx.o
+    0x080038a4   0x080038a4   0x00000010   Code   RO         1484    .text.USART3_IRQHandler  USART_STM32F4xx.o
+    0x080038b4   0x080038b4   0x00000018   Code   RO         1490    .text.USART3_Initialize  USART_STM32F4xx.o
+    0x080038cc   0x080038cc   0x0000001c   Code   RO         1494    .text.USART3_PowerControl  USART_STM32F4xx.o
+    0x080038e8   0x080038e8   0x0000001c   Code   RO         1498    .text.USART3_Receive  USART_STM32F4xx.o
+    0x08003904   0x08003904   0x0000001c   Code   RO         1496    .text.USART3_Send   USART_STM32F4xx.o
+    0x08003920   0x08003920   0x0000001c   Code   RO         1510    .text.USART3_SetModemControl  USART_STM32F4xx.o
+    0x0800393c   0x0800393c   0x00000020   Code   RO         1500    .text.USART3_Transfer  USART_STM32F4xx.o
+    0x0800395c   0x0800395c   0x00000010   Code   RO         1492    .text.USART3_Uninitialize  USART_STM32F4xx.o
+    0x0800396c   0x0800396c   0x00000d86   Code   RO         1540    .text.USART_Control  USART_STM32F4xx.o
+    0x080046f2   0x080046f2   0x00000002   PAD
+    0x080046f4   0x080046f4   0x00000010   Code   RO         1514    .text.USART_GetCapabilities  USART_STM32F4xx.o
+    0x08004704   0x08004704   0x0000006a   Code   RO         1546    .text.USART_GetModemStatus  USART_STM32F4xx.o
+    0x0800476e   0x0800476e   0x00000002   PAD
+    0x08004770   0x08004770   0x0000000e   Code   RO         1538    .text.USART_GetRxCount  USART_STM32F4xx.o
+    0x0800477e   0x0800477e   0x00000002   PAD
+    0x08004780   0x08004780   0x000000d4   Code   RO         1542    .text.USART_GetStatus  USART_STM32F4xx.o
+    0x08004854   0x08004854   0x0000000e   Code   RO         1536    .text.USART_GetTxCount  USART_STM32F4xx.o
+    0x08004862   0x08004862   0x00000002   PAD
+    0x08004864   0x08004864   0x00000402   Code   RO         1482    .text.USART_IRQHandler  USART_STM32F4xx.o
+    0x08004c66   0x08004c66   0x00000002   PAD
+    0x08004c68   0x08004c68   0x000000e0   Code   RO         1516    .text.USART_Initialize  USART_STM32F4xx.o
+    0x08004d48   0x08004d48   0x0000024c   Code   RO         1528    .text.USART_PeripheralReset  USART_STM32F4xx.o
+    0x08004f94   0x08004f94   0x0000045e   Code   RO         1522    .text.USART_PowerControl  USART_STM32F4xx.o
+    0x080053f2   0x080053f2   0x00000002   PAD
+    0x080053f4   0x080053f4   0x000000e4   Code   RO         1532    .text.USART_Receive  USART_STM32F4xx.o
+    0x080054d8   0x080054d8   0x000000b6   Code   RO         1530    .text.USART_Send    USART_STM32F4xx.o
+    0x0800558e   0x0800558e   0x00000002   PAD
+    0x08005590   0x08005590   0x000000e2   Code   RO         1544    .text.USART_SetModemControl  USART_STM32F4xx.o
+    0x08005672   0x08005672   0x00000002   PAD
+    0x08005674   0x08005674   0x00000096   Code   RO         1534    .text.USART_Transfer  USART_STM32F4xx.o
+    0x0800570a   0x0800570a   0x00000002   PAD
+    0x0800570c   0x0800570c   0x000000c0   Code   RO         1520    .text.USART_Uninitialize  USART_STM32F4xx.o
+    0x080057cc   0x080057cc   0x00000012   Code   RO         1486    .text.USARTx_GetVersion  USART_STM32F4xx.o
+    0x080057de   0x080057de   0x00000002   PAD
+    0x080057e0   0x080057e0   0x00000004   Code   RO           93    .text.UsageFault_Handler  stm32f4xx_it.o
+    0x080057e4   0x080057e4   0x00000030   Code   RO         1524    .text.__NVIC_ClearPendingIRQ  USART_STM32F4xx.o
+    0x08005814   0x08005814   0x00000038   Code   RO          131    .text.__NVIC_DisableIRQ  stm32f4xx_hal_cortex.o
+    0x0800584c   0x0800584c   0x00000030   Code   RO         1526    .text.__NVIC_EnableIRQ  USART_STM32F4xx.o
+    0x0800587c   0x0800587c   0x00000010   Code   RO          119    .text.__NVIC_GetPriorityGrouping  stm32f4xx_hal_cortex.o
+    0x0800588c   0x0800588c   0x00000042   Code   RO          121    .text.__NVIC_SetPriority  stm32f4xx_hal_cortex.o
+    0x080058ce   0x080058ce   0x00000002   PAD
+    0x080058d0   0x080058d0   0x0000003c   Code   RO          115    .text.__NVIC_SetPriorityGrouping  stm32f4xx_hal_cortex.o
+    0x0800590c   0x0800590c   0x00000048   Code   RO         1250    .text.check_SPI_SR  LCD_SPI.o
+    0x08005954   0x08005954   0x0000001c   Code   RO         1587    .text.display_error  display.o
+    0x08005970   0x08005970   0x00000002   Code   RO         1585    .text.display_update  display.o
+    0x08005972   0x08005972   0x00000002   PAD
+    0x08005974   0x08005974   0x000000a8   Code   RO         1603    .text.getDirection  encoder.o
+    0x08005a1c   0x08005a1c   0x00000064   Code   RO         1601    .text.getPhase      encoder.o
+    0x08005a80   0x08005a80   0x0000002a   Code   RO         1597    .text.givePinA      encoder.o
+    0x08005aaa   0x08005aaa   0x00000002   PAD
+    0x08005aac   0x08005aac   0x0000002c   Code   RO         1599    .text.givePinB      encoder.o
+    0x08005ad8   0x08005ad8   0x00000140   Code   RO         1403    .text.initGPIOs     init.o
+    0x08005c18   0x08005c18   0x00000014   Code   RO         1399    .text.initITSboard  init.o
+    0x08005c2c   0x08005c2c   0x000000b4   Code   RO         1301    .text.itoa          LCD_Tools.o
+    0x08005ce0   0x08005ce0   0x000001d2   Code   RO         1367    .text.lcdPrintS     lcd.o
+    0x08005eb2   0x08005eb2   0x00000002   PAD
+    0x08005eb4   0x08005eb4   0x00000054   Code   RO         1375    .text.lcdPrintlnS   lcd.o
+    0x08005f08   0x08005f08   0x00000056   Code   RO         1634    .text.ledDirection  led_control.o
+    0x08005f5e   0x08005f5e   0x00000002   PAD
+    0x08005f60   0x08005f60   0x0000000e   Code   RO         1636    .text.ledError      led_control.o
+    0x08005f6e   0x08005f6e   0x00000002   PAD
+    0x08005f70   0x08005f70   0x0000003e   Code   RO         1630    .text.ledNextStep   led_control.o
+    0x08005fae   0x08005fae   0x00000002   PAD
+    0x08005fb0   0x08005fb0   0x00000038   Code   RO         1632    .text.ledReset      led_control.o
+    0x08005fe8   0x08005fe8   0x00000250   Code   RO         1575    .text.main          main.o
+    0x08006238   0x08006238   0x000000b2   Code   RO         1333    .text.printDebugMsg  LCD_Debug.o
+    0x080062ea   0x080062ea   0x00000002   PAD
+    0x080062ec   0x080062ec   0x0000007e   Code   RO         1612    .text.reset         errorManager.o
+    0x0800636a   0x0800636a   0x00000002   PAD
+    0x0800636c   0x0800636c   0x00000030   Code   RO         1248    .text.save_restore_AltFn_SPI1_MOSI_Pin  LCD_SPI.o
+    0x0800639c   0x0800639c   0x000000ae   Code   RO         1562    .text.stdinout_init  stdinout_USART.o
+    0x0800644a   0x0800644a   0x00000002   PAD
+    0x0800644c   0x0800644c   0x00000046   Code   RO         1369    .text.stringCopy    lcd.o
+    0x08006492   0x08006492   0x0000000e   Code   RO         1758    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x080064a0   0x080064a0   0x00000002   Code   RO         1759    i.__scatterload_null  mc_w.l(handlers.o)
+    0x080064a2   0x080064a2   0x0000000e   Code   RO         1760    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x080064b0   0x080064b0   0x00000010   Data   RO           76    .rodata.AHBPrescTable  system_stm32f4xx.o
+    0x080064c0   0x080064c0   0x00000008   Data   RO           77    .rodata.APBPrescTable  system_stm32f4xx.o
+    0x080064c8   0x080064c8   0x00000038   Data   RO         1548    .rodata.Driver_USART3  USART_STM32F4xx.o
+    0x08006500   0x08006500   0x00000034   Data   RO         1553    .rodata.USART3_Resources  USART_STM32F4xx.o
+    0x08006534   0x08006534   0x0000000c   Data   RO         1550    .rodata.USART3_rx   USART_STM32F4xx.o
+    0x08006540   0x08006540   0x0000000c   Data   RO         1549    .rodata.USART3_tx   USART_STM32F4xx.o
+    0x0800654c   0x0800654c   0x00000067   Data   RO         1158    .rodata.initCmds    LCD_Driver.o
+    0x080065b3   0x080065b3   0x00000037   Data   RO         1190    .rodata.str1.1      LCD_GUI.o
+    0x080065ea   0x080065ea   0x00000037   Data   RO         1254    .rodata.str1.1      LCD_SPI.o
+    0x08006621   0x08006621   0x00000037   Data   RO         1287    .rodata.str1.1      LCD_TIM.o
+    0x08006658   0x08006658   0x0000001c   Data   RO         1336    .rodata.str1.1      LCD_Debug.o
+    0x08006674   0x08006674   0x00000022   Data   RO         1577    .rodata.str1.1      main.o
+    0x08006696   0x08006696   0x00000022   Data   RO         1589    .rodata.str1.1      display.o
+    0x080066b8   0x080066b8   0x00000020   Data   RO         1757    Region$$Table       anon$$obj.o
 
 
-    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x080079b0, Size: 0x00000580, Max: 0x00030000, ABSOLUTE)
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x080066d8, Size: 0x00000550, Max: 0x00030000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x080079b0   0x00000008   Data   RW         1108    .data.Consolas40FLASH  fontsFLASH.o
-    0x20000008   0x080079b8   0x00000008   Data   RW         1102    .data.Font16FLASH   fontsFLASH.o
-    0x20000010   0x080079c0   0x00000004   Data   RW           75    .data.SystemCoreClock  system_stm32f4xx.o
-    0x20000014   0x080079c4   0x00000004   Data   RW         1385    .data.crd           lcd.o
-    0x20000018   0x080079c8   0x00000018   Data   RW         1624    .data.echoTerm      display.o
-    0x20000030   0x080079e0   0x00000004   Data   RW         1386    .data.fontHeight    lcd.o
-    0x20000034   0x080079e4   0x00000004   Data   RW         1384    .data.fontWidth     lcd.o
-    0x20000038   0x080079e8   0x00000004   Data   RW         1387    .data.lcdFont       lcd.o
-    0x2000003c   0x080079ec   0x00000004   Data   RW         1383    .data.lcdmaxx       lcd.o
-    0x20000040   0x080079f0   0x00000004   Data   RW         1389    .data.lcdmaxy       lcd.o
-    0x20000044   0x080079f4   0x00000001   Data   RW         1653    .data.nextToken.c   scanner.o
-    0x20000045   0x080079f5   0x00000003   PAD
-    0x20000048   0x080079f8   0x00000004   Data   RW         1255    .data.save_restore_AltFn_SPI1_MOSI_Pin.saved_AF  LCD_SPI.o
-    0x2000004c   0x080079fc   0x00000018   Data   RW         1623    .data.stdoutTerm    display.o
-    0x20000064   0x08007a14   0x00000001   Data   RW          332    .data.uwTickFreq    stm32f4xx_hal.o
-    0x20000065   0x08007a15   0x00000003   PAD
-    0x20000068   0x08007a18   0x00000004   Data   RW          331    .data.uwTickPrio    stm32f4xx_hal.o
-    0x2000006c   0x08007a1c   0x00000004   PAD
-    0x20000070        -       0x00000048   Zero   RW          105    .bss.EthHandle      stm32f4xx_it.o
-    0x200000b8        -       0x00000014   Zero   RW         1551    .bss.USART3_Info    USART_STM32F4xx.o
-    0x200000cc        -       0x00000024   Zero   RW         1552    .bss.USART3_TransferInfo  USART_STM32F4xx.o
-    0x200000f0        -       0x00000040   Zero   RW         1286    .bss.htim4          LCD_TIM.o
-    0x20000130        -       0x00000002   Zero   RW         1388    .bss.lcdColor       lcd.o
-    0x20000132   0x08007a1c   0x00000002   PAD
-    0x20000134        -       0x00000018   Zero   RW         1227    .bss.sTP_DEV        LCD_Touch.o
-    0x2000014c        -       0x00000028   Zero   RW         1676    .bss.stack          stack.o
-    0x20000174        -       0x00000004   Zero   RW         1675    .bss.stackSize      stack.o
-    0x20000178        -       0x00000004   Zero   RW          333    .bss.uwTick         stm32f4xx_hal.o
-    0x2000017c   0x08007a1c   0x00000004   PAD
-    0x20000180        -       0x00000400   Zero   RW           61    STACK               startup_stm32f429xx.o
+    0x20000000   0x080066d8   0x00000008   Data   RW         1102    .data.Font16FLASH   fontsFLASH.o
+    0x20000008   0x080066e0   0x00000004   Data   RW           75    .data.SystemCoreClock  system_stm32f4xx.o
+    0x2000000c   0x080066e4   0x00000004   Data   RW         1385    .data.crd           lcd.o
+    0x20000010   0x080066e8   0x00000004   Data   RW         1623    .data.direction     errorManager.o
+    0x20000014   0x080066ec   0x00000004   Data   RW         1386    .data.fontHeight    lcd.o
+    0x20000018   0x080066f0   0x00000004   Data   RW         1384    .data.fontWidth     lcd.o
+    0x2000001c   0x080066f4   0x00000004   Data   RW         1387    .data.lcdFont       lcd.o
+    0x20000020   0x080066f8   0x00000004   Data   RW         1383    .data.lcdmaxx       lcd.o
+    0x20000024   0x080066fc   0x00000004   Data   RW         1389    .data.lcdmaxy       lcd.o
+    0x20000028   0x08006700   0x00000004   Data   RW         1255    .data.save_restore_AltFn_SPI1_MOSI_Pin.saved_AF  LCD_SPI.o
+    0x2000002c   0x08006704   0x00000001   Data   RW          332    .data.uwTickFreq    stm32f4xx_hal.o
+    0x2000002d   0x08006705   0x00000003   PAD
+    0x20000030   0x08006708   0x00000004   Data   RW          331    .data.uwTickPrio    stm32f4xx_hal.o
+    0x20000034   0x0800670c   0x00000004   PAD
+    0x20000038        -       0x00000048   Zero   RW          105    .bss.EthHandle      stm32f4xx_it.o
+    0x20000080        -       0x00000014   Zero   RW         1551    .bss.USART3_Info    USART_STM32F4xx.o
+    0x20000094        -       0x00000024   Zero   RW         1552    .bss.USART3_TransferInfo  USART_STM32F4xx.o
+    0x200000b8        -       0x00000008   Zero   RW         1614    .bss.angle          errorManager.o
+    0x200000c0        -       0x00000008   Zero   RW         1615    .bss.angleSpeed     errorManager.o
+    0x200000c8        -       0x00000001   Zero   RW         1618    .bss.channelA       errorManager.o
+    0x200000c9        -       0x00000001   Zero   RW         1619    .bss.channelB       errorManager.o
+    0x200000ca   0x0800670c   0x00000002   PAD
+    0x200000cc        -       0x00000004   Zero   RW         1621    .bss.currentPhase   errorManager.o
+    0x200000d0        -       0x00000040   Zero   RW         1286    .bss.htim4          LCD_TIM.o
+    0x20000110        -       0x00000008   Zero   RW         1616    .bss.lastAngle      errorManager.o
+    0x20000118        -       0x00000004   Zero   RW         1620    .bss.lastPhase      errorManager.o
+    0x2000011c        -       0x00000002   Zero   RW         1388    .bss.lcdColor       lcd.o
+    0x2000011e   0x0800670c   0x00000002   PAD
+    0x20000120        -       0x00000008   Zero   RW         1617    .bss.newAngle       errorManager.o
+    0x20000128        -       0x00000004   Zero   RW         1638    .bss.nextStepCounter  led_control.o
+    0x2000012c        -       0x00000004   Zero   RW         1622    .bss.phaseCounter   errorManager.o
+    0x20000130        -       0x00000018   Zero   RW         1227    .bss.sTP_DEV        LCD_Touch.o
+    0x20000148        -       0x00000004   Zero   RW          333    .bss.uwTick         stm32f4xx_hal.o
+    0x2000014c   0x0800670c   0x00000004   PAD
+    0x20000150        -       0x00000400   Zero   RW           61    STACK               startup_stm32f429xx.o
 
 
 ==============================================================================
@@ -3867,24 +3664,21 @@ Image component sizes
        178          0         28          0          0       1076   LCD_Debug.o
       1254          0        103          0          0       4519   LCD_Driver.o
        422          0          0          0          0       2615   LCD_GPIO.o
-      1284          0         55          0          0       6600   LCD_GUI.o
-       706          0         55          4          0       5337   LCD_SPI.o
+      1022          0         55          0          0       6600   LCD_GUI.o
+       612          0         55          4          0       5337   LCD_SPI.o
        368          0         55          0         64       5918   LCD_TIM.o
        410          0          0          0          0       3023   LCD_Tools.o
-      1062          8          0          0         24       6415   LCD_Touch.o
+        92          0          0          0         24       6415   LCD_Touch.o
       8678         52        132          0         56      22357   USART_STM32F4xx.o
-      1022          0          0          0          0       2503   calculate.o
-       336          0          0         48          0       2384   display.o
+        30          0         34          0          0        656   display.o
+       354          0          0          0          0       1705   encoder.o
        232          0          0          0          0       2350   error.o
-       200         10        172          0          0        820   errorhaendler.o
-         0          0          0         16          0       1774   fontsFLASH.o
+       126          0          0          4         46        788   errorManager.o
+         0          0          0          8          0       1774   fontsFLASH.o
        524          0          0          0          0       3656   init.o
-      1552          0        336          0          0       5118   keypad.o
-       536          0          0         24          2       3772   lcd.o
-       300         84          0          0          0        769   main.o
-       414          0          0          0          0       1532   operations.o
-       338         74          0          1          0       1025   scanner.o
-       260          0          0          0         44       1238   stack.o
+       620          0          0         24          2       3772   lcd.o
+       218          0          0          0          4       1465   led_control.o
+       592         16         34          0          0       1851   main.o
         36          8        428          0       1024        928   startup_stm32f429xx.o
        174          0          0          0          0       1441   stdinout_USART.o
        264          0          0          5          4       7759   stm32f4xx_hal.o
@@ -3898,13 +3692,11 @@ Image component sizes
        290          0          0          0          0      12877   stm32f4xx_hal_tim_ex.o
         48          0          0          0         72       4750   stm32f4xx_it.o
        110          0         24          4          0       2794   system_stm32f4xx.o
-       508          0         84          0          0       3289   terminal.o
-       214          0          0          0          0        882   toString.o
 
     ----------------------------------------------------------------------
-     29238        250       1508        108       1300     203560   Object Totals
+     24138         90        980         52       1308     190465   Object Totals
          0          0         32          0          0          0   (incl. Generated)
-       158          0          4          6         10          0   (incl. Padding)
+       124          0          0          3         12          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
@@ -3920,25 +3712,32 @@ Image component sizes
          8          4          0          0          0          0   entry9a.o
         30          0          0          0          0          0   handlers.o
         48         10          0          0          0         68   init.o
+         0          0          0          0          0          0   iusefp.o
         98          0          0          0          0         84   ldiv.o
         30          0          0          0          0         68   llshl.o
+        36          0          0          0          0         68   llsshr.o
         32          0          0          0          0         68   llushr.o
         36          0          0          0          0        108   memseta.o
         14          0          0          0          0         68   strlen.o
         98          0          0          0          0         92   uldiv.o
+       334          0          0          0          0        148   dadd.o
+       222          0          0          0          0        100   ddiv.o
+       186          0          0          0          0        176   depilogue.o
+        26          0          0          0          0         76   dfltui.o
 
     ----------------------------------------------------------------------
-       406         18          0          0          0        556   Library Totals
+      1210         18          0          0          0       1124   Library Totals
          0          0          0          0          0          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
 
-       406         18          0          0          0        556   mc_w.l
+       442         18          0          0          0        624   mc_w.l
+       768          0          0          0          0        500   mf_w.l
 
     ----------------------------------------------------------------------
-       406         18          0          0          0        556   Library Totals
+      1210         18          0          0          0       1124   Library Totals
 
     ----------------------------------------------------------------------
 
@@ -3947,15 +3746,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     29644        268       1508        108       1300     203504   Grand Totals
-     29644        268       1508        108       1300     203504   ELF Image Totals
-     29644        268       1508        108          0          0   ROM Totals
+     25348        108        980         52       1308     190765   Grand Totals
+     25348        108        980         52       1308     190765   ELF Image Totals
+     25348        108        980         52          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                31152 (  30.42kB)
-    Total RW  Size (RW Data + ZI Data)              1408 (   1.38kB)
-    Total ROM Size (Code + RO Data + RW Data)      31260 (  30.53kB)
+    Total RO  Size (Code + RO Data)                26328 (  25.71kB)
+    Total RW  Size (RW Data + ZI Data)              1360 (   1.33kB)
+    Total ROM Size (Code + RO Data + RW Data)      26380 (  25.76kB)
 
 ==============================================================================
 

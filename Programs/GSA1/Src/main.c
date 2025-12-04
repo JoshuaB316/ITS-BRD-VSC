@@ -46,6 +46,7 @@ int main(void) {
 			case NUMBER:
 				clearStdout();
 				value = t.val;
+				push(value);
 				break;
 
 			case PLUS:
@@ -90,8 +91,8 @@ int main(void) {
 
 			case DOUBLE:
 				clearStdout();
-				push(value);	
-				//d();
+				//push(value);	
+				d();
 				break;
 			case ENTER:
 				//push(value);
