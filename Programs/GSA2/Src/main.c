@@ -45,13 +45,15 @@ int main(void) {
 
 	// Test in Endlosschleife
 	while(1) {
+		HAL_Delay(250);//test
 		// Datenerfassung
 			// Gibt es Fehler und wurde S6 gedrückt?
 			if(existingError){
 				if(MODER_MASK_PIN_6 == (GPIOF -> IDR & MODER_MASK_PIN_6)){
 					reset();
 				}
-			}
+			} else {
+
 
 			// Kanäle einlesen
 			channelA = givePinA();
@@ -93,7 +95,8 @@ int main(void) {
 			lastAngle = newAngle;
 			newAngle = angle;
 			timer_start = timer_end;
+			
+		}
 	}
 }
-
 // EOF

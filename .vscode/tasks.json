@@ -28,7 +28,7 @@
             "type": "shell",
             "command": "pyocd",
             "options": {
-                "cwd": "${workspaceFolder}/Programs/TestNewFont",
+                "cwd": "${workspaceFolder}/Programs/GSA1",
                 "cwd": "${workspaceFolder}/Programs/TestNewFont",
                 "cwd": "${workspaceFolder}/Programs/GSP_Aufgabe2_Drehgeber",
                 "cwd": "${workspaceFolder}/Programs/TestNewFont",

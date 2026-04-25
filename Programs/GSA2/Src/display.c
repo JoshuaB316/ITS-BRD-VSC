@@ -23,12 +23,14 @@
 
 void display_update() {
   // Winkel, Winkelgwschwindigkeit aber die einzelnen chars??
+    //INHALT UPDATE
 }
     
 
 
 void display_error() {
   // Fehlermeldung auf bem Bildschirm
+    //UNBEDINGT SCREEN CLEAR
   lcdPrintlnS("Fehler erkannt!");
   lcdPrintlnS("Bitte S6 drücken");
 }
