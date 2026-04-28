@@ -1,7 +1,7 @@
 
 cmake_minimum_required(VERSION 3.15)
 
-set(command "C:/Users/bumuk/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.28.4/bin/cmake.exe;-G;Ninja;-S;C:/GS_Labor/ITS-BRD-VSC/Programs/TestNewFont/tmp/TestNewFont.Debug+ITSboard;-B;C:/GS_Labor/ITS-BRD-VSC/Programs/TestNewFont/tmp/1;-DSOLUTION_ROOT=C:/GS_Labor/ITS-BRD-VSC/Programs/TestNewFont;-DCMSIS_PACK_ROOT=C:/Users/bumuk/AppData/Local/arm/packs;-DCMSIS_COMPILER_ROOT=C:/Users/bumuk/.vcpkg/artifacts/2139c4c6/tools.open.cmsis.pack.cmsis.toolbox/2.12.0/etc")
+set(command "C:/Users/bumuk/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.28.4/bin/cmake.exe;-G;Ninja;-S;C:/GS_Labor/ITS-BRD-VSC/Programs/TestNewFont/tmp/TestNewFont.Debug+ITSboard;-B;C:/GS_Labor/ITS-BRD-VSC/Programs/TestNewFont/tmp/1;-DSOLUTION_ROOT=C:/GS_Labor/ITS-BRD-VSC/Programs/TestNewFont;-DCMSIS_PACK_ROOT=C:/Users/bumuk/AppData/Local/arm/packs;-DCMSIS_COMPILER_ROOT=C:/Users/bumuk/.vscode/extensions/arm.cmsis-csolution-1.66.0-win32-x64/tools/cmsis-toolbox/etc")
 set(log_merged "")
 set(log_output_on_failure "ON")
 set(stdout_log "C:/GS_Labor/ITS-BRD-VSC/Programs/TestNewFont/tmp/TestNewFont.Debug+ITSboard/src/TestNewFont.Debug+ITSboard-stamp/TestNewFont.Debug+ITSboard-configure-out.log")
