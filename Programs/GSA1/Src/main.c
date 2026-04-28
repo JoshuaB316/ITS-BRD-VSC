@@ -37,6 +37,7 @@ int main(void) {
 	
 	int value = 0;
 	int errorHappened = 0;
+	int errNo = 0;
 
 	// Test in Endlosschleife
 	while(1) {
@@ -49,7 +50,6 @@ int main(void) {
 				clearStdout();
 				errorHappened = 0;
 				errNo = C();
-				break;
 			}
 		}
 		else {
@@ -126,54 +126,55 @@ int main(void) {
 			}
 		}
 
-		switch (errNo){
-			case StackOverflow:{
-				displayError(StackOverflow);
-				errorHappened = 1;
-				break;
-			}
-			case StackUnderflow:{
-				displayError(StackUnderflow);
-				errorHappened = 1;
-				break;
-			}
-			case IntOverflow:{
-				displayError(IntOverflow);
-				errorHappened = 1;
-				break;
-			}
-			case IntUnderflow:{
-				displayError(IntUnderflow);
-				errorHappened = 1;
-				break;
-			}
-			case DivideByZero:{
-				displayError(DivideByZero);
-				errorHappened = 1;
-				break;
-			}
-			case UnexpectedToken:{
-				displayError(UnexpectedToken);
-				errorHappened = 1;
-				break;
-			}
-			case UnknownToken:{
-				displayError(UnknownToken);
-				errorHappened = 1;
-				break;
-			}
-			case EmptyStack:{
-				displayError(EmptyStack);
-				errorHappened = 1;
-				break;
-			}
-			case NotEnoughElements:{
-				displayError(NotEnoughElements);
-				errorHappened = 1;
-				break;
+		if(errorHappened == 0) {
+			switch (errNo){
+				case StackOverflow:{
+					displayError(StackOverflow);
+					errorHappened = 1;
+					break;
+				}
+				case StackUnderflow:{
+					displayError(StackUnderflow);
+					errorHappened = 1;
+					break;
+				}
+				case IntOverflow:{
+					displayError(IntOverflow);
+					errorHappened = 1;
+					break;
+				}
+				case IntUnderflow:{
+					displayError(IntUnderflow);
+					errorHappened = 1;
+					break;
+				}
+				case DivideByZero:{
+					displayError(DivideByZero);
+					errorHappened = 1;
+					break;
+				}
+				case UnexpectedToken:{
+					displayError(UnexpectedToken);
+					errorHappened = 1;
+					break;
+				}
+				case UnknownToken:{
+					displayError(UnknownToken);
+					errorHappened = 1;
+					break;
+				}
+				case EmptyStack:{
+					displayError(EmptyStack);
+					errorHappened = 1;
+					break;
+				}
+				case NotEnoughElements:{
+					displayError(NotEnoughElements);
+					errorHappened = 1;
+					break;
+				}
 			}
 		}
-
 
 
 	}
