@@ -65,8 +65,9 @@ int P() {
     return 0;
 }
 
-void C() {
-    stackSize == 0;
+int C() {
+    stackSize = 0;
+    return 0;
 }
 
 int d() {
