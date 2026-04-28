@@ -51,48 +51,48 @@ int main(void) {
 
 			case PLUS:
 				clearStdout();
-				add();
+				errNo = add();
 				break;
 
 			case MINUS:
 				clearStdout();
-				subtract();
+				errNo = subtract();
 				break;
 
 			case MULT:
 				clearStdout();
-				multiply();
+				errNo = multiply();
 				break;
 
 			case DIV:
 				clearStdout();
-				divide();
+				errNo = divide();
 				break;
 
 			case PRT:
 				clearStdout();
-				p();
+				errNo = p();
 				break;
 
 			case SWAP:
 				clearStdout();
-				r();
+				errNo = r();
 				break;
 
 			case PRT_ALL:
 				clearStdout();
-				P();
+				errNo = P();
 				break;
 
 			case CLEAR:
 				clearStdout();
-				C();
+				errNo = C();
 				break;
 
 			case DOUBLE:
 				clearStdout();
 				//push(value);	
-				d();
+				errNo = d();
 				break;
 			case ENTER:
 				//push(value);
@@ -100,17 +100,17 @@ int main(void) {
 
 			case UNEXPECTED:
 				clearStdout();
-				displayError(UnexpectedToken);
+				errNo = UnexpectedToken;
 				break;
 
 			case OVERFLOW:
 				clearStdout();
-				displayError(StackOverflow);
+				errNo = StackOverflow;
 				break;
 
 			default:
 				clearStdout();
-				displayError(UnknownToken);
+				errNo = UnknownToken;
 				break;
 		}
 	}
