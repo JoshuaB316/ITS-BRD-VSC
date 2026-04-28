@@ -31,7 +31,7 @@ int safe_add(int a, int b, int *result) {
     }
 }
 
-void add() {
+int add() {
     int result1 = 0;
     int err1 = pop(&result1);
 
@@ -83,7 +83,7 @@ int safe_substract(int a, int b, int *result) {
     }
 }
 
-extern void subtract() {
+int subtract() {
     int result1 = 0;
     int err1 = pop(&result1);
 
@@ -123,7 +123,7 @@ int safe_multiply(int a, int b, int *result) {
     }
 }
 
-extern void multiply() {
+int multiply() {
     int result1 = 0;
     int err1 = pop(&result1);
 
@@ -163,7 +163,7 @@ int safe_divide(int a, int b, int *result) {
     }
 }
 
-extern void divide() {
+int divide() {
     int result1 = 0;
     int err1 = pop(&result1);
 
