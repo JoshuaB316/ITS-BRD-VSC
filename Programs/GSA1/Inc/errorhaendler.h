@@ -17,6 +17,8 @@
 #define EmptyStack -8
 #define NotEnoughElements -9
 
+extern int errNo;
+
 /**
  * @brief displays errormessage based on the error
  * 
