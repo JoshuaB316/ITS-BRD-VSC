@@ -96,11 +96,7 @@ int subtract() {
             //displayError(IntOverflow);
             push(result2);
             push(result1);
-<<<<<<< HEAD
             return IntOverflow;
-=======
-            return IntOverflow
->>>>>>> c84fd6b (return)
         } else if(safe_substract(result1, result2, &result) == IntUnderflow) {
             //displayError(IntUnderflow);
             push(result2);
