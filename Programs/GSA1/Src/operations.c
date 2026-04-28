@@ -21,30 +21,28 @@
 #include "errorhaendler.h"
 #include "stack.h"
 
-void p() {
-    if (isEmpty()) {
-        displayError(EmptyStack);
-        return;
+int p() {
+    if (stackSize == 0) {
+        return EmptyStack;
     }
 
     int result;
     int err = peek(stackSize - 1, &result);
 
     if(err == StackUnderflow){
-        displayError(StackUnderflow);
-        return;
+        return StackUnderflow;
     }
     else {
         char str[12]; //max int = 10 + "-" + "\0" = 12
         intToString(result, str);
         printStdout(str);
     }
+    return 0;
 }
 
-void P() {
-    if (isEmpty()) {
-        displayError(EmptyStack);
-        return;
+int P() {
+    if (stackSize == 0) {
+        return EmptyStack;
     }
 
     int result[maxStackSize]; //max stack size is 10
@@ -54,8 +52,7 @@ void P() {
         int temp;
         int err = peek(stackSize - 1 - i, &temp);
         if(err == StackUnderflow) {
-            displayError(StackUnderflow);
-            return;
+            return StackUnderflow;
         }
         result[i] = temp;
     }
@@ -65,56 +62,55 @@ void P() {
         printStdout(str);
         printStdout("\n");
     }
+    return 0;
 }
 
 void C() {
-    clearStack();
+    stackSize == 0;
 }
 
-void d() {
-    if (isEmpty()) {
-        displayError(EmptyStack);
-        return;
+int d() {
+    if (stackSize == 0) {
+       return EmptyStack;
     }
 
     int result;
     int err = peek(stackSize - 1, &result);
 
     if(err == StackUnderflow){
-        displayError(StackUnderflow);
-        return;
+        return StackUnderflow;
     }
 
     if(stackSize + 1 <= maxStackSize){
         push(result);
     } else {
-        displayError(StackOverflow);
+        return StackOverflow;
     }
-    
+    return 0;
 }
     
 
-void r() {
+int r() {
 
     if (stackSize < 2) {
-        displayError(NotEnoughElements);
-        return;
+        return NotEnoughElements;
     }
 
     int val1; 
     int val2;
 
     if (pop(&val1) == StackUnderflow) {
-        displayError(StackUnderflow);
-        return;
+        return StackUnderflow;
     }
 
     if (pop(&val2) == StackUnderflow) {
-        displayError(StackUnderflow);
+        //displayError(StackUnderflow);
         push(val1);
-        return;
+        return StackUnderflow;
     }
 
     push(val1); 
     push(val2); 
+    
+    return 0;
 }

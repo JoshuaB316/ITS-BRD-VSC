@@ -24,10 +24,6 @@
 int stackSize = 0;
 int stack[10];
 
-bool isEmpty() {
-    return stackSize == 0;
-}
-
 int peek(int index, int *result) {
     
     if(index >= 0 && index < stackSize){
@@ -62,8 +58,3 @@ int pop(int *result) {
         return StackUnderflow;
     }
 }
-   
-void clearStack() {
-    stackSize = 0; //verlieren von referenzen
-}
-

@@ -56,6 +56,7 @@ int add() {
     } else {
        return StackUnderflow;
     }
+    return 0;
 }
 
 /*
@@ -108,6 +109,7 @@ int subtract() {
     } else {
         return StackUnderflow;
     }
+    return 0;
 }
 
 int safe_multiply(int a, int b, int *result) {
@@ -148,6 +150,7 @@ int multiply() {
     } else {
        return StackUnderflow;
     }
+    return 0;
 }
 
 int safe_divide(int a, int b, int *result) {
@@ -185,4 +188,5 @@ int divide() {
     } else {
         return StackUnderflow;
     }
+    return 0;
 }
