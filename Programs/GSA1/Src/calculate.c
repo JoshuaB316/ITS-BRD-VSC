@@ -149,6 +149,8 @@ int safe_divide(int a, int b, int *result) {
         return DivideByZero; // Division by zero
     } else if ((a == INT_MIN) && (b == -1)) {
         return IntOverflow; // Overflow
+    } else if ((a == -1) && (b == INT_MIN)) {
+        return IntOverflow;
     } else {
         *result = b / a;
         return 0; // is OK
