@@ -63,10 +63,6 @@ int pop(int *result) {
     }
 }
    
-int getStackSize() {
-    return stackSize;
-}
-
 void clearStack() {
     stackSize = 0; //verlieren von referenzen
 }

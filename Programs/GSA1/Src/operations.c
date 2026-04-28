@@ -28,7 +28,7 @@ void p() {
     }
 
     int result;
-    int err = peek(getStackSize() - 1, &result);
+    int err = peek(stackSize - 1, &result);
 
     if(err == StackUnderflow){
         displayError(StackUnderflow);
@@ -46,8 +46,6 @@ void P() {
         displayError(EmptyStack);
         return;
     }
-    
-    int stackSize = getStackSize();
 
     int result[maxStackSize]; //max stack size is 10
     char str[12];
@@ -80,14 +78,14 @@ void d() {
     }
 
     int result;
-    int err = peek(getStackSize() - 1, &result);
+    int err = peek(stackSize - 1, &result);
 
     if(err == StackUnderflow){
         displayError(StackUnderflow);
         return;
     }
 
-    if(getStackSize() + 1 <= maxStackSize){
+    if(stackSize + 1 <= maxStackSize){
         push(result);
     } else {
         displayError(StackOverflow);
@@ -98,7 +96,7 @@ void d() {
 
 void r() {
 
-    if (getStackSize() < 2) {
+    if (stackSize < 2) {
         displayError(NotEnoughElements);
         return;
     }
