@@ -129,18 +129,20 @@ extern void multiply() {
     int result;
     if(err1 == 0 && err2 == 0){
         if (safe_multiply(result1, result2, &result) == IntOverflow){
-            displayError(IntOverflow);
+            //displayError(IntOverflow);
             push(result2);
             push(result1);
+            return IntOverflow;
         } else if(safe_multiply(result1, result2, &result) == IntUnderflow) {
-            displayError(IntUnderflow);
+            //displayError(IntUnderflow);
             push(result2);
             push(result1);
+            return IntUnderflow;
         } else {
             push(result);
         }
     } else {
-       displayError(StackUnderflow);
+       return StackUnderflow;
     }
 }
 
@@ -167,15 +169,16 @@ extern void divide() {
     int result;
     if(err1 == 0 && err2 == 0){
         if (safe_divide(result1, result2, &result) == IntOverflow){
-            displayError(IntOverflow);
+            //displayError(IntOverflow);
             push(result2);
             push(result1);
+            return IntOverflow;
         } else if(safe_divide(result1, result2, &result) == DivideByZero) {
-            displayError(DivideByZero);
+            return DivideByZero;
         } else {
             push(result);
         }
     } else {
-        displayError(StackUnderflow);
+        return StackUnderflow;
     }
 }
