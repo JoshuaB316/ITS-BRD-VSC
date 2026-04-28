@@ -1,5 +1,5 @@
 build:
-  generated-by: csolution version 2.11.0
+  generated-by: csolution version 2.13.0+p3-g40b6564e
   solution: ../../../../Stack.csolution.yml
   project: ../../../../Stack.cproject.yml
   context: Stack.Debug+ITSboard
@@ -159,6 +159,8 @@ build:
   output:
     - type: elf
       file: Stack.axf
+    - type: comp-db
+      file: compile_commands.json
   components:
     - component: ARM::CMSIS:CORE@6.1.0
       condition: ARMv6_7_8-M Device

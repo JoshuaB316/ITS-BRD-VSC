@@ -1,7 +1,7 @@
 
-cmake_minimum_required(VERSION 3.15)
+cmake_minimum_required(VERSION ${CMAKE_VERSION}) # this file comes with cmake
 
-set(command "C:/Users/Musti/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.28.4/bin/cmake.exe;-G;Ninja;-S;C:/GS_Labor/ITS-BRD-VSC/Programs/GSA1/tmp/GSA1.Debug+ITSboard;-B;C:/GS_Labor/ITS-BRD-VSC/Programs/GSA1/tmp/1;-DSOLUTION_ROOT=C:/GS_Labor/ITS-BRD-VSC/Programs/GSA1;-DCMSIS_PACK_ROOT=C:/Users/Musti/AppData/Local/arm/packs;-DCMSIS_COMPILER_ROOT=C:/Users/Musti/.vcpkg/artifacts/2139c4c6/tools.open.cmsis.pack.cmsis.toolbox/2.12.0/etc")
+set(command "C:/Users/Musti/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.31.5/bin/cmake.exe;-G;Ninja;-S;C:/GS_Labor/ITS-BRD-VSC/Programs/GSA1/tmp/GSA1.Debug+ITSboard;-B;C:/GS_Labor/ITS-BRD-VSC/Programs/GSA1/tmp/1;-DSOLUTION_ROOT=C:/GS_Labor/ITS-BRD-VSC/Programs/GSA1;-DCMSIS_PACK_ROOT=C:/Users/Musti/AppData/Local/arm/packs;-DCMSIS_COMPILER_ROOT=C:/Users/Musti/.vscode/extensions/arm.cmsis-csolution-1.66.0-win32-x64/tools/cmsis-toolbox/etc")
 set(log_merged "")
 set(log_output_on_failure "ON")
 set(stdout_log "C:/GS_Labor/ITS-BRD-VSC/Programs/GSA1/tmp/GSA1.Debug+ITSboard/src/GSA1.Debug+ITSboard-stamp/GSA1.Debug+ITSboard-configure-out.log")

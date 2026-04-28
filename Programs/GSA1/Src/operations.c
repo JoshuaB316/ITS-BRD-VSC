@@ -65,6 +65,7 @@ void P() {
     for(int i = 0; i < stackSize; i++) {
         intToString(result[i], str);
         printStdout(str);
+        printStdout("\n");
     }
 }
 

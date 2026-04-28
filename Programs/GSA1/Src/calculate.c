@@ -56,14 +56,28 @@ void add() {
     }
 }
 
+/*
 int safe_substract(int a, int b, int *result) {
-    if ((b < 0) && (a > INT_MAX + b)) {
+    if ((b > 0) && (a > INT_MAX - b)) {                      //testphase für b > 0, war vorher b < 0 
         return IntOverflow; // Overflow
-    } else if ((b > 0) && (a < INT_MIN + b)) {
+    } else if ((b < 0) && (a > INT_MIN - b)) {               //testphase für b < 0, war vorher b > 0 
         return IntUnderflow; // Underflow
     } else {
         *result = b - a;
         return 0; // is OK
+    }
+}*/
+
+int safe_substract(int a, int b, int *result) {
+    if (a < 0 && b > INT_MAX + a) {
+        return IntOverflow;
+    } 
+    else if (a > 0 && b < INT_MIN + a) {
+        return IntUnderflow;
+    } 
+    else {
+        *result = b - a;
+        return 0;
     }
 }
 

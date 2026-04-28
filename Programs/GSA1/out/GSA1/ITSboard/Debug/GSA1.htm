@@ -3,7 +3,7 @@
 <title>Static Call Graph - [C:\GS_Labor\ITS-BRD-VSC\Programs\GSA1\out\GSA1\ITSboard\Debug\GSA1.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image C:\GS_Labor\ITS-BRD-VSC\Programs\GSA1\out\GSA1\ITSboard\Debug\GSA1.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6240002: Last Updated: Thu Dec  4 09:16:21 2025
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6240002: Last Updated: Mon Apr 27 15:19:32 2026
 <BR><P>
 <H3>Maximum Stack Usage =        712 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -946,7 +946,7 @@ Global Symbols
 <P><STRONG><a name="[1]"></a>NMI_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f4xx_it.o(.text.NMI_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f429xx.o(RESET)
 </UL>
-<P><STRONG><a name="[ca]"></a>P</STRONG> (Thumb, 150 bytes, Stack size 88 bytes, operations.o(.text.P))
+<P><STRONG><a name="[ca]"></a>P</STRONG> (Thumb, 162 bytes, Stack size 88 bytes, operations.o(.text.P))
 <BR><BR>[Stack]<UL><LI>Max Depth = 680<LI>Call Chain = P &rArr; displayError &rArr; printStdout &rArr; printTerm &rArr; printNewLine &rArr; printChar &rArr; clearTerm &rArr; GUI_drawRectangle &rArr; printDebugMsg &rArr; GUI_disNum &rArr;  printDebugMsg (Cycle)
 </UL>
 <BR>[Calls]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;intToString
@@ -1232,8 +1232,8 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[cf]"></a>intToString</STRONG> (Thumb, 214 bytes, Stack size 28 bytes, toString.o(.text.intToString))
-<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = intToString
+<P><STRONG><a name="[cf]"></a>intToString</STRONG> (Thumb, 208 bytes, Stack size 32 bytes, toString.o(.text.intToString))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = intToString
 </UL>
 <BR>[Called By]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;P
 <LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;p
