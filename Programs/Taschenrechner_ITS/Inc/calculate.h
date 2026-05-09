@@ -23,9 +23,9 @@ int safe_add(int a, int b, int *result);
  ****************************************************************************************
  *  @brief      This function adds the top values of the Stack
  *
- *  @return     void 
+ *  @return     int errNo
  ****************************************************************************************/
-extern void add();
+int add();
 
 /*
  ****************************************************************************************
@@ -43,9 +43,9 @@ int safe_substract(int a, int b, int *result);
  ****************************************************************************************
  *  @brief      This function subtracts the top values of the Stack
  *
- *  @return     void 
+ *  @return     int errNo 
  ****************************************************************************************/
-extern void subtract();
+int subtract();
 
 /*
  ****************************************************************************************
@@ -63,9 +63,9 @@ int safe_multiply(int a, int b, int *result);
  ****************************************************************************************
  *  @brief      This function multiplies the top values of the Stack
  *
- *  @return     void 
+ *  @return     int errNo 
  ****************************************************************************************/
-extern void multiply();
+int multiply();
 
 /*
  ****************************************************************************************
@@ -83,9 +83,9 @@ int safe_divide(int a, int b, int *result);
  ****************************************************************************************
  *  @brief      This function divides the top values of the Stack
  *
- *  @return     void 
+ *  @return     int errNo 
  ****************************************************************************************/
-extern void divide();
+int divide();
 
 
 #endif 

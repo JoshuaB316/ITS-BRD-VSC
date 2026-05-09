@@ -12,18 +12,22 @@ void intToString(int value, char *str){
 
     int i = 0;
     int isNegative = 0;
+    unsigned int uValue = 0;
 
     if(value < 0) {
         isNegative = 1;
-        value = value * (-1);
+        uValue = (unsigned int)(-value);
+    }
+    else{
+        uValue = (unsigned int)value;
     }
 
     do{
-        int digit = value % 10;
+        int digit = uValue % 10;
         str[i++] = '0' + digit;
-        value /= 10;
+        uValue /= 10;
     }
-    while(value > 0);
+    while(uValue > 0);
 
     if(isNegative) {
         str[i++] = '-';
@@ -31,7 +35,7 @@ void intToString(int value, char *str){
 
     str[i] = '\0';
 
-    for(int j = 0; j < i / 2; j++ , i--) {
+    for(int j = 0; j < i; j++ , i--) {
         char temp = str[j];
         str[j] = str[i - 1];
         str[i - 1] = temp;

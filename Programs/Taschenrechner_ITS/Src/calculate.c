@@ -31,7 +31,7 @@ int safe_add(int a, int b, int *result) {
     }
 }
 
-void add() {
+int add() {
     int result1 = 0;
     int err1 = pop(&result1);
 
@@ -41,33 +41,50 @@ void add() {
     int result;
     if(err1 == 0 && err2 == 0){
         if (safe_add(result1, result2, &result) == IntOverflow){
-            displayError(IntOverflow);
+            //displayError(IntOverflow);
             push(result2);
             push(result1);
+            return IntOverflow;
         }else if(safe_add(result1, result2, &result) == IntUnderflow){
-            displayError(IntUnderflow);
+            //displayError(IntUnderflow);
             push(result2);
             push(result1);
+            return IntUnderflow;
         } else {
             push(result);
         }
     } else {
-       displayError(StackUnderflow);
+       return StackUnderflow;
     }
+    return 0;
 }
 
+/*
 int safe_substract(int a, int b, int *result) {
-    if ((b < 0) && (a > INT_MAX + b)) {
+    if ((b > 0) && (a > INT_MAX - b)) {                      //testphase für b > 0, war vorher b < 0 
         return IntOverflow; // Overflow
-    } else if ((b > 0) && (a < INT_MIN + b)) {
+    } else if ((b < 0) && (a > INT_MIN - b)) {               //testphase für b < 0, war vorher b > 0 
         return IntUnderflow; // Underflow
     } else {
         *result = b - a;
         return 0; // is OK
     }
+}*/
+
+int safe_substract(int a, int b, int *result) {
+    if (a < 0 && b > INT_MAX + a) {
+        return IntOverflow;
+    } 
+    else if (a > 0 && b < INT_MIN + a) {
+        return IntUnderflow;
+    } 
+    else {
+        *result = b - a;
+        return 0;
+    }
 }
 
-extern void subtract() {
+int subtract() {
     int result1 = 0;
     int err1 = pop(&result1);
 
@@ -77,19 +94,22 @@ extern void subtract() {
     int result;
     if(err1 == 0 && err2 == 0){
         if (safe_substract(result1, result2, &result) == IntOverflow){
-            displayError(IntOverflow);
+            //displayError(IntOverflow);
             push(result2);
             push(result1);
+            return IntOverflow;
         } else if(safe_substract(result1, result2, &result) == IntUnderflow) {
-            displayError(IntUnderflow);
+            //displayError(IntUnderflow);
             push(result2);
             push(result1);
+            return IntUnderflow;
         } else {
             push(result);
         }
     } else {
-        displayError(StackUnderflow);
+        return StackUnderflow;
     }
+    return 0;
 }
 
 int safe_multiply(int a, int b, int *result) {
@@ -105,7 +125,7 @@ int safe_multiply(int a, int b, int *result) {
     }
 }
 
-extern void multiply() {
+int multiply() {
     int result1 = 0;
     int err1 = pop(&result1);
 
@@ -115,19 +135,22 @@ extern void multiply() {
     int result;
     if(err1 == 0 && err2 == 0){
         if (safe_multiply(result1, result2, &result) == IntOverflow){
-            displayError(IntOverflow);
+            //displayError(IntOverflow);
             push(result2);
             push(result1);
+            return IntOverflow;
         } else if(safe_multiply(result1, result2, &result) == IntUnderflow) {
-            displayError(IntUnderflow);
+            //displayError(IntUnderflow);
             push(result2);
             push(result1);
+            return IntUnderflow;
         } else {
             push(result);
         }
     } else {
-       displayError(StackUnderflow);
+       return StackUnderflow;
     }
+    return 0;
 }
 
 int safe_divide(int a, int b, int *result) {
@@ -135,13 +158,15 @@ int safe_divide(int a, int b, int *result) {
         return DivideByZero; // Division by zero
     } else if ((a == INT_MIN) && (b == -1)) {
         return IntOverflow; // Overflow
+    } else if ((a == -1) && (b == INT_MIN)) {
+        return IntOverflow;
     } else {
         *result = b / a;
         return 0; // is OK
     }
 }
 
-extern void divide() {
+int divide() {
     int result1 = 0;
     int err1 = pop(&result1);
 
@@ -151,15 +176,17 @@ extern void divide() {
     int result;
     if(err1 == 0 && err2 == 0){
         if (safe_divide(result1, result2, &result) == IntOverflow){
-            displayError(IntOverflow);
+            //displayError(IntOverflow);
             push(result2);
             push(result1);
+            return IntOverflow;
         } else if(safe_divide(result1, result2, &result) == DivideByZero) {
-            displayError(DivideByZero);
+            return DivideByZero;
         } else {
             push(result);
         }
     } else {
-        displayError(StackUnderflow);
+        return StackUnderflow;
     }
+    return 0;
 }

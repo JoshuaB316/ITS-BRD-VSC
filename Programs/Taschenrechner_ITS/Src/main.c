@@ -25,6 +25,7 @@
 #include <stdio.h>
 #include "errorhaendler.h"
 
+
 int main(void) {
 	initITSboard();    // Initialisierung des ITS Boards
 	
@@ -35,6 +36,8 @@ int main(void) {
 	//lcdPrintlnS("Hallo liebes TI-Labor (c-project)");
 	
 	int value = 0;
+	int errorHappened = 0;
+	int errNo = 0;
 
 	// Test in Endlosschleife
 	while(1) {
@@ -42,77 +45,138 @@ int main(void) {
 		
 		T_token  t = nextToken();
 
-		switch (t.tok) {
-			case NUMBER:
+		if(errorHappened != 0){
+			if(t.tok == CLEAR){
 				clearStdout();
-				value = t.val;
-				push(value);
-				break;
-
-			case PLUS:
-				clearStdout();
-				add();
-				break;
-
-			case MINUS:
-				clearStdout();
-				subtract();
-				break;
-
-			case MULT:
-				clearStdout();
-				multiply();
-				break;
-
-			case DIV:
-				clearStdout();
-				divide();
-				break;
-
-			case PRT:
-				clearStdout();
-				p();
-				break;
-
-			case SWAP:
-				clearStdout();
-				r();
-				break;
-
-			case PRT_ALL:
-				clearStdout();
-				P();
-				break;
-
-			case CLEAR:
-				clearStdout();
-				C();
-				break;
-
-			case DOUBLE:
-				clearStdout();
-				//push(value);	
-				d();
-				break;
-			case ENTER:
-				//push(value);
-				break;
-
-			case UNEXPECTED:
-				clearStdout();
-				displayError(UnexpectedToken);
-				break;
-
-			case OVERFLOW:
-				clearStdout();
-				displayError(StackOverflow);
-				break;
-
-			default:
-				clearStdout();
-				displayError(UnknownToken);
-				break;
+				errorHappened = 0;
+				errNo = C();
+			}
 		}
+		else {
+			switch (t.tok) {
+				case NUMBER:
+					clearStdout();
+					value = t.val;
+					push(value);
+					break;
+
+				case PLUS:
+					clearStdout();
+					errNo = add();
+					break;
+
+				case MINUS:
+					clearStdout();
+					errNo = subtract();
+					break;
+
+				case MULT:
+					clearStdout();
+					errNo = multiply();
+					break;
+
+				case DIV:
+					clearStdout();
+					errNo = divide();
+					break;
+
+				case PRT:
+					clearStdout();
+					errNo = p();
+					break;
+
+				case SWAP:
+					clearStdout();
+					errNo = r();
+					break;
+
+				case PRT_ALL:
+					clearStdout();
+					errNo = P();
+					break;
+
+				case CLEAR:
+					clearStdout();
+					errNo = C();
+					break;
+
+				case DOUBLE:
+					clearStdout();
+					//push(value);	
+					errNo = d();
+					break;
+				case ENTER:
+					//push(value);
+					break;
+
+				case UNEXPECTED:
+					clearStdout();
+					errNo = UnexpectedToken;
+					break;
+
+				case OVERFLOW:
+					clearStdout();
+					errNo = StackOverflow;
+					break;
+
+				default:
+					clearStdout();
+					errNo = UnknownToken;
+					break;
+			}
+		}
+
+		if(errorHappened == 0) {
+			switch (errNo){
+				case StackOverflow:{
+					displayError(StackOverflow);
+					errorHappened = 1;
+					break;
+				}
+				case StackUnderflow:{
+					displayError(StackUnderflow);
+					errorHappened = 1;
+					break;
+				}
+				case IntOverflow:{
+					displayError(IntOverflow);
+					errorHappened = 1;
+					break;
+				}
+				case IntUnderflow:{
+					displayError(IntUnderflow);
+					errorHappened = 1;
+					break;
+				}
+				case DivideByZero:{
+					displayError(DivideByZero);
+					errorHappened = 1;
+					break;
+				}
+				case UnexpectedToken:{
+					displayError(UnexpectedToken);
+					errorHappened = 1;
+					break;
+				}
+				case UnknownToken:{
+					displayError(UnknownToken);
+					errorHappened = 1;
+					break;
+				}
+				case EmptyStack:{
+					displayError(EmptyStack);
+					errorHappened = 1;
+					break;
+				}
+				case NotEnoughElements:{
+					displayError(NotEnoughElements);
+					errorHappened = 1;
+					break;
+				}
+			}
+		}
+
+
 	}
 }
 

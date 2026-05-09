@@ -5,6 +5,9 @@ include("../roots.cmake")
 
 set(CONTEXT GSA1.Debug+ITSboard)
 set(TARGET ${CONTEXT})
+set(DNAME STM32F429ZITx)
+set(DPACK Keil::STM32F4xx_DFP@2.17.1)
+set(DPACK_DIR "${CMSIS_PACK_ROOT}/Keil/STM32F4xx_DFP/2.17.1")
 set(OUT_DIR "${SOLUTION_ROOT}/out/GSA1/ITSboard/Debug")
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(LD_SCRIPT "${SOLUTION_ROOT}/GSA1_ITSboard.sct")
@@ -16,10 +19,14 @@ set(FPU SP_FPU)
 set(BYTE_ORDER Little-endian)
 
 # Toolchain config map
+set(COMPILER AC6)
 include("toolchain.cmake")
 
 # Setup project
 project(${CONTEXT} LANGUAGES C ASM)
+
+# Enable color diagnostics
+set(CMAKE_COLOR_DIAGNOSTICS ON)
 
 # Compilation database
 add_custom_target(database
@@ -151,4 +158,5 @@ target_link_options(${CONTEXT} PUBLIC
   "SHELL:--strict"
   "SHELL:--info summarysizes"
 )
-set_target_properties(${CONTEXT} PROPERTIES LINK_DEPENDS ${LD_SCRIPT})
+set(LD_DEPS ${LD_SCRIPT})
+set_target_properties(${CONTEXT} PROPERTIES LINK_DEPENDS "${LD_DEPS}")
