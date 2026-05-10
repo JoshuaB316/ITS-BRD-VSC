@@ -1,7 +1,7 @@
 /**
-  * @file toString.c
-  * @author MJ
-  * @date Oct 2025
+  * @file   toString.c
+  * @author Mustafa Kocatürk, Joshua Beinert
+  * @date   Mai 2026
   */
 
 #include "toString.h"

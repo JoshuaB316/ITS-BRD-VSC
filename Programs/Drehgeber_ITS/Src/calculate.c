@@ -1,5 +1,5 @@
 /**
- * @file    rechnen.c
+ * @file    calculate.c
  * @authors Mustafa Kocatürk, Joshua Beinert
  * @date    Mai 2026
  */
