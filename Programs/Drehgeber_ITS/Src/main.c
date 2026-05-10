@@ -61,8 +61,8 @@ int main() {
           angleSpeed = calculateAnglespeed(lastAngle, currentAngle, startingTime, endingTime);
           lastAngle = currentAngle;
           lastPhase = currentPhase;
-          // Test
-          lcdPrintS("Funktioniert"); // if-Funktioniert
+          // Test ###################################
+          // lcdPrintS("Funktioniert"); // if-Funktioniert
         }
 
         startingTime = endingTime;
