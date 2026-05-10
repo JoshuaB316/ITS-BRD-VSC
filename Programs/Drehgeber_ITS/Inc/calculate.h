@@ -1,11 +1,11 @@
 /**
- * @file rechnen.h
+ * @file    calculate.h
  * @authors Mustafa Kocatürk, Joshua Beinert
- * @date Mai 2026
+ * @date    Mai 2026
  */
 
-#ifndef RECHNEN_H
-#define RECHNEN_H
+#ifndef CALCULATE_H
+#define CALCULATE_H
 
 #include <stdbool.h>
 #include <stdint.h>
@@ -26,6 +26,6 @@ double calculateDegree(uint32_t schritte);
  * @param aktuellerZeit Die Endzeit in Millisekunden.
  * @return der berechnete GeschwindigkeitProSekunde
  */
-double calculateSpeed(double letzterWinkel, double aktuellerWinkel, uint32_t alterZeit, uint32_t aktuellerZeit);
+double calculateAnglespeed(double letzterWinkel, double aktuellerWinkel, uint32_t alterZeit, uint32_t aktuellerZeit);
 
 #endif

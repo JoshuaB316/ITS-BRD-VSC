@@ -1,14 +1,14 @@
 /**
- * @file eingabe.h
+ * @file    input.h
  * @authors Mustafa Kocatürk, Joshua Beinert
- * @date Mai 2026
+ * @date    Mai 2026
  */
 
 #include <stdbool.h>
 #include <stdint.h>
 
-#ifndef EINGABE_H
-#define EINGABE_H
+#ifndef INPUT_H
+#define INPUT_H
 
 extern int currentPhase;
 extern int lastPhase;
@@ -43,23 +43,6 @@ int determinePhase(bool A, bool B);
 /**
  * @brief verarbeitet die Eingangssignale des Drehgebers und aktualisiert die Zustände.
  */
-void processInput(void);
-
-
-/**
- * @brief Gibt die aktuelle Schrittzahl zurück.
- * @return Die aktuelle Schrittzahl des Drehgebers.
- */
-//int gibSchrittzahl(void);
-
-
-/** 
- * @brief Gibt den Fehlerstatus zurück.
- * @return true, wenn ein Fehler erkannt wurde, sonst false.
- */
-//bool gibFehler(void);
-
-
-//int gibPhase();
+void processInput();
 
 #endif

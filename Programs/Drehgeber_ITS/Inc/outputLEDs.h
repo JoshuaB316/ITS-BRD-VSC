@@ -1,11 +1,11 @@
 /**
- * @file ausgabeLEDs.h
+ * @file    outputLEDs.h
  * @authors Mustafa Kocatürk, Joshua Beinert
- * @date Mai 2026
+ * @date    Mai 2026
  */
 
-#ifndef AUSGABELEDS_H
-#define AUSGABELEDS_H
+#ifndef OUTPUTLEDS_H
+#define OUTPUTLEDS_H
 
 #include <stdbool.h>
 #include <stdint.h>

@@ -20,7 +20,7 @@
 /**
  * @brief This function initializes TIM2
  */
-extern void initTimer(void);
+extern void initTimer();
 
 /**
  * @brief This macro gets the current time stamp.

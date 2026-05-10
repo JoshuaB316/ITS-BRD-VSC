@@ -1,14 +1,14 @@
 /**
- * @file error.c
+ * @file    error.c
  * @authors Mustafa Kocatürk, Joshua Beinert
- * @date Mai 2026
+ * @date    Mai 2026
  */
 
 #include "error.h"
-#include "ausgabeLEDs.h"
-#include "eingabe.h"
+#include "outputLEDs.h"
+#include "input.h"
 
-void errorReset(void) {
+void errorReset() {
   // Alle Variablen zurücksetzen
   errorOccurred = false;
   direction = 0;

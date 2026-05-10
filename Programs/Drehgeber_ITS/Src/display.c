@@ -1,11 +1,11 @@
 /**
- * @file display.c
- * @author Franz Korf, HAW Hamburg
- * @date Mar 2016
- * @brief This modules implements a simple output module.
- *        It places two terminals in the terminal area of keypad.
- *        One terminal will be used for standard output. The other one
- *        echos pressed digit keys.
+ * @file    display.c
+ * @author  Franz Korf, HAW Hamburg
+ * @date    Mar 2016
+ * @brief   This modules implements a simple output module.
+ *          It places two terminals in the terminal area of keypad.
+ *          One terminal will be used for standard output. The other one
+ *          echos pressed digit keys.
  */
 
 #include "display.h"

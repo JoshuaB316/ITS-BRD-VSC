@@ -1,24 +1,27 @@
 /**
- * @file rechnen.c
+ * @file    rechnen.c
  * @authors Mustafa Kocatürk, Joshua Beinert
- * @date Mai 2026
+ * @date    Mai 2026
  */
 
-#include "rechnen.h"
+#include "calculate.h"
 #include <stdint.h>
 
-#define PROUMDREHUNG 1200.0
+#define PHASE_SHIFTS_PER_ROTATION 1200.0
 
-double calculateDegree(uint32_t schritte) {
-  double schritteProUmdrehung = PROUMDREHUNG;
-  double drehwinkel = (schritte / schritteProUmdrehung) * 360.0;
+double calculateDegree(uint32_t steps) {
 
-  return drehwinkel;
+  double stepsPerRotation = PHASE_SHIFTS_PER_ROTATION;
+  double rotationAngle = (steps / stepsPerRotation) * 360.0;
+
+  return rotationAngle;
 }
 
-double calculateSpeed(double letzterWinkel, double aktuellerWinkel, uint32_t alterZeit, uint32_t aktuellerZeit) {
-  double zeitSekunden = (aktuellerZeit - alterZeit) / 90000000.0; // Millisekunden in Sekunden umrechnen
-  double winkel = aktuellerWinkel - letzterWinkel;
-  double geschwindigkeitProSekunde = winkel / zeitSekunden;
-  return geschwindigkeitProSekunde;
+double calculateAnglespeed(double lastAngle, double currentAngle, uint32_t oldTime, uint32_t currentTime) {
+
+  double timeInSec = (currentTime - oldTime) / 90000000.0; // Millisekunden in Sekunden umrechnen unter be
+  double angle = currentAngle - lastAngle;
+  double anglespeedPerSec = angle / timeInSec;
+
+  return anglespeedPerSec;
 }

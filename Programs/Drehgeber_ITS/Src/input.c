@@ -1,11 +1,11 @@
 /**
- * @file eingabe.c
+ * @file    input.c
  * @authors Mustafa Kocatürk, Joshua Beinert
- * @date Mai 2026
+ * @date    Mai 2026
  */
 
-#include "eingabe.h"
-#include "ausgabeLEDs.h"
+#include "input.h"
+#include "outputLEDs.h"
 #include "stm32f429xx.h"
 #include <stdbool.h>
 #include <stdint.h>
@@ -14,16 +14,14 @@
 #define IDR_MASK_PIN_0 (0x01U << (0))
 #define IDR_MASK_PIN_1 (0x01U << (1))
 #define ERROR -1
-#define OK 0
 
 // Globale Variablen für den Zustand des Drehgebers
 int currentPhase = 0; // 0 = a, 1 = b, 2 = c, 3 = d
 int lastPhase = 0;
-int direction = 0;            // 1 = vorwärts, -1 = rückwärts, 0 = keine Änderung
-uint32_t stepCounter = 0; // Zählt die Phasenwechsel
-bool errorOccurred = false; // Wird true, wenn ein ungültiger Übergang erkannt wird
+int direction = 0; // 1 = vorwärts, -1 = rückwärts, 0 = kein Phasenwechsel
+uint32_t stepCounter = 0; // Anzahl der Phasenwechsel
 
-bool readPinA(void) {
+bool readPinA() {
   if (IDR_MASK_PIN_0 == (GPIOF->IDR & IDR_MASK_PIN_0)) {
     return true;
   } else {
@@ -31,7 +29,7 @@ bool readPinA(void) {
   }
 }
 
-bool readPinB(void) {
+bool readPinB() {
   if (IDR_MASK_PIN_1 == (GPIOF->IDR & IDR_MASK_PIN_1)) {
     return true;
   } else {
@@ -48,74 +46,71 @@ int determinePhase(bool A, bool B) {
     return 2; // Phase c
   if (!A && B)
     return 3;   // Phase d
-  return ERROR; // Fehler
+
+  // Fehler
+  return ERROR; 
 }
 
-void processInput(void) {
+void processInput() {
   bool A = readPinA();
   bool B = readPinB();
 
   lastPhase = currentPhase;
   currentPhase = determinePhase(A, B);
 
-  // Wenn Phase ungültig ist, Fehler setzen
+  // Wenn Phase ungültig ist, errorOccurred = true
   if (currentPhase == ERROR) {
     errorOccurred = true;
   }
-  // Keine Änderung → nichts tun
+  // Wnn keine Änderung dann aus der Funktion raus
   if (lastPhase == currentPhase) {
-    return; // Beende die Funktion sofort.
+    return;
   }
 
-  // Phasenübergänge auswerten (nach Tabelle aus der Aufgabe)
+  // Phasenübergänge auswerten
+
   // Vorwärtsbewegung
   if (lastPhase == 0 && currentPhase == 1) {
-    // a → b = Vorwärtsbewegung
+    // a,b
     direction = 1;
     stepCounter++;
   } else if (lastPhase == 1 && currentPhase == 2) {
-    // b → c = Vorwärtsbewegung
+    // b,c
     direction = 1;
     stepCounter++;
   } else if (lastPhase == 2 && currentPhase == 3) {
-    // c → d = Vorwärtsbewegung
+    // c,d
     direction = 1;
     stepCounter++;
   } else if (lastPhase == 3 && currentPhase == 0) {
+    // d,a
     direction = 1;
     stepCounter++;
   }
 
   // Rückwärtsbewegung
   else if (lastPhase == 1 && currentPhase == 0) {
-    // b → a = Rückwärtsbewegung
+    // b,a
     direction = -1;
     stepCounter--;
   } else if (lastPhase == 2 && currentPhase == 1) {
-    // c → b = Rückwärtsbewegung
+    // c,b
     direction = -1;
     stepCounter--;
   } else if (lastPhase == 3 && currentPhase == 2) {
-    // d → c = Rückwärtsbewegung
+    // d,c
     direction = -1;
     stepCounter--;
   } else if (lastPhase == 0 && currentPhase == 3) {
+    // a,d
     direction = -1;
     stepCounter--;
-  }
-
-  else {
-    // Alle anderen Übergänge sind ungültig
+  } else {
+    // Ungültiger Übergang = Error
     errorOccurred = true;
     setErrorLED();
-    // led 21 muss ausgehen
     return;
   }
 
   toggleLEDs(stepCounter, direction); // Ausgabe der Schrittzahl auf die LEDs
 }
-
-//int gibPhase() { return aktuellePhase; }
-//int gibSchrittzahl(void) { return schrittZaehler; }
-
-//bool gibFehler(void) { return fehler; }
