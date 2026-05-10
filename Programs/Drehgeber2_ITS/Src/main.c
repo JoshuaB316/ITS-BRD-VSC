@@ -38,6 +38,7 @@ int main(void) {
   uint32_t startZeit = getTimeStamp();
 
   // Test in Endlosschleife
+  // test
   while (1) {
     eingabeVerarbeitung();
     HAL_Delay(100);
