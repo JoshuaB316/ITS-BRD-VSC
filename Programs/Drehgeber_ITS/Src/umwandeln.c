@@ -10,11 +10,6 @@
 
 static char str[13];
 
-/**
- * @brief Gibt einen String in umgekehrter Reihenfolge auf dem Display aus.
- * @param str Zeiger auf den String, der umgekehrt ausgegeben werden soll.
- * @param length Länge des Strings
- */
 void reverse_string(char str[], int length) {
   if (str == NULL || length <= 0)
     return;
@@ -29,12 +24,6 @@ void reverse_string(char str[], int length) {
 
   printStdout(tmp);
 }
-
-/**
- * @brief Wandelt eine Ganzzahl in einen String um.
- * @param num Der zu konvertierende Ganzzahlwert.
- *
- */
 
 int integer_to_string(int num) {
   int i = 0;

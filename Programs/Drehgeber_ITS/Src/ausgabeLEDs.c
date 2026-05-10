@@ -15,11 +15,6 @@
 #define BSRR_MASKE_PIN_21 (0x01U << 5)
 #define IDR_MASKE_PIN_6 (0x01U << 6)
 
-/**
- * @brief Schaltet die LEDs entsprechend der übergebenen Maske ein oder aus.
- * @param led_mask Bitmaske, die angibt, welche LEDs geschaltet werden sollen.
- *@param richtung da wird entweder 1(vorwärts) oder -1(rückwärts) gegeben
- */
 void toggle_LEDs(uint32_t led_mask, int richtung) {
   // von 32bit in 8 bit uwmandeln
   uint8_t mask = (uint8_t)led_mask;
@@ -33,17 +28,12 @@ void toggle_LEDs(uint32_t led_mask, int richtung) {
     GPIOE->BSRR = (BSRR_MASK_PIN_23 << 16); // LED 23 ausschalten (vorwärts)
   }
 }
-/**
- *@brief LED21 geht an, wenn es fehler bei der phasen auftreten
- */
+
 void toggle_LEDs_Error() {
   GPIOE->BSRR = BSRR_MASKE_PIN_21; // LED 21 einschalten(fehler)
 }
 void rest_LEDs_Error() {
-  GPIOE->BSRR = BSRR_MASKE_PIN_21 << 16; // LED 21 einschalten(fehler)
+  GPIOE->BSRR = BSRR_MASKE_PIN_21 << 16; // LED 21 ausschalten(fehler)
 }
-/**
- *@brief es wird überprüft, ob taster S6 gedrückt würde.
- *
- */
+
 bool readGPIOPIN() { return IDR_MASKE_PIN_6 != (GPIOF->IDR & IDR_MASKE_PIN_6); }

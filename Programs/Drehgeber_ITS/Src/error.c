@@ -7,9 +7,6 @@
 #include "ausgabeLEDs.h"
 #include "eingabe.h"
 
-/**
- *@brief hier werden alle veriablen zurückgesetzt
- */
 void fehlerZuruecksetzen(void) {
   fehler = false;              // Fehlerflag löschen
   richtung = 0;                // Richtung neutralisieren (optional)

@@ -20,11 +20,13 @@ void toggle_LEDs(uint32_t led_mask, int richtung);
  */
 void toggle_LEDs_Error();
 
+/**
+ *@brief LED21 geht wieder aus
+ */
 void rest_LEDs_Error();
 
 /**
  *@brief es wird überprüft, ob taster S6 gedrückt würde.
- *
  */
 bool readGPIOPIN();
 

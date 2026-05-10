@@ -24,10 +24,6 @@ int richtung = 0;            // 1 = vorwärts, -1 = rückwärts, 0 = keine Ände
 uint32_t schrittZaehler = 0; // Zählt die Phasenwechsel
 bool fehler = false; // Wird true, wenn ein ungültiger Übergang erkannt wird
 
-/**
- * @brief Liest den Zustand von Pin A des Drehgebers aus.
- * @return true, wenn Pin A HIGH ist, sonst false.
- */
 bool lesePinA(void) {
   if (IDR_MASK_PIN_0 == (GPIOF->IDR & IDR_MASK_PIN_0)) {
     return true;
@@ -36,10 +32,6 @@ bool lesePinA(void) {
   }
 }
 
-/**
- * @brief Liest den Zustand von Pin B des Drehgebers aus.
- * @return true, wenn Pin B HIGH ist, sonst false.
- */
 bool lesePinB(void) {
   if (IDR_MASK_PIN_1 == (GPIOF->IDR & IDR_MASK_PIN_1)) {
     return true;
@@ -48,12 +40,6 @@ bool lesePinB(void) {
   }
 }
 
-/**
- * @brief Bestimmt die aktuelle Phase anhand der Eingangssignale.
- * @param A Zustand von Pin A
- * @param B Zustand von Pin B
- * @return Die aktuelle Phase (0 = a, 1 = b, 2 = c, 3 = d) oder -1 bei Fehler.
- */
 int bestimmePhase(bool A, bool B) {
   if (!A && !B)
     return 0; // Phase a
@@ -66,11 +52,6 @@ int bestimmePhase(bool A, bool B) {
   return ERROR; // Fehler
 }
 
-/**
- * @brief verarbeitet die Eingangssignale des Drehgebers und aktualisiert die
- * Zustände.
- * @return es wird entweder Fehler oder okay ausgegeben
- */
 void eingabeVerarbeitung(void) {
   bool A = lesePinA();
   bool B = lesePinB();
@@ -135,15 +116,7 @@ void eingabeVerarbeitung(void) {
   toggle_LEDs(schrittZaehler, richtung); // Ausgabe der Schrittzahl auf die LEDs
 }
 
-/**
- * @brief Gibt die aktuelle Schrittzahl zurück.
- * @return Die aktuelle Schrittzahl
- */
 int gibPhase() { return aktuellePhase; }
 int gibSchrittzahl(void) { return schrittZaehler; }
 
-/**
- * @brief Gibt an, ob ein Fehler im Drehgeber erkannt wurde.
- * @return true, wenn ein Fehler erkannt wurde, sonst false.
- */
 bool gibFehler(void) { return fehler; }
