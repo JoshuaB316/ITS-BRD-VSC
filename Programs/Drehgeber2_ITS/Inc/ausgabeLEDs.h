@@ -1,5 +1,5 @@
 /** 
-* @file ausgabeLEDs.c
+* @file ausgabeLEDs.h
 * @authors Mustafa Kocatürk, Joshua Beinert
 * @date Mai 2026
 */

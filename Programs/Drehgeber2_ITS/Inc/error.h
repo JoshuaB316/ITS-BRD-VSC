@@ -1,5 +1,5 @@
 /** 
-* @file error.H
+* @file error.h
 * @authors Mustafa Kocatürk, Joshua Beinert
 * @date Mai 2026
 */
