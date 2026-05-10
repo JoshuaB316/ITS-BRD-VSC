@@ -19,5 +19,3 @@ void initTimer(void) {
   TIM2->DIER = 0;                     /* Interrupt ausschalten         */
   TIM2->CR1 = TIM_CR1_CEN;            /* Enable Timer                  */
 }
-
-// EOF

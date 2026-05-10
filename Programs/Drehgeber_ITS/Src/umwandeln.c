@@ -4,28 +4,16 @@
  * @date Mai 2026
  */
 
+#include "umwandeln.h" 
 #include "display.h"
-#include <stdbool.h> // Für den booleschen Wert
+#include <stdbool.h> 
 #include <stddef.h>  // Für NULL
 
 static char str[13];
 
-void reverse_string(char str[], int length) {
-  if (str == NULL || length <= 0)
-    return;
 
-  char tmp[length + 1]; // Nutze die gleiche Größe wie str
-  int s = 0;
 
-  for (int t = length - 1; t >= 0; t--) {
-    tmp[s++] = str[t];
-  }
-  tmp[s] = '\0';
-
-  printStdout(tmp);
-}
-
-int integer_to_string(int num) {
+int intToString(int num) {
   int i = 0;
   bool negative = false;
 
@@ -33,7 +21,7 @@ int integer_to_string(int num) {
   if (num == 0) {
     str[i++] = '0'; // Konvertiere die Ziffer
     str[i] = '\0';  // String-Ende
-    reverse_string(str, i);
+    reverseString(str, i);
     return 0;
   }
 
@@ -58,6 +46,22 @@ int integer_to_string(int num) {
   str[i] = '\0';
 
   // String umkehren, da Ziffern in umgekehrter Reihenfolge gespeichert wurden
-  reverse_string(str, i);
+  reverseString(str, i);
   return i;
+}
+
+
+void reverseString(char str[], int length) {
+  if (str == NULL || length <= 0)
+    return;
+
+  char tmp[length + 1]; // Nutze die gleiche Größe wie str
+  int s = 0;
+
+  for (int t = length - 1; t >= 0; t--) {
+    tmp[s++] = str[t];
+  }
+  tmp[s] = '\0';
+
+  printStdout(tmp);
 }

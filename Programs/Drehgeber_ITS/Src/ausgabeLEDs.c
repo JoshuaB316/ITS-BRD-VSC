@@ -1,8 +1,9 @@
 /**
- * @file ausgabeLEDs.c
- * @authors Mustafa Kocatürk, Joshua Beinert
- * @date Mai 2026
- */
+* @file ausgabeLEDs.c
+* @authors Mustafa Kocatürk, Joshua Beinert
+* @date Mai 2026
+*/
+
 
 #include "ausgabeLEDs.h"
 #include "error.h"
@@ -15,7 +16,7 @@
 #define BSRR_MASKE_PIN_21 (0x01U << 5)
 #define IDR_MASKE_PIN_6 (0x01U << 6)
 
-void toggle_LEDs(uint32_t led_mask, int richtung) {
+void toggleLEDs(uint32_t led_mask, int richtung) {
   // von 32bit in 8 bit uwmandeln
   uint8_t mask = (uint8_t)led_mask;
   GPIOD->BSRR = (0x0F << 16);
@@ -29,11 +30,16 @@ void toggle_LEDs(uint32_t led_mask, int richtung) {
   }
 }
 
-void toggle_LEDs_Error() {
+void setErrorLED() {
   GPIOE->BSRR = BSRR_MASKE_PIN_21; // LED 21 einschalten(fehler)
 }
-void rest_LEDs_Error() {
+
+
+void resetErrorLED() {
   GPIOE->BSRR = BSRR_MASKE_PIN_21 << 16; // LED 21 ausschalten(fehler)
 }
 
-bool readGPIOPIN() { return IDR_MASKE_PIN_6 != (GPIOF->IDR & IDR_MASKE_PIN_6); }
+
+bool readPinS6() {
+  return IDR_MASKE_PIN_6 != (GPIOF->IDR & IDR_MASKE_PIN_6); 
+}

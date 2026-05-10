@@ -8,8 +8,8 @@
 #define ERROR_H
 
 /**
- *@brief hier werden alle veriablen zurückgesetzt
+ * @brief hier werden alle Variablen zurückgesetzt
  */
-void fehlerZuruecksetzen(void);
+void errorReset(void);
 
 #endif

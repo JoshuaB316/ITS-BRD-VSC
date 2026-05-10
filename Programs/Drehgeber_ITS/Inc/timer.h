@@ -1,11 +1,11 @@
 
 /**
  ******************************************************************************
- * @file    	timer.h
- * @author  	Franz Korf
- * @version  V1.0
- * @date     2020-08-22
- * @brief    Timer for calculation
+ * @file    timer.h
+ * @author  Franz Korf
+ * @version V1.0
+ * @date    2020-08-22
+ * @brief   Timer for calculation
  ******************************************************************************
  */
 
@@ -19,17 +19,12 @@
 
 /**
  * @brief This function initializes TIM2
- * @param None
- * @retval None
  */
 extern void initTimer(void);
 
 /**
  * @brief This macro gets the current time stamp.
- * @param None
- * @retval timerTicks
  */
 #define getTimeStamp() ((uint32_t)(TIM2->CNT))
 
 #endif
-// EOF

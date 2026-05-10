@@ -10,24 +10,26 @@
 #ifndef EINGABE_H
 #define EINGABE_H
 
-extern int aktuellePhase;
-extern int letztePhase;
-extern int richtung;
-extern uint32_t schrittZaehler;
-extern bool fehler;
+extern int currentPhase;
+extern int lastPhase;
+extern int direction;
+extern uint32_t stepCounter;
+extern bool errorOccurred;
 
 /**
  * @brief Liest den Zustand von Pin A des Drehgebers aus.
  * @return true, wenn Pin A HIGH ist, sonst false.
  */
 
-bool lesePinA(void);
+bool readPinA(void);
+
 
 /**
  * @brief Liest den Zustand von Pin B des Drehgebers aus.
  * @return true, wenn Pin B HIGH ist, sonst false.
  */
-bool lesePinB(void);
+bool readPinB(void);
+
 
 /**
  * @brief Bestimmt die aktuelle Phase anhand der Eingangssignale
@@ -35,25 +37,29 @@ bool lesePinB(void);
  * @param B Zustand von Pin B
  * @return Die aktuelle Phase (0 = a, 1 = b, 2 = c, 3 = d), oder -1 bei Fehler.
  */
-int bestimmePhase(bool A, bool B);
+int determinePhase(bool A, bool B);
+
 
 /**
- * @brief verarbeitet die Eingangssignale des Drehgebers und aktualisiert die
- * Zustände.
- * @return es wird entweder Fehler oder okay ausgegeben
+ * @brief verarbeitet die Eingangssignale des Drehgebers und aktualisiert die Zustände.
  */
-void eingabeVerarbeitung(void);
+void processInput(void);
+
 
 /**
  * @brief Gibt die aktuelle Schrittzahl zurück.
  * @return Die aktuelle Schrittzahl des Drehgebers.
  */
-int gibSchrittzahl(void);
+//int gibSchrittzahl(void);
 
-/** @brief Gibt den Fehlerstatus zurück.
- *   @return true, wenn ein Fehler erkannt wurde, sonst false.
+
+/** 
+ * @brief Gibt den Fehlerstatus zurück.
+ * @return true, wenn ein Fehler erkannt wurde, sonst false.
  */
-bool gibFehler(void);
+//bool gibFehler(void);
 
-int gibPhase();
+
+//int gibPhase();
+
 #endif

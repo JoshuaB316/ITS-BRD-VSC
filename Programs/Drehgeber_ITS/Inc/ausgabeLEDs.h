@@ -3,6 +3,7 @@
  * @authors Mustafa Kocatürk, Joshua Beinert
  * @date Mai 2026
  */
+
 #ifndef AUSGABELEDS_H
 #define AUSGABELEDS_H
 
@@ -12,22 +13,26 @@
 /**
  * @brief Schaltet die LEDs entsprechend der übergebenen Maske ein oder aus.
  * @param led_mask Bitmaske, die angibt, welche LEDs geschaltet werden sollen.
- *@param richtung da wird entweder 1(vorwärts) oder -1(rückwärts) gegeben
+ * @param richtung entweder 1(vorwärts) oder -1(rückwärts)
  */
-void toggle_LEDs(uint32_t led_mask, int richtung);
+void toggleLEDs(uint32_t led_mask, int richtung);
+
+
 /**
- *@brief LED21 geht an, wenn es fehler bei der phasen auftreten
+ *@brief LED21 geht an, wenn es ein Fehler gibt
  */
-void toggle_LEDs_Error();
+void setErrorLED();
+
 
 /**
  *@brief LED21 geht wieder aus
  */
-void rest_LEDs_Error();
+void resetErrorLED();
+
 
 /**
  *@brief es wird überprüft, ob taster S6 gedrückt würde.
  */
-bool readGPIOPIN();
+bool readPinS6();
 
 #endif

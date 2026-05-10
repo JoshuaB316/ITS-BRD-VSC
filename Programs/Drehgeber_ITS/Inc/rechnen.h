@@ -15,7 +15,7 @@
  * @param schritte Anzahl der Schritte (Phasenwechsel)
  * @return Drehwinkel in Grad
  */
-double berechneWinkel(uint32_t schritte);
+double calculateDegree(uint32_t schritte);
 
 /**
  * @brief Berechnet die Drehgeschwindigkeit basierend auf der Änderung der
@@ -26,6 +26,6 @@ double berechneWinkel(uint32_t schritte);
  * @param aktuellerZeit Die Endzeit in Millisekunden.
  * @return der berechnete GeschwindigkeitProSekunde
  */
-double berechneGeschwindigkeit(double letzterWinkel, double aktuellerWinkel,
-                               uint32_t alterZeit, uint32_t aktuellerZeit);
+double calculateSpeed(double letzterWinkel, double aktuellerWinkel, uint32_t alterZeit, uint32_t aktuellerZeit);
+
 #endif

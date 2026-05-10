@@ -23,49 +23,49 @@
 #include <stdint.h>
 
 int main(void) {
+  // Initialisierungen
   initITSboard(); // Initialisierung des ITS Boards
+  GUI_init(DEFAULT_BRIGHTNESS);
+  TP_Init(false);
+  initTimer();
 
-  GUI_init(DEFAULT_BRIGHTNESS); // Initialisierung des LCD Boards mit Touch
-  TP_Init(false);               // Initialisierung des LCD Boards mit Touch
-  initTimer();                  // Timer initialisieren
-
-  double startSchritte;
-  double aktuellerWinkel;
-  double letzterWinkel = 0.0;
-  double geschwindigkeit;
+  // Variablen
+  double startSteps;
+  double currentAngle;
+  double lastAngle = 0.0;
+  double speed;
   int letzterPhase = 0;
-  uint32_t startZeit = getTimeStamp();
+  uint32_t startingTime = getTimeStamp();
 
   // Test in Endlosschleife
-  // test
   while (1) {
-    eingabeVerarbeitung();
+    processInput();
     HAL_Delay(100);
-    bool s6 = readGPIOPIN();
+
+    bool s6 = readPinS6();
     // wenn taste s6 gedrückt ist, geh rein und setzte alle Variablen zurück
     if (s6 == true) {
-      //	fehlerZuruecksetzen();
+      errorReset();
       lcdPrintS("2"); // es wurde zurückgesetzt;
     }
     if (gibFehler() == false && s6 == true) {
-      uint32_t endZeit = getTimeStamp();
-      uint32_t deltaZeit = endZeit - startZeit;
+      uint32_t endingTime = getTimeStamp();
+      uint32_t deltaTime = endingTime - startingTime;
 
       // Wenn die Zeitdifferenz zwischen 250 ms und 500 ms liegt, berechne die
       // Geschwindigkeit und den Drehwinkel
-      if (deltaZeit >= 250) {
-        startSchritte = gibSchrittzahl();
-        int aktuellerPahse = gibPhase();
-        if (aktuellerPahse != letzterPhase) {
-          aktuellerWinkel = berechneWinkel(startSchritte);
-          geschwindigkeit = berechneGeschwindigkeit(
-              letzterWinkel, aktuellerWinkel, startZeit, endZeit);
-          letzterWinkel = aktuellerWinkel;
-          letzterPhase = aktuellerPahse;
+      if (deltaTime >= 250) {
+        startSteps = gibSchrittzahl();
+        //int aktuellerPahse = gibPhase();
+        if (currentPhase != letzterPhase) {
+          currentAngle = calculateDegree(startSteps);
+          speed = calculateSpeed(lastAngle, currentAngle, startingTime, endingTime);
+          lastAngle = currentAngle;
+          letzterPhase = currentPhase;
           lcdPrintS("es geht"); // dieser if geht
         }
-        startZeit = endZeit;
-        updateDisplay(aktuellerWinkel, geschwindigkeit);
+        startingTime = endingTime;
+        updateDisplay(currentAngle, speed);
       }
       lcdPrintS("0"); // Es gab kein Fehler
     } else {
@@ -74,5 +74,4 @@ int main(void) {
   }
 }
 
-// EOFit.h"
 #include "LC
