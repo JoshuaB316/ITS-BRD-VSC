@@ -8,7 +8,6 @@
 
 #include "LCD_Touch.h"
 #include "additionalFonts.h"
-#include "ausgabeLEDs.h"
 #include "fontsFLASH.h"
 #include "inD_GUI.h"
 #include "lcd.h"
@@ -19,6 +18,7 @@
 #include "calculate.h"
 #include "toString.h"
 #include "timer.h"
+#include "outputLEDs.h"
 #include <stdint.h>
 
 int main() {
