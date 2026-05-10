@@ -17,6 +17,7 @@
 #include "input.h"
 #include "error.h"
 #include "calculate.h"
+#include "toString.h"
 #include "timer.h"
 #include <stdint.h>
 
@@ -31,7 +32,7 @@ int main() {
   double startSteps;
   double currentAngle;
   double lastAngle = 0.0;
-  double speed;
+  double angleSpeed;
   uint32_t startingTime = getTimeStamp();
 
   // Test in Endlosschleife
@@ -43,8 +44,8 @@ int main() {
     bool s6 = readPinS6();
     if (s6 == true) {
       errorReset();
-      // Test
-      lcdPrintS("2"); // es wurde zurückgesetzt;
+      // Test ###################################
+      //lcdPrintS("2"); // es wurde zurückgesetzt;
     }
 
     if (errorOccurred == false && s6 == true) {
@@ -57,7 +58,7 @@ int main() {
 
         if (currentPhase != lastPhase) {
           currentAngle = calculateDegree(startSteps);
-          speed = calculateAnglespeed(lastAngle, currentAngle, startingTime, endingTime);
+          angleSpeed = calculateAnglespeed(lastAngle, currentAngle, startingTime, endingTime);
           lastAngle = currentAngle;
           lastPhase = currentPhase;
           // Test
@@ -67,15 +68,23 @@ int main() {
         startingTime = endingTime;
         //updateDisplay(currentAngle, speed);
 
+        // Ausgabe Winkel
+        char currentAngleStr[12]; // vllt lieber andere Zahl als 12
+        doubleToString(currentAngle, currentAngleStr)
+        lcdPrintS(currentAngleStr);
 
+        // Ausgabe Winkelgeschwindigkeit
+        char speedStr[12]; // auch hier vllt andere Zahl
+        doubleToString(angleSpeed, speedStr)
+        lcdPrintS(speedStr);
       }
 
-      // Test
-      lcdPrintS("0"); // Es gab kein Fehler
+      // Test ###################################
+      //lcdPrintS("0"); // Es gab kein Fehler
 
     } else {
-      // Test
-      lcdPrintS("1"); // Es gab ein Fehler bei den Phasen
+      // Test ###################################
+      //lcdPrintS("1"); // Es gab ein Fehler bei den Phasen
     }
   }
 }
