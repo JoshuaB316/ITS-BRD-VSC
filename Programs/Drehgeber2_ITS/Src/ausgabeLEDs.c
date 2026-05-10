@@ -1,7 +1,7 @@
 /** 
 * @file ausgabeLEDs.c
-* @author Esmat Rabaki, Raphael Pfeiffer
-* @brief hier werden die LEDS ausgegeben und Taster S6 wird überprüft 
+* @authors Mustafa Kocatürk, Joshua Beinert
+* @date Mai 2026
 */
 
 

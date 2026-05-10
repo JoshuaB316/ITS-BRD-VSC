@@ -1,10 +1,7 @@
 /**
  * @file umwandeln.c
- * @authors Esmat Rabaki undRaphael Pfeiffer.  
- * @brief Enthält Funktionen zur Umwandlung von Integer-Werten
- * in Strings und deren Anzeige auf dem Display.
- *
- * @date Okt 2025
+ * @authors Mustafa Kocatürk, Joshua Beinert
+ * @date Mai 2026
  */
 
 

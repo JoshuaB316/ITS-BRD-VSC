@@ -1,7 +1,7 @@
 /** 
 * @file rechnen.c
-* @author Esmat Rabaki, Raphael Pfeiffer
-* @brief hier wird die Drehwinkel und Drehgeschwindigkeit berechnet
+* @authors Mustafa Kocatürk, Joshua Beinert
+* @date Mai 2026
 */
 
 #include "rechnen.h"

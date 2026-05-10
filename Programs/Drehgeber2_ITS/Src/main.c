@@ -57,7 +57,7 @@ int main(void) {
       if (deltaZeit >= 250) {
         startSchritte = gibSchrittzahl();
         int aktuellerPahse = gibPhase();
-        if (aktuellerPahse != letzterPhase) {
+        if (aktuellerPahse != letzterPhase) {    
           aktuellerWinkel = berechneWinkel(startSchritte);
           geschwindigkeit = berechneGeschwindigkeit(
               letzterWinkel, aktuellerWinkel, startZeit, endZeit);

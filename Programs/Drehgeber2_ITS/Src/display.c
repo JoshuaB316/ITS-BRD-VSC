@@ -51,7 +51,7 @@ void printToEchoLine(char c){
    buf[0] = c;
    printTerm(buf, &echoTerm);
 }
-//
+
 void setErrMode(void) {
 	clearTerm(&stdoutTerm);
 	setTextColorTerm(RED, &stdoutTerm);

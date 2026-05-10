@@ -1,3 +1,10 @@
+/** 
+* @file rechnen.h
+* @authors Mustafa Kocatürk, Joshua Beinert
+* @date Mai 2026
+*/
+
+
 #ifndef RECHNEN_H
 #define RECHNEN_H
 

@@ -1,10 +1,7 @@
 /**
  * @file umwandeln.h
- * @brief Header-Datei für Funktionen zur Umwandlung von Ganzzahlen in Strings und deren Display-Ausgabe.
- *
- *
- * @date Oktober 2025
- * @authors Esmat Rabaki, Raphael Pfeiffer, HAW Hamburg
+ * @authors Mustafa Kocatürk, Joshua Beinert
+ * @date Mai 2026
  */
 
 #ifndef UMWANDELN_H

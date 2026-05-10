@@ -1,8 +1,7 @@
 /** 
 * @file eingabe.c
-* @author Esmat Rabaki, Raphael Pfeiffer
-* @brief hier wird die Kanal A und Kanal B eingelesen. dann wird 
-* die phasenwechsel überprüft. 
+* @authors Mustafa Kocatürk, Joshua Beinert
+* @date Mai 2026
 */
 
 

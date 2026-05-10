@@ -1,7 +1,7 @@
 /** 
 * @file error.H
-* @author Esmat Rabaki, Raphael Pfeiffer
-* @brief hier wird der Fehlerzustand zurückgesetzt 
+* @authors Mustafa Kocatürk, Joshua Beinert
+* @date Mai 2026
 */
 
 #ifndef ERROR_H
