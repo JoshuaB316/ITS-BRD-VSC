@@ -19,7 +19,7 @@
 
 void toggleLEDs(uint32_t led_mask, int direction) {
 
-  // von 32bit in 8 bit uwmandeln
+  // von 32 bit in 8 bit uwmandeln (8 LEDs)
   uint8_t mask = (uint8_t)led_mask;
   GPIOD->BSRR = (0x0F << 16);
   GPIOD->BSRR = mask;
