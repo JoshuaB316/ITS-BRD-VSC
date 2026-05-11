@@ -12,10 +12,11 @@
 #include "LCD_GUI.h"
 #include "lcd.h"
 #include "stm32f4xx_hal.h"
+#include "init.h"
 
 #include "display.h"
 #include "input.h"
-#include "error.h"
+#include "myError.h"
 #include "calculate.h"
 #include "toString.h"
 #include "timer.h"

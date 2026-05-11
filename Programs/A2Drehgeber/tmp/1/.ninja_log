@@ -1,6 +1,6 @@
 # ninja log v7
-5	201	8002006472213393	CMakeFiles/database	c1c29f28a20e0913
-5	201	8002006472213393	C:/GS_Labor/ITS-BRD-VSC/Programs/A2Drehgeber/tmp/1/CMakeFiles/database	c1c29f28a20e0913
+26	111	8002021164179708	CMakeFiles/database	c1c29f28a20e0913
+26	111	8002021164179708	C:/GS_Labor/ITS-BRD-VSC/Programs/A2Drehgeber/tmp/1/CMakeFiles/database	c1c29f28a20e0913
 40	487	8002006640924125	CMakeFiles/Group_Drivers_Board.dir/C_/GS_Labor/ITS-BRD-VSC/ITS_BRD_LIB/Src/startup/system_stm32f4xx.o	8a4ab8a22ca7c0b7
 30	539	8002006640822368	CMakeFiles/Group_Drivers_Board.dir/C_/GS_Labor/ITS-BRD-VSC/ITS_BRD_LIB/Src/startup/startup_stm32f429xx.o	a8079a0b345b7db8
 97	584	8002006641490623	CMakeFiles/Group_Drivers_STM32F4xx_HAL_Driver.dir/C_/GS_Labor/ITS-BRD-VSC/stm32cubef4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o	196e3189e5363e6d
@@ -52,7 +52,7 @@
 2611	3011	8002006666742135	CMakeFiles/Group_LCD.dir/C_/GS_Labor/ITS-BRD-VSC/DisplayWaveshare/Src/LCD_Demos.o	d7ad4c0d70f32b3d
 2514	3027	8002006665666583	CMakeFiles/Group_LCD.dir/C_/GS_Labor/ITS-BRD-VSC/DisplayWaveshare/Src/testsoftware.o	ea0d76c3d6c703b7
 2672	3062	8002006667246746	CMakeFiles/Group_ITS_BRD_LIB.dir/C_/GS_Labor/ITS-BRD-VSC/ITS_BRD_LIB/Src/lcd.o	989ec0f5c332cc77
-2658	3168	8002006667095765	CMakeFiles/Group_ITS_BRD_LIB.dir/C_/GS_Labor/ITS-BRD-VSC/ITS_BRD_LIB/Src/error.o	5720b48bc3ad392c
+20	294	8002021292320377	CMakeFiles/Group_ITS_BRD_LIB.dir/C_/GS_Labor/ITS-BRD-VSC/ITS_BRD_LIB/Src/error.o	5720b48bc3ad392c
 2890	3232	8002006669423656	CMakeFiles/Group_ITS_BRD_LIB.dir/C_/GS_Labor/ITS-BRD-VSC/ITS_BRD_LIB/Src/keypad.o	d56692e465a63ce5
 3011	3338	8002006670630932	CMakeFiles/Group_ITS_BRD_LIB.dir/C_/GS_Labor/ITS-BRD-VSC/ITS_BRD_LIB/Src/stdinout_USART.o	64c10fdb9dd22dd3
 2945	3340	8002006669974820	CMakeFiles/Group_ITS_BRD_LIB.dir/C_/GS_Labor/ITS-BRD-VSC/ITS_BRD_LIB/Src/delay.o	d713a434b660cbac
@@ -63,6 +63,25 @@
 2994	3622	8002006670505428	CMakeFiles/Group_ITS_BRD_LIB.dir/C_/GS_Labor/ITS-BRD-VSC/ITS_BRD_LIB/Src/USART_STM32F4xx.o	292e3bc9d7aeb4d2
 86	341	8002008438685024	CMakeFiles/Group_Program_User_Src.dir/C_/GS_Labor/ITS-BRD-VSC/Programs/A2Drehgeber/Src/toString.o	5f7ab211933d56fc
 54	378	8002008438303670	CMakeFiles/Group_Program_User_Src.dir/C_/GS_Labor/ITS-BRD-VSC/Programs/A2Drehgeber/Src/input.o	e609f0fc7a096a98
-63	417	8002008438412344	CMakeFiles/Group_Program_User_Src.dir/C_/GS_Labor/ITS-BRD-VSC/Programs/A2Drehgeber/Src/outputLEDs.o	abb5cc4728548a63
+40	242	8002021881279540	CMakeFiles/Group_Program_User_Src.dir/C_/GS_Labor/ITS-BRD-VSC/Programs/A2Drehgeber/Src/outputLEDs.o	abb5cc4728548a63
 73	464	8002008438542594	CMakeFiles/Group_Program_User_Src.dir/C_/GS_Labor/ITS-BRD-VSC/Programs/A2Drehgeber/Src/timer.o	2f2bacb6d4be4023
-55	288	8002009453029033	CMakeFiles/Group_Program_User_Src.dir/C_/GS_Labor/ITS-BRD-VSC/Programs/A2Drehgeber/Src/main.o	644777c2839c55c3
+27	236	8002021881139929	CMakeFiles/Group_Program_User_Src.dir/C_/GS_Labor/ITS-BRD-VSC/Programs/A2Drehgeber/Src/main.o	644777c2839c55c3
+5	2512	8002023441646163	build.ninja	2ab6a858917b492d
+38	222	8002021292503318	CMakeFiles/Group_ITS_BRD_LIB.dir/C_/GS_Labor/ITS-BRD-VSC/ITS_BRD_LIB/Src/terminal.o	b2770e74d3623de6
+34	156	8002021881209864	CMakeFiles/Group_Program_User_Src.dir/C_/GS_Labor/ITS-BRD-VSC/Programs/A2Drehgeber/Src/myError.o	2d2d0e7a92e05469
+30	321	8002021292416551	CMakeFiles/Group_ITS_BRD_LIB.dir/C_/GS_Labor/ITS-BRD-VSC/ITS_BRD_LIB/Src/init.o	aadebf29103b80e1
+4	2285	8002023441646163	build.ninja	2ab6a858917b492d
+23	136	8002023442281016	CMakeFiles/database	c1c29f28a20e0913
+23	136	8002023442281016	C:/GS_Labor/ITS-BRD-VSC/Programs/A2Drehgeber/tmp/1/CMakeFiles/database	c1c29f28a20e0913
+18	230	8002023559749145	CMakeFiles/Group_ITS_BRD_LIB.dir/C_/GS_Labor/ITS-BRD-VSC/ITS_BRD_LIB/Src/timer.o	8333d2d17ed378ea
+25	259	8002023559822469	CMakeFiles/Group_Program_User_Src.dir/C_/GS_Labor/ITS-BRD-VSC/Programs/A2Drehgeber/Src/main.o	644777c2839c55c3
+27	179	8002025394736233	CMakeFiles/Group_Program_User_Src.dir/C_/GS_Labor/ITS-BRD-VSC/Programs/A2Drehgeber/Src/input.o	e609f0fc7a096a98
+180	308	8002025396260087	C:/GS_Labor/ITS-BRD-VSC/Programs/A2Drehgeber/out/A2Drehgeber/ITSboard/Debug/A2Drehgeber.axf	714b3196b3d4caaa
+28	126	8002025398767283	CMakeFiles/database	c1c29f28a20e0913
+28	126	8002025398767283	C:/GS_Labor/ITS-BRD-VSC/Programs/A2Drehgeber/tmp/1/CMakeFiles/database	c1c29f28a20e0913
+15	91	8002045024739506	CMakeFiles/database	c1c29f28a20e0913
+15	91	8002045024739506	C:/GS_Labor/ITS-BRD-VSC/Programs/A2Drehgeber/tmp/1/CMakeFiles/database	c1c29f28a20e0913
+3	79	8002045065276870	CMakeFiles/database	c1c29f28a20e0913
+3	79	8002045065276870	C:/GS_Labor/ITS-BRD-VSC/Programs/A2Drehgeber/tmp/1/CMakeFiles/database	c1c29f28a20e0913
+21	161	8002045490977610	CMakeFiles/database	c1c29f28a20e0913
+21	161	8002045490977610	C:/GS_Labor/ITS-BRD-VSC/Programs/A2Drehgeber/tmp/1/CMakeFiles/database	c1c29f28a20e0913

@@ -207,10 +207,9 @@ add_library(Group_Program_User_Src OBJECT
   "${SOLUTION_ROOT}/Src/main.c"
   "${SOLUTION_ROOT}/Src/calculate.c"
   "${SOLUTION_ROOT}/Src/display.c"
-  "${SOLUTION_ROOT}/Src/error.c"
+  "${SOLUTION_ROOT}/Src/myError.c"
   "${SOLUTION_ROOT}/Src/input.c"
   "${SOLUTION_ROOT}/Src/outputLEDs.c"
-  "${SOLUTION_ROOT}/Src/timer.c"
   "${SOLUTION_ROOT}/Src/toString.c"
 )
 target_include_directories(Group_Program_User_Src PUBLIC

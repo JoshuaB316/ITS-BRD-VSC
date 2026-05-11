@@ -20,6 +20,7 @@ int currentPhase = 0; // 0 = a, 1 = b, 2 = c, 3 = d
 int lastPhase = 0;
 int direction = 0; // 1 = vorwärts, -1 = rückwärts, 0 = kein Phasenwechsel
 uint32_t stepCounter = 0; // Anzahl der Phasenwechsel
+bool errorOccurred = false;
 
 bool readPinA() {
   if (IDR_MASK_PIN_0 == (GPIOF->IDR & IDR_MASK_PIN_0)) {

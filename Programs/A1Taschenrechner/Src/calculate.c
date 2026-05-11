@@ -40,21 +40,18 @@ int add() {
 
     int result;
     if(err1 == 0 && err2 == 0){
-        if (safe_add(result1, result2, &result) == IntOverflow){
+        err1 = safe_add(result1, result2, &result);
+
+        if (err1 != 0){
             //displayError(IntOverflow);
             push(result2);
             push(result1);
-            return IntOverflow;
-        }else if(safe_add(result1, result2, &result) == IntUnderflow){
-            //displayError(IntUnderflow);
-            push(result2);
-            push(result1);
-            return IntUnderflow;
+            return err1;
         } else {
-            push(result);
+            return  push(result);
         }
-    } else {
-       return StackUnderflow;
+    } else { 
+        return err2;
     }
     return 0;
 }
@@ -93,21 +90,18 @@ int subtract() {
 
     int result;
     if(err1 == 0 && err2 == 0){
-        if (safe_substract(result1, result2, &result) == IntOverflow){
+        err1 = safe_substract(result1, result2, &result);
+
+        if (err1 != 0){
             //displayError(IntOverflow);
             push(result2);
             push(result1);
-            return IntOverflow;
-        } else if(safe_substract(result1, result2, &result) == IntUnderflow) {
-            //displayError(IntUnderflow);
-            push(result2);
-            push(result1);
-            return IntUnderflow;
+            return err1;
         } else {
-            push(result);
+            return  push(result);
         }
-    } else {
-        return StackUnderflow;
+    } else { 
+        return err2;
     }
     return 0;
 }

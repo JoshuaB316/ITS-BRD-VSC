@@ -6,7 +6,7 @@
 
 
 #include "outputLEDs.h"
-#include "error.h"
+#include "myError.h"
 #include "stm32f4xx_hal.h"
 #include <stdbool.h>
 #include <stdint.h>

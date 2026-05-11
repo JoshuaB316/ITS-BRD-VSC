@@ -3,9 +3,9 @@
 <title>Static Call Graph - [C:\GS_Labor\ITS-BRD-VSC\Programs\A1Taschenrechner\out\A1Taschenrechner\ITSboard\Debug\A1Taschenrechner.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image C:\GS_Labor\ITS-BRD-VSC\Programs\A1Taschenrechner\out\A1Taschenrechner\ITSboard\Debug\A1Taschenrechner.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6240002: Last Updated: Mon May 11 12:58:57 2026
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6240002: Last Updated: Mon May 11 14:21:20 2026
 <BR><P>
-<H3>Maximum Stack Usage =        720 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
+<H3>Maximum Stack Usage =        712 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
 main &rArr; initDisplay &rArr; makeKeyPad &rArr; printButton &rArr; GUI_drawRectangle &rArr; printDebugMsg &rArr; GUI_disNum &rArr;  printDebugMsg (Cycle)
 <P>
@@ -1090,7 +1090,7 @@ Global Symbols
 <P><STRONG><a name="[5]"></a>UsageFault_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f4xx_it.o(.text.UsageFault_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f429xx.o(RESET)
 </UL>
-<P><STRONG><a name="[f1]"></a>add</STRONG> (Thumb, 148 bytes, Stack size 40 bytes, calculate.o(.text.add))
+<P><STRONG><a name="[f1]"></a>add</STRONG> (Thumb, 102 bytes, Stack size 40 bytes, calculate.o(.text.add))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = add &rArr; safe_add
 </UL>
 <BR>[Calls]<UL><LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pop
@@ -1227,8 +1227,8 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;genTerm
 </UL>
 
-<P><STRONG><a name="[64]"></a>main</STRONG> (Thumb, 516 bytes, Stack size 48 bytes, main.o(.text.main))
-<BR><BR>[Stack]<UL><LI>Max Depth = 720<LI>Call Chain = main &rArr; initDisplay &rArr; makeKeyPad &rArr; printButton &rArr; GUI_drawRectangle &rArr; printDebugMsg &rArr; GUI_disNum &rArr;  printDebugMsg (Cycle)
+<P><STRONG><a name="[64]"></a>main</STRONG> (Thumb, 376 bytes, Stack size 40 bytes, main.o(.text.main))
+<BR><BR>[Stack]<UL><LI>Max Depth = 712<LI>Call Chain = main &rArr; initDisplay &rArr; makeKeyPad &rArr; printButton &rArr; GUI_drawRectangle &rArr; printDebugMsg &rArr; GUI_disNum &rArr;  printDebugMsg (Cycle)
 </UL>
 <BR>[Calls]<UL><LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;displayError
 <LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;d
