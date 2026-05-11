@@ -1,5 +1,5 @@
 CompileFlags:
-  CompilationDatabase: c:\GS_Labor\ITS-BRD-VSC\Programs\TestNewFont\out\TestNewFont\ITSboard\Debug
+  CompilationDatabase: c:\GS_Labor\ITS-BRD-VSC\Programs\GSA1\out\GSA1\ITSboard\Debug
   Add:
     - "-D_ILP32=1\r\n"
     - "-D_USE_STATIC_INLINE=1\r\n"
@@ -411,26 +411,23 @@ CompileFlags:
     - "-D__thumb2__=1\r\n"
     - "-D__thumb__=1\r\n"
     - '-D__ARMCOMPILER_LIBCXX=1'
-    - '-IC:/GS_Labor/ITS-BRD-VSC/Programs/TestNewFont/Inc'
+    - '-IC:/GS_Labor/ITS-BRD-VSC/Programs/GSA1/Inc'
     - >-
-      -IC:/GS_Labor/ITS-BRD-VSC/Programs/TestNewFont/../../stm32cubef4/Drivers/CMSIS/Device/ST/STM32F4xx/Include
+      -IC:/GS_Labor/ITS-BRD-VSC/Programs/GSA1/../../stm32cubef4/Drivers/CMSIS/Device/ST/STM32F4xx/Include
     - >-
-      -IC:/GS_Labor/ITS-BRD-VSC/Programs/TestNewFont/../../stm32cubef4/Drivers/CMSIS/Include
+      -IC:/GS_Labor/ITS-BRD-VSC/Programs/GSA1/../../stm32cubef4/Drivers/CMSIS/Include
     - >-
-      -IC:/GS_Labor/ITS-BRD-VSC/Programs/TestNewFont/../../stm32cubef4/Drivers/STM32F4xx_HAL_Driver/Inc
+      -IC:/GS_Labor/ITS-BRD-VSC/Programs/GSA1/../../stm32cubef4/Drivers/STM32F4xx_HAL_Driver/Inc
     - >-
-      -IC:/GS_Labor/ITS-BRD-VSC/Programs/TestNewFont/../../stm32cubef4/Drivers/BSP/STM32F4xx_Nucleo_144
+      -IC:/GS_Labor/ITS-BRD-VSC/Programs/GSA1/../../stm32cubef4/Drivers/BSP/STM32F4xx_Nucleo_144
+    - '-IC:/GS_Labor/ITS-BRD-VSC/Programs/GSA1/../../stm32cubef4/Utilities/Fonts'
+    - '-IC:/GS_Labor/ITS-BRD-VSC/Programs/GSA1/../../DisplayWaveshare/Inc'
     - >-
-      -IC:/GS_Labor/ITS-BRD-VSC/Programs/TestNewFont/../../stm32cubef4/Utilities/Fonts
-    - '-IC:/GS_Labor/ITS-BRD-VSC/Programs/TestNewFont/../../DisplayWaveshare/Inc'
-    - >-
-      -IC:/GS_Labor/ITS-BRD-VSC/Programs/TestNewFont/../../ITS_BRD_LIB/Utilities/AddFonts
-    - '-IC:/GS_Labor/ITS-BRD-VSC/Programs/TestNewFont/../../lwip/src/include'
-    - >-
-      -IC:/GS_Labor/ITS-BRD-VSC/Programs/TestNewFont/tmp/TestNewFont.Debug+ITSboard
-    - '-IC:/GS_Labor/ITS-BRD-VSC/Programs/TestNewFont/RTE/_Debug_ITSboard'
+      -IC:/GS_Labor/ITS-BRD-VSC/Programs/GSA1/../../ITS_BRD_LIB/Utilities/AddFonts
+    - '-IC:/GS_Labor/ITS-BRD-VSC/Programs/GSA1/tmp/GSA1.Debug+ITSboard'
+    - '-IC:/GS_Labor/ITS-BRD-VSC/Programs/GSA1/RTE/_Debug_ITSboard'
     - >-
       -IC:/Users/Musti/AppData/Local/arm/packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include
     - >-
       -IC:/Users/Musti/AppData/Local/arm/packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include
-    - '-IC:/GS_Labor/ITS-BRD-VSC/Programs/TestNewFont/../../ITS_BRD_LIB/Inc'
+    - '-IC:/GS_Labor/ITS-BRD-VSC/Programs/GSA1/../../ITS_BRD_LIB/Inc'
