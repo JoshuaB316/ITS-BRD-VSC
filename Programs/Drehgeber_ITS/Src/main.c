@@ -13,6 +13,7 @@
 #include "lcd.h"
 #include "stm32f4xx_hal.h"
 
+#include "display.h"
 #include "input.h"
 #include "error.h"
 #include "calculate.h"
@@ -38,14 +39,14 @@ int main() {
   // Test in Endlosschleife
   while (1) {
     processInput();
-    //HAL_Delay(100);
+    // HAL_Delay(100);
 
     // Überprüfen on S6 gedrückt wurde und dementsprechend handeln
     bool s6 = readPinS6();
     if (s6 == true) {
       errorReset();
       // Test ###################################
-      //lcdPrintS("2"); // es wurde zurückgesetzt;
+      // printStdout("2"); // es wurde zurückgesetzt;
     }
 
     if (errorOccurred == false && s6 == true) {
@@ -62,29 +63,28 @@ int main() {
           lastAngle = currentAngle;
           lastPhase = currentPhase;
           // Test ###################################
-          // lcdPrintS("Funktioniert"); // if-Funktioniert
+          // printStdout("Funktioniert"); // if-Funktioniert
         }
 
         startingTime = endingTime;
-        //updateDisplay(currentAngle, speed);
 
         // Ausgabe Winkel
         char currentAngleStr[12]; // vllt lieber andere Zahl als 12
-        doubleToString(currentAngle, currentAngleStr)
-        lcdPrintS(currentAngleStr);
+        doubleToString(currentAngle, currentAngleStr);
+        printStdout(currentAngleStr);
 
         // Ausgabe Winkelgeschwindigkeit
         char speedStr[12]; // auch hier vllt andere Zahl
-        doubleToString(angleSpeed, speedStr)
-        lcdPrintS(speedStr);
+        doubleToString(angleSpeed, speedStr);
+        printStdout(speedStr);
       }
 
       // Test ###################################
-      //lcdPrintS("0"); // Es gab kein Fehler
+      // printStdout("0"); // Es gab kein Fehler
 
     } else {
       // Test ###################################
-      //lcdPrintS("1"); // Es gab ein Fehler bei den Phasen
+      // printStdout("1"); // Es gab ein Fehler bei den Phasen
     }
   }
 }
