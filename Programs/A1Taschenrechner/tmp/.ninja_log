@@ -1,0 +1,27 @@
+# ninja log v7
+39	120	8002003252160571	A1Taschenrechner.Debug+ITSboard/src/A1Taschenrechner.Debug+ITSboard-stamp/A1Taschenrechner.Debug+ITSboard-mkdir	1e3a69b67114238f
+39	120	8002003252160571	C:/GS_Labor/ITS-BRD-VSC/Programs/A1Taschenrechner/tmp/A1Taschenrechner.Debug+ITSboard/src/A1Taschenrechner.Debug+ITSboard-stamp/A1Taschenrechner.Debug+ITSboard-mkdir	1e3a69b67114238f
+121	194	8002003252885605	A1Taschenrechner.Debug+ITSboard/src/A1Taschenrechner.Debug+ITSboard-stamp/A1Taschenrechner.Debug+ITSboard-download	f332dd3eafeee72c
+121	194	8002003252885605	C:/GS_Labor/ITS-BRD-VSC/Programs/A1Taschenrechner/tmp/A1Taschenrechner.Debug+ITSboard/src/A1Taschenrechner.Debug+ITSboard-stamp/A1Taschenrechner.Debug+ITSboard-download	f332dd3eafeee72c
+195	267	8002003253618460	A1Taschenrechner.Debug+ITSboard/src/A1Taschenrechner.Debug+ITSboard-stamp/A1Taschenrechner.Debug+ITSboard-update	513f8583c39369d1
+195	267	8002003253618460	C:/GS_Labor/ITS-BRD-VSC/Programs/A1Taschenrechner/tmp/A1Taschenrechner.Debug+ITSboard/src/A1Taschenrechner.Debug+ITSboard-stamp/A1Taschenrechner.Debug+ITSboard-update	513f8583c39369d1
+267	337	8002003254284713	A1Taschenrechner.Debug+ITSboard/src/A1Taschenrechner.Debug+ITSboard-stamp/A1Taschenrechner.Debug+ITSboard-patch	3abac0794f50e7ab
+267	337	8002003254284713	C:/GS_Labor/ITS-BRD-VSC/Programs/A1Taschenrechner/tmp/A1Taschenrechner.Debug+ITSboard/src/A1Taschenrechner.Debug+ITSboard-stamp/A1Taschenrechner.Debug+ITSboard-patch	3abac0794f50e7ab
+337	7214	8002003323077218	A1Taschenrechner.Debug+ITSboard/src/A1Taschenrechner.Debug+ITSboard-stamp/A1Taschenrechner.Debug+ITSboard-configure	d7612ea9f01a48c8
+337	7214	8002003323077218	C:/GS_Labor/ITS-BRD-VSC/Programs/A1Taschenrechner/tmp/A1Taschenrechner.Debug+ITSboard/src/A1Taschenrechner.Debug+ITSboard-stamp/A1Taschenrechner.Debug+ITSboard-configure	d7612ea9f01a48c8
+7215	12313	8002003323164964	A1Taschenrechner.Debug+ITSboard/src/A1Taschenrechner.Debug+ITSboard-stamp/A1Taschenrechner.Debug+ITSboard-build	31fffec86426318d
+7215	12313	8002003323164964	C:/GS_Labor/ITS-BRD-VSC/Programs/A1Taschenrechner/out/A1Taschenrechner/ITSboard/Debug/A1Taschenrechner.axf	31fffec86426318d
+7215	12313	8002003323164964	C:/GS_Labor/ITS-BRD-VSC/Programs/A1Taschenrechner/out/A1Taschenrechner/ITSboard/Debug/compile_commands.json	31fffec86426318d
+7215	12313	8002003323164964	C:/GS_Labor/ITS-BRD-VSC/Programs/A1Taschenrechner/tmp/A1Taschenrechner.Debug+ITSboard/src/A1Taschenrechner.Debug+ITSboard-stamp/A1Taschenrechner.Debug+ITSboard-build	31fffec86426318d
+12327	12446	8002003375370192	A1Taschenrechner.Debug+ITSboard/src/A1Taschenrechner.Debug+ITSboard-stamp/A1Taschenrechner.Debug+ITSboard-executes	7c083e2027c3060e
+12327	12446	8002003375370192	C:/GS_Labor/ITS-BRD-VSC/Programs/A1Taschenrechner/tmp/A1Taschenrechner.Debug+ITSboard/src/A1Taschenrechner.Debug+ITSboard-stamp/A1Taschenrechner.Debug+ITSboard-executes	7c083e2027c3060e
+12313	12636	8002003374160367	A1Taschenrechner.Debug+ITSboard/src/A1Taschenrechner.Debug+ITSboard-stamp/A1Taschenrechner.Debug+ITSboard-database	9519a9e4ab9e7ca0
+12313	12636	8002003374160367	C:/GS_Labor/ITS-BRD-VSC/Programs/A1Taschenrechner/tmp/A1Taschenrechner.Debug+ITSboard/src/A1Taschenrechner.Debug+ITSboard-stamp/A1Taschenrechner.Debug+ITSboard-database	9519a9e4ab9e7ca0
+12636	12689	8002003377371750	A1Taschenrechner.Debug+ITSboard/src/A1Taschenrechner.Debug+ITSboard-stamp/A1Taschenrechner.Debug+ITSboard-install	a47ccc478f00c753
+12636	12689	8002003377371750	C:/GS_Labor/ITS-BRD-VSC/Programs/A1Taschenrechner/tmp/A1Taschenrechner.Debug+ITSboard/src/A1Taschenrechner.Debug+ITSboard-stamp/A1Taschenrechner.Debug+ITSboard-install	a47ccc478f00c753
+12689	12774	8002003378683279	A1Taschenrechner.Debug+ITSboard/src/A1Taschenrechner.Debug+ITSboard-stamp/A1Taschenrechner.Debug+ITSboard-test	1f95672f90828ca8
+12689	12774	8002003378683279	C:/GS_Labor/ITS-BRD-VSC/Programs/A1Taschenrechner/tmp/A1Taschenrechner.Debug+ITSboard/src/A1Taschenrechner.Debug+ITSboard-stamp/A1Taschenrechner.Debug+ITSboard-test	1f95672f90828ca8
+12774	12900	8002003379939190	CMakeFiles/A1Taschenrechner.Debug+ITSboard-complete	8bb4efa455a00e58
+12774	12900	8002003379939190	A1Taschenrechner.Debug+ITSboard/src/A1Taschenrechner.Debug+ITSboard-stamp/A1Taschenrechner.Debug+ITSboard-done	8bb4efa455a00e58
+12774	12900	8002003379939190	C:/GS_Labor/ITS-BRD-VSC/Programs/A1Taschenrechner/tmp/CMakeFiles/A1Taschenrechner.Debug+ITSboard-complete	8bb4efa455a00e58
+12774	12900	8002003379939190	C:/GS_Labor/ITS-BRD-VSC/Programs/A1Taschenrechner/tmp/A1Taschenrechner.Debug+ITSboard/src/A1Taschenrechner.Debug+ITSboard-stamp/A1Taschenrechner.Debug+ITSboard-done	8bb4efa455a00e58

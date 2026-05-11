@@ -1,0 +1,16 @@
+# Target labels
+ A1Taschenrechner.Debug+ITSboard
+# Source files and their labels
+C:/GS_Labor/ITS-BRD-VSC/Programs/A1Taschenrechner/tmp/CMakeFiles/A1Taschenrechner.Debug+ITSboard
+C:/GS_Labor/ITS-BRD-VSC/Programs/A1Taschenrechner/tmp/CMakeFiles/A1Taschenrechner.Debug+ITSboard.rule
+C:/GS_Labor/ITS-BRD-VSC/Programs/A1Taschenrechner/tmp/CMakeFiles/A1Taschenrechner.Debug+ITSboard-complete.rule
+C:/GS_Labor/ITS-BRD-VSC/Programs/A1Taschenrechner/tmp/A1Taschenrechner.Debug+ITSboard/src/A1Taschenrechner.Debug+ITSboard-stamp/A1Taschenrechner.Debug+ITSboard-build.rule
+C:/GS_Labor/ITS-BRD-VSC/Programs/A1Taschenrechner/tmp/A1Taschenrechner.Debug+ITSboard/src/A1Taschenrechner.Debug+ITSboard-stamp/A1Taschenrechner.Debug+ITSboard-configure.rule
+C:/GS_Labor/ITS-BRD-VSC/Programs/A1Taschenrechner/tmp/A1Taschenrechner.Debug+ITSboard/src/A1Taschenrechner.Debug+ITSboard-stamp/A1Taschenrechner.Debug+ITSboard-database.rule
+C:/GS_Labor/ITS-BRD-VSC/Programs/A1Taschenrechner/tmp/A1Taschenrechner.Debug+ITSboard/src/A1Taschenrechner.Debug+ITSboard-stamp/A1Taschenrechner.Debug+ITSboard-download.rule
+C:/GS_Labor/ITS-BRD-VSC/Programs/A1Taschenrechner/tmp/A1Taschenrechner.Debug+ITSboard/src/A1Taschenrechner.Debug+ITSboard-stamp/A1Taschenrechner.Debug+ITSboard-executes.rule
+C:/GS_Labor/ITS-BRD-VSC/Programs/A1Taschenrechner/tmp/A1Taschenrechner.Debug+ITSboard/src/A1Taschenrechner.Debug+ITSboard-stamp/A1Taschenrechner.Debug+ITSboard-install.rule
+C:/GS_Labor/ITS-BRD-VSC/Programs/A1Taschenrechner/tmp/A1Taschenrechner.Debug+ITSboard/src/A1Taschenrechner.Debug+ITSboard-stamp/A1Taschenrechner.Debug+ITSboard-mkdir.rule
+C:/GS_Labor/ITS-BRD-VSC/Programs/A1Taschenrechner/tmp/A1Taschenrechner.Debug+ITSboard/src/A1Taschenrechner.Debug+ITSboard-stamp/A1Taschenrechner.Debug+ITSboard-patch.rule
+C:/GS_Labor/ITS-BRD-VSC/Programs/A1Taschenrechner/tmp/A1Taschenrechner.Debug+ITSboard/src/A1Taschenrechner.Debug+ITSboard-stamp/A1Taschenrechner.Debug+ITSboard-test.rule
+C:/GS_Labor/ITS-BRD-VSC/Programs/A1Taschenrechner/tmp/A1Taschenrechner.Debug+ITSboard/src/A1Taschenrechner.Debug+ITSboard-stamp/A1Taschenrechner.Debug+ITSboard-update.rule
