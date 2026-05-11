@@ -9,7 +9,7 @@
 #include "LCD_Touch.h"
 #include "additionalFonts.h"
 #include "fontsFLASH.h"
-#include "inD_GUI.h"
+#include "LCD_GUI.h"
 #include "lcd.h"
 #include "stm32f4xx_hal.h"
 
