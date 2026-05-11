@@ -1,0 +1,13 @@
+# ninja log v7
+23	100	8002006421781974	A2Drehgeber.Debug+ITSboard/src/A2Drehgeber.Debug+ITSboard-stamp/A2Drehgeber.Debug+ITSboard-mkdir	7ad21595d0e8bd2f
+23	100	8002006421781974	C:/GS_Labor/ITS-BRD-VSC/Programs/A2Drehgeber/tmp/A2Drehgeber.Debug+ITSboard/src/A2Drehgeber.Debug+ITSboard-stamp/A2Drehgeber.Debug+ITSboard-mkdir	7ad21595d0e8bd2f
+100	171	8002006422488358	A2Drehgeber.Debug+ITSboard/src/A2Drehgeber.Debug+ITSboard-stamp/A2Drehgeber.Debug+ITSboard-download	81eea70a81df52ee
+100	171	8002006422488358	C:/GS_Labor/ITS-BRD-VSC/Programs/A2Drehgeber/tmp/A2Drehgeber.Debug+ITSboard/src/A2Drehgeber.Debug+ITSboard-stamp/A2Drehgeber.Debug+ITSboard-download	81eea70a81df52ee
+171	245	8002006423241134	A2Drehgeber.Debug+ITSboard/src/A2Drehgeber.Debug+ITSboard-stamp/A2Drehgeber.Debug+ITSboard-update	6b0b22134aeb00a4
+171	245	8002006423241134	C:/GS_Labor/ITS-BRD-VSC/Programs/A2Drehgeber/tmp/A2Drehgeber.Debug+ITSboard/src/A2Drehgeber.Debug+ITSboard-stamp/A2Drehgeber.Debug+ITSboard-update	6b0b22134aeb00a4
+245	316	8002006423948759	A2Drehgeber.Debug+ITSboard/src/A2Drehgeber.Debug+ITSboard-stamp/A2Drehgeber.Debug+ITSboard-patch	d9a6bf787adc33a1
+245	316	8002006423948759	C:/GS_Labor/ITS-BRD-VSC/Programs/A2Drehgeber/tmp/A2Drehgeber.Debug+ITSboard/src/A2Drehgeber.Debug+ITSboard-stamp/A2Drehgeber.Debug+ITSboard-patch	d9a6bf787adc33a1
+317	5025	8002006471029528	A2Drehgeber.Debug+ITSboard/src/A2Drehgeber.Debug+ITSboard-stamp/A2Drehgeber.Debug+ITSboard-configure	212c2faf43d1beda
+317	5025	8002006471029528	C:/GS_Labor/ITS-BRD-VSC/Programs/A2Drehgeber/tmp/A2Drehgeber.Debug+ITSboard/src/A2Drehgeber.Debug+ITSboard-stamp/A2Drehgeber.Debug+ITSboard-configure	212c2faf43d1beda
+5025	5349	8002006471110390	A2Drehgeber.Debug+ITSboard/src/A2Drehgeber.Debug+ITSboard-stamp/A2Drehgeber.Debug+ITSboard-database	f346a94f2449f7d4
+5025	5349	8002006471110390	C:/GS_Labor/ITS-BRD-VSC/Programs/A2Drehgeber/tmp/A2Drehgeber.Debug+ITSboard/src/A2Drehgeber.Debug+ITSboard-stamp/A2Drehgeber.Debug+ITSboard-database	f346a94f2449f7d4

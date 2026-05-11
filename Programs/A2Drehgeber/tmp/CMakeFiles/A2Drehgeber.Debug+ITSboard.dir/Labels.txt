@@ -1,0 +1,16 @@
+# Target labels
+ A2Drehgeber.Debug+ITSboard
+# Source files and their labels
+C:/GS_Labor/ITS-BRD-VSC/Programs/A2Drehgeber/tmp/CMakeFiles/A2Drehgeber.Debug+ITSboard
+C:/GS_Labor/ITS-BRD-VSC/Programs/A2Drehgeber/tmp/CMakeFiles/A2Drehgeber.Debug+ITSboard.rule
+C:/GS_Labor/ITS-BRD-VSC/Programs/A2Drehgeber/tmp/CMakeFiles/A2Drehgeber.Debug+ITSboard-complete.rule
+C:/GS_Labor/ITS-BRD-VSC/Programs/A2Drehgeber/tmp/A2Drehgeber.Debug+ITSboard/src/A2Drehgeber.Debug+ITSboard-stamp/A2Drehgeber.Debug+ITSboard-build.rule
+C:/GS_Labor/ITS-BRD-VSC/Programs/A2Drehgeber/tmp/A2Drehgeber.Debug+ITSboard/src/A2Drehgeber.Debug+ITSboard-stamp/A2Drehgeber.Debug+ITSboard-configure.rule
+C:/GS_Labor/ITS-BRD-VSC/Programs/A2Drehgeber/tmp/A2Drehgeber.Debug+ITSboard/src/A2Drehgeber.Debug+ITSboard-stamp/A2Drehgeber.Debug+ITSboard-database.rule
+C:/GS_Labor/ITS-BRD-VSC/Programs/A2Drehgeber/tmp/A2Drehgeber.Debug+ITSboard/src/A2Drehgeber.Debug+ITSboard-stamp/A2Drehgeber.Debug+ITSboard-download.rule
+C:/GS_Labor/ITS-BRD-VSC/Programs/A2Drehgeber/tmp/A2Drehgeber.Debug+ITSboard/src/A2Drehgeber.Debug+ITSboard-stamp/A2Drehgeber.Debug+ITSboard-executes.rule
+C:/GS_Labor/ITS-BRD-VSC/Programs/A2Drehgeber/tmp/A2Drehgeber.Debug+ITSboard/src/A2Drehgeber.Debug+ITSboard-stamp/A2Drehgeber.Debug+ITSboard-install.rule
+C:/GS_Labor/ITS-BRD-VSC/Programs/A2Drehgeber/tmp/A2Drehgeber.Debug+ITSboard/src/A2Drehgeber.Debug+ITSboard-stamp/A2Drehgeber.Debug+ITSboard-mkdir.rule
+C:/GS_Labor/ITS-BRD-VSC/Programs/A2Drehgeber/tmp/A2Drehgeber.Debug+ITSboard/src/A2Drehgeber.Debug+ITSboard-stamp/A2Drehgeber.Debug+ITSboard-patch.rule
+C:/GS_Labor/ITS-BRD-VSC/Programs/A2Drehgeber/tmp/A2Drehgeber.Debug+ITSboard/src/A2Drehgeber.Debug+ITSboard-stamp/A2Drehgeber.Debug+ITSboard-test.rule
+C:/GS_Labor/ITS-BRD-VSC/Programs/A2Drehgeber/tmp/A2Drehgeber.Debug+ITSboard/src/A2Drehgeber.Debug+ITSboard-stamp/A2Drehgeber.Debug+ITSboard-update.rule
