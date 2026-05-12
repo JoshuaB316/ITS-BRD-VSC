@@ -411,7 +411,6 @@ CompileFlags:
     - "-D__thumb2__=1\r\n"
     - "-D__thumb__=1\r\n"
     - '-D__ARMCOMPILER_LIBCXX=1'
-    - '-IC:/GS_Labor/ITS-BRD-VSC/Programs/A2Drehgeber/Inc'
     - >-
       -IC:/GS_Labor/ITS-BRD-VSC/Programs/A2Drehgeber/../../stm32cubef4/Drivers/CMSIS/Device/ST/STM32F4xx/Include
     - >-
@@ -433,3 +432,4 @@ CompileFlags:
     - >-
       -IC:/Users/Musti/AppData/Local/arm/packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include
     - '-IC:/GS_Labor/ITS-BRD-VSC/Programs/A2Drehgeber/../../ITS_BRD_LIB/Inc'
+    - '-IC:/GS_Labor/ITS-BRD-VSC/Programs/A2Drehgeber/Inc'

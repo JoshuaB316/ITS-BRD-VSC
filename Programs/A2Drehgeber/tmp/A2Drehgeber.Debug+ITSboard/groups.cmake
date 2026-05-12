@@ -193,6 +193,7 @@ add_library(Group_Program_User_Inc INTERFACE)
 target_include_directories(Group_Program_User_Inc INTERFACE
   $<TARGET_PROPERTY:${CONTEXT},INTERFACE_INCLUDE_DIRECTORIES>
   "${SOLUTION_ROOT}/../../ITS_BRD_LIB/Inc"
+  "${SOLUTION_ROOT}/Inc"
 )
 target_compile_definitions(Group_Program_User_Inc INTERFACE
   $<TARGET_PROPERTY:${CONTEXT},INTERFACE_COMPILE_DEFINITIONS>
@@ -211,6 +212,7 @@ add_library(Group_Program_User_Src OBJECT
   "${SOLUTION_ROOT}/Src/input.c"
   "${SOLUTION_ROOT}/Src/outputLEDs.c"
   "${SOLUTION_ROOT}/Src/toString.c"
+  "${SOLUTION_ROOT}/Src/output.c"
 )
 target_include_directories(Group_Program_User_Src PUBLIC
   $<TARGET_PROPERTY:${CONTEXT},INTERFACE_INCLUDE_DIRECTORIES>

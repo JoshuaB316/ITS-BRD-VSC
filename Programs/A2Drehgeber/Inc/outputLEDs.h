@@ -15,7 +15,7 @@
  * @param led_mask Bitmaske, die angibt, welche LEDs geschaltet werden sollen.
  * @param richtung entweder 1(vorwärts) oder -1(rückwärts)
  */
-void toggleLEDs(uint32_t led_mask, int richtung);
+void setLEDs(uint8_t led_mask, int richtung);
 
 
 /**

@@ -22,10 +22,9 @@ double calculateDegree(uint32_t schritte);
  * Schrittzahl und der Zeit.
  * @param letzterWinkel Der vorherige Winkel.
  * @param aktuellerWinkel Der aktuelle Winkel.
- * @param alterZeit Die Startzeit in Millisekunden.
- * @param aktuellerZeit Die Endzeit in Millisekunden.
+ * @param deltaTime Die Differenzeit in Ticks.
  * @return der berechnete GeschwindigkeitProSekunde
  */
-double calculateAnglespeed(double letzterWinkel, double aktuellerWinkel, uint32_t alterZeit, uint32_t aktuellerZeit);
+double calculateAnglespeed(double letzterWinkel, double aktuellerWinkel, uint32_t deltaTime);
 
 #endif

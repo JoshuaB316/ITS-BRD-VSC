@@ -10,6 +10,8 @@
 #include <stdbool.h>
 #include <stdint.h>
 
+#if 0
+
 // Definitionen für die Pin-Masken
 #define IDR_MASK_PIN_0 (0x01U << (0))
 #define IDR_MASK_PIN_1 (0x01U << (1))
@@ -52,6 +54,12 @@ int determinePhase(bool A, bool B) {
   return ERROR; 
 }
 
+void readInitialInput() {
+  bool A = readPinA();
+  bool B = readPinB();
+  lastPhase = currentPhase = determinePhase(A, B);
+}
+
 void processInput() {
   bool A = readPinA();
   bool B = readPinB();
@@ -59,10 +67,6 @@ void processInput() {
   lastPhase = currentPhase;
   currentPhase = determinePhase(A, B);
 
-  // Wenn Phase ungültig ist, errorOccurred = true
-  if (currentPhase == ERROR) {
-    errorOccurred = true;
-  }
   // Wnn keine Änderung dann aus der Funktion raus
   if (lastPhase == currentPhase) {
     return;
@@ -109,9 +113,47 @@ void processInput() {
   } else {
     // Ungültiger Übergang = Error
     errorOccurred = true;
-    setErrorLED();
     return;
   }
+}
 
-  toggleLEDs(stepCounter, direction); // Ausgabe der Schrittzahl auf die LEDs
+
+#endif
+
+
+// Globale Variablen für den Zustand des Drehgebers
+int currentPhase = 0; // 0 = a, 1 = b, 2 = c, 3 = d
+int lastPhase = 0;
+int direction = 0; // 1 = vorwärts, -1 = rückwärts, 0 = kein Phasenwechsel
+uint32_t stepCounter = 0; // Anzahl der Phasenwechsel
+bool errorOccurred = false;
+
+int readInput()
+{
+  return GPIOF->IDR & 3;
+}
+
+void readInitialInput() {
+  lastPhase = currentPhase = readInput();
+}
+
+void processInput() {
+  lastPhase = currentPhase;
+  currentPhase = readInput();
+  const int table[4][4] = {
+      {  0,  1, -1,  2 },
+      { -1,  0,  2,  1 },
+      {  1,  2,  0, -1 },
+      {  2, -1,  1,  0 } };
+
+  int v = table[lastPhase][currentPhase];
+  if(v == 2)
+  {
+    errorOccurred = true;
+  }
+  else if(v != 0)
+  {
+    direction = v;
+    stepCounter += direction;
+  }
 }

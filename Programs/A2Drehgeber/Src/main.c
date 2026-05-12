@@ -19,6 +19,7 @@
 #include "myError.h"
 #include "calculate.h"
 #include "toString.h"
+#include "output.h"
 #include "timer.h"
 #include "outputLEDs.h"
 #include <stdint.h>
@@ -30,62 +31,55 @@ int main() {
   TP_Init(false);
   initTimer();
 
+  readInitialInput();
+
   // Variablen
-  double startSteps;
-  double currentAngle;
+  double currentAngle = 0.0;
   double lastAngle = 0.0;
-  double angleSpeed;
+  double angleSpeed = 0.0;
   uint32_t startingTime = getTimeStamp();
+
+  lcdGotoXY(1, 2);
+  lcdPrintS("Winkel:");
+
+  lcdGotoXY(1, 4);
+  lcdPrintS("Geschwindigkeit:");
 
   // Test in Endlosschleife
   while (1) {
     processInput();
-    // HAL_Delay(100);
 
     // Überprüfen on S6 gedrückt wurde und dementsprechend handeln
     bool s6 = readPinS6();
-    if (s6 == true) {
+    if (s6) {
       errorReset();
-      // Test ###################################
-      // printStdout("2"); // es wurde zurückgesetzt;
     }
 
-    if (errorOccurred == false && s6 == true) {
+    if (!errorOccurred) {
       uint32_t endingTime = getTimeStamp();
       uint32_t deltaTime = endingTime - startingTime;
 
       // Wenn die Zeitdifferenz zwischen 250 ms und 500 ms liegt -> Geschwindigkeit und den Drehwinkel berechnen
-      if (deltaTime >= 250) {
-        startSteps = stepCounter;
+      if ((deltaTime >= (250 * 1000 * TICKS_PER_US) && currentPhase != lastPhase) ||
+        (deltaTime >= (500 * 1000 * TICKS_PER_US))) {
 
-        if (currentPhase != lastPhase) {
-          currentAngle = calculateDegree(startSteps);
-          angleSpeed = calculateAnglespeed(lastAngle, currentAngle, startingTime, endingTime);
-          lastAngle = currentAngle;
-          lastPhase = currentPhase;
-          // Test ###################################
-          // printStdout("Funktioniert"); // if-Funktioniert
-        }
+        currentAngle = calculateDegree(stepCounter);
+        angleSpeed = calculateAnglespeed(lastAngle, currentAngle, deltaTime);
+        lastAngle = currentAngle;
 
         startingTime = endingTime;
 
-        // Ausgabe Winkel
-        char currentAngleStr[12]; // vllt lieber andere Zahl als 12
-        doubleToString(currentAngle, currentAngleStr);
-        printStdout(currentAngleStr);
-
-        // Ausgabe Winkelgeschwindigkeit
-        char speedStr[12]; // auch hier vllt andere Zahl
-        doubleToString(angleSpeed, speedStr);
-        printStdout(speedStr);
+        outputChange(currentAngle, angleSpeed);
       }
 
-      // Test ###################################
-      // printStdout("0"); // Es gab kein Fehler
-
-    } else {
-      // Test ###################################
-      // printStdout("1"); // Es gab ein Fehler bei den Phasen
+      lastPhase = currentPhase;
     }
+    else
+    {
+      setErrorLED();
+    }
+
+    setLEDs(stepCounter, direction); // Ausgabe der Schrittzahl auf die LEDs
+    outputUpdate();
   }
 }

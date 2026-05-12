@@ -21,7 +21,7 @@ void doubleToString(double value, char *str) {
     }
 
     // Ganzzahlteil
-    long intPart = (long)absValue;
+    int intPart = (int)absValue;
     // Nachkommateil
     double fracPart = absValue - intPart;
 

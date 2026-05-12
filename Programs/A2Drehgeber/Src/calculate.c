@@ -17,9 +17,9 @@ double calculateDegree(uint32_t steps) {
   return rotationAngle;
 }
 
-double calculateAnglespeed(double lastAngle, double currentAngle, uint32_t oldTime, uint32_t currentTime) {
+double calculateAnglespeed(double lastAngle, double currentAngle, uint32_t deltaTime) {
 
-  double timeInSec = (currentTime - oldTime) / 90000000.0; // Millisekunden in Sekunden umrechnen unter be
+  double timeInSec = deltaTime / 90000000.0; // Millisekunden in Sekunden umrechnen unter be
   double angle = currentAngle - lastAngle;
   double anglespeedPerSec = angle / timeInSec;
 

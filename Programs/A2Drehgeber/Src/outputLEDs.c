@@ -16,19 +16,19 @@
 #define BSRR_MASKE_PIN_21 (0x01U << 5)
 #define IDR_MASKE_PIN_6 (0x01U << 6)
 
-
-void toggleLEDs(uint32_t led_mask, int direction) {
-
-  // von 32 bit in 8 bit uwmandeln (8 LEDs)
-  uint8_t mask = (uint8_t)led_mask;
-  GPIOD->BSRR = (0x0F << 16);
-  GPIOD->BSRR = mask;
+void setLEDs(uint8_t led_mask, int direction) {
+  GPIOD->BSRR = led_mask | ((~led_mask & 0xFF) << 16);
   if (direction == 1) {
     GPIOE->BSRR = BSRR_MASK_PIN_23;         // Vorwärts-LED 23 anschalten
     GPIOE->BSRR = (BSRR_MASK_PIN_22 << 16); // Rückwärts-LED 22 ausschalten
-  } else {
+  } else if(direction == -1) {
     GPIOE->BSRR = BSRR_MASK_PIN_22;         // Rückwärts-LED 22 anschalten
     GPIOE->BSRR = (BSRR_MASK_PIN_23 << 16); // Vorwärts-LED 23 ausschalten
+  }
+  else
+  {
+    GPIOE->BSRR = (BSRR_MASK_PIN_22 << 16);         // Rückwärts-LED 22 anschalten
+    GPIOE->BSRR = (BSRR_MASK_PIN_23 << 16);
   }
 }
 

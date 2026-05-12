@@ -39,6 +39,7 @@ bool readPinB(void);
  */
 int determinePhase(bool A, bool B);
 
+void readInitialInput();
 
 /**
  * @brief verarbeitet die Eingangssignale des Drehgebers und aktualisiert die Zustände.
