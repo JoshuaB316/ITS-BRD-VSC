@@ -1,0 +1,13 @@
+# ninja log v7
+11	55	8002878478355251	TestNewFont.Debug+ITSboard/src/TestNewFont.Debug+ITSboard-stamp/TestNewFont.Debug+ITSboard-mkdir	e4af4ec23c36fdd3
+11	55	8002878478355251	C:/GS_Labor/ITS-BRD-VSC/Programs/TestNewFont/tmp/TestNewFont.Debug+ITSboard/src/TestNewFont.Debug+ITSboard-stamp/TestNewFont.Debug+ITSboard-mkdir	e4af4ec23c36fdd3
+56	98	8002878478771166	TestNewFont.Debug+ITSboard/src/TestNewFont.Debug+ITSboard-stamp/TestNewFont.Debug+ITSboard-download	26f31ecfc0aa6463
+56	98	8002878478771166	C:/GS_Labor/ITS-BRD-VSC/Programs/TestNewFont/tmp/TestNewFont.Debug+ITSboard/src/TestNewFont.Debug+ITSboard-stamp/TestNewFont.Debug+ITSboard-download	26f31ecfc0aa6463
+98	140	8002878479196118	TestNewFont.Debug+ITSboard/src/TestNewFont.Debug+ITSboard-stamp/TestNewFont.Debug+ITSboard-update	a57c292d150505ed
+98	140	8002878479196118	C:/GS_Labor/ITS-BRD-VSC/Programs/TestNewFont/tmp/TestNewFont.Debug+ITSboard/src/TestNewFont.Debug+ITSboard-stamp/TestNewFont.Debug+ITSboard-update	a57c292d150505ed
+140	182	8002878479613027	TestNewFont.Debug+ITSboard/src/TestNewFont.Debug+ITSboard-stamp/TestNewFont.Debug+ITSboard-patch	80ac23884b36bd90
+140	182	8002878479613027	C:/GS_Labor/ITS-BRD-VSC/Programs/TestNewFont/tmp/TestNewFont.Debug+ITSboard/src/TestNewFont.Debug+ITSboard-stamp/TestNewFont.Debug+ITSboard-patch	80ac23884b36bd90
+182	5184	8002878529639549	TestNewFont.Debug+ITSboard/src/TestNewFont.Debug+ITSboard-stamp/TestNewFont.Debug+ITSboard-configure	8dc41833aa736cce
+182	5184	8002878529639549	C:/GS_Labor/ITS-BRD-VSC/Programs/TestNewFont/tmp/TestNewFont.Debug+ITSboard/src/TestNewFont.Debug+ITSboard-stamp/TestNewFont.Debug+ITSboard-configure	8dc41833aa736cce
+5184	5288	8002878529675676	TestNewFont.Debug+ITSboard/src/TestNewFont.Debug+ITSboard-stamp/TestNewFont.Debug+ITSboard-database	d00d48af8c657760
+5184	5288	8002878529675676	C:/GS_Labor/ITS-BRD-VSC/Programs/TestNewFont/tmp/TestNewFont.Debug+ITSboard/src/TestNewFont.Debug+ITSboard-stamp/TestNewFont.Debug+ITSboard-database	d00d48af8c657760
