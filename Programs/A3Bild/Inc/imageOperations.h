@@ -13,7 +13,7 @@ static void waitForButtonPress(){}
 /**
  * @brief displays image on LCD-display
  * @param bmp Pointer to BMPImage
- * @retval EOK oder NOK
+ * @return EOK oder NOK
  */
 static int displayBMP(BMPImage *bmp) 
 
