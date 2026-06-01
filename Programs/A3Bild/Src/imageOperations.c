@@ -1,5 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+#include "stm32f4xx_hal.h"
+#include "lcd.h"
+#include "LCD_GUI.h"
+#include "input.h"
+#include "errorhandler.h"
+#include "perfTimer.h"
+#include "bmp.h"
 #include "imageOperations.h"
-#include "BMP_types"
+
 
 
 // LCD Display Dimensionen
@@ -7,10 +17,10 @@
 #define LCD_HEIGHT  320
 
 // Button für nächstes Bild
-#define BUTTON_PIN  //definition
-#define BUTTON_PORT //definition
+#define BUTTON_PIN  GPIO_PIN_0
+#define BUTTON_PORT GPIOF
 
-static void waitForButtonPress() {
+void waitForButtonPress() {
     lcdPrintlnS("Press button for next image!");
     
     // Einfache Button-Abfrage (polling)
@@ -30,7 +40,7 @@ static void waitForButtonPress() {
 
 
 
-static int displayBMP(BMPImage *bmp) {
+int displayBMP(BMPImage *bmp) {
     LOOP_ON_ERR(NULL == bmp, "displayBMP: bmp pointer is NULL");
     
     // Überprüfe Bildgröße
@@ -48,9 +58,9 @@ static int displayBMP(BMPImage *bmp) {
     
     // Gebe Bildinfo auf LCD aus
     lcdGotoXY(1, 1);
-    char infoStr;
+    char infoStr[100];
     snprintf(infoStr, sizeof(infoStr), 
-             "Image: %ldx%ld, %d-bit, Comp: %ld",
+             "Image: %dx%d, %d-bit, Comp: %u",
              bmp->infoHeader.biWidth,
              bmp->infoHeader.biHeight,
              bmp->infoHeader.biBitCount,
@@ -91,15 +101,23 @@ static int displayBMP(BMPImage *bmp) {
             // Gebe Pixel auf Display aus
             // Beachte: BMP speichert Bilder von unten nach oben
             // LCD erwartet von oben nach unten
+            
+            
             int displayY = displayHeight - 1 - y;
-            GUI_drawPoint(x, displayY, pixel, DOT_PIXEL_1X1, DOT_FILL_AROUND);
+
+            Coordinate p;
+            p.x = x;
+            p.y = displayY;
+
+            GUI_drawPoint(p, pixel, DOT_PIXEL_1X1, DOT_FILL_AROUND);
+
             
             pixelCount++;
             
             // Fortschritt anzeigen (alle 1000 Pixel)
             if (0 == (pixelCount % 1000)) {
                 lcdGotoXY(1, 2);
-                char progStr;
+                char progStr[50];
                 snprintf(progStr, sizeof(progStr), "Pixels: %d", pixelCount);
                 lcdPrintS(progStr);
             }
@@ -111,7 +129,7 @@ display_done:
     
     // Gebe Statistik aus
     lcdGotoXY(1, 4);
-    char statStr;
+    char statStr[50];
     snprintf(statStr, sizeof(statStr), "Displayed: %d pixels", pixelCount);
     lcdPrintS(statStr);
     

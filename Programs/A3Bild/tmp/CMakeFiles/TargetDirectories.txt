@@ -1,0 +1,8 @@
+C:/GS_Labor/ITS-BRD-VSC/Programs/A3Bild/tmp/CMakeFiles/database.dir
+C:/GS_Labor/ITS-BRD-VSC/Programs/A3Bild/tmp/CMakeFiles/A3Bild.Debug+ITSboard.dir
+C:/GS_Labor/ITS-BRD-VSC/Programs/A3Bild/tmp/CMakeFiles/A3Bild.Debug+ITSboard-build.dir
+C:/GS_Labor/ITS-BRD-VSC/Programs/A3Bild/tmp/CMakeFiles/A3Bild.Debug+ITSboard-configure.dir
+C:/GS_Labor/ITS-BRD-VSC/Programs/A3Bild/tmp/CMakeFiles/A3Bild.Debug+ITSboard-executes.dir
+C:/GS_Labor/ITS-BRD-VSC/Programs/A3Bild/tmp/CMakeFiles/A3Bild.Debug+ITSboard-database.dir
+C:/GS_Labor/ITS-BRD-VSC/Programs/A3Bild/tmp/CMakeFiles/edit_cache.dir
+C:/GS_Labor/ITS-BRD-VSC/Programs/A3Bild/tmp/CMakeFiles/rebuild_cache.dir

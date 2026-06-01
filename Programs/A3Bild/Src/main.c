@@ -19,7 +19,7 @@
 #include "errorhandler.h"
 #include "bmp.h"
 #include "perftimer.h"
-
+#include "imageOperations.h"
 
 
 
@@ -38,7 +38,7 @@ int main(void) {
     initPerfTimers();
     
     // Begrüßung
-    GUI_clear();
+    GUI_clear(WHITE);
     lcdGotoXY(1, 1);
     lcdPrintlnS("BMP Image Viewer");
     lcdPrintlnS("Waiting for images...");
@@ -47,7 +47,7 @@ int main(void) {
     // Hauptschleife - verarbeite Bilder nacheinander
     while (1) {
         // Lösche Display
-        GUI_clear();
+        GUI_clear(WHITE);
         lcdGotoXY(1, 1);
         lcdPrintlnS("Loading next image...");
         
@@ -82,9 +82,23 @@ int main(void) {
             BMP_Cleanup(&bmp);
             continue;
         }
+
+		// Zum Pixel-Start springen 
+
+		uint32_t pos = sizeof(BITMAPFILEHEADER) + sizeof(BITMAPINFOHEADER);
+
+		if (bmp.infoHeader.biBitCount == 8) {
+			pos += bmp.paletteSize * sizeof(RGBQUAD);
+		}
+
+		while (pos < bmp.fileHeader.bfOffBits) {
+			nextChar();
+			pos++;
+		}
+
         
         // Lösche Display und gebe Bild aus
-        GUI_clear();
+        GUI_clear(WHITE);
         
         if (EOK != displayBMP(&bmp)) {
             lcdGotoXY(1, 1);

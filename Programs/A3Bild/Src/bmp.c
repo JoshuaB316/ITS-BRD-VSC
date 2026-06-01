@@ -36,7 +36,7 @@ int BMP_ReadHeaders(BMPImage *bmp) {
     ERR_HANDLER(NULL == bmp, "BMP_ReadHeaders: bmp pointer ist NULL");
     
     // BITMAPFILEHEADER lesen fileHeader
-    RAISE_NOK_ON_ERR(1 != COMread((char*)&bmp->fileHeader, sizeof(BITMAPFILEHEADER), 1), "BMP_ReadHeaders: Error beim lesen von BITMAPFILEHEADER");
+    RETURN_NOK_ON_ERR(1 != COMread((char*)&bmp->fileHeader, sizeof(BITMAPFILEHEADER), 1), "BMP_ReadHeaders: Error beim lesen von BITMAPFILEHEADER");
     
     // valide signatur?
     ERR_HANDLER(BMP_SIGNATURE != bmp->fileHeader.bfType, "BMP_ReadHeaders: Invalide BMP Signatur");
@@ -46,7 +46,7 @@ int BMP_ReadHeaders(BMPImage *bmp) {
     ERR_HANDLER(0 != bmp->fileHeader.bfReserved2, "BMP_ReadHeaders: bfReserved2 sollte 0 sein");
     
     // BITMAPINFOHEADER lesen infoHeader
-    RAISE_NOK_ON_ERR(1 != COMread((char*)&bmp->infoHeader, sizeof(BITMAPINFOHEADER), 1), "BMP_ReadHeaders: Error beim lesen von BITMAPINFOHEADER");
+    RETURN_NOK_ON_ERR(1 != COMread((char*)&bmp->infoHeader, sizeof(BITMAPINFOHEADER), 1), "BMP_ReadHeaders: Error beim lesen von BITMAPINFOHEADER");
     
     // infoHeader größe überprüfen ob richtiges Format
     ERR_HANDLER(0x28 != bmp->infoHeader.biSize, "BMP_ReadHeaders: Invalide biSize");
@@ -89,7 +89,7 @@ int BMP_ReadPalette(BMPImage *bmp) {
     ERR_HANDLER(NULL == bmp->palette, "BMP_ReadPalette: Speicherreservierung fehlgeschlagen");
     
     // Palette Lesen
-    RAISE_NOK_ON_ERR(bmp->paletteSize != COMread((char*)bmp->palette, sizeof(RGBQUAD), bmp->paletteSize), "BMP_ReadPalette: Error reading palette");
+    RETURN_NOK_ON_ERR(bmp->paletteSize != COMread((char*)bmp->palette, sizeof(RGBQUAD), bmp->paletteSize), "BMP_ReadPalette: Error reading palette");
     return EOK;
 }
 
@@ -162,26 +162,26 @@ static int RLE_GetNextPixel(BMPImage *bmp, uint8_t *pixelIndex) {
         
         // wenn es noch bytes im absoluten modus gibt
         if (rleState.rleAbsCount > 0) {
-            RAISE_NOK_ON_ERR(EOF == RLE_ReadNextByte(pixelIndex), "RLE_GetNextPixel: Unerwartetes EOF im absoluten modus");
+            RETURN_NOK_ON_ERR(EOF == RLE_ReadNextByte(pixelIndex), "RLE_GetNextPixel: Unerwartetes EOF im absoluten modus");
             rleState.rleAbsCount--;
             rleState.linePixels++;
             
-            // rleAbsCount == 0 , Absolute Mode fertig!
-            if (0 == rleState.rleAbsCount) {
-                // Padding berechnen
-                int padding = (2 - (3 % 2)) % 2;  // = (2 - 1) % 2 = 1
-                // Lese 1 Padding-Byte (wird ignoriert)
-                for (int i = 0; i < 1; i++) {
-                    uint8_t dummy;
-                    RLE_ReadNextByte(&dummy);  // Lese und verwerfe Padding
-                }
+            
+        // rleAbsCount == 0 , Absolute Mode fertig!
+        if (0 == rleState.rleAbsCount) {
+            // Bei ungerader Anzahl Bytes → 1 Padding-Byte lesen
+            if (byte2 % 2 != 0) {
+                uint8_t dummy;
+                RLE_ReadNextByte(&dummy);
             }
+        }
+
             return EOK;
         }
         
         // nächster RLE befehl
-        RAISE_NOK_ON_ERR(EOF == RLE_ReadNextByte(&byte1), "RLE_GetNextPixel: Unerwartetes EOF");
-        RAISE_NOK_ON_ERR(EOF == RLE_ReadNextByte(&byte2), "RLE_GetNextPixel: Unerwartetes EOF");
+        RETURN_NOK_ON_ERR(EOF == RLE_ReadNextByte(&byte1), "RLE_GetNextPixel: Unerwartetes EOF");
+        RETURN_NOK_ON_ERR(EOF == RLE_ReadNextByte(&byte2), "RLE_GetNextPixel: Unerwartetes EOF");
         
         // escape sequenz
         if (0 == byte1) {

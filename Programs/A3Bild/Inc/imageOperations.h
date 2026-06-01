@@ -3,11 +3,12 @@
 #define IMAGEOPERATIONS
 
 #include "BMP_types.h"
+#include "bmp.h"
 
 /**
  * @brief waiting for button press to get next image
  */
-static void waitForButtonPress(){}
+void waitForButtonPress(void);
 
 
 /**
@@ -15,7 +16,7 @@ static void waitForButtonPress(){}
  * @param bmp Pointer to BMPImage
  * @return EOK oder NOK
  */
-static int displayBMP(BMPImage *bmp) 
+int displayBMP(BMPImage *bmp); 
 
 
 #endif
