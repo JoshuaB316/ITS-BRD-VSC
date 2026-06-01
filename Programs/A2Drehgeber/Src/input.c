@@ -122,7 +122,7 @@ void processInput() {
 
 
 // Globale Variablen für den Zustand des Drehgebers
-int currentPhase = 0; // 0 = a, 1 = b, 3 = c, 2 = d
+int currentPhase = 0; // 0 = a, 1 = b, 3 = c, d = d
 int lastPhase = 0;
 int direction = 0; // 1 = vorwärts, -1 = rückwärts, 0 = kein Phasenwechsel
 uint32_t stepCounter = 0; // Anzahl der Phasenwechsel
