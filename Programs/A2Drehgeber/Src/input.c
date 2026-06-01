@@ -122,7 +122,7 @@ void processInput() {
 
 
 // Globale Variablen für den Zustand des Drehgebers
-int currentPhase = 0; // 0 = a, 1 = b, 2 = c, 3 = d
+int currentPhase = 0; // 0 = a, 1 = b, 3 = c, 2 = d
 int lastPhase = 0;
 int direction = 0; // 1 = vorwärts, -1 = rückwärts, 0 = kein Phasenwechsel
 uint32_t stepCounter = 0; // Anzahl der Phasenwechsel
@@ -140,12 +140,13 @@ void readInitialInput() {
 void processInput() {
   lastPhase = currentPhase;
   currentPhase = readInput();
-  const int table[4][4] = {
+
+   const int table[4][4] = {
       {  0,  1, -1,  2 },
       { -1,  0,  2,  1 },
       {  1,  2,  0, -1 },
       {  2, -1,  1,  0 } };
-
+ 
   int v = table[lastPhase][currentPhase];
   if(v == 2)
   {

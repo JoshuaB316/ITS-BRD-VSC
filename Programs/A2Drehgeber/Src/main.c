@@ -47,6 +47,7 @@ int main() {
 
   // Test in Endlosschleife
   while (1) {
+    uint32_t endingTime = getTimeStamp();
     processInput();
 
     // Überprüfen on S6 gedrückt wurde und dementsprechend handeln
@@ -56,7 +57,7 @@ int main() {
     }
 
     if (!errorOccurred) {
-      uint32_t endingTime = getTimeStamp();
+      //uint32_t endingTime = getTimeStamp();
       uint32_t deltaTime = endingTime - startingTime;
 
       // Wenn die Zeitdifferenz zwischen 250 ms und 500 ms liegt -> Geschwindigkeit und den Drehwinkel berechnen
