@@ -28,7 +28,7 @@
             "type": "shell",
             "command": "pyocd",
             "options": {
-                "cwd": "${workspaceFolder}/Programs/A2Drehgeber",
+                "cwd": "${workspaceFolder}/Programs/TestNewFont",
                 "cwd": "${workspaceFolder}/Programs/TestNewFont",
                 "cwd": "${workspaceFolder}/Programs/GSP_Aufgabe2_Drehgeber",
                 "cwd": "${workspaceFolder}/Programs/TestNewFont",
@@ -61,7 +61,7 @@
             "type": "shell",
             "command": "pyocd",
             "options": {
-                "cwd": "${workspaceFolder}/Programs/A2Drehgeber",
+                "cwd": "${workspaceFolder}/Programs/TestNewFont",
                 "shell": {
                     "executable": "cmd.exe",
                     "args": [
@@ -89,7 +89,7 @@
             "type": "shell",
             "command": "pyocd",
             "options": {
-                "cwd": "${workspaceFolder}/Programs/A2Drehgeber",
+                "cwd": "${workspaceFolder}/Programs/TestNewFont",
                 "shell": {
                     "executable": "cmd.exe",
                     "args": [
@@ -128,7 +128,7 @@
             "type": "shell",
             "command": "pyocd",
             "options": {
-                "cwd": "${workspaceFolder}/Programs/A2Drehgeber",
+                "cwd": "${workspaceFolder}/Programs/TestNewFont",
                 "shell": {
                     "executable": "cmd.exe",
                     "args": [
