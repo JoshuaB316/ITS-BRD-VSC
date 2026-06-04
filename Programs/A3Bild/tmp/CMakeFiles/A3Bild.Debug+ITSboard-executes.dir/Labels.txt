@@ -1,0 +1,12 @@
+# Target labels
+ A3Bild.Debug+ITSboard
+# Source files and their labels
+C:/GS_Labor/ITS-BRD-VSC/Programs/A3Bild/tmp/CMakeFiles/A3Bild.Debug+ITSboard-executes
+C:/GS_Labor/ITS-BRD-VSC/Programs/A3Bild/tmp/CMakeFiles/A3Bild.Debug+ITSboard-executes.rule
+C:/GS_Labor/ITS-BRD-VSC/Programs/A3Bild/tmp/A3Bild.Debug+ITSboard/src/A3Bild.Debug+ITSboard-stamp/A3Bild.Debug+ITSboard-executes.rule
+C:/GS_Labor/ITS-BRD-VSC/Programs/A3Bild/tmp/A3Bild.Debug+ITSboard/src/A3Bild.Debug+ITSboard-stamp/A3Bild.Debug+ITSboard-build.rule
+C:/GS_Labor/ITS-BRD-VSC/Programs/A3Bild/tmp/A3Bild.Debug+ITSboard/src/A3Bild.Debug+ITSboard-stamp/A3Bild.Debug+ITSboard-configure.rule
+C:/GS_Labor/ITS-BRD-VSC/Programs/A3Bild/tmp/A3Bild.Debug+ITSboard/src/A3Bild.Debug+ITSboard-stamp/A3Bild.Debug+ITSboard-patch.rule
+C:/GS_Labor/ITS-BRD-VSC/Programs/A3Bild/tmp/A3Bild.Debug+ITSboard/src/A3Bild.Debug+ITSboard-stamp/A3Bild.Debug+ITSboard-update.rule
+C:/GS_Labor/ITS-BRD-VSC/Programs/A3Bild/tmp/A3Bild.Debug+ITSboard/src/A3Bild.Debug+ITSboard-stamp/A3Bild.Debug+ITSboard-download.rule
+C:/GS_Labor/ITS-BRD-VSC/Programs/A3Bild/tmp/A3Bild.Debug+ITSboard/src/A3Bild.Debug+ITSboard-stamp/A3Bild.Debug+ITSboard-mkdir.rule
